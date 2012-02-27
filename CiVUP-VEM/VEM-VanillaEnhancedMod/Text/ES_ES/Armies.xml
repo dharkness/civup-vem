@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_es_ES>
+		<Row Tag="TXT_KEY_PROMOTION_ANTI_CAVALRY">
+			<Text>Bonificación contra Caballería (100)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_ANTI_CAVALRY">
+			<Text>Bonificación contra Caballería (100)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ANTI_MOUNTED_III">
+			<Text>Bonificación contra Unidades Montadas (100)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ANTI_MOUNTED_III_HELP">
+			<Text>Bonificación contra Unidades Montadas (100)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PEDIA_PROMOTION_ANTI_MOUNTED_III">
+			<Text>Bonificación contra Unidades Montadas (100)</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_SIEGE_HELP" />
+			<Set Text="40% Bonificación contra Ciudades." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_VOLLEY_HELP" />
+			<Set Text="Aumenta un +40% la [ICON_STRENGTH] Fuerza de Combate contra [COLOR_POSITIVE_TEXT]Unidades Fortificadas[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_CITY_SIEGE" />
+			<Set Text="Demolición" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_CITY_SIEGE_HELP" />
+			<Set Text="100% de Bonificación contra ciudades.[NEWLINE]50% de Bonificación contra unidades fortificadas." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_RESOURCE_COAL_HELP" />
+			<Set Text="Utilizan por las Fábricas." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_IRONCLAD" />
+			<Set Text="Unidad más poderosa que las Fragatas pero incapaz de entrar en las casillas de Océano." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_PARATROOPER" />
+			<Set Text="Potente Unidad de infantería capaz de lanzarse en paracaídas hasta 10 casillas desde territorio amigo." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_PARATROOPER_STRATEGY" />
+			<Set Text="El Paracaidista es un soldado de infantería de la Edad Moderna. Es algo más débil que una unidad de infantería mecanizada, sin embargo, puede lanzarse en paracaídas hasta 10 casillas de distancia (cuando se hace desde territorio amigo). Esto permite al paracaidista saltar literalmente por encima las posiciones enemigas y destruir las redes de carreteras, saquear recursos vitales y otras, causando estragos detrás de sus líneas. El Paracaidista corre un gran riesgo durante dichas misiones, así que asegúra que el objetivo valga la pena." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_BRONZE_WORKING_HELP" />
+			<Set Text="Revela el [ICON_RES_IRON] [COLOR_POSITIVE_TEXT]Hierro[ENDCOLOR]. Permite a los trabajadores [COLOR_POSITIVE_TEXT]Deforestar la Jungla[ENDCOLOR], limpiar la casilla del mapa para que se puedan construir otras mejoras. También permite construir el [COLOR_POSITIVE_TEXT]Lancero[ENDCOLOR], una unidad militar fuerte contra enemigos montados." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_IRON_WORKING_HELP" />
+			<Set Text="Permite usar y comerciar con el [ICON_RES_IRON] [COLOR_POSITIVE_TEXT]Hierro[ENDCOLOR] y permite construir el [COLOR_POSITIVE_TEXT]Soldado con Espada[ENDCOLOR], una unidad de combate cuerpo a cuerpo muy potente que lo requiere." />
+		</Update>
+	</Language_es_ES>
+</GameData>

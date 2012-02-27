@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Defines>
+		<Update>
+			<Where Name="BASE_POLICY_COST" />
+			<Set Value="100" />
+			<!-- 25 -->
+		</Update>
+		<Update>
+			<Where Name="POLICY_COST_INCREASE_TO_BE_EXPONENTED" />
+			<Set Value="2.78" />
+			<!-- 3 -->
+		</Update>
+		<Update>
+			<Where Name="POLICY_COST_EXPONENT" />
+			<Set Value="2.2" />
+			<!-- 2.01 -->
+		</Update>
+		<Update>
+			<Where Name="POLICY_COST_VISIBLE_DIVISOR" />
+			<Set Value="10" />
+			<!-- 5 -->
+		</Update>
+	</Defines>
+	<GameOptions>
+		<Update>
+			<Where Type="GAMEOPTION_POLICY_SAVING" />
+			<Set Reverse="true" />
+		</Update>
+	</GameOptions>
+	<Projects>
+		<Update>
+			<Where Type="PROJECT_UTOPIA_PROJECT" />
+			<Set CultureBranchesRequired="6" />
+		</Update>
+	</Projects>
+	<PolicyBranch_Disables>
+		<Delete PolicyBranchType="POLICY_BRANCH_ORDER" PolicyBranchDisable="POLICY_BRANCH_FREEDOM" />
+		<Delete PolicyBranchType="POLICY_BRANCH_FREEDOM" PolicyBranchDisable="POLICY_BRANCH_ORDER" />
+		<Delete PolicyBranchType="POLICY_BRANCH_ORDER" PolicyBranchDisable="POLICY_BRANCH_AUTOCRACY" />
+		<Delete PolicyBranchType="POLICY_BRANCH_AUTOCRACY" PolicyBranchDisable="POLICY_BRANCH_ORDER" />
+		<Delete PolicyBranchType="POLICY_BRANCH_PIETY" PolicyBranchDisable="POLICY_BRANCH_RATIONALISM" />
+		<Delete PolicyBranchType="POLICY_BRANCH_RATIONALISM" PolicyBranchDisable="POLICY_BRANCH_PIETY" />
+	</PolicyBranch_Disables>
+	<PolicyBranchTypes>
+		<!--
+		<Update>
+			<Where Type="POLICY_BRANCH_RATIONALISM" />
+			<Set EraPrereq="ERA_MEDIEVAL" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_BRANCH_ORDER" />
+			<Set EraPrereq="ERA_RENAISSANCE" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_BRANCH_AUTOCRACY" />
+			<Set EraPrereq="ERA_RENAISSANCE" />
+		</Update>
+		-->
+	</PolicyBranchTypes>
+	
+	
+	<!--
+			Tradition
+	-->
+	<Policy_Flavors>
+		<Delete PolicyType="POLICY_TRADITION" />
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_LANDED_ELITE" />
+			<Set GridX="1"
+				 CapitalGrowthMod="0"
+				 CityGrowthMod="0"
+				 PlotCultureExponentModifier="-20"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_LEGALISM" />
+			<Set PortraitIndex="55"
+				 NumCitiesFreeCultureBuilding="0"
+				 Description="TXT_KEY_POLICY_CEREMONIAL_RITES"
+				 Civilopedia="TXT_KEY_POLICY_CEREMONIAL_RITES_TEXT"
+				 Help="TXT_KEY_POLICY_CEREMONIAL_RITES_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_MONARCHY" />
+			<Set GridX="5"
+				 GridY="1"
+				 CapitalUnhappinessMod="-25"
+				 Description="TXT_KEY_POLICY_LEGALISM"
+				 Civilopedia="TXT_KEY_POLICY_LEGALISM_TEXT"
+				 Help="TXT_KEY_POLICY_LEGALISM_HELP"
+				 PortraitIndex="57"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_ARISTOCRACY" />
+			<Set GridX="5"
+				 GridY="2"
+				 HappinessPerXPopulation="0"
+				 Description="TXT_KEY_POLICY_MONARCHY"
+				 Civilopedia="TXT_KEY_POLICY_MONARCHY_TEXT"
+				 Help="TXT_KEY_POLICY_MONARCHY_HELP"
+				 PortraitIndex="59"
+				 WonderProductionModifier="20"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_OLIGARCHY" />
+			<Set GridX="1"
+				 GarrisonedExperience="0.2"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_TRADITION_FINISHER" />
+			<Set HappinessPerXPopulation="0"
+				 CityGrowthMod="25"
+				 />
+		</Update>
+	</Policies>
+	<Policy_PrereqPolicies>
+		<Update>
+			<Where PolicyType="POLICY_LANDED_ELITE" PrereqPolicy="POLICY_LEGALISM" />
+			<Set PrereqPolicy="POLICY_OLIGARCHY" />
+		</Update>
+		<Delete PolicyType="POLICY_MONARCHY" />
+		<Row>
+			<PolicyType>POLICY_ARISTOCRACY</PolicyType>
+			<PrereqPolicy>POLICY_MONARCHY</PrereqPolicy>
+		</Row>
+	</Policy_PrereqPolicies>
+	<Policy_BuildingClassCultureChanges>
+		<Delete PolicyType="POLICY_TRADITION" />
+	</Policy_BuildingClassCultureChanges>
+	<Policy_CityYieldChanges>
+		<Delete PolicyType="POLICY_TRADITION_FINISHER" />
+		<Row>
+			<PolicyType>POLICY_LANDED_ELITE</PolicyType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Policy_CityYieldChanges>
+	<Policy_CapitalYieldChanges>
+		<Delete PolicyType="POLICY_LANDED_ELITE" />
+	</Policy_CapitalYieldChanges>
+	<Policy_CapitalYieldPerPopChanges>
+		<Delete PolicyType="POLICY_MONARCHY" />
+	</Policy_CapitalYieldPerPopChanges>
+	<Policy_BuildingClassYieldChanges>
+		<!--
+		<Row>
+			<PolicyType>POLICY_LEGALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		-->
+		<Row>
+			<PolicyType>POLICY_MONARCHY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>5</YieldChange>
+		</Row>
+		<!--
+		<Row>
+			<PolicyType>POLICY_LANDED_ELITE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+		-->
+		<Row>
+			<PolicyType>POLICY_LANDED_ELITE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_LANDED_ELITE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_LANDED_ELITE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_ARSENAL</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_LANDED_ELITE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</Policy_BuildingClassYieldChanges>
+	<Policy_YieldModifiers>
+		<!--
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>15</Yield>
+		</Row>
+		-->
+	</Policy_YieldModifiers>
+	<Policy_BuildingClassHappiness>
+		<!--
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_ARSENAL</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADITION_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+		-->
+	</Policy_BuildingClassHappiness>
+	<Policy_FreeBuildingFlavor>
+		<Row>
+			<PolicyType>POLICY_LEGALISM</PolicyType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<NumCities>4</NumCities>
+		</Row>
+	</Policy_FreeBuildingFlavor>
+
+	
+	
+	<!--
+			Liberty
+	-->
+	<Policy_Flavors>
+		<Delete PolicyType="POLICY_LIBERTY" />
+		<Row>
+			<PolicyType>POLICY_LIBERTY</PolicyType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_LIBERTY</PolicyType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_LIBERTY" />
+			<Set CulturePerCity="2"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_LIBERTY_FINISHER" />
+			<Set IncludesOneShotFreeUnits="false"
+				 NumFreeGreatPeople="0"
+				 UnhappinessMod="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_MERITOCRACY" />
+			<Set HappinessPerTradeRoute="100"
+				 UnhappinessMod="-5"
+				 Description="TXT_KEY_POLICY_REPRESENTATION"
+				 Civilopedia="TXT_KEY_CIV5_POLICY_REPRESENTATION_TEXT"
+				 Help="TXT_KEY_POLICY_REPRESENTATION_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_REPUBLIC" />
+			<Set BuildingProductionModifier="0"
+				 Description="TXT_KEY_POLICY_MERITOCRACY"
+				 Civilopedia="TXT_KEY_CIV5_POLICY_MERITOCRACY_TEXT"
+				 Help="TXT_KEY_POLICY_MERITOCRACY_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_REPRESENTATION" />
+			<Set NumCitiesPolicyCostDiscount="-20"
+				 GoldenAgeTurns="10"
+				 Description="TXT_KEY_POLICY_REPUBLIC"
+				 Civilopedia="TXT_KEY_CIV5_POLICY_REPUBLIC_TEXT"
+				 Help="TXT_KEY_POLICY_REPUBLIC_HELP"
+				 />
+		</Update>
+	</Policies>
+	<Policy_CityYieldChanges>
+		<Update>
+			<Where PolicyType="POLICY_REPUBLIC" YieldType="YIELD_PRODUCTION" />
+			<Set Yield="2" />
+		</Update>
+		<!--
+		<Row>
+			<PolicyType>POLICY_MERITOCRACY</PolicyType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		-->
+	</Policy_CityYieldChanges>
+	<Policy_BuildingClassYieldChanges>
+		<Row>
+			<PolicyType>POLICY_REPUBLIC</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_REPUBLIC</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_REPUBLIC</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_ARSENAL</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_REPUBLIC</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</Policy_BuildingClassYieldChanges>
+	<Policy_BuildingClassHappiness>
+		<!--
+		<Row>
+			<PolicyType>POLICY_MERITOCRACY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_COLOSSEUM</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERITOCRACY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_THEATRE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERITOCRACY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_STADIUM</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		-->
+	</Policy_BuildingClassHappiness>
+	<Policy_FreeBuildingFlavor>
+		<Row>
+			<PolicyType>POLICY_LIBERTY_FINISHER</PolicyType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<NumCities>-1</NumCities>
+		</Row>
+	</Policy_FreeBuildingFlavor>
+
+
+
+	<!--
+			Honor
+	-->
+	<Policy_Flavors>
+		<Delete PolicyType="POLICY_HONOR" />
+		<Delete PolicyType="POLICY_WARRIOR_CODE" />
+		<Delete PolicyType="POLICY_DISCIPLINE" />
+		<Delete PolicyType="POLICY_MILITARY_CASTE" />
+		<Delete PolicyType="POLICY_MILITARY_TRADITION" />
+		<Delete PolicyType="POLICY_PROFESSIONAL_ARMY" />
+		<Row>
+			<PolicyType>POLICY_HONOR</PolicyType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HONOR</PolicyType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_WARRIOR_CODE</PolicyType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_WARRIOR_CODE</PolicyType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_DISCIPLINE</PolicyType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_DISCIPLINE</PolicyType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_DISCIPLINE</PolicyType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_DISCIPLINE</PolicyType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_CASTE</PolicyType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_CASTE</PolicyType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_CASTE</PolicyType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_TRADITION</PolicyType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_TRADITION</PolicyType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PROFESSIONAL_ARMY</PolicyType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PROFESSIONAL_ARMY</PolicyType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_HONOR" />
+			<Set BarbarianCombatBonus="15"
+				 CultureFromBarbarianKills="1000"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_HONOR_FINISHER" />
+			<Set GoldFromKills="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_WARRIOR_CODE" />
+			<Set GridX="1" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_MILITARY_TRADITION" />
+			<Set GridX="3"
+				 GridY="1"
+				 ExpModifier="0"
+				 MilitaryProductionModifier="20"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_PROFESSIONAL_ARMY" />
+			<Set GridX="3"
+				 GridY="3"
+				 GoldFromKillsCostBased="0.10"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_MILITARY_CASTE" />
+			<Set GridX="3"/>
+		</Update>
+		<!--
+		<Update>
+			<Where Type="POLICY_MILITARY_CASTE" />
+			<Set GridX="3"
+				 GridY="3"
+				 HappinessPerGarrisonedUnit="0"
+				 GoldFromKills="0.25"
+				 CityCaptureCulture="50"
+				 CityCaptureCulturePerPop="10"
+				 CityCaptureCulturePerEra="50"
+				 PortraitIndex="21"
+				 />
+		</Update>
+		-->
+		<Update>
+			<Where Type="POLICY_DISCIPLINE" />
+			<Set GridX="5"
+				 GridY="1" />
+		</Update>
+	</Policies>
+	<Policy_UnitCombatProductionModifiers>
+		<Delete PolicyType="POLICY_WARRIOR_CODE" />
+	</Policy_UnitCombatProductionModifiers>
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_ADJACENT_BONUS" />
+			<Set AdjacentMod="20" />
+		</Update>
+	</UnitPromotions>
+	<Policy_PrereqPolicies>
+		<Delete PolicyType="POLICY_MILITARY_TRADITION" />
+		<Update>
+			<Where PolicyType="POLICY_MILITARY_CASTE" PrereqPolicy="POLICY_DISCIPLINE" />
+			<Set PrereqPolicy="POLICY_MILITARY_TRADITION" />
+		</Update>
+	</Policy_PrereqPolicies>
+	<Policy_FreePromotionUnitClasses>
+		<Row>
+			<PolicyType>POLICY_WARRIOR_CODE</PolicyType>
+			<UnitClass>UNITCLASS_GREAT_GENERAL</UnitClass>
+			<PromotionType>PROMOTION_MOBILITY</PromotionType>
+		</Row>
+	</Policy_FreePromotionUnitClasses>
+	<Policy_BuildingClassHappiness>
+		<Delete PolicyType="POLICY_PROFESSIONAL_ARMY" />
+		<!--
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_VICEROY</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_ARSENAL</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		-->
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_COLOSSEUM</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+	</Policy_BuildingClassHappiness>
+	<Policy_BuildingClassYieldChanges>
+		<Row>
+			<PolicyType>POLICY_HONOR_FINISHER</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_COLOSSEUM</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>4</YieldChange>
+		</Row>
+	</Policy_BuildingClassYieldChanges>
+
+
+
+	<!--
+			Piety
+	-->
+	<Policy_Flavors>
+
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_PIETY" />
+			<Set ExtraHappiness="3" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_ORGANIZED_RELIGION" />
+			<Set HappinessToCulture="200" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_MANDATE_OF_HEAVEN" />
+			<Set HappinessToCulture="0" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_THEOCRACY" />
+			<Set CultureWonderMultiplier="10"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_REFORMATION" />
+			<Set GoldenAgeMeterMod="-25"
+				 GoldenAgeTurns="10"
+				 CultureWonderMultiplier="0"
+				 />
+		</Update>
+	</Policies>
+	<Policy_PrereqPolicies>
+		
+	</Policy_PrereqPolicies>
+	<Policy_BuildingClassYieldChanges>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</Policy_BuildingClassYieldChanges>
+	<Policy_BuildingClassCultureChanges>
+		<Delete PolicyType="POLICY_FREE_RELIGION" />
+	</Policy_BuildingClassCultureChanges>
+	<Policy_BuildingClassHappiness>
+		<Delete PolicyType="POLICY_ORGANIZED_RELIGION" />
+		<Row>
+			<PolicyType>POLICY_MANDATE_OF_HEAVEN</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MANDATE_OF_HEAVEN</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MANDATE_OF_HEAVEN</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+	</Policy_BuildingClassHappiness>
+	<Policy_BuildingClassProductionModifiers>
+		<Delete PolicyType="POLICY_PIETY" />
+		<!--
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_OPERA_HOUSE</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MUSEUM</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_BROADCAST_TOWER</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_ORGANIZED_RELIGION</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
+			<ProductionModifier>25</ProductionModifier>
+		</Row>
+		-->
+	</Policy_BuildingClassProductionModifiers>
+	<Policy_SpecialistYieldChanges>
+		<Row>
+			<PolicyType>POLICY_FREE_RELIGION</PolicyType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Policy_SpecialistYieldChanges>
+	<Policy_ImprovementCultureChanges>
+		<Row>
+			<PolicyType>POLICY_FREE_RELIGION</PolicyType>
+			<ImprovementType>IMPROVEMENT_LANDMARK</ImprovementType>
+			<CultureChange>2</CultureChange>
+		</Row>
+	</Policy_ImprovementCultureChanges>
+	<Policy_BuildingClassYieldModifiers>
+		<Delete PolicyType="POLICY_THEOCRACY" />
+		<Row>
+			<PolicyType>POLICY_THEOCRACY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_TEMPLE</BuildingClassType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<YieldMod>10</YieldMod>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_THEOCRACY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MONASTERY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldMod>10</YieldMod>
+		</Row>
+	</Policy_BuildingClassYieldModifiers>
+
+
+
+	<!--
+			Patronage
+	-->
+	<Policy_Flavors>
+		
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_PATRONAGE" />
+			<Set MinorGoldFriendshipMod="20"
+				 MinorFriendshipDecayMod="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_PHILANTHROPY" />
+			<Set MinorFriendshipDecayMod="-25"
+				 MinorGoldFriendshipMod="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_AESTHETICS" />
+			<Set MinorFriendshipMinimum="20" 
+				 MinorInfluence="20"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_EDUCATED_ELITE" />
+			<Set GridX="2"
+				 PortraitIndex="17"
+				 MinorGreatPeopleAllies="false"
+				 Description="TXT_KEY_POLICY_FREE_TRADE"
+				 Civilopedia="TXT_KEY_POLICY_FREE_TRADE_TEXT"
+				 Help="TXT_KEY_POLICY_FREE_TRADE_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_CULTURAL_DIPLOMACY" />
+			<Set GridX="4"
+				 MinorResourceBonus="false"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_PATRONAGE_FINISHER" />
+			<Set OtherPlayersMinorFriendshipDecayMod="10"
+				 />
+		</Update>
+	</Policies>
+	<Policy_PrereqPolicies>
+		<Delete PolicyType="POLICY_EDUCATED_ELITE" />
+		<Delete PolicyType="POLICY_CULTURAL_DIPLOMACY" />
+		<Row>
+			<PolicyType>POLICY_EDUCATED_ELITE</PolicyType>
+			<PrereqPolicy>POLICY_SCHOLASTICISM</PrereqPolicy>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_CULTURAL_DIPLOMACY</PolicyType>
+			<PrereqPolicy>POLICY_SCHOLASTICISM</PrereqPolicy>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_CULTURAL_DIPLOMACY</PolicyType>
+			<PrereqPolicy>POLICY_AESTHETICS</PrereqPolicy>
+		</Row>		
+	</Policy_PrereqPolicies>
+	<Policy_MinorCivBonuses>
+		<Row>
+			<PolicyType>POLICY_CULTURAL_DIPLOMACY</PolicyType>
+			<FriendLevel>1</FriendLevel>
+			<YieldType>YIELD_HAPPINESS</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_CULTURAL_DIPLOMACY</PolicyType>
+			<FriendLevel>2</FriendLevel>
+			<YieldType>YIELD_HAPPINESS</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_EDUCATED_ELITE</PolicyType>
+			<FriendLevel>1</FriendLevel>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_EDUCATED_ELITE</PolicyType>
+			<FriendLevel>2</FriendLevel>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>3</Yield>
+		</Row>
+	</Policy_MinorCivBonuses>
+	
+
+
+
+	<!--
+			Commerce
+	-->
+	<Policy_Flavors>
+		<Delete PolicyType="POLICY_COMMERCE" />
+		<Delete PolicyType="POLICY_TRADE_UNIONS" />
+		<Delete PolicyType="POLICY_MERCHANT_NAVY" />
+		<Delete PolicyType="POLICY_MERCANTILISM" />
+		<Delete PolicyType="POLICY_PATENT_LAW" />
+		<Delete PolicyType="POLICY_PROTECTIONISM" />
+		<Row>
+			<PolicyType>POLICY_COMMERCE</PolicyType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADE_UNIONS</PolicyType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_TRADE_UNIONS</PolicyType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>5</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERCHANT_NAVY</PolicyType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>15</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERCHANT_NAVY</PolicyType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERCHANT_NAVY</PolicyType>
+			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERCANTILISM</PolicyType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERCANTILISM</PolicyType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PATENT_LAW</PolicyType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PATENT_LAW</PolicyType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PROTECTIONISM</PolicyType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_COMMERCE" />
+			<Set EmbarkedExtraMoves="1"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_COMMERCE_FINISHER" />
+			<Set ExtraHappinessPerLuxury="1" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_NAVAL_TRADITION" />
+			<Set PolicyBranchType="NULL" />
+		</Update>
+		<Row>
+			<Type>POLICY_PATENT_LAW</Type>
+			<Description>TXT_KEY_POLICY_PATENT_LAW</Description>
+			<Civilopedia>TXT_KEY_POLICY_PATENT_LAW_TEXT</Civilopedia>
+			<Help>TXT_KEY_POLICY_PATENT_LAW_HELP</Help>
+			<PolicyBranchType>POLICY_BRANCH_COMMERCE</PolicyBranchType>
+			<CultureCost>10</CultureCost>
+			<GridX>1</GridX>
+			<GridY>1</GridY>
+			<PortraitIndex>9</PortraitIndex>
+			<IconAtlas>POLICY_ATLAS</IconAtlas>
+			<IconAtlasAchieved>POLICY_A_ATLAS</IconAtlasAchieved>
+		</Row>
+		<Update>
+			<Where Type="POLICY_TRADE_UNIONS" />
+			<Set GridX="3"
+				 GridY="1"
+				 Description="TXT_KEY_POLICY_GUILDS"
+				 Civilopedia="TXT_KEY_POLICY_GUILDS_TEXT"
+				 Help="TXT_KEY_POLICY_GUILDS_HELP"
+				 PortraitIndex="7"
+				 RouteGoldMaintenanceMod="-50"
+				 OneShot="true"
+				 IncludesOneShotFreeUnits="true"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_MERCANTILISM" />
+			<Set GridX="5" GridY="1" PortraitIndex="8" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_MERCHANT_NAVY" />
+			<Set GridX="2"
+				 GridY="2"
+				 PortraitIndex="10"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_PROTECTIONISM" />
+			<Set GridX="4"
+				 GridY="2"
+				 PortraitIndex="11"
+				 ExtraHappinessPerLuxury="0"
+				 />
+		</Update>
+	</Policies>
+	<Policy_PrereqPolicies>
+		<Delete PolicyType="POLICY_TRADE_UNIONS" />
+		<Delete PolicyType="POLICY_MERCANTILISM" />
+		<Update>
+			<Where PolicyType="POLICY_MERCHANT_NAVY" />
+			<Set PrereqPolicy="POLICY_TRADE_UNIONS" />
+		</Update>
+		<Update>
+			<Where PolicyType="POLICY_PROTECTIONISM" />
+			<Set PrereqPolicy="POLICY_TRADE_UNIONS" />
+		</Update>
+	</Policy_PrereqPolicies>
+	<Policy_ImprovementYieldChanges>
+		<Row>
+			<PolicyType>POLICY_PATENT_LAW</PolicyType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_PATENT_LAW</PolicyType>
+			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERCANTILISM</PolicyType>
+			<ImprovementType>IMPROVEMENT_CUSTOMS_HOUSE</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Policy_ImprovementYieldChanges>
+	<Policy_CapitalYieldModifiers>
+		<Delete PolicyType="POLICY_COMMERCE" />
+	</Policy_CapitalYieldModifiers>
+	<Policy_CoastalCityYieldChanges>
+		<Delete PolicyType="POLICY_MERCHANT_NAVY" />
+		<Row>
+			<PolicyType>POLICY_MERCHANT_NAVY</PolicyType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Policy_CoastalCityYieldChanges>
+	<Policy_BuildingClassYieldChanges>
+		<Delete PolicyType="POLICY_TRADE_UNIONS" />
+		<Row>
+			<PolicyType>POLICY_MERCHANT_NAVY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_LIGHTHOUSE</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERCHANT_NAVY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MERCHANT_NAVY</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_SEAPORT</BuildingClassType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<YieldChange>2</YieldChange>
+		</Row>
+	</Policy_BuildingClassYieldChanges>
+	<Policy_YieldModifiers>
+		<Row>
+			<PolicyType>POLICY_COMMERCE</PolicyType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Policy_YieldModifiers>
+	<Policy_SpecialistYieldChanges>
+		<Row>
+			<PolicyType>POLICY_MERCANTILISM</PolicyType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Policy_SpecialistYieldChanges>
+	<Policy_SpecialistExtraYields>
+		<Delete PolicyType="POLICY_COMMERCE_FINISHER" />
+	</Policy_SpecialistExtraYields>
+	<Policy_HurryModifiers>
+		<Delete PolicyType="POLICY_MERCANTILISM" />
+		<Row>
+			<PolicyType>POLICY_PROTECTIONISM</PolicyType>
+			<HurryType>HURRY_GOLD</HurryType>
+			<HurryCostModifier>-20</HurryCostModifier>
+		</Row>
+	</Policy_HurryModifiers>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_COMMERCE</Type>
+			<Description>TXT_KEY_PROMOTION_COMMERCE</Description>
+			<Help>TXT_KEY_PROMOTION_COMMERCE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<MovesChange>1</MovesChange>
+			<PortraitIndex>33</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_COMMERCE</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<Policy_FreePromotions>
+		<Update>
+			<Where PromotionType="PROMOTION_NAVAL_TRADITION" />
+			<Set PolicyType="POLICY_MERCHANT_NAVY" />
+		</Update>
+		<Row>
+			<PolicyType>POLICY_COMMERCE</PolicyType>
+			<PromotionType>PROMOTION_COMMERCE</PromotionType>
+		</Row>
+	</Policy_FreePromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_COMMERCE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_CIVILIAN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COMMERCE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_DIPLOMACY</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COMMERCE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_COMMAND</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Policy_FreeUnitClasses>
+		<Row>
+			<PolicyType>POLICY_TRADE_UNIONS</PolicyType>
+			<UnitClassType>UNITCLASS_MERCHANT</UnitClassType>
+			<Count>1</Count>
+		</Row>
+	</Policy_FreeUnitClasses>
+
+
+
+	<!--
+			Enlightenment
+	-->
+	<Policy_Flavors>
+
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_RATIONALISM" />
+			<Set MedianTechPercentChange="0"
+				 OneShot="true"
+				 IncludesOneShotFreeUnits="true"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_FREE_THOUGHT" />
+			<Set GridX="1" GridY="1" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_SECULARISM" />
+			<Set GridX="5" GridY="1"  />
+		</Update>
+		<Update>
+			<Where Type="POLICY_SOVEREIGNTY" />
+			<Set GridX="3" GridY="1"
+				 HappinessToScience="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_SCIENTIFIC_REVOLUTION" />
+			<Set GridX="3" GridY="2"
+				 NumFreeTechs="0"
+				 HappinessToScience="15"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_HUMANISM" />
+			<Set GridX="3" GridY="3"  />
+		</Update>
+		<Update>
+			<Where Type="POLICY_RATIONALISM_FINISHER" />
+			<Set OneShot="true"
+				 NumFreeTechs="2"
+				 />
+		</Update>
+	</Policies>
+	<Policy_PrereqPolicies>
+		<Delete PolicyType="POLICY_FREE_THOUGHT" />
+		<Delete PolicyType="POLICY_HUMANISM" />
+		<Delete PolicyType="POLICY_SOVEREIGNTY" />
+		<Delete PolicyType="POLICY_SECULARISM" />
+		<Delete PolicyType="POLICY_SCIENTIFIC_REVOLUTION" />
+
+		<Row>
+			<PolicyType>POLICY_SCIENTIFIC_REVOLUTION</PolicyType>
+			<PrereqPolicy>POLICY_SOVEREIGNTY</PrereqPolicy>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HUMANISM</PolicyType>
+			<PrereqPolicy>POLICY_SCIENTIFIC_REVOLUTION</PrereqPolicy>
+		</Row>
+	</Policy_PrereqPolicies>
+	<Policy_SpecialistYieldChanges>
+		<Row>
+			<PolicyType>POLICY_SECULARISM</PolicyType>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Policy_SpecialistYieldChanges>
+	<Policy_SpecialistExtraYields>
+		<Delete PolicyType="POLICY_SECULARISM" />
+	</Policy_SpecialistExtraYields>
+	<Policy_ImprovementYieldChanges>
+		<Row>
+			<PolicyType>POLICY_SECULARISM</PolicyType>
+			<ImprovementType>IMPROVEMENT_ACADEMY</ImprovementType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Policy_ImprovementYieldChanges>
+	<Policy_FreeUnitClasses>
+		<Row>
+			<PolicyType>POLICY_RATIONALISM</PolicyType>
+			<UnitClassType>UNITCLASS_SCIENTIST</UnitClassType>
+			<Count>1</Count>
+		</Row>
+	</Policy_FreeUnitClasses>
+	<Policy_BuildingClassHappiness>
+		<Row>
+			<PolicyType>POLICY_HUMANISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_HUMANISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_LABORATORY</BuildingClassType>
+			<Happiness>1</Happiness>
+		</Row>
+	</Policy_BuildingClassHappiness>
+	<Policy_BuildingClassYieldChanges>
+		<Update>
+			<Where PolicyType="POLICY_RATIONALISM_FINISHER" />
+			<Set PolicyType="POLICY_SOVEREIGNTY" />
+		</Update>
+	</Policy_BuildingClassYieldChanges>
+
+
+
+	<!--
+			Freedom
+	-->
+	<Policy_Flavors>
+
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_FREEDOM" />
+			<Set CityStrengthMod="10"
+				 GreatPeopleRateModifier="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_FREE_SPEECH" />
+			<Set GridX="2"
+				 GridY="1"
+				 MinorGreatPeopleRate="2"
+				 BaseFreeUnits="0"
+				 PortraitIndex="41"
+				 Description="TXT_KEY_POLICY_EDUCATED_ELITE"
+				 Civilopedia="TXT_KEY_POLICY_EDUCATED_ELITE_TEXT"
+				 Help="TXT_KEY_POLICY_EDUCATED_ELITE_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_CONSTITUTION" />
+			<Set GridX="4"
+				 GridY="1"
+				 PortraitIndex="14"
+				 GoldenAgeDurationMod="50"
+				 CityStrengthMod="0"
+				 CulturePerWonder="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_DEMOCRACY" />
+			<Set GridX="4"
+				 GridY="2"
+				 PortraitIndex="13"
+				 HalfSpecialistUnhappiness="false"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_CIVIL_SOCIETY" />
+			<Set GridX="4"
+				 GridY="3"
+				 Description="TXT_KEY_POLICY_HUMAN_RIGHTS"
+				 Civilopedia="TXT_KEY_POLICY_HUMAN_RIGHTS_TEXT"
+				 Help="TXT_KEY_POLICY_HUMAN_RIGHTS_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_UNIVERSAL_SUFFRAGE" />
+			<Set GridX="2"
+				 GridY="2"
+				 PortraitIndex="16"
+				 CityStrengthMod="0"
+				 GreatPeopleRateModifier="50"
+				 IncludesOneShotFreeUnits="true"
+				 NumFreeGreatPeople="1"
+				 Description="TXT_KEY_POLICY_LIBERTARIANISM"
+				 Civilopedia="TXT_KEY_POLICY_LIBERTARIANISM_TEXT"
+				 Help="TXT_KEY_POLICY_LIBERTARIANISM_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_FREEDOM_FINISHER" />
+			<Set GoldenAgeDurationMod="0"
+				 HalfSpecialistUnhappiness="true"
+				 />
+		</Update>
+	</Policies>
+	<Policy_PrereqPolicies>
+		<Delete PolicyType="POLICY_FREE_SPEECH" />
+		<Delete PolicyType="POLICY_CONSTITUTION" />
+		<Delete PolicyType="POLICY_DEMOCRACY" />
+		<Delete PolicyType="POLICY_CIVIL_SOCIETY" />
+		<Delete PolicyType="POLICY_UNIVERSAL_SUFFRAGE" />
+		<Row>
+			<PolicyType>POLICY_DEMOCRACY</PolicyType>
+			<PrereqPolicy>POLICY_CONSTITUTION</PrereqPolicy>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_CIVIL_SOCIETY</PolicyType>
+			<PrereqPolicy>POLICY_DEMOCRACY</PrereqPolicy>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_UNIVERSAL_SUFFRAGE</PolicyType>
+			<PrereqPolicy>POLICY_CONSTITUTION</PrereqPolicy>
+		</Row>
+	</Policy_PrereqPolicies>
+	<Policy_ImprovementYieldChanges>
+		<Delete PolicyType="POLICY_FREEDOM_FINISHER" />
+	</Policy_ImprovementYieldChanges>
+	<Policy_BuildingClassYieldChanges>
+		<!--
+		<Row>
+			<PolicyType>POLICY_UNIVERSAL_SUFFRAGE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_UNIVERSAL_SUFFRAGE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_UNIVERSAL_SUFFRAGE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_ARSENAL</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_UNIVERSAL_SUFFRAGE</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_MILITARY_BASE</BuildingClassType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<YieldChange>3</YieldChange>
+		</Row>
+		-->
+	</Policy_BuildingClassYieldChanges>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_FREEDOM</Type>
+			<Description>TXT_KEY_PROMOTION_FREEDOM</Description>
+			<Help>TXT_KEY_PROMOTION_FREEDOM_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<PortraitIndex>59</PortraitIndex>
+			<FriendlyLandsModifier>10</FriendlyLandsModifier>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_FREEDOM</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<Policy_FreePromotions>
+		<Row>
+			<PolicyType>POLICY_FREEDOM</PolicyType>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+		</Row>
+	</Policy_FreePromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_FREEDOM</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+
+
+
+	<!--
+			Autocracy
+	-->
+	<Policy_Flavors>
+		<Row>
+			<PolicyType>POLICY_AUTOCRACY</PolicyType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_AUTOCRACY" />
+			<Set FreeExperience="15"
+				 UnitGoldMaintenanceMod="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_POPULISM" />
+			<Set GridX="1"
+				 PortraitIndex="2"
+				 WoundedUnitDamageMod="0"
+				 MilitaryProductionModifier="25"
+				 UnitPurchaseCostModifier="-25"
+				 Description="TXT_KEY_POLICY_NATIONALISM"
+				 Civilopedia="TXT_KEY_POLICY_NATIONALISM_TEXT"
+				 Help="TXT_KEY_POLICY_NATIONALISM_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_FASCISM" />
+			<Set GridX="1"
+				 StrategicResourceMod="0"
+				 UnitGoldMaintenanceMod="-33"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_MILITARISM" />
+			<Set GridX="4"
+				 UnitGoldMaintenanceMod="0"
+				 UnitPurchaseCostModifier="0"
+				 StrategicResourceMod="150"
+				 PortraitIndex="5"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_TOTAL_WAR" />
+			<Set GridX="3"
+				 GridY="2"
+				 MilitaryProductionModifier="0"
+				 FreeExperience="0"
+				 PortraitIndex="1"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_POLICE_STATE" />
+			<Set GridX="5"
+				 />
+		</Update>
+	</Policies>
+	<Policy_PrereqPolicies>
+		<Delete PolicyType="POLICY_FASCISM" PrereqPolicy="POLICY_MILITARISM" />
+		<Delete PolicyType="POLICY_TOTAL_WAR" />
+		<Row>
+			<PolicyType>POLICY_TOTAL_WAR</PolicyType>
+			<PrereqPolicy>POLICY_MILITARISM</PrereqPolicy>
+		</Row>		
+	</Policy_PrereqPolicies>
+	<UnitPromotions>
+		<Row>
+			<Type>PROMOTION_TOTAL_WAR</Type>
+			<Description>TXT_KEY_PROMOTION_TOTAL_WAR</Description>
+			<Help>TXT_KEY_PROMOTION_TOTAL_WAR_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<EnemyHealChange>2</EnemyHealChange>
+			<NeutralHealChange>2</NeutralHealChange>
+			<FriendlyHealChange>2</FriendlyHealChange>
+			<PortraitIndex>59</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_SHARED</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_TOTAL_WAR</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<Policy_FreePromotions>
+		<Row>
+			<PolicyType>POLICY_TOTAL_WAR</PolicyType>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+		</Row>
+	</Policy_FreePromotions>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TOTAL_WAR</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+
+
+
+	<!--
+			Order
+	-->
+	<Policy_Flavors>
+
+	</Policy_Flavors>
+	<Policies>
+		<Update>
+			<Where Type="POLICY_UNITED_FRONT" />
+			<Set TradeRouteGoldModifier="10"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_PLANNED_ECONOMY" />
+			<Set BuildingGoldMaintenanceMod="-25"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_NATIONALISM" />
+			<Set Description="TXT_KEY_POLICY_POPULISM"
+				 Civilopedia="TXT_KEY_POLICY_POPULISM_TEXT"
+				 Help="TXT_KEY_POLICY_POPULISM_HELP"
+				 />
+		</Update>
+		<Update>
+			<Where Type="POLICY_SOCIALISM" />
+			<Set BuildingGoldMaintenanceMod="0" />
+		</Update>
+		<Update>
+			<Where Type="POLICY_COMMUNISM" />
+			<Set BuildingProductionModifier="0" />
+		</Update>
+	</Policies>
+	<Policy_CityYieldChanges>
+		<Delete PolicyType="POLICY_COMMUNISM" />
+		<Update>
+			<Where Type="POLICY_ORDER_FINISHER" />
+			<Set Yield="2" />
+		</Update>
+	</Policy_CityYieldChanges>
+	<Policy_ImprovementYieldChanges>
+		<Row>
+			<PolicyType>POLICY_COMMUNISM</PolicyType>
+			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Policy_ImprovementYieldChanges>
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_NATIONALISM" />
+			<Set FriendlyLandsAttackModifier="20" />
+		</Update>		
+	</UnitPromotions>
+	<Policy_BuildingClassHappiness>
+		<Row>
+			<PolicyType>POLICY_SOCIALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SOCIALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+			<Happiness>2</Happiness>
+		</Row>
+	</Policy_BuildingClassHappiness>
+	<Policy_BuildingClassYieldModifiers>
+		<Delete PolicyType="POLICY_PLANNED_ECONOMY" />
+		<Row>
+			<PolicyType>POLICY_SOCIALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_WORKSHOP</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldMod>10</YieldMod>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SOCIALISM</PolicyType>
+			<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<YieldMod>10</YieldMod>
+		</Row>
+	</Policy_BuildingClassYieldModifiers>
+	<Policy_PrereqPolicies>
+
+	</Policy_PrereqPolicies>
+	<Policy_SpecialistYieldChanges>
+		<Row>
+			<PolicyType>POLICY_NATIONALISM</PolicyType>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Policy_SpecialistYieldChanges>
+	<Policy_ImprovementYieldChanges>
+		<Row>
+			<PolicyType>POLICY_NATIONALISM</PolicyType>
+			<ImprovementType>IMPROVEMENT_MANUFACTORY</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Policy_ImprovementYieldChanges>
+</GameData>

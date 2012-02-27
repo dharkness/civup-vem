@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_es_ES>
+		<Update>
+			<Where Tag="TXT_KEY_POLICIES_CULTURAL_VICTORY" />
+			<Set Text="Al término de 6 ramas políticas, es posible construir el [COLOR_POSITIVE_TEXT]Proyecto Utopía[ENDCOLOR] en una de tus Ciudades, provocando una [COLOR_POSITIVE_TEXT]Victoria Cultural[ENDCOLOR]!" />
+		</Update>
+		<!--<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_TRADITION_HELP" />
+			<Set Text="La [COLOR_POSITIVE_TEXT]Tradición[ENDCOLOR] es mejor para los imperios pequeños, con muchas políticas que mejoren la [ICON_CAPITAL] Ciudad Capital.[NEWLINE][NEWLINE]La adopción de la Tradición incrementa la tasa de crecimiento de la[ICON_CAPITAL] Capital en un 33%." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_LANDED_ELITE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]élite terrateniente[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] a la Ciencia por cada Especialista." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MONARCHY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Monarchy[ENDCOLOR][NEWLINE]+3 [ICON_CULTURE] a la Cultura por cada Maravilla del Mundo." />
+		</Update>-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_REPRESENTATION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Representation[ENDCOLOR][NEWLINE]-50%[ICON_GOLD] al coste de Oro por la compra de tierra." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_COLLECTIVE_RULE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Reglamento Colectivo[ENDCOLOR][NEWLINE]Las nuevas Ciudades fundadas empiezan con el 75% de la[ICON_FOOD] Comida necesaria para ganar su segundo [ICON_CITIZEN] Ciudadano." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_CITIZENSHIP_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Ciudadanía[ENDCOLOR][NEWLINE]La velocidad a la que los trabajadores construyen mejoras aumenta un 33%." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_PIETY_HELP" />
+			<Set Text="La [COLOR_POSITIVE_TEXT]Piedad[ENDCOLOR] incrementa la [ICON_HAPPINESS_1] Felicidad de los imperios y permite que florezca su [ICON_CULTURE] Cultura.[NEWLINE][NEWLINE]La adopción de Piedad aumenta inmediatamente la [ICON_HAPPINESS_1] Felicidad en el imperio en 5.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]Esta rama no puede estar activa al mismo tiempo que el racionalismo.[ENCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MANDATE_OF_HEAVEN_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Mandato Divino[ENDCOLOR][NEWLINE]Incrementa la [ICON_CULTURE]Cultura por turno en un 75% del exceso de [ICON_HAPPINESS_1] felicidad." />
+		</Update>
+		<!--<Update>
+			<Where Tag="TXT_KEY_POLICY_REFORMATION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Reforma[ENDCOLOR][NEWLINE]El imperio entra de inmediato en una [ICON_GOLDEN_AGE] Edad de Oro de 10 turnos." />
+		</Update>-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_PATRONAGE_HELP" />
+			<Set Text="El [COLOR_POSITIVE_TEXT]Patrocinio[ENDCOLOR] aumenta los beneficios de las Ciudades-Estado amistosas. [NEWLINE][NEWLINE]El nivel de [ICON_INFLUENCE] Influencia mínimo con cada Ciudad-Estado es 20." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_AESTHETICS_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Estética[ENDCOLOR][NEWLINE]La [ICON_INFLUENCE] Influencia sobre las Ciudades-Estado se degrada un 25% más lento de lo normal." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_PLANNED_ECONOMY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Planificación de la Economía[ENDCOLOR][NEWLINE]La [ICON_HAPPINESS_4] Infelicidad por el número de Ciudades se reduce en un 33%." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_TRADE_UNIONS_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Sindicatos[ENDCOLOR][NEWLINE]El [ICON_GOLD] Mantenimiento de Carreteras y Ferrocarrilesse reduce en un 30%." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_SOVEREIGNTY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Soberanía[ENDCOLOR][NEWLINE]+25% [ICON_RESEARCH] a la Ciencia mientras el imperio sea [ICON_HAPPINESS_1] Feliz." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_UNIVERSAL_SUFFRAGE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Sufragio Universal[ENDCOLOR][NEWLINE]La [ICON_STRENGTH] Fuerza de Combate de las Ciudades se incrementa en un 50%." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_UNITED_FRONT_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Frente Unido[ENDCOLOR][NEWLINE]La [ICON_INFLUENCE] Influencia de otros jugadores con las Ciudades-Estado se reduce un 50% más de lo normal por turno." />
+		</Update>
+	</Language_es_ES>
+</GameData>

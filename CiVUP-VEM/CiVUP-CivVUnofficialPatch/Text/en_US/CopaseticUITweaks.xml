@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/30/2010 3:22:22 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_BY">
+			<Text>Protected By:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_DESC">
+			<Text>Other civilizations may choose to protect a city-state. Declaring war on that city-state will cause its protectors to declare war on you in return.</Text>
+		</Row>
+		
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_de_DE>
+		<Row Tag="TXT_KEY_PROMOTION_TOTAL_WAR">
+			<Text>Populismus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TOTAL_WAR_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]1 zusätzlicher Heilungspunkt[ENDCOLOR] pro Runde</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PROFESSIONAL_ARMY">
+			<Text>Professionelle Armee</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PROFESSIONAL_ARMY_HELP">
+			<Text>Schaltet fortgeschrittene Beförderungen frei</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COMMERCE">
+			<Text>Gilden</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COMMERCE_HELP">
+			<Text>+1 [ICON_MOVES] Bewegung.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_POLICIES_CULTURAL_VICTORY" />
+			<Set Text="Nach der Beendigung von 6 Politikzweigen, kann das [COLOR_POSITIVE_TEXT]Utopia-Projekt[ENDCOLOR] in einer eurer Städte erbaut werden, was einen [COLOR_POSITIVE_TEXT]Kultursieg[ENDCOLOR] auslöst!" />
+		</Update>
+
+		<!-- 
+				Tradition 
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_TRADITION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Tradition[ENDCOLOR] empfielt sich für kleine Reiche.[NEWLINE][NEWLINE]Die Übernahme der Tradition führt zu einer enormen Beschleunigung bei der Grenzerweiterung der Städte und gewährt +3 [ICON_CULTURE] Kultur in der [ICON_CAPITAL] Hauptstadt.[NEWLINE][NEWLINE]Die Übernahme aller Politiken des Zweiges Tradition gewährt einen +10% [ICON_FOOD] Nahrungs Bonus in jeder Stadt, und +1 [ICON_HAPPINESS_1] Zufriedenheit pro 10 [ICON_CITIZEN] Einwohner in jeder Stadt." />
+		</Update>
+		<Row Tag="TXT_KEY_POLICY_CEREMONIAL_RITES">
+			<Text>Zeremonielle Riten</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CEREMONIAL_RITES_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Zeremonielle Riten[ENDCOLOR][NEWLINE]Bietet ein freies Kulturgebäude in den ersten 4 Städten.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CEREMONIAL_RITES_TEXT">
+			<Text>Eine Zeremonie ist eine Veranstaltung von ritueller Bedeutung, durchgeführt zu einem besonderen Anlass. Zeremonien können eine physische Besonderheit oder theatralische Komponente haben: Tanz, eine Prozession oder Handauflegung. Eine bezeichnende verbale Verkündung kann mit dem dem Anlass verbunden sein.[NEWLINE][NEWLINE]Eine Zeremonie kann einen Übergangsritus in einem menschlichen Leben kennzeichnen, um Ereignisse wie Geburt, Erwachsenwerden, Initiationsriten oder Tod hervorzuheben. Manchmal darf eine Zeremonie nur von einer Person mit bestimmter Autorität durchgeführt werden. Gesellschaftsweite Zeremonien können jährliche, saisonale oder wiederkehrende Ereignisse kennzeichnen, wie der Frühlingsbeginn, Wintersonnenwende und andere jährliche astronomische Positionen.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_LEGALISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Legalismus[ENDCOLOR][NEWLINE]+5 [ICON_GOLD] Gold in der [ICON_CAPITAL] Hauptstadt.[NEWLINE]-50% [ICON_HAPPINESS_4] Unzufriedenheit durch [ICON_CITIZEN] Bevölkerung in der [ICON_CAPITAL] Hauptstadt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MONARCHY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Monarchie[ENDCOLOR][NEWLINE]+3 [ICON_HAPPINESS_1] je National- oder Weltwunder.[NEWLINE]+15% [ICON_PRODUCTION] Produktion beim Bau von Wundern." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_LANDED_ELITE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Großgrundbesitzer[ENDCOLOR][NEWLINE]+4 [ICON_FOOD] Nahrung in der [ICON_CAPITAL] Hauptstadt.[NEWLINE]+2 [ICON_FOOD] Nahrung pro [ICON_STRENGTH] Verteidigungsgebäude." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_OLIGARCHY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Oligarchie[ENDCOLOR][NEWLINE]Garnisonseinheiten kosten keinen [ICON_GOLD] Unterhalt und erhalten 0.2 [ICON_WAR] Erfahrung je Runde.[NEWLINE]Städte mit einer Garnison erhalten +100% [ICON_RANGE_STRENGTH] Fernkampfstärke." />
+		</Update>
+
+
+		<!--
+				Liberty 
+		-->
+		<!--
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_REPRESENTATION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Repräsentation[ENDCOLOR][NEWLINE]Jede Stadt erhöht die [ICON_CULTURE] Kulturkosten für Politiken nur mehr um die Hälfte des Normalwertes.  Startet auch ein [ICON_GOLDEN_AGE] Goldenes Zeitalter." />
+		</Update>
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_LIBERTY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Unabhängigkeit[ENDCOLOR] eignet sich am besten für Zivilisationen die eine rasche Expansion anstreben.[NEWLINE][NEWLINE]Die Übernahme von Unabhängigkeit gewährt +1 [ICON_CULTURE] Kulter je Stadt.[NEWLINE][NEWLINE]Die Übernahme aller Politiken des Zweiges Unabhängigkeit reduziert die [ICON_HAPPINESS_4] Unzufriedenheit der [ICON_CITIZEN] Bevölkerung in Städten die nicht [ICON_OCCUPIED] besetzt sind um -5%." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MERITOCRACY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Meritokratie[ENDCOLOR][NEWLINE]+1 [ICON_PRODUCTION] Produktion in jeder Stadt.[NEWLINE]+2 [ICON_PRODUCTION] Produktion beim Bau von [ICON_STRENGTH] Verteidigungsgebäuden." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_REPUBLIC_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Republik[ENDCOLOR][NEWLINE]Startet ein [ICON_GOLDEN_AGE] Goldenes Zeitalter.[NEWLINE]-25% [ICON_CULTURE] Kulturkosten pro Stadt für Sozialpolitiken." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_REPRESENTATION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Repräsentation[ENDCOLOR][NEWLINE]+5 [ICON_HAPPINESS_1] Zufriedenheit[NEWLINE]+0.5 [ICON_HAPPINESS_1] Zufriedenheit in [ICON_CONNECTED] verbundenen Städten." />
+		</Update>
+
+
+		<!--
+				Honor
+		-->
+		<!--
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MILITARY_CASTE" />
+			<Set Text="Kriegsbeute" />
+		</Update>
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_HONOR_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Ehre[ENDCOLOR] verbessert die Effektivität der eigenen Armee auf verschiedene Weise.[NEWLINE][NEWLINE]Die Übernahme von Ehre enthüllt Barbarenlager, wenn sie in erforschtem Gebiet entstehen, und gibt einen 25% Kampfbonus gegen Barbaren, und für jeden besiegten Barbaren erhält man [ICON_CULTURE] Kultur für das Reich.[NEWLINE][NEWLINE]Die Übernahme aller Politiken des Zweiges Ehre gewährt [ICON_GOLD] Gold für jede besiegte gegnerische Einheit." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_WARRIOR_CODE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Kriegerkodex[ENDCOLOR][NEWLINE]+1[ICON_MOVES] Bewegung für Große Generäle und ein Großer General erscheint in der [ICON_CAPITAL] Hauptstadt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MILITARY_TRADITION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Militärtradition[ENDCOLOR][NEWLINE] +20% [ICON_PRODUCTION] Produktion für Militäreinheiten und Militärgebäude (Verteidigungs- und Ausbildungsgebäude)." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MILITARY_CASTE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Kriegerkaste[ENDCOLOR][NEWLINE]+2 [ICON_CULTURE] Kultur und +1 [ICON_HAPPINESS_1] Zufriedenheit pro Stadt mit einer Garnison." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_DISCIPLINE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Disziplin[ENDCOLOR][NEWLINE]+20% [ICON_STRENGTH] Stärke für Einheiten, die an eine befreundete Militäreinheit angrenzen." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_DISCIPLINE_HELP" />
+			<Set Text="+20% [ICON_STRENGTH] Stärke wenn eine befreundete Militäreinheit angrenzt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_PROFESSIONAL_ARMY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Berufsarmee[ENDCOLOR][NEWLINE]-33% [ICON_GOLD] Aufrüstungskosten für Einheiten." />
+		</Update>
+
+
+		<!--
+				Piety
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_ORGANIZED_RELIGION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Organisierte Religion[ENDCOLOR][NEWLINE]+1 [ICON_HAPPINESS_1] Zufriedenheit für Monumente, Tempel und Klöster." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_THEOCRACY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Theokratie[ENDCOLOR][NEWLINE]+15% [ICON_GOLD] Gold in Städten mit einem Tempel." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MANDATE_OF_HEAVEN_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Mandat des Himmels[ENDCOLOR][NEWLINE][ICON_CULTURE] Kultur erhöht sich jede Runde um 50% der überschüssigen [ICON_HAPPINESS_1] Zufriedenheit. Zusätzlich wird 25% weniger [ICON_HAPPINESS_1] Zufriedenheit für ein [ICON_GOLDEN_AGE] Goldenes Zeitalter benötigt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_REFORMATION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Reformation[ENDCOLOR][NEWLINE]Startet ein [ICON_GOLDEN_AGE] Goldenes Zeitalter.[NEWLINE]+33% [ICON_CULTURE] Kultur in Städten mit einem Weltwunder." />
+		</Update>
+		
+
+
+		<!--
+				Commerce
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_COMMERCE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Wirtschaft[ENDCOLOR] gewährt Vorteile für Seemächte, die ihren Schwerpunkt auf [ICON_GOLD] Gold setzen.[NEWLINE][NEWLINE]Die Übernahme von Wirtschaft erhöht das [ICON_GOLD] Goldeinkommen um 10% und es erscheint ein Großer Händler nahe der [ICON_CAPITAL] Hauptstadt.[NEWLINE][NEWLINE]Die Übernahme aller Politiken des Zweiges Wirtschaft gewährt +1 [ICON_HAPPINESS_1] Zufriedenheit durch jedes Luxusgut, inklusive überschüssiger Exemplare." />
+		</Update>
+		<Row Tag="TXT_KEY_POLICY_PATENT_LAW">
+			<Text>Patentrecht</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PATENT_LAW_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Patentrecht[ENDCOLOR][NEWLINE]+1 [ICON_GOLD] Gold für Handelsposten.[NEWLINE]+2 [ICON_GOLD] Gold für Fischerbote und Zöllhäuser.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PATENT_LAW_TEXT">
+			<Text>Ein Patent ist eine Reihe von ausschließlichen Rechten, verliehen durch einen Staat (nationale Regierung) an einen Erfinder oder seine Rechtsnachfolger für einen begrenzten Zeitraum im Austausch für die Offenlegung einer Erfindung.[NEWLINE][NEWLINE]Patente im modernen Sinne entstanden im Jahr 1474, als die Republik Venedig ein Dekret erließ, dass neue und innovative Geräte, einmal in die Praxis umgesetzt, der Republik gemeldet werden mussten um das Recht zu erwerben, andere an deren Nutzung zu hindern.[NEWLINE][NEWLINE]England folgte 1623 unter König James I mit dem Monopolgesetz, welches besagte, dass Patente nur für "Projekte der neuen Erfindung" gewährt wurden. Während der Regierungszeit von Königin Anne (1702â€“14), entwickelten die Anwälte des englischen Gerichtshofs die Forderung, dass eine schriftliche Beschreibung der Erfindung vorgelegt werden muss. Das Patentsystem in vielen anderen Ländern basiert auf dem britischen Recht und kann zurückgeführt werden auf das Monopolgesetz.</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_POLICY_GUILDS">
+			<Text>Gilden</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_GUILDS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Gilden[ENDCOLOR][NEWLINE]+1[ICON_MOVES] Bewegung für zivile Einheiten.[NEWLINE]-50% [ICON_GOLD] Goldkosten für Straßen und Schienen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_GUILDS_TEXT">
+			<Text>Eine Gilde ist eine Vereinigung von Handwerkern in einem bestimmten Gewerbe. Die frühesten Formen der Gilde waren Bruderschaften von Arbeitern. Sie waren in einer Art und Weise etwas zwischen einer Gewerkschaft, einem Kartell, und einer geheimen Gesellschaft organisiert. Sie waren oft auf die Gewährung von Patenten durch einen Monarchen oder andere Autoritäten angewiesen, um den Handelsverkehr zu ihren freischaffenden Mitgliedern zu gewährleisten und den Besitz von Werkzeugen und die Versorgung mit Matrialien sicherzustellen.</Text>
+		</Row>	
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MERCANTILISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Merkantilismus[ENDCOLOR][NEWLINE]+2 [ICON_GOLD] Gold für jeden Spezialisten." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MERCHANT_NAVY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Handelsmarine[ENDCOLOR][NEWLINE]+1[ICON_MOVES] Bewegung und +1 Sicht für militärische Schiffe.[NEWLINE]+1 [ICON_PRODUCTION] Produktion für Küstenstädte.[NEWLINE]+1 [ICON_PRODUCTION] Produktion für maritime Gebäude." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_PROTECTIONISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Monopolisierung[ENDCOLOR][NEWLINE]-20% [ICON_GOLD] Anschaffungskosten für Einheiten und Gebäude." />
+		</Update>
+
+
+		<!--
+				Rationalism
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_RATIONALISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Rationalismus[ENDCOLOR] verbessert die Fähigkeit [ICON_RESEARCH] Wissenschaft zu nutzen und zu erzeugen.[NEWLINE][NEWLINE]Nach der Übernahme des Rationalismus erscheint nahe der [ICON_CAPITAL] Hauptstadt ein Großer Wissenschaftler.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]Dieser Zweig kann nicht gleichzeitig mit Frömmigkeit aktiviert werden.[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_FREE_THOUGHT_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Freidenkertum[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] Wissenschaft pro Handelsposten.[NEWLINE]+2 [ICON_RESEARCH] Wissenschaft pro Akademie." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_SOVEREIGNTY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Souveränität[ENDCOLOR][NEWLINE]+25% [ICON_RESEARCH] Wissenschaft wenn im Reich [ICON_HAPPINESS_1] Zufriedenheit herrscht." />
+		</Update>
+		-->
+
+
+		<!--
+				Freedom
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_FREEDOM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Freiheit[ENDCOLOR] eignet sich am besten für kleine, fokussierte Reiche. Insbesondere bietet es Boni für [ICON_GREAT_PEOPLE] Große Persönlichkeiten und Spezialisten.[NEWLINE][NEWLINE]Die Übernahme von Freiheit gewährt +20% [ICON_PRODUCTION] Produktion für den Bau von Gebäuden, welche ein oder mehrere Spezialisten beherbergen können.[NEWLINE][NEWLINE]Die Übernahme aller Politiken des Zweiges Freiheit erhöht die Effektivität von Feldern mit Einrichtungen, die von Großen Persönlichkeiten geschaffen wurden, um +100% und verlängert [ICON_GOLDEN_AGE] Goldene Zeitalter um +50%.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]Dieser Zweig kann nicht gleichzeitig mit Autokratie oder Ordnung aktiviert werden.[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_UNIVERSAL_SUFFRAGE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Allgemeines Wahlrecht[ENDCOLOR][NEWLINE]Spezialisten produzieren nur die Hälfte des Normalwertes an [ICON_HAPPINESS_4] Unzufriedenheit." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_DEMOCRACY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Demokratie[ENDCOLOR][NEWLINE]+50% Erschaffungsrate auf [ICON_GREAT_PEOPLE] Große Persönlichkeiten.[NEWLINE]Eine Große Persönlichkeit Ihrer Wahl erscheint in der [ICON_CAPITAL] Hauptstadt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_FREE_SPEECH_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Meinungsfreiheit[ENDCOLOR][NEWLINE]+1 [ICON_CULTURE] Kultur pro Spezialist." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_CONSTITUTION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Verfassung[ENDCOLOR][NEWLINE]+10% [ICON_STRENGTH] Verteidigung für alle Städte.[NEWLINE]+3 [ICON_CULTURE] Kultur je [ICON_STRENGTH] Verteidigungsgebäude." />
+		</Update>
+
+
+		<!--
+				Autocracy
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_AUTOCRACY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Autokratie[ENDCOLOR] ist eine gute Wahl für militaristische Reiche, die von der Eroberung der Welt träumen.[NEWLINE][NEWLINE]Die Übernahme des Zweiges Autokratie gewährt +15% [ICON_PRODUCTION] Produktion und +15 [ICON_WAR] Erfahrung für neue Militäreinheiten.[NEWLINE][NEWLINE]Die Übernahme aller Politiken des Zweiges Autokratie gewährt einen 20% Angriffsbonus für alle Militäreinheiten für die nächsten 30 Runden.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]Dieser Zweig kann nicht gleichzeitig mit Freiheit aktiviert werden.[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_POPULISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Populismus[ENDCOLOR][NEWLINE]Einheiten heilen schneller." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_FASCISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Faschismus[ENDCOLOR][NEWLINE]Die Menge an im Reich produzierten strategischen Resourcen erhöht sich um 100%." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MILITARISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Militarismus[ENDCOLOR][NEWLINE]-33% [ICON_GOLD] Anschaffungskosten für Einheiten." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_POLICE_STATE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Polizeistaat[ENDCOLOR][NEWLINE]+3 [ICON_HAPPINESS_1] Zufriedenheit je Gerichtsgebäude. Die Errichtung eines Gerichtsgebäudes dauert nur halb so lange wie normal." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_TOTAL_WAR_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Totaler Krieg[ENDCOLOR][NEWLINE]-33% [ICON_GOLD] Anschaffungskosten für Einheiten." />
+		</Update>
+
+
+		<!--
+				Order
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_ORDER_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Ordnung[ENDCOLOR] eignet sich am Besten für große, weitläufige Reiche. Sie erhöht die Stärke einer Nation basierend auf der Zahl Ihrer Städte.[NEWLINE][NEWLINE]Die Übernahme von Ordnung erhöht die [ICON_HAPPINESS_1] Zufriedenheit um 1 je Stadt.[NEWLINE][NEWLINE]Die Übernahme aller Politiken des Zweiges Ordnung gewährt +1 für jedes Feld in jeder Stadt.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]Dieser Zweig kann nicht gleichzeitig mit Freiheit aktiviert werden.[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_UNITED_FRONT_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Einheitsfront[ENDCOLOR][NEWLINE]+0.5 [ICON_PRODUCTION] Produktion in jeder Stadt von jedem verbündeten, sowie +0.25 [ICON_PRODUCTION] Produktion von jedem befreundetem Stadtstaat." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_PLANNED_ECONOMY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Planwirtschaft[ENDCOLOR][NEWLINE]-25% [ICON_GOLD] Unterhaltskosten für Gebäude." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_SOCIALISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Sozialismus[ENDCOLOR][NEWLINE]+2 [ICON_HAPPINESS_1] Zufriedenheit und +10% [ICON_RESEARCH] Wissenschaft durch Schmieden und Fabriken." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_NATIONALISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Nationalismus[ENDCOLOR][NEWLINE]+20% Angriffsbonus in befreundetem Territorium.[NEWLINE]+20% [ICON_GOLD] Gold durch inländischen [ICON_CONNECTED] Handel." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_NATIONALISM_HELP" />
+			<Set Text="+20% Angriffsbonus in befreundetem Territorium" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_COMMUNISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Kommunismus[ENDCOLOR][NEWLINE]+2 [ICON_PRODUCTION] Produktion in jeder Stadt.[NEWLINE]+10% [ICON_PRODUCTION] Produktion beim Bau von Gebäuden." />
+		</Update>
+	</Language_de_DE>
+</GameData>

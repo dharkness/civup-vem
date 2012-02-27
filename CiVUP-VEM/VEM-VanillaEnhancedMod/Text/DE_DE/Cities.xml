@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_de_DE>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_ARCHERY_HELP" />
+			<Set Text="Erlaubt das Aufstellen der Einheit [COLOR_POSITIVE_TEXT]Bogenschütze[ENDCOLOR], der ersten Fernkampfeinheit des Spiels. Ebenso können Arbeiter nun auch [COLOR_POSITIVE_TEXT]Lager[ENDCOLOR] für die Rohstoffe [ICON_RES_DEER] Wild, [ICON_RES_IVORY] Elfenbein und [ICON_RES_FUR] Pelze errichten." />
+		</Update>
+		<Row Tag="TXT_KEY_TECH_SANITATION_TITLE">
+			<Text>Kanalisation</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_SANITATION_DESC">
+			<Text>Der früheste Nachweis einer städtischen Kanalisation konnte bei der Zivilisation im Industal (2600–1900 v.C.) erbracht werden. In den Städten Harappa, Mohenjo-daro und Rakhigarhi, erlangten einzelne Häuser oder Wohngruppen ihr Wasser aus Brunnen. Aus einem Zimmer, dass offensichtlich zum Baden benutzt wurde, wurde das benutzte Wasser in zugedeckte Rinnen abgeleitet, welche seitlich entlang der Hauptstraßen führten.[NEWLINE][NEWLINE]Römische Städte und Villen besaßen Teile eines Kanalisationssystems, welches Wasser in die Straßen von Städten wie Pompeji brachte. Auch wurden steinere und hölzerne Rinnen erbaut, um Abwasser zu sammeln und aus den bewohnten Gebieten heraus zu transportieren. Ein Beispiel dafür ist die Cloaca Maxima (erbaut ca. 600 v.Chr.), welche in den römischen Fluß Tiber abgeleitet wurde.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_SANITATION_HELP">
+			<Text>Erlaubt die Errichtung eines [COLOR_POSITIVE_TEXT]Aquäduktes[ENDCOLOR], welches die Wachstumsrate der Städte erhöht. Auch können Arbeiter nun [COLOR_POSITIVE_TEXT]Handelsposten[ENDCOLOR] errichten, die den [ICON_GOLD] Goldertrag von Geländefeldern erhöhen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TECH_SANITATION_QUOTE">
+			<Text>[NEWLINE][TAB][TAB]"Römische Abwasserkanäle, überbedeckt mit einem festsitzenden Gewölbe aus angepassten Steinen. Stellenweise gibt es Durchfahrten für Heuwagen."[NEWLINE][TAB][TAB] - Strabo of Greece[NEWLINE][TAB]</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_TRAPPING_HELP" />
+			<Set Text="Erlaubt Arbeitern die Konstruktion von [COLOR_POSITIVE_TEXT]Handelsposten[ENDCOLOR], die den [ICON_GOLD] Goldertrag auf Geländefeldern erhöhen." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_IMPROVEMENT_TRADING_POST" />
+			<Set Text="Handelsposten" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_TRADING_POST_TEXT" />
+			<Set Text="Ein Handelsposten ist eine angehäufte Ansiedlung von Menschen oder Gemeinschaften, die eine Bevölkerung zwischen einigen Hundert bis zu einigen Tausend Menschen umfassen kann. Diese kleinen Ansiedlungen tragen zur Wirtschaft bei." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_TRADINGPOST" />
+			<Set Text="Handelsposten" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GOLD_TRADINGPOST_ADV_QUEST" />
+			<Set Text="Erbringt der Handelsposten Gold?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GOLD_TRADINGPOST_HEADING3_BODY" />
+			<Set Text="Errichtet einen Handelsposten auf einem Geländefeld, um den Goldertrag zu steigern." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GOLD_TRADINGPOST_HEADING3_TITLE" />
+			<Set Text="Der Handelsposten" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_WORKERS_TRADINGPOST_HEADING3_BODY" />
+			<Set Text="Ein Handelsposten erhöht den Goldertrag eines Geländefeldes um 1 Gold. Es greift auf keinerlei Rohstoffe zurück.[NEWLINE]Erforderliche Technologie: Fallenstellen[NEWLINE]Dauer der Errichtung: 5 Runden[NEWLINE]Kann erbaut werden auf: Allen Landflächen, außer Eis" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_FREE_THOUGHT_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Freidenkertum[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] Wissenschaft pro Handelsposten." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_TRADING_POST" />
+			<Set Text="Errichtet einen [LINK=IMPROVEMENT_TRADING_POST]Handelsposten[\LINK]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_GOLD_REC" />
+			<Set Text="Es wird den [ICON_GOLD] Goldertrag pro Runde, der von diesem Geländefeld erwirtschaftet wird, erhöhen. Dies wird den Goldbetrag den wir ausgeben werden, in die Höhe treiben!" />
+		</Update>
+		
+		<!--
+				Culture
+		-->
+		<Row Tag="TXT_KEY_BUILDING_MUSEUM_HELP">
+			<Text>+2 [ICON_CULTURE] wenn [ICON_RES_MARBLE] Marmor in der Nähe ist.</Text>
+		</Row>
+
+
+
+		<!--
+				Food
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_FLOATING_GARDENS_DESC" />
+			<Set Text="Schwimmende Gärten" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_FOATING_GARDENS_STRATEGY" />
+			<Set Text="Der Schwimmende Garten ist das einzigartige Gebäude der Azteken, welches die Wassermühle ersetzt. Es erhöht die Nahrungsproduktion der Stadt und sollte gebaut werden, wenn die Stadt an einem See oder Fluß liegt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_FLOATING_GARDENS_PEDIA" />
+			<Set Text="Ein Schwimmender Garten ist eine kleine künstliche Insel, die auf einem Süßwassersee erbaut wird, um neuen Boden für die Landwirtschaft zu gewinnen. Der See bewässert die Insel und versorgt sie mit frischem organischen Material, was ein unglaublich fruchtbares Umfeld zum Anbauen erschafft. Die Azteken waren Meister in dieser Art der Landwirtschaft, und die 'Schwimmenden Gärten von Xochimilco' sind bis heute weltberühmt." />
+		</Update>
+		<!-- Granary
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_GRANARY" />
+			<Set Text="Räucherkammer" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_GRANARY_STRATEGY" />
+			<Set Text="Die Räucherkammer erhöht die Nahrungsmittelproduktion einer Stadt und beschleunigt das Wachstum. Das ist besonders nützlich, wenn zügig eine große Stadt entstehen soll." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_BUILDINGS_GRANARY_TEXT" />
+			<Set Text="Die Räucherkammer ist ein Gebäude, in dem oftmals für ganze Gruppen oder Gemeinschaften Fisch oder Fleisch mit Rauch geräuchert wird. Die Konservierung von Nahrungsmitteln erfolgt durch die Behandlung mit Salz und ausgedehnte Kalträucherung für zwei oder mehr Wochen. Der Nutzen von der leicht erwärmten, trockenen Luft eines langsam brennenden Hartholzfeuers stellt die ordnungsgemäße Trocknung des Fleisches sicher. Das Endprodukt kann in dem Gebäude manchmal für ein Jahr, oder noch länger, gelagert werden. [NEWLINE][NEWLINE]Räucherkammern wurden oftmals gesichert, um zu verhindern, dass Tiere oder Diebe Zugriff auf die Nahrung erlangten. Die Räucherkammer ist traditionell ein kleines umfriedetes Nebengebäude, oftmals mit einer Luftöffnung, einem einzelnen Eingang, keinen Fenstern, und hat regelmäßig ein pyramidenförmiges oder Giebeldach. Kommunale und kommerzielle Räucherkammern sind größer als dijenigen, die nur ein einzelnes Wohnhaus oder einen Gutshof versorgen." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_POTTERY_HELP" />
+			<Set Text="Erlaubt den Städten des Erbauen der [COLOR_POSITIVE_TEXT]Räucherkammer[ENDCOLOR], welche [ICON_FOOD] Nahrung bereitstellt, was beim Wachstum der Städte behilflich ist." />
+		</Update>
+		-->
+		<!-- Aqueduct 
+		<Row Tag="TXT_KEY_BUILDING_AQUEDUCT">
+			<Text>Aquädukt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AQUEDUCT_HELP">
+			<Text></Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AQUEDUCT_STRATEGY">
+			<Text>Das Aquädukt ist ein Gebäude der klassischen Ära. Es verringert die Menge an Nahrung, die eine Stadt für ihr Wachstum braucht um 40% (160% schnelleres Wachstum.)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AQUEDUCT_PEDIA">
+			<Text>Ein Aquädukt ist ein Wasservorrat oder ein befahrbarer Kanal, der zur Wasserbeförderung erbaut wurde. Obwohl besonders mit den Römern in Verbindung gebracht, wurden Aquädukte bereits viel früher in Griechenland, Arabien und Indien entwickelt. Die Ägypter und Harappaner erbauten ausgeklügelte Bewässerungssysteme. In Amerika wurde die aztekische Hauptstadt Tenochtitlán von zwei Aquädukten bewässert: Wasser rann in dem Einen von einem Berg in die Stadt hinab, während der andere Aquädukt gereinigt und gewartet wurde.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_HOSPITAL_STRATEGY" />
+			<Set Text="Das Krankenhaus ist ein Gebäude des Industriezeitalters. Es erhöht die Nahrung einer Stadt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_MEDICAL_LAB_STRATEGY" />
+			<Set Text="Das Medizinlabor ist ein Gebäude der Moderne. Es verringert die Menge an Nahrung, die eine Stadt zum Wachstum braucht um 65%. Es benötigt ein Krankenhaus in der Stadt. (170% schnelleres Wachstum als nur vom Aquädukt, was ein insgesamt ein 300% schnelleres Wachstum ergibt.)" />
+		</Update>
+		-->
+		
+		
+		
+		<!--
+				Gold
+		-->
+		
+		
+		
+		<!--
+				Happiness
+		-->
+		
+		
+		
+		<!--
+				Other
+		-->
+		<Row Tag="TXT_KEY_BUILDING_VICEROY">
+			<Text>Herrenhaus des Statthalters</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VICEROY_HELP">
+			<Text>Beaufsichtigt einen Marionettenstaat.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_POPUP_ANNEX_CITY"/>
+			<Set Text="Die Stadt besetzen"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POPUP_CITY_CAPTURE_INFO"/>
+			<Set Text="Was soll mit der Stadt geschehen?[NEWLINE][NEWLINE][ICON_OCCUPIED] Besetzung: (4[ICON_HAPPINESS_4] pro 3[ICON_CITIZEN]) + 4[ICON_HAPPINESS_4][NEWLINE][ICON_PUPPET] Marionette: (4[ICON_HAPPINESS_4] pro 5[ICON_CITIZEN]) + 3[ICON_HAPPINESS_4][NEWLINE][ICON_PUPPET] Marionette: 0[ICON_RESEARCH] pro [ICON_CITIZEN][NEWLINE][ICON_PUPPET] Marionette: 25% [ICON_CULTURE] Kultur[NEWLINE][ICON_PUPPET] Marionette: Auf Goldfokus gesperrt[NEWLINE][ICON_PUPPET] Marionette: Kein Einkommen für Sozialpolitiken oder Kosten für Nationalwunder."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POPUP_ANNEX_PUPPET"/>
+			<Set Text="Soll der Marionettenstaat {@1_CityName} [ICON_OCCUPIED]besetzt werden? Das kann nicht mehr rückgängig gemacht werden.[NEWLINE][NEWLINE][ICON_OCCUPIED] Besetzt: (4[ICON_HAPPINESS_4] pro 3[ICON_CITIZEN]) + 4[ICON_HAPPINESS_4][NEWLINE][ICON_BULLET] Normal: (4[ICON_HAPPINESS_4] pro 5[ICON_CITIZEN]) + 3[ICON_HAPPINESS_4][NEWLINE][ICON_PUPPET] Marionette: (4[ICON_HAPPINESS_4] pro 5[ICON_CITIZEN]) + 3[ICON_HAPPINESS_4][NEWLINE][ICON_PUPPET] Marionette: 0[ICON_RESEARCH] pro [ICON_CITIZEN][NEWLINE][ICON_PUPPET] Marionette: 25% [ICON_CULTURE] Kultur[NEWLINE][ICON_PUPPET] Marionette: Kann keine Produktion auswählen.[NEWLINE][ICON_PUPPET] Marionette: Auf Goldfokus gesperrt[NEWLINE][ICON_PUPPET] Marionette: Kein Einkommen für Sozialpolitiken oder Kosten für Nationalwunder."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POPUP_CITY_CAPTURE_INFO_PUPPET"/>
+			<Set Text="Stadt als [ICON_PUPPET] [COLOR_POSITIVE_TEXT]Marionette[ENDCOLOR] (+{1_Num} [ICON_HAPPINESS_4] Unzufriedenheit).[NEWLINE][NEWLINE]Später kann ein Marionettenstaat jederzeit [ICON_OCCUPIED] besetzt werden."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POPUP_CITY_CAPTURE_INFO_ANNEX"/>
+			<Set Text="Stadt [ICON_OCCUPIED] [COLOR_POSITIVE_TEXT]besetzen[ENDCOLOR] (+{1_Num} [ICON_HAPPINESS_4] Unzufriedenheit)."/>
+		</Update>
+		
+		
+		
+		<!--
+				Production
+		-->
+		<Row Tag="TXT_KEY_BUILDING_BLAST_FURNACE">
+			<Text>Hochofen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BLAST_FURNACE_STRATEGY">
+			<Text>Der Hochofen erhöht die Produktion einer Stadt, wenn sie Einheiten ausbildet.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_BLAST_FURNACE_PEDIA">
+			<Text>Ein Hochofen wird zum Schmelzen von Metall, gewöhnlich Eisen, benutzt. Kraftstoff und Erz werden ständig durch die Oberseite des Ofens zugeführt, während Luft vom Boden in die Kammer geblasen wird, so dass die chemischen Reaktionen im Ofen durchgehend stattfinden, wenn das Material zum Boden gleitet.[NEWLINE][NEWLINE]Hochöfen wurden in China erfunden und ab 400 v.Chr. zur Gewohnheit. Bis 1500 n.Chr. verbreiteten sie sich in ganz Europa. Eisen war für militärischen Erfolg unerläßlich, als der Staat von Qin China 221 v.Chr. vereinte und die chinesische Eisenschmelzerei dieser Epoche etwa 200 Männer umfaßte. Um 1000 n.Chr. stellte die Song Dynastie ihre Eisenindustrie bemerkenswerterweise auf Holzkohle und Steinkohle um, um Eisen und Stahl zu gießen. Das ersparte es, tausende Hektar von Waldgebieten abzuholzen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SMITHY">
+			<Text>Schmiede</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SMITHY_STRATEGY">
+			<Text>Die Schmiede erhöht die Produktion einer Stadt.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SMITHY_PEDIA">
+			<Text>Die Schmiede ist ein Ort, an dem ein Schmied gewöhnlich Eisen und Stahl durch Erhitzen und Hämmern bearbeitet. Die Hethiter entwickelten als erstes die Technologie des Eisenerzschmelzens um 1500 v.Chr. Scheinbar hielten sie ein Monopol um das Wissen der Eisenproduktion für einige Jahrhunderte aufrecht. Als jedoch um 1200 v.Chr. ihr Reich im Laufe des Umbruches im ostmediteranen Gebiet zerfiel, verbreitete sich das Wissen in alle Himmelsrichtungen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FOUNDRY">
+			<Text>Gießerei</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FOUNDRY_STRATEGY">
+			<Text>Das Nationalwunder Gießerei erhöht die Produktion einer Stadt immens. Ein Reich muß in all ihren Städten einen Hochofen besitzen, bevor die Gießerei erbaut werden kann.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_FOUNDRY_PEDIA">
+			<Text>In einer Gießerei erfolgt das Metallgießen im großen Stil. Metalle werden zu einer Flüßigkeit geschmolzen und in Formen gegoßen. Anschließend wird das eingegoßene Material herausgenommen oder die Gußform, wenn das Metall beim Abkühlen erstarrt ist. Meistens wurden für diesen Prozess Aluminium und Gußeisen verwendet.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_WORKSHOP_STRATEGY" />
+			<Set Text="Die Werkstatt erhöht die Produktion beim Bau von Gebäuden. Städte, die auf einem Hügel erbaut wurden, können keine Werkstatt errichten." />
+		</Update>
+
+
+		<!--
+				Science
+		-->
+		
+
+		<!--
+				General
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_MISSION_START_GOLDENAGE_HELP"/>
+			<Set Text="Dieser Befehl wird die Große Persönlichkeit verbrauchen und ein [ICON_GOLDEN_AGE] Goldenes Zeitalter starten (zusätzliche [ICON_PRODUCTION] und [ICON_GOLD]) für {1_Num} Runden. Jedesmal wenn eine Große Persönlichkeit ein Goldenes Zeitalter startet, wird die Dauer beim nächsten Mal vermindert (bis zum Minimum von 2 Runden)."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRADE_ROUTE_INCOME_INFO"/>
+			<Set Text="{1_Num} Basis [ICON_GOLD] Gold pro Handelsroute [NEWLINE]0.05 [ICON_GOLD] Gold pro [ICON_CITIZEN] Einwohner der Hauptstadt[NEWLINE]{2_Num} [ICON_GOLD] Gold pro [ICON_CITIZEN] Einwohner"/>
+		</Update>
+		
+		
+		
+		<!--
+				National Wonders
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_HEROIC_EPIC_HELP" />
+			<Set Text="Alle in dieser Stadt neu aufgestellten Einheiten erhalten die Beförderung [COLOR_POSITIVE_TEXT]Moral[ENDCOLOR], welche die [ICON_STRENGTH] Kampfstärke um 15% erhöht." />
+		</Update>
+		<!--
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_CIRCUS_MAXIMUS" />
+			<Set Text="Bäder des Trajan" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_CIRCUS_MAXIMUS_STRATEGY" />
+			<Set Text="Die Bäder des Trajan liefern Zufriedenheit und Kultur." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_CIRCUS_MAXIMUS_PEDIA" />
+			<Set Text="Die Bäder des Trajan war ein gewaltiger Bade- und Erholungskomplex, der vom Kaiser Trajan in Auftrag gegeben und von 104-109 n.Chr. in Rom erbaut wurde. Der Architekt des Komplexes soll Apollodorus aus Damaskus gewesen sein.[NEWLINE][NEWLINE]Die Bäder wurden für mindestens drei Jahrhunderte genutzt, hauptsächlich als ein Treffpunkt von römischen Männern und Frauen zur Erholung und Gesellschaft." />
+		</Update>
+		-->
+		<Row Tag="TXT_KEY_BUILDING_AGRA_FORT">
+			<Text>Agra Festung</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AGRA_FORT_STRATEGY">
+			<Text>Die Agra Festung bietet einen Verteidigungsbonus, einen Händler-Plätze und Kultur.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AGRA_FORT_PEDIA">
+			<Text>Die Agra Festung kann genauer gesagt als eine von Mauern umgebene Stadt beschrieben werden. Es stellt die wichtigste Festung in Indien dar.[NEWLINE][NEWLINE]Die großen Mogule Humayun, Akbar, Jehangir, Shah Jahan und Aurangzeb lebten dort und das Land wurde von der Festung aus regiert. Sie wurde von ausländischen Diplomaten, Reisenden und Würdenträgern besucht. Sie enthielt einen gewaltigen Staatsschatz und eine Münzanstalt.</Text>
+		</Row>
+		<!--<Row Tag="TXT_KEY_BUILDING_MEDICI_BANK">
+			<Text>Bank des Medici</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MEDICI_BANK_STRATEGY">
+			<Text>Die Bank des Medici liefert Gold, Händler-Plätze und Kultur.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MEDICI_BANK_PEDIA">
+			<Text>Die Bank des Medici (1397-1494 n.Chr.) war eine der früheren Banken in Europa. Sie wurde von der Familie Medici in Italien erschafft.  Während ihrer Blütezeit war sie die größte und am meisten respektierte Bank in Europa. Die Einführung des doppelten Buchungssystems mit Soll und Haben auf unterschiedlichen Konten trug einen bemerkenswerten Anteil zur Entwicklung des Buchhalter-Berufes bei.</Text>
+		</Row>-->
+		
+		
+		
+		<!--
+				Wonders
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_WONDER_PENTAGON_HELP" />
+			<Set Text="Alle Einheiten heilen jede Runde." />
+		</Update>
+	</Language_de_DE>
+</GameData>

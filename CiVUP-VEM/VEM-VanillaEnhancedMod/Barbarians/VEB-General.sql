@@ -1,0 +1,1 @@
+UPDATE Worlds SET FogTilesPerBarbarianCamp = 2;

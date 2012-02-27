@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UnitMemberTemplates>
+  <!-- Base Template for most units **************************************** -->
+  <UnitMemberTemplate>
+    <Type>ART_DEF_TEMPLATE_BASE</Type>
+    <Combat>
+      <bHasRefaceAfterCombat>1</bHasRefaceAfterCombat>
+      <EnableActions>Idle Attack RunCharge AttackCity Bombard Death BombardDefend Run Fortify CombatReady</EnableActions>
+    </Combat>
+  </UnitMemberTemplate>
+  <!-- Template for a units that have no defenses ************************ -->
+  <UnitMemberTemplate>
+    <Type>ART_DEF_TEMPLATE_DEFENSELESS_BASE</Type>
+    <Combat>
+      <bHasRefaceAfterCombat>1</bHasRefaceAfterCombat>
+      <EnableActions>Idle Death BombardDefend Run</EnableActions>
+    </Combat>
+  </UnitMemberTemplate>
+  <!-- Template for a Soldier (single human) ******************************* -->
+  <UnitMemberTemplate>
+    <Type>ART_DEF_TEMPLATE_SOLDIER</Type>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_BASE</Defaults>
+      <EnableActions>Walk AttackCharge</EnableActions>
+      <fShortMoveRadius>12.0</fShortMoveRadius>
+      <fShortMoveRate>0.7</fShortMoveRate>
+      <fDeathRotationAmount>45.0</fDeathRotationAmount>
+      <EnableActions>Victory</EnableActions>
+      <fTargetHeight>4.0</fTargetHeight>
+    </Combat>
+  </UnitMemberTemplate>
+  <!-- Template for a mounted unit *************************************** -->
+  <UnitMemberTemplate>
+    <Type>ART_DEF_TEMPLATE_MOUNTED</Type>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_BASE</Defaults>
+      <EnableActions>Walk</EnableActions>
+      <fTurnRateMin>1.0f</fTurnRateMin>
+      <fTurnRateMax>1.5.f</fTurnRateMax>
+      <fTurnFacingRateMin>30.f</fTurnFacingRateMin>
+      <fTurnFacingRateMax>40.f</fTurnFacingRateMax>
+      <fShortMoveRadius>24.0</fShortMoveRadius>
+      <fShortMoveRate>0.7</fShortMoveRate>
+      <EnableActions>Victory</EnableActions>
+      <bOnlyTurnInMovementActions>true</bOnlyTurnInMovementActions>
+    </Combat>
+  </UnitMemberTemplate>
+  <!-- Template for a mounted unit with a single rider ******************* -->
+  <UnitMemberTemplate>
+    <Type>ART_DEF_TEMPLATE_MOUNTED_SINGLE</Type>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_MOUNTED</Defaults>
+      <fDeathRotationAmount>45.0</fDeathRotationAmount>
+    </Combat>
+  </UnitMemberTemplate>  
+  <!-- Template for a ships that can attack ****************************** -->
+  <UnitMemberTemplate>
+    <Type>ART_DEF_TEMPLATE_SHIP</Type>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_BASE</Defaults>
+      <bHasRefaceAfterCombat>0</bHasRefaceAfterCombat>
+      <EnableActions>AttackSurfaceToAir</EnableActions>
+    </Combat>
+  </UnitMemberTemplate>
+  <!-- Template for a ships that have no defenses ************************ -->
+  <UnitMemberTemplate>
+    <Type>ART_DEF_TEMPLATE_DEFENSELESS_SHIP</Type>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_DEFENSELESS_BASE</Defaults>
+      <bHasRefaceAfterCombat>0</bHasRefaceAfterCombat>
+    </Combat>
+  </UnitMemberTemplate>
+  <!-- Template for workboats, they have even less actions *************** -->
+  <UnitMemberTemplate>
+    <Type>ART_DEF_TEMPLATE_WORKBOAT</Type>
+    <Combat>
+      <EnableActions>Idle Death Run</EnableActions>
+      <bHasRefaceAfterCombat>0</bHasRefaceAfterCombat>
+    </Combat>
+  </UnitMemberTemplate>
+  <!-- Template for a air units that can attack ****************************** -->
+  <UnitMemberTemplate>
+    <Type>ART_DEF_TEMPLATE_AIR</Type>
+    <Combat>
+      <EnableActions>Idle Attack Bombard Death Run</EnableActions>
+      <bHasRefaceAfterCombat>0</bHasRefaceAfterCombat>
+    </Combat>
+  </UnitMemberTemplate>
+  <!-- Template for the Warror and its variations **************************** -->
+  <UnitMemberArtInfo>
+    <Type>ART_DEF_TEMPLATE_WARRIOR</Type>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_SOLDIER</Defaults>
+      <Weapon>
+        <WeaponTypeTag>BLUNT</WeaponTypeTag>
+        <WeaponTypeSoundOverrideTag>BLUNT</WeaponTypeSoundOverrideTag>
+      </Weapon>
+      <Weapon>
+        <Usage>Vs_City ShortRange</Usage>
+        <fVisKillStrengthMin>10.0</fVisKillStrengthMin>
+        <fVisKillStrengthMax>20.0</fVisKillStrengthMax>
+        <WeaponTypeTag>FLAMING_ARROW</WeaponTypeTag>
+      </Weapon>
+    </Combat>
+  </UnitMemberArtInfo>
+  <!-- Template for the Archer and its variations **************************** -->
+  <UnitMemberArtInfo>
+    <Type>ART_DEF_TEMPLATE_ARCHER</Type>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_SOLDIER</Defaults>
+      <bReformBeforeCombat>1</bReformBeforeCombat>
+      <bHasShortRangedAttack>1</bHasShortRangedAttack>
+      <bHasLongRangedAttack>1</bHasLongRangedAttack>
+      <Weapon>
+        <WeaponTypeTag>ARROW</WeaponTypeTag>
+        <WeaponTypeSoundOverrideTag>ARROW</WeaponTypeSoundOverrideTag>
+      </Weapon>
+      <Weapon>
+        <Usage>Vs_City</Usage>
+        <fVisKillStrengthMin>10.0</fVisKillStrengthMin>
+        <fVisKillStrengthMax>20.0</fVisKillStrengthMax>
+        <WeaponTypeTag>FLAMING_ARROW</WeaponTypeTag>
+      </Weapon>
+    </Combat>
+  </UnitMemberArtInfo>
+  <!-- Template for the Swordsman and its variations **************************** -->
+  <UnitMemberArtInfo>
+    <Type>ART_DEF_TEMPLATE_SWORDSMAN</Type>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_SOLDIER</Defaults>
+      <Weapon>
+        <WeaponTypeTag>METAL</WeaponTypeTag>
+        <WeaponTypeSoundOverrideTag>SWORD</WeaponTypeSoundOverrideTag>
+      </Weapon>
+      <Weapon>
+        <Usage>Vs_City ShortRange</Usage>
+        <fVisKillStrengthMin>10.0</fVisKillStrengthMin>
+        <fVisKillStrengthMax>20.0</fVisKillStrengthMax>
+        <WeaponTypeTag>FLAMING_ARROW</WeaponTypeTag>
+      </Weapon>
+    </Combat>
+  </UnitMemberArtInfo>
+  <!-- Template for the Spearman and its variations **************************** -->
+  <UnitMemberArtInfo>
+    <Type>ART_DEF_TEMPLATE_SPEARMAN</Type>
+    <Combat>
+      <Defaults>ART_DEF_TEMPLATE_SOLDIER</Defaults>
+      <bReformBeforeCombat>1</bReformBeforeCombat>
+      <Weapon>
+        <WeaponTypeTag>METAL</WeaponTypeTag>
+        <WeaponTypeSoundOverrideTag>SPEAR</WeaponTypeSoundOverrideTag>
+      </Weapon>
+      <Weapon>
+        <Usage>Vs_City ShortRange</Usage>
+        <fVisKillStrengthMin>10.0</fVisKillStrengthMin>
+        <fVisKillStrengthMax>20.0</fVisKillStrengthMax>
+        <WeaponTypeTag>FLAMING_ARROW</WeaponTypeTag>
+      </Weapon>
+    </Combat>
+  </UnitMemberArtInfo>
+</UnitMemberTemplates>

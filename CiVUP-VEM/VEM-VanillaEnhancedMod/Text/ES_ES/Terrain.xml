@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_es_ES>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_FORT_REC" />
+			<Set Text="Mejora la [ICON_STRENGTH] Defensa de cualquier unidad militar estacionada en üsta casilla y causa 1 punto de daño a los enemigos adyacentes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_FORT_HELP" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]Coste[ENDCOLOR] de mantenimiento de 1 [ICON_GOLD] Oro por turno.[NEWLINE][NEWLINE]+50% a la Fuerza [ICON_STRENGTH] Devensiva para cualquier unidad estacionada en esta Casilla y causa 1 punto de daño a los enemigos adyacentes." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_FORT_TEXT" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]Coste[ENDCOLOR] de mantenimiento de 1 [ICON_GOLD] Oro por turno.[NEWLINE][NEWLINE]Una fortaleza es una mejora especial que mejora la bonificaciün defensiva de un hexügono y genera 1 punto de daño a los enemigos adyacentes. Sin embargo, estos efectos no se aplican en territorio enemigo." />
+		</Update>
+	</Language_es_ES>
+</GameData>

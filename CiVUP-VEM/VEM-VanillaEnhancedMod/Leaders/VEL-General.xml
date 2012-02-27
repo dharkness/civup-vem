@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Traits>
+		<Update>
+			<Where Type="TRAIT_AMPHIB_WARLORD" />
+			<Set EmbarkedNotCivilian="false" />
+		</Update>
+		<Update>
+			<Where Type="TRAIT_ART_OF_WAR" />
+			<Set GreatGeneralExtraBonus="10" GreatGeneralRateModifier="100" />
+			<!-- 20 -->
+		</Update>
+		<Update>
+			<Where Type="TRAIT_CAPITAL_BUILDINGS_CHEAPER" />
+			<Set CapitalBuildingModifier="25" />
+			<!-- 25 -->
+		</Update>
+		<Update>
+			<Where Type="TRAIT_CITY_STATE_BONUSES" />
+			<Set CityStateBonusModifier="40" />
+			<!-- 20 -->
+		</Update>
+		<Update>
+			<Where Type="TRAIT_CONVERTS_LAND_BARBARIANS" />
+			<Set LandBarbarianConversionPercent="0" LandUnitMaintenanceModifier="0" BarbarianCapturePercent="100" />
+		</Update>
+		<Update>
+			<Where Type="TRAIT_ENHANCED_GOLDEN_AGES" />
+			<Set GoldenAgeDurationModifier="0" GoldenAgeCombatModifier="10" />
+			<!-- 0, 10 -->
+		</Update>
+		<Update>
+			<Where Type="TRAIT_CITY_STATE_FRIENDSHIP" />
+			<Set MilitaristicCSFreePromotion="PROMOTION_MORALE" />
+		</Update>
+		<Row>
+			<Type>TRAIT_GOVERNANCE</Type>
+			<Description>TXT_KEY_TRAIT_GOVERNANCE</Description>
+			<ShortDescription>TXT_KEY_TRAIT_GOVERNANCE_SHORT</ShortDescription>
+		</Row>
+		<Update>
+			<Where Type="TRAIT_LAND_TRADE_GOLD" />
+			<Set TradeRouteChange="0" ExtraHappinessPerLuxury="1" />
+		</Update>
+		<Update>
+			<Where Type="TRAIT_POPULATION_GROWTH" />
+			<Set CityUnhappinessModifier="0" PopulationUnhappinessModifier="-20" />
+			<!-- 100, -50 -->
+		</Update>
+		<Update>
+			<Where Type="TRAIT_RIVER_EXPANSION" />
+			<Set PlotBuyCostModifier="-50" />
+			<!-- -25 -->
+		</Update>
+		<Update>
+			<Where Type="TRAIT_SCHOLARS_JADE_HALL" />
+			<Set TechBoostFromCapitalScienceBuildings="false"
+				 />
+		</Update>		
+		<Update>
+			<Where Type="TRAIT_SEVEN_CITIES" />
+			<Set NaturalWonderFirstFinderGold="100"
+				 NaturalWonderSubsequentFinderGold="100"
+				 FreeUnit="UNITCLASS_SCOUT"
+				 NaturalWonderYieldModifier="100"
+				 />
+		</Update>
+		<Update>
+			<Where Type="TRAIT_TERROR" />
+			<Set MinorCivCaptureBonus="25" CityStateCombatModifier="0" />
+		</Update>
+	</Traits>
+	<Trait_MovesChangeUnitCombats>
+		<Row>
+			<TraitType>TRAIT_TERROR</TraitType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+			<MovesChange>1</MovesChange>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_TERROR</TraitType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+			<MovesChange>1</MovesChange>
+		</Row>
+	</Trait_MovesChangeUnitCombats>
+	<Trait_FreeExperience_Domains>
+		<Row>
+			<TraitType>TRAIT_OCEAN_MOVEMENT</TraitType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Experience>15</Experience>
+		</Row>
+	</Trait_FreeExperience_Domains>
+	<Trait_ImprovementYieldChanges>
+		<Update>
+			<Where TraitType="TRAIT_SCHOLARS_JADE_HALL" />
+			<Set Yield="2" />
+		</Update>
+	</Trait_ImprovementYieldChanges>
+	<Trait_SpecialistYieldChanges>
+		<Update>
+			<Where TraitType="TRAIT_SCHOLARS_JADE_HALL" />
+			<Set Yield="2" />
+		</Update>
+		<Row>
+			<TraitType>TRAIT_GOVERNANCE</TraitType>
+			<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_GOVERNANCE</TraitType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_GOVERNANCE</TraitType>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_GOVERNANCE</TraitType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_GOVERNANCE</TraitType>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Trait_SpecialistYieldChanges>
+	<Leader_Traits>
+		<Update>
+			<Where LeaderType="LEADER_SULEIMAN" />
+			<Set TraitType="TRAIT_GOVERNANCE" /> <!-- TRAIT_CONVERTS_SEA_BARBARIANS -->
+		</Update>
+	</Leader_Traits>
+	<Civilization_Start_Along_Ocean>
+		<Delete CivilizationType="CIVILIZATION_OTTOMAN" />
+	</Civilization_Start_Along_Ocean>
+	<Civilization_Start_Along_River>
+		<Row>
+			<CivilizationType>CIVILIZATION_INDIA</CivilizationType>
+			<StartAlongRiver>true</StartAlongRiver>
+		</Row>
+	</Civilization_Start_Along_River>
+	<Civilization_Start_Region_Priority>
+		<Delete CivilizationType="CIVILIZATION_RUSSIA"/>
+		<Delete CivilizationType="CIVILIZATION_INDIA"/>
+		<Row>
+			<CivilizationType>CIVILIZATION_ROME</CivilizationType>
+			<RegionType>REGION_HILLS</RegionType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_ROME</CivilizationType>
+			<RegionType>REGION_FOREST</RegionType>
+		</Row>
+	</Civilization_Start_Region_Priority>
+	<Civilization_Start_Region_Avoid>
+		<Delete CivilizationType="CIVILIZATION_EGYPT"/>
+		<Delete CivilizationType="CIVILIZATION_SIAM"/>
+		<Row>
+			<CivilizationType>CIVILIZATION_SIAM</CivilizationType>
+			<RegionType>REGION_TUNDRA</RegionType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_EGYPT</CivilizationType>
+			<RegionType>REGION_TUNDRA</RegionType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_GREECE</CivilizationType>
+			<RegionType>REGION_TUNDRA</RegionType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_GREECE</CivilizationType>
+			<RegionType>REGION_DESERT</RegionType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_GREECE</CivilizationType>
+			<RegionType>REGION_HILLS</RegionType>
+		</Row>
+		<Row>
+			<CivilizationType>CIVILIZATION_RUSSIA</CivilizationType>
+			<RegionType>REGION_DESERT</RegionType>
+		</Row>
+	</Civilization_Start_Region_Avoid>
+
+
+	<Improvements>
+		<Update>
+			<Where Type="IMPROVEMENT_MOAI"/>
+			<Set Culture="2"/>
+		</Update>
+	</Improvements>
+		
+	
+	<Units>
+		<Update>
+			<Where Type="UNIT_POLYNESIAN_MAORI_WARRIOR"/>
+			<Set Combat="7"/>
+		</Update>
+		<Update>
+			<Where Type="UNIT_GREEK_HOPLITE"/>
+			<Set Combat="7"/>
+		</Update>
+		<Update>
+			<Where Type="UNIT_AMERICAN_MINUTEMAN" />
+			<Set Class="UNITCLASS_SKIRMISHER"
+				 PrereqTech="TECH_ECONOMICS"
+				 ObsoleteTech="TECH_ELECTRICITY"
+				 Combat="20"
+				 Cost="120"
+				 CombatClass="UNITCOMBAT_RECON"
+				 GoodyHutUpgradeUnitClass="UNITCLASS_LIGHT_INFANTRY"
+				 />
+		</Update>
+		<Update>
+			<Where Type="UNIT_ENGLISH_LONGBOWMAN" />
+			<Set Range="3" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_PERSIAN_IMMORTAL" />
+			<Set Combat="8" />
+			<!-- 8 -->
+		</Update>
+		<Update>
+			<Where Type="UNIT_GERMAN_LANDSKNECHT" />
+			<Set Cost="65"
+				 />
+		</Update>
+		<Update>
+			<Where Type="UNIT_DANISH_BERSERKER"/>
+			<Set Moves="2" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_FRENCH_MUSKETEER" />
+			<Set Combat="16" />
+			<!-- 20 -->
+		</Update>
+		<Update>
+			<Where Type="UNIT_FRENCH_FOREIGNLEGION" />
+			<Set Cost="250" />
+			<!-- 350 -->
+		</Update>
+		<Update>
+			<Where Type="UNIT_ROMAN_LEGION" />
+			<Set Cost="100"
+				 Combat="14"
+				 WorkRate="200"
+				 ObsoleteTech="TECH_GUNPOWDER"
+				 />
+		</Update>
+		<Update>
+			<Where Type="UNIT_MONGOLIAN_KHAN" />
+			<Set Moves="4" />
+			<!-- 5 -->
+		</Update>
+		<!--
+		<Update>
+			<Where Type="UNIT_KOREAN_TURTLE_SHIP"/>
+			<Set PrereqTech="TECH_COMPASS"/>
+		</Update>
+		-->
+	</Units>
+	<!--
+	<Unit_ClassUpgrades>
+		<Update>
+			<Where UnitType="UNIT_KOREAN_TURTLE_SHIP" />
+			<Set UnitClassType="UNITCLASS_FRIGATE" />
+		</Update>
+	</Unit_ClassUpgrades>
+	-->
+	<Civilization_UnitClassOverrides>
+		<Delete>
+			<CivilizationType>CIVILIZATION_AMERICA</CivilizationType>
+			<UnitClassType>UNITCLASS_MUSKETMAN</UnitClassType>
+			<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
+		</Delete>
+		<Row>
+			<CivilizationType>CIVILIZATION_AMERICA</CivilizationType>
+			<UnitClassType>UNITCLASS_SKIRMISHER</UnitClassType>
+			<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
+		</Row>
+	</Civilization_UnitClassOverrides>
+	<Unit_ResourceQuantityRequirements>
+		<!--
+		<Row>
+			<UnitType>UNIT_IROQUOIAN_MOHAWKWARRIOR</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+		-->
+	</Unit_ResourceQuantityRequirements>
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_MEDIC_GENERAL" />
+			<Set SameTileHealChange="4"
+				 EnemyHealChange="0"
+				 NeutralHealChange="0"
+				 FriendlyHealChange="0" />
+		</Update>
+		<!--
+		<Update>
+			<Where Type="PROMOTION_GAIN_EXPERIENCE" />
+			<Set ExperiencePercent="25" />
+		</Update>
+		-->
+	</UnitPromotions>
+	<Trait_FreePromotionUnitCombats>
+		<Row>
+			<TraitType>TRAIT_RIVER_EXPANSION</TraitType>
+			<UnitCombatType>UNITCOMBAT_CIVILIAN</UnitCombatType>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_RIVER_EXPANSION</TraitType>
+			<UnitCombatType>UNITCOMBAT_COMMAND</UnitCombatType>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_RIVER_EXPANSION</TraitType>
+			<UnitCombatType>UNITCOMBAT_DIPLOMACY</UnitCombatType>
+			<PromotionType>PROMOTION_SENTRY</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_ART_OF_WAR</TraitType>
+			<UnitCombatType>UNITCOMBAT_COMMAND</UnitCombatType>
+			<PromotionType>PROMOTION_EXTRA_SIGHT_NOUPGRADE_II</PromotionType>
+		</Row>		
+	</Trait_FreePromotionUnitCombats>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_EGYPTIAN_WARCHARIOT</UnitType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ROMAN_LEGION</UnitType>
+			<PromotionType>PROMOTION_DOUBLE_WORK_SPEED</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ROMAN_LEGION</UnitType>
+			<PromotionType>PROMOTION_COVER_1</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_GERMAN_LANDSKNECHT</UnitType>
+			<PromotionType>PROMOTION_MERCENARY</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ENGLISH_LONGBOWMAN</UnitType>
+			<PromotionType>PROMOTION_INDIRECT_FIRE</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ENGLISH_LONGBOWMAN</UnitType>
+			<PromotionType>PROMOTION_SIGHT_PENALTY</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SONGHAI_MUSLIMCAVALRY</UnitType>
+			<PromotionType>PROMOTION_SIEGE</PromotionType>
+		</Row>
+		<Delete UnitType="UNIT_GREEK_HOPLITE" PromotionType="PROMOTION_ANTI_MOUNTED_II"/>
+		<Row>
+			<UnitType>UNIT_GREEK_HOPLITE</UnitType>
+			<PromotionType>PROMOTION_PHALANX</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_PERSIAN_IMMORTAL</UnitType>
+			<PromotionType>PROMOTION_GOLDEN</PromotionType>
+		</Row>
+		<Delete UnitType="UNIT_MONGOLIAN_KESHIK" PromotionType="PROMOTION_SPAWN_GENERALS_I"/>
+		<Delete UnitType="UNIT_AMERICAN_MINUTEMAN"/>
+		<Row>
+			<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
+			<PromotionType>PROMOTION_SCOUTING_1</PromotionType>
+		</Row>
+		<Update>
+			<Where UnitType="UNIT_DANISH_BERSERKER" PromotionType="PROMOTION_AMPHIBIOUS" />
+			<Set PromotionType="PROMOTION_CHARGE" />
+		</Update>
+		<Delete UnitType="UNIT_ENGLISH_LONGBOWMAN" PromotionType="PROMOTION_RANGE" />
+		<Update>
+			<Where UnitType="UNIT_OTTOMAN_JANISSARY" PromotionType="PROMOTION_HEAL_IF_DESTROY_ENEMY" />
+			<Set PromotionType="PROMOTION_PARTIAL_HEAL_IF_DESTROY_ENEMY" />
+		</Update>
+		<Delete UnitType="UNIT_FRENCH_FOREIGNLEGION" PromotionType="PROMOTION_FOREIGN_LANDS" />
+		<Row>
+			<UnitType>UNIT_FRENCH_MUSKETEER</UnitType>
+			<PromotionType>PROMOTION_FOREIGN_LANDS</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+	<Trait_FreePromotionUnitCombats>
+		<Row>
+			<TraitType>TRAIT_IGNORE_TERRAIN_IN_FOREST</TraitType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_IGNORE_TERRAIN_IN_FOREST</TraitType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_IGNORE_TERRAIN_IN_FOREST</TraitType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_IGNORE_TERRAIN_IN_FOREST</TraitType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED_ARCHER</UnitCombatType>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_IGNORE_TERRAIN_IN_FOREST</TraitType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_IGNORE_TERRAIN_IN_FOREST</TraitType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_IGNORE_TERRAIN_IN_FOREST</TraitType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_IGNORE_TERRAIN_IN_FOREST</TraitType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_IGNORE_TERRAIN_IN_FOREST</TraitType>
+			<UnitCombatType>UNITCOMBAT_CIVILIAN</UnitCombatType>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_IGNORE_TERRAIN_IN_FOREST</TraitType>
+			<UnitCombatType>UNITCOMBAT_COMMAND</UnitCombatType>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_IGNORE_TERRAIN_IN_FOREST</TraitType>
+			<UnitCombatType>UNITCOMBAT_DIPLOMACY</UnitCombatType>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED_ARCHER</UnitCombatType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
+			<UnitCombatType>UNITCOMBAT_CIVILIAN</UnitCombatType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
+			<UnitCombatType>UNITCOMBAT_COMMAND</UnitCombatType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LAND_TRADE_GOLD</TraitType>
+			<UnitCombatType>UNITCOMBAT_DIPLOMACY</UnitCombatType>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+		</Row>
+	</Trait_FreePromotionUnitCombats>
+
+	<Buildings>
+		<Update>
+			<Where Type="BUILDING_MUD_PYRAMID_MOSQUE" />
+			<Set Culture="5" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_SATRAPS_COURT" />
+			<Set BuildingClass="BUILDINGCLASS_MARKET"
+				 PrereqTech="TECH_CURRENCY"
+				 Cost="120"
+				 ArtDefineTag="ART_DEF_BUILDING_MARKET"
+				 Happiness="0"
+				 GoldenAgePoints="2"
+				 InstantGoldenAgePoints="200"
+				 OneShot="true"
+				 />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_WAT" />
+			<Set Culture="3" />
+		</Update>
+		
+	</Buildings>
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_WAT</BuildingType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Building_YieldModifiers>
+	<Building_DomainProductionModifiers>
+		<Delete BuildingType="BUILDING_HARBOR" />
+		<Row>
+			<BuildingType>BUILDING_SEAPORT</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Modifier>50</Modifier>
+		</Row>
+	</Building_DomainProductionModifiers>
+	<!--
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_PAPER_MAKER</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>10</Yield>
+		</Row>
+	</Building_YieldModifiers>
+	-->
+	<Building_FeatureYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_LONGHOUSE</BuildingType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_FeatureYieldChanges>
+	<Trait_ResourceQuantityModifiers>
+		<Delete TraitType="TRAIT_LAND_TRADE_GOLD" />
+	</Trait_ResourceQuantityModifiers>
+	<Building_YieldChangesPerPop>
+		<!--
+		<Row>
+			<BuildingType>BUILDING_SATRAPS_COURT</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>50</Yield>
+		</Row>
+		-->
+	</Building_YieldChangesPerPop>
+	<Civilization_BuildingClassOverrides>
+		<Update>
+			<Where BuildingType="BUILDING_SATRAPS_COURT" />
+			<Set BuildingClassType="BUILDINGCLASS_MARKET" />
+		</Update>
+	</Civilization_BuildingClassOverrides>
+	<Building_ClassesNeededInCity>
+		<Delete BuildingType="BUILDING_SATRAPS_COURT" />
+	</Building_ClassesNeededInCity>
+	
+
+
+
+
+	<!--
+			Ottoman Specialist Bonus
+	<Buildings>
+		<Row>
+			<Type>BUILDING_OTTOMAN_PALACE</Type>
+			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+			<Cost>0</Cost>
+			<Help>TXT_KEY_BUILDING_PALACE_HELP</Help>
+			<Description>TXT_KEY_BUILDING_PALACE</Description>
+			<Civilopedia>TXT_KEY_CIV5_BUILDINGS_PALACE_TEXT</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PALACE_STRATEGY</Strategy>
+			<ArtDefineTag>PALACE</ArtDefineTag>
+			<Capital>true</Capital>
+			<NukeImmune>true</NukeImmune>
+			<MinAreaSize>-1</MinAreaSize>
+			<Culture>1</Culture>
+			<Defense>250</Defense>
+			<ArtInfoCulturalVariation>true</ArtInfoCulturalVariation>
+			<DisplayPosition>32</DisplayPosition>
+			<NeverCapture>true</NeverCapture>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>19</PortraitIndex>
+		</Row>
+	</Buildings>
+	<Building_YieldChanges>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_PALACE</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_PALACE</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>3</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_PALACE</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>3</Yield>
+		</Row>
+	</Building_YieldChanges>
+	<Civilization_BuildingClassOverrides>
+		<Row>
+			<CivilizationType>CIVILIZATION_OTTOMAN</CivilizationType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+			<BuildingType>BUILDING_OTTOMAN_PALACE</BuildingType>
+		</Row>
+	</Civilization_BuildingClassOverrides>
+	<Building_SpecialistYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_PALACE</BuildingType>
+			<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_PALACE</BuildingType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_PALACE</BuildingType>
+			<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_PALACE</BuildingType>
+			<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_OTTOMAN_PALACE</BuildingType>
+			<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_SpecialistYieldChanges>
+	-->
+</GameData>

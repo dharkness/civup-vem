@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Yields>
+		<Update>
+			<Where Type="YIELD_PRODUCTION" />
+			<Set MinCity="1" />
+		</Update>
+		<Update>
+			<Where Type="YIELD_GOLD" />
+			<Set MinCity="1" />
+		</Update>
+	</Yields>
+	<Units>
+		<Update>
+			<Where Class="UNITCLASS_SETTLER" />
+			<Set HurryCostModifier="50" />
+		</Update>
+	</Units>
+	<Defines>
+		<Update>
+			<Where Name="SCIENCE_PER_POPULATION" />
+			<Set Value="2" />
+			<!-- 1 -->
+		</Update>
+		<Update>
+			<Where Name="ADVANCED_START_CITY_COST" />
+			<Set Value="105" />
+			<!-- 84 -->
+		</Update>
+		<Update>
+			<Where Name="MINOR_CIV_PLOT_CULTURE_COST_MULTIPLIER" />
+			<Set Value="100" />
+		</Update>
+		<Update>
+			<Where Name="UNIT_SETTLER_BASE_COST" />
+			<Set Value="105" />
+		</Update>
+		<Update>
+			<Where Name="GOLD_PURCHASE_GOLD_PER_PRODUCTION"/>
+			<Set Value="6"/>
+			<!-- 30 -->
+		</Update>
+		<Update>
+			<Where Name="HURRY_GOLD_PRODUCTION_EXPONENT"/>
+			<Set Value="0.9"/>
+			<!-- .7 -->
+		</Update>
+		<Update>
+			<Where Name="TRADE_ROUTE_BASE_GOLD"/>
+			<Set Value="100"/>
+			<!-- -130 -->
+		</Update>
+		<Update>
+			<Where Name="TRADE_ROUTE_CAPITAL_POP_GOLD_MULTIPLIER"/>
+			<Set Value="15"/>
+			<!-- 15 -->
+		</Update>
+		<Update>
+			<Where Name="TRADE_ROUTE_CITY_POP_GOLD_MULTIPLIER"/>
+			<Set Value="25"/>
+			<!-- 120 -->
+		</Update>
+		<Update>
+			<Where Name="MIN_CITY_RANGE"/>
+			<Set Value="2"/>
+		</Update>
+		<!-- Occupied accepts decimals, but regular does not, so this variable is useless =\ -->
+		<Update>
+			<Where Name="UNHAPPINESS_PER_POPULATION"/>
+			<Set Value="1.0"/>
+			<!-- 1.0 -->
+		</Update>
+		<Update>
+			<Where Name="UNHAPPINESS_PER_OCCUPIED_POPULATION"/>
+			<Set Value="1.0"/>
+			<!-- 1.34 -->
+		</Update>
+		<Update>
+			<Where Name="UNHAPPINESS_PER_CITY"/>
+			<Set Value="4"/>
+			<!-- 2 -->
+		</Update>
+		<Update>
+			<Where Name="UNHAPPINESS_PER_CAPTURED_CITY"/>
+			<Set Value="4"/>
+			<!-- 5 -->
+		</Update>
+		<!--
+		<Update>
+			<Where Name="PLOT_INFLUENCE_DISTANCE_MULTIPLIER" />
+			<Set Value="75" />
+			 100 
+		</Update>
+		-->
+		<Update>
+			<Where Name="PLOT_BASE_COST" />
+			<Set Value="20" />
+			<!-- 50 -->
+		</Update>
+		<Update>
+			<Where Name="PLOT_ADDITIONAL_COST_PER_PLOT" />
+			<Set Value="10" />
+			<!-- 5 -->
+		</Update>
+		<Update>
+			<Where Name="CULTURE_COST_FIRST_PLOT" />
+			<Set Value="30" />
+			<!-- 15 -->
+		</Update>
+		<Update>
+			<Where Name="CULTURE_COST_LATER_PLOT_MULTIPLIER" />
+			<Set Value="30" />
+			<!-- 10 -->
+		</Update>
+		<Update>
+			<Where Name="CULTURE_COST_LATER_PLOT_EXPONENT" />
+			<Set Value="1.1" />
+			<!-- 1.1 -->
+		</Update>
+		<Update>
+			<Where Name="CULTURE_COST_VISIBLE_DIVISOR" />
+			<Set Value="5" />
+			<!-- 5 -->
+		</Update>
+		<Update>
+			<Where Name="PLOT_INFLUENCE_RING_COST" />
+			<Set Value="100" />
+			<!-- 100 -->
+		</Update>
+		<Update>
+			<Where Name="PLOT_INFLUENCE_WATER_COST" />
+			<Set Value="0" />
+			<!-- 25 -->
+		</Update>
+		<Update>
+			<Where Name="PLOT_INFLUENCE_ROUTE_COST" />
+			<Set Value="-25" />
+			<!-- 0 -->
+		</Update>
+		<Update>
+			<Where Name="PLOT_INFLUENCE_RESOURCE_COST" />
+			<Set Value="-125" />
+			<!-- -100 -->
+		</Update>
+		<Update>
+			<Where Name="PLOT_BUY_RESOURCE_COST" />
+			<Set Value="-125" />
+			<!-- -100 -->
+		</Update>
+		<Update>
+			<Where Name="PLOT_INFLUENCE_NW_COST" />
+			<Set Value="-400" />
+			<!-- -100 -->
+		</Update>
+		<Update>
+			<Where Name="PLOT_BUY_NW_COST" />
+			<Set Value="-400" />
+			<!-- -100 -->
+		</Update>
+	</Defines>
+
+
+	
+	<Improvements>
+		<Row>
+			<Type>IMPROVEMENT_MACHU_PICCHU</Type>
+			<Description>TXT_KEY_BUILDING_MACHU_PICHU</Description>
+			<Civilopedia>TXT_KEY_WONDER_MACHUPICCHU_DESC</Civilopedia>
+			<PortraitIndex>11</PortraitIndex>
+			<IconAtlas>BW_ATLAS_2</IconAtlas>
+			<Culture>5</Culture>
+		</Row>
+	</Improvements>
+	<Improvement_Yields>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MACHU_PICCHU</ImprovementType>
+			<YieldType>YIELD_FOOD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MACHU_PICCHU</ImprovementType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>5</Yield>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MACHU_PICCHU</ImprovementType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>5</Yield>
+		</Row>
+	</Improvement_Yields>
+	<!--
+	<Improvement_ValidTerrains>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MACHU_PICCHU</ImprovementType>
+			<TerrainType>TERRAIN_GRASS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MACHU_PICCHU</ImprovementType>
+			<TerrainType>TERRAIN_PLAINS</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MACHU_PICCHU</ImprovementType>
+			<TerrainType>TERRAIN_DESERT</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MACHU_PICCHU</ImprovementType>
+			<TerrainType>TERRAIN_TUNDRA</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MACHU_PICCHU</ImprovementType>
+			<TerrainType>TERRAIN_SNOW</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MACHU_PICCHU</ImprovementType>
+			<TerrainType>TERRAIN_HILL</TerrainType>
+		</Row>
+		<Row>
+			<ImprovementType>IMPROVEMENT_MACHU_PICCHU</ImprovementType>
+			<TerrainType>TERRAIN_MOUNTAIN</TerrainType>
+		</Row>
+	</Improvement_ValidTerrains>
+	-->
+</GameData>

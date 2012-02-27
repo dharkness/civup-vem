@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{c0082016-8de8-43b7-b7e2-bee0b6363942}</ProjectGuid>
+    <Name>Balance - Policies</Name>
+    <Guid>be22a90b-0f33-4bbf-84c8-e5bea023b46e</Guid>
+    <ModVersion>11</ModVersion>
+    <Stability>Beta</Stability>
+    <Teaser>Improves a few less-useful [ICON_CULTURE] policies.</Teaser>
+    <Description>Improves a few less-useful [ICON_CULTURE] policies to make them equally valuable choices as their counterparts.[NEWLINE]
+[NEWLINE]
+[COLOR_GREEN]Rationale:[/COLOR] Motivated by a feeling decision-making for social policies is rather limited, with a few especially powerful choices outweighing weaker ones. A selected few are improved to make them worthwhile choices compared to their companions.[NEWLINE]
+[NEWLINE]
+Swapped Legalism and Oligarchy, swapped+improved Tradition and Landed Elite. Improved Collective rule, Citizenship, Trade Unions, Sovereignty, Universal Suffrage, United Front.[NEWLINE]
+[NEWLINE]
+For details and feedback, please see the included [COLOR_YELLOW]readme[/COLOR] file:[NEWLINE]
+Documents\My Games\Sid Meier's Civilization 5\MODS\Balance - Policies</Description>
+    <Authors>Thalassicus</Authors>
+    <SpecialThanks>Please see [COLOR_YELLOW]readme[/COLOR] included in mod folder.</SpecialThanks>
+    <Categories>$Categories$</Categories>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>Mod Template</AssemblyName>
+    <RootNamespace>Mod Template</RootNamespace>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>BP - General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BP - Language_en_US.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BP - Language_DE_DE.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BP - Language_ES_ES.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BP - Language_FR_FR.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BP - Language_IT_IT.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BP - Language_JA_JP.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BP - Language_PL_PL.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BP - Language_RU_RU.xml</FileName>
+      </Action>
+    </ModActions>
+    <ModContent>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>Balance - Policies: Script</Name>
+        <Description>Balance - Policies: Script</Description>
+        <FileName>BP - Script.lua</FileName>
+      </Content>
+    </ModContent>
+    <Homepage>http://tiny.cc/civ5mods</Homepage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="BP - General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="BP - Script.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="BP - Readme.html">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\BP - Language_en_US.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\Please read if multilingual!.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Text" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

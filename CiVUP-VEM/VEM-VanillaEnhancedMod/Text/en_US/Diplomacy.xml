@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_OPEN_BORDERS_TT" />
+			<Set Text="With [COLOR_POSITIVE_TEXT]mutual open borders[/COLOR], 1% of the combined gross [ICON_GOLD] Income of both players adds to your gold rate.[NEWLINE][NEWLINE]Allows the other player's units to pass through your territory.[NEWLINE][NEWLINE](Lasts {1_Num} turns.)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_RESCH_AGREEMENT_TT"/>
+			<Set Text="3% of the combined research of both players adds to your [ICON_RESEARCH] Science rate."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_DEC_FRIENDSHIP_TT"/>
+			<Set Text="Announces to the world your empires are close friends. Both players must want to make the declaration.[NEWLINE][NEWLINE]Increases income from [ICON_RESEARCH] Research Agreements and [ICON_GOLD] Mutual Open Borders with this leader by +100%.[NEWLINE][NEWLINE]This promotes friendly relations with this empire and will often deter outside aggressors. Your friend may ask for your aid when in need, and failure to help might upset them."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_BARB_KILLED" />
+			<Set Text="You killed Barbarians near {1_CivName:textkey}! They are grateful, and your [ICON_INFLUENCE] Influence with them has increased by 12!" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NTFN_RA_FREE_TECH" />
+			<Set Text="Your Research Agreement with {1_CivName:textkey} has expired." />
+		</Update>
+	</Language_en_US>
+</GameData>

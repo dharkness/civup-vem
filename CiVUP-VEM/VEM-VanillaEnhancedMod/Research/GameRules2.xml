@@ -1,0 +1,38 @@
+<GameData>
+	<!-- Table definition -->
+	<Table name="EmigrationWeights">
+		<Column name="Type" type="text" reference="GameSpeeds(Type)"/>
+		<Column name="Value" type="variant"/>
+	</Table>
+	<!-- Table data -->
+	<EmigrationWeights>
+		<Row>
+			<Type>IsRazing</Type>
+			<Value>0</Value>
+		</Row>
+		<Row>
+			<Type>IsResistance</Type>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<Type>IsPuppet</Type>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<Type>IsOccupied</Type>
+			<Value>1.5</Value>
+		</Row>
+		<Row>
+			<Type>IsBlockaded</Type>
+			<Value>0.5</Value>
+		</Row>
+		<Row>
+			<Type>IsCapital</Type>
+			<Value>0.5</Value>
+		</Row>
+		<Row>
+			<Type>GetGarrisonedUnit</Type>
+			<Value>0.5</Value>
+		</Row>
+	</EmigrationWeights>
+</GameData>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_RU_RU>
+		<Row Tag="TXT_KEY_TP_GOLD_FROM_OPEN_BORDERS">
+			<Text>{1_Num} от обоюдных открытых границ с другими лидерами.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TP_SCIENCE_FROM_RESEARCH_AGREEMENTS"/>
+			<Set Text="[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_RESEARCH] от торговых договоров с другими игроками."/>
+		</Update>
+		<Row Tag="TXT_KEY_YIELD_FROM_POLICIES">
+			<Text>{1_Num} {2_icon} от общественных институтов</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_TRAITS">
+			<Text>{1_Num} {2_icon} от особенностей</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_PROCESSES">
+			<Text>{1_Num} {2_IconString} от обработки</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_MINOR_CIVS">
+			<Text>{1_num} {2_icon} от городов-государств</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_FOCUS" >
+			<Text>{2_icon} Фокус города: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_POPULATION" >
+			<Text>[ICON_CITIZEN] Население: {1_num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_NOT_CONNECTED" >
+			<Text>[ICON_CONNECTED] Не соединен: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RAZING" >
+			<Text>[ICON_RAZING] Растет: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RESISTANCE" >
+			<Text>[ICON_RESISTANCE] Сопротивление: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_PUPPET" >
+			<Text>[ICON_PUPPET] Марионетка: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_OCCUPIED" >
+			<Text>[ICON_OCCUPIED] Окупация: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_BLOCKADED" >
+			<Text>[ICON_BLOCKADED] Блокада: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_CAPITAL" >
+			<Text>[ICON_CAPITAL] Столица: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID" >
+			<Text>[ICON_MUSHROOM] Сдерживать рост: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID_MANY" >
+			<Text>(Более чем {1_num}% городов сдерживают рост)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_WEIGHT_TOTAL" >
+			<Text>{1_num} (city) / {2_num} (empire) = {3_num}% of {4_num}{5_icon}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_USAGE" >
+			<Text>([COLOR_POSITIVE_TEXT]{1_num}[ENDCOLOR] - [COLOR_NEGATIVE_TEXT]{2_num}[ENDCOLOR] расходуется)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_SURPLUS" >
+			<Text>{1_num} {2_icon} излишек</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_PLAYER"/>
+			<Set Text="[NEWLINE][ICON_BULLET]Модификатор института: {1_num}%"/>
+		</Update>
+		<Row Tag="TXT_KEY_PRODMOD_YIELD_SETTLER_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]Модификатор институтов для поселенцев: {1_num}%</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_CAPITAL_BUILDING_TRAIT" />
+			<Set Text="[NEWLINE][ICON_BULLET]Модификатор для построек в [ICON_CAPITAL] столице: {1_Num}%"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_HAPPINESS" />
+			<Set Text="[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT][ICON_HAPPINESS_4] Модификатор недовольства: {1_Num}%[ENDCOLOR]"/>
+		</Update>
+	</Language_RU_RU>
+</GameData>

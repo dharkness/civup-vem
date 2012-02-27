@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CiVUP>
+		<Update>
+			<Where Type="PERCENT_SCIENCE_FOR_1_SURPLUS_HAPPINESS" />
+			<Set Value="1" />
+		</Update>
+	</CiVUP>
+	<Buildings>
+		<Update>
+			<Where BuildingClass="BUILDINGCLASS_PALACE" />
+			<Set MedianTechPercentChange="-1000" />
+		</Update>
+	</Buildings>
+	<GameSpeeds>
+		<Update>
+			<Where Type="GAMESPEED_MARATHON" />
+			<Set ResearchPercent="500" />
+		</Update>
+	</GameSpeeds>
+	<Eras>
+		<Update>
+			<Where Type="ERA_ANCIENT"/>
+			<Set>
+				<ResearchAgreementCost>100</ResearchAgreementCost>
+				<TriggerRatePercent>2</TriggerRatePercent>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="ERA_CLASSICAL"/>
+			<Set>
+				<ResearchAgreementCost>100</ResearchAgreementCost>
+				<TriggerRatePercent>3</TriggerRatePercent>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="ERA_MEDIEVAL"/>
+			<Set>
+				<ResearchAgreementCost>300</ResearchAgreementCost>
+				<TriggerRatePercent>4</TriggerRatePercent>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="ERA_RENAISSANCE"/>
+			<Set>
+				<ResearchAgreementCost>1000</ResearchAgreementCost>
+				<TriggerRatePercent>5</TriggerRatePercent>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="ERA_INDUSTRIAL"/>
+			<Set>
+				<ResearchAgreementCost>3000</ResearchAgreementCost>
+				<TriggerRatePercent>7</TriggerRatePercent>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="ERA_MODERN"/>
+			<Set>
+				<ResearchAgreementCost>6000</ResearchAgreementCost>
+				<TriggerRatePercent>10</TriggerRatePercent>
+			</Set>
+		</Update>
+		<Update>
+			<Where Type="ERA_FUTURE"/>
+			<Set>
+				<ResearchAgreementCost>6000</ResearchAgreementCost>
+				<TriggerRatePercent>10</TriggerRatePercent>
+			</Set>
+		</Update>
+	</Eras>
+	<Technologies>
+		<Update>
+			<Where Type="TECH_COMPASS" />
+			<Set GridX="4"/>
+		</Update>
+		<Update>
+			<Where Type="TECH_ARCHAEOLOGY" />
+			<Set GridX="9" Era="ERA_INDUSTRIAL" />
+		</Update>
+		<Update>
+			<Where Type="TECH_WRITING" />
+			<Set OpenBordersTradingAllowed="false"/>
+		</Update>
+		<Update>
+			<Where Type="TECH_TRAPPING" />
+			<Set Description="TXT_KEY_TECH_TRADE_TITLE"
+				 Civilopedia="TXT_KEY_TECH_TRADE_DESC"
+				 Quote="TXT_KEY_TECH_TRADE_QUOTE"
+				 OpenBordersTradingAllowed="true"
+				 />
+		</Update>
+	</Technologies>
+	<Technology_PrereqTechs>
+		<!--
+		<Row>
+			<TechType>TECH_METAL_CASTING</TechType>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+		</Row>
+		-->
+		<Row>
+			<TechType>TECH_MATHEMATICS</TechType>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+		</Row>
+		<Delete TechType="TECH_ENGINEERING" PrereqTech="TECH_CONSTRUCTION" />
+		<Delete TechType="TECH_BANKING" PrereqTech="TECH_EDUCATION" />
+		<Delete TechType="TECH_CHIVALRY" PrereqTech="TECH_CURRENCY" />
+		<Update>
+			<Where TechType="TECH_STEAM_POWER" PrereqTech="TECH_MILITARY_SCIENCE" />
+			<Set PrereqTech="TECH_FERTILIZER"/>
+		</Update>
+		<Update>
+			<Where TechType="TECH_MILITARY_SCIENCE" PrereqTech="TECH_ECONOMICS" />
+			<Set TechType="TECH_FERTILIZER"/>
+		</Update>
+		<Row>
+			<TechType>TECH_BANKING</TechType>
+			<PrereqTech>TECH_CURRENCY</PrereqTech>
+		</Row>
+		<Update>
+			<Where TechType="TECH_BIOLOGY" PrereqTech="TECH_ARCHAEOLOGY" />
+			<Set TechType="TECH_ELECTRICITY"/>
+		</Update>
+		<Delete TechType="TECH_COMPUTERS" PrereqTech="TECH_RADAR" />
+		<Delete TechType="TECH_ECOLOGY" PrereqTech="TECH_PLASTIC" />
+		<Row>
+			<TechType>TECH_ROBOTICS</TechType>
+			<PrereqTech>TECH_PLASTIC</PrereqTech>
+		</Row>
+		<Row>
+			<TechType>TECH_GLOBALIZATION</TechType>
+			<PrereqTech>TECH_PLASTIC</PrereqTech>
+		</Row>
+	</Technology_PrereqTechs>
+</GameData>

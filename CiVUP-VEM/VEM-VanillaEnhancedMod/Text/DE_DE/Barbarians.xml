@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_de_DE>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_ARCHER">
+			<Text>Wilddieb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_SPEARMAN">
+			<Text>Plünderer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_SWORDSMAN">
+			<Text>Dieb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_PIKEMAN">
+			<Text>Söldner</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_CROSSBOWMAN">
+			<Text>Attentäter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_LONGSWORDSMAN">
+			<Text>Gesetzloser</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_MUSKETMAN">
+			<Text>Bandit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_RIFLEMAN">
+			<Text>Unruhestifter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_INFANTRY">
+			<Text>Partisan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_PARATROOPER">
+			<Text>Guerillakämpfer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_MECHANIZED_INFANTRY">
+			<Text>Rebell</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_CHARIOT_ARCHER">
+			<Text>Plänkler</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_HORSEMAN">
+			<Text>Marodeur</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_KNIGHT">
+			<Text>Räuber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_LANCER">
+			<Text>Wegelagerer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_CAVALRY">
+			<Text>Bandit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_MECH">
+			<Text>Schurke</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_GALLEY">
+			<Text>Sklavenhändler</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_TRIREME">
+			<Text>Pirat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_CARAVEL">
+			<Text>Korsar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_FRIGATE">
+			<Text>Freibeuter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_IRONCLAD">
+			<Text>Gangster</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_BARBARIAN_SUBMARINE">
+			<Text>Schmuggler</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

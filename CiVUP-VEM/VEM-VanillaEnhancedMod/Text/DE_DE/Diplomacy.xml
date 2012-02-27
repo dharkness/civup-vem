@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/28/2011 1:17:31 PM -->
+<GameData>
+	<Language_de_DE>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_BARB_KILLED" />
+			<Set Text="Du hast eine Horde von Barbaren in der Nähe von {1_CivName:textkey} vernichtet! Sie sind äußerst dankbar, und dein [ICON_INFLUENCE] Einfluß auf sie hat sich um 25 erhöht!" />
+		</Update>
+	</Language_de_DE>
+</GameData>

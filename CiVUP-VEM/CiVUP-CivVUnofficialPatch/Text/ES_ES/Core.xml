@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_ES_ES>
+		<Row Tag="TXT_KEY_BUILDING_MONUMENT">
+			<Text>Monumento</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY_HELP">
+			<Text>-50% Pena de Defensa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOUNTED_PENALTY_HELP">
+			<Text>-50% Pena de Montaje</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY"/>
+			<Set Text="Pena de Defensa (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_MOUNTED_PENALTY"/>
+			<Set Text="Pena de Montaje (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WEAK_RANGED"/>
+			<Set Text="Pena de Ataque a Tierra (75)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WEAK_RANGED_HELP"/>
+			<Set Text="-75% fuerza al atacar en tierra y units"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_HELICOPTER"/>
+			<Set Text="Bono vs Helicópteros (100)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_FIGHTER"/>
+			<Set Text="Bono vs Avión de Combate (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_NAVAL_PENALTY"/>
+			<Set Text="Pena de frente a los barcos (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_TANK"/>
+			<Set Text="Bono vs Tanques (100)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_NO_DEFENSIVE_BONUSES"/>
+			<Set Text="N Bonos del Terreno Defensivo"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_FOREIGN_LANDS"/>
+			<Set Text="Exteriores Tierras Bono (20)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_ADVANCED_BALLISTICS_HELP"/>
+			<Set Text="Allows para construir el [COLOR_POSITIVE_TEXT]Misiles Nucleares[ENDCOLOR], un arma temible que requiere 2[ICON_RES_URANIUM] Uranium, y es capaz de destruir las unidades y cities."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_CAMEL_ARCHER" />
+			<Set Text="Rápido unidad árabe medieval. Es a distancia y no tiene una vulnerabilidad de Piqueros, a diferencia de la que sustituye a Caballero." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_SUPPLY_HELP" />
+			<Set Text="+1[ICON_MOVES] y puede curar el daño [COLOR_POSITIVE_TEXT]Fuera de Friendly Territorio[ENDCOLOR]. 2 HP curado por turno." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRADITION_TITLE"/>
+			<Set Text="Soberana {1_PlayerName:textkey} de {2_CivName:textkey}"/>
+		</Update>
+	</Language_ES_ES>
+</GameData>

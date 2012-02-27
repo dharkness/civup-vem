@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_DE_DE>
+		<Row Tag="TXT_KEY_TP_GOLD_FROM_OPEN_BORDERS">
+			<Text>{1_Num} durch gemeinsame Offene Grenzen mit anderen Staatsoberhäuptern.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_OPEN_BORDERS_TT" />
+			<Set Text="1% des vereinten Bruttoeinkommens [ICON_GOLD] beider Parteien wird dem eigenen Einkommen jede Runde hinzugefügt.[NEWLINE][NEWLINE]Erlaubt der anderen Partei Einheiten durch das eigene Gebiet zu bewegen.[NEWLINE][NEWLINE](Dauer: {1_Num} Runden.)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_RESCH_AGREEMENT_TT"/>
+			<Set Text="5% der gemeinsamen Forschungsleistung beider Reiche wird jede Runde zur eigenen [ICON_RESEARCH] [COLOR_POSITIVE_TEXT]Forschung[/COLOR] hinzugefügt. Dies ist automatisch aktiv für jeden Beteiligten, wenn die folgenden Voraussetzungen erfüllt sind.[NEWLINE][NEWLINE]Beide Teilnehmer müssen:[NEWLINE][ICON_BULLET]Philosophie muss erforscht sein.[NEWLINE][ICON_BULLET]Freundschaftserklärung muss aktiv sein."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_RESCH_AGREEMENT_NO_TECH"/>
+			<Set Text=" "/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_RESCH_AGREEMENT_EXISTS"/>
+			<Set Text=" "/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_RESCH_AGREEMENT_NO_AGREEMENT"/>
+			<Set Text=" "/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_DISCUSS_MESSAGE_DEC_FRIENDSHIP_TT"/>
+			<Set Text="Offenbart der Welt, dass Ihre beiden Reiche nun Freunde sind. Beide Reiche müssen die Erklärung befürworten.[NEWLINE][NEWLINE]Wenn beide Reiche Philosophie erforscht haben, wird jede Runde 5% der gemeinsamen Forschungsleistung beider Reiche zur [ICON_RESEARCH] [COLOR_POSITIVE_TEXT]Wissenschaft[/COLOR] hinzugefügt.[NEWLINE][NEWLINE]Zusätzlich wird eine Freundschaftserklärung oft Agressoren abschrecken, und freundschaftliche Beziehungen mit diesem Reiche begünstigen - sie werden aber auch im Ernstfall Unterstützung erwarten. Verweigerte Hilfe würde sie erzürnen."/>
+		</Update>
+		<Row Tag="TXT_KEY_YIELD_FROM_POLICIES">
+			<Text>{1_Num} {2_icon} durch Sozialpolitiken</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_TRAITS">
+			<Text>{1_Num} {2_icon} durch Eigenschaften</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_MINOR_CIVS">
+			<Text>{1_num} {2_icon} durch Stadtstaaten</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_FOCUS" >
+			<Text>{2_icon} Stadtschwerpunkt: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_POPULATION" >
+			<Text>[ICON_CITIZEN] Einwohner: {1_num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_NOT_CONNECTED" >
+			<Text>[ICON_CONNECTED] Nicht angebunden: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RAZING" >
+			<Text>[ICON_RAZING] Schleifen: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RESISTANCE" >
+			<Text>[ICON_RESISTANCE] Widerstand: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_PUPPET" >
+			<Text>[ICON_PUPPET] Marionette: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_OCCUPIED" >
+			<Text>[ICON_OCCUPIED] Besetzt: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_BLOCKADED" >
+			<Text>[ICON_BLOCKADED] Blockiert: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_CAPITAL" >
+			<Text>[ICON_CAPITAL] Hauptstadt: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID" >
+			<Text>[ICON_MUSHROOM] Wachstum vermeiden: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID_MANY" >
+			<Text>(Mehr als {1_num}% der Städte auf Vermeidung)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_WEIGHT_TOTAL" >
+			<Text>{1_num} (Stadt) / {2_num} (Reich) = {3_num}% von {4_num}{5_icon}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_USAGE" >
+			<Text>([COLOR_POSITIVE_TEXT]{1_num}[ENDCOLOR] - [COLOR_NEGATIVE_TEXT]{2_num}[ENDCOLOR] verbraucht)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_SURPLUS" >
+			<Text>{1_num} {2_icon} Überschuss</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PRODMOD_YIELD_SETTLER_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]Politik-Modifikator für Siedler: {1_num}%</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_CAPITAL_BUILDING_TRAIT" />
+			<Set Text="[NEWLINE][ICON_BULLET]Modifikator für Gebäude in der [ICON_CAPITAL] Hauptstadt: {1_Num}%"/>
+		</Update>
+	</Language_DE_DE>
+</GameData>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_de_DE>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_FORT_REC" />
+			<Set Text="Stärkt die [ICON_STRENGTH] Verteidigung jeder beliebigen auf diesem Feld stationierten Militäreinheit, und fügt angrenzenden Gegnern 1 Schaden zu." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_FORT_HELP" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]Kostet[ENDCOLOR] 1 [ICON_GOLD] Gold Unterhalt pro Runde.[NEWLINE][NEWLINE]+50% [ICON_STRENGTH] Verteidigungsstärke für jede auf diesem Feld stationierte Militäreinheit. Fügt angrenzenden Gegnern 1 Schaden zu." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_FORT_TEXT" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]Kostet[ENDCOLOR] 1 [ICON_GOLD] Gold Unterhalt pro Runde.[NEWLINE][NEWLINE]Eine Festung ist eine spezielle Verbesserung, die einen Verteidigungsbonus gewährt, und angrenzenden Gegnern 1 Schaden zufügt. Allerdings gelten diese Effekte nicht in feindlichem Gebiet." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_FEATURES_EL_DORADO_HELP" />
+			<Set Text="Gewährt dem ersten Spieler, der es entdeckt, 100 [ICON_GOLD] Gold." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_FEATURES_EL_DORADO_HELP" />
+			<Set Text="Gewährt dem ersten Spieler, der es entdeckt, 100 [ICON_GOLD] Gold." />
+		</Update>
+	</Language_de_DE>
+</GameData>

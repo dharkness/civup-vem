@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Resources>
+		<Update>
+			<Where Type="RESOURCE_IRON" />
+			<Set TechReveal="TECH_BRONZE_WORKING" TechCityTrade="TECH_BRONZE_WORKING" />
+		</Update>
+	</Resources>
+
+
+
+	<!--
+			Soldiers
+	-->
+	<Units>
+		<Update>
+			<Where Class="UNITCLASS_WARRIOR" />
+			<Set Combat="6" />
+			<!-- 6 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_SPEARMAN" />
+			<Set Cost="55"
+				 />
+			<!-- 56
+				 GoodyHutUpgradeUnitClass="UNITCLASS_LEVY" -->
+		</Update>
+		<Update>
+			<Where Type="UNIT_GREEK_HOPLITE" />
+			<Set Cost="60"/>
+			<!-- 70 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_PIKEMAN" />
+			<Set Cost="80"
+				 Combat="10"
+				 PrereqTech="TECH_METAL_CASTING"
+				 ObsoleteTech="TECH_METALLURGY"
+				 GoodyHutUpgradeUnitClass="UNITCLASS_MUSKETMAN"
+				 />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_MUSKETMAN" />
+			<Set Cost="120"
+				 />
+		</Update>		
+	</Units>
+
+
+
+	<!--
+			Ranged
+	-->
+	<Units>
+		<Update>
+			<Where Class="UNITCLASS_ARCHER" />
+			<Set Cost="50" GoodyHutUpgradeUnitClass="NULL" />
+			<!-- 40 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_CANNON" />
+			<Set RangedCombat="26" />
+			<!-- 26 -->
+		</Update>
+
+	</Units>
+	<Unit_ResourceQuantityRequirements>
+		<Delete UnitType="UNIT_CATAPULT" />
+		<Delete UnitType="UNIT_ROMAN_BALLISTA" />
+		<Delete UnitType="UNIT_TREBUCHET" />
+	</Unit_ResourceQuantityRequirements>
+
+
+
+	<!--
+			Mobile
+	-->
+	<Units>
+		<Update>
+			<Where Type="UNIT_CHARIOT_ARCHER" />
+			<Set Cost="60" />
+			<!-- 56 -->
+		</Update>
+		<Update>
+			<Where Class="UNIT_EGYPTIAN_WARCHARIOT" />
+			<Set Cost="60" />
+			<!-- 56 -->
+		</Update>
+		<Update>
+			<Where Type="UNIT_GREEK_COMPANIONCAVALRY" />
+			<Set Moves="5" />
+			<!-- 5 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_KNIGHT" />
+			<Set Cost="150" />
+			<!-- 120 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_LANCER" />
+			<Set Cost="185" />
+			<!-- 240 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_CAVALRY" />
+			<Set Cost="225" />
+			<!-- 260 -->
+		</Update>
+	</Units>
+
+
+
+	<!--
+			Naval
+	-->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_SHIP_OF_THE_LINE</Type>
+			<Description>TXT_KEY_UNIT_ENGLISH_SHIPOFTHELINE</Description>
+			<DefaultUnit>UNIT_SHIP_OF_THE_LINE</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Update>
+			<Where Class="UNITCLASS_TRIREME" />
+			<Set Combat="5"
+				 RangedCombat="5"
+				 Cost="40"
+				 />
+			<!-- 5 3 56 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_GALLEY" />
+			<Set Combat="6" RangedCombat="6" />
+			<!-- 5 3 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_CARAVEL" />
+			<Set PrereqTech="TECH_COMPASS"
+				 />
+		</Update>
+		<Update>
+			<Where Type="UNIT_CARAVEL" />
+			<Set Combat="10"
+				 RangedCombat="10"
+				 Moves="5"
+				 />
+			<!-- 15 7 6 -->
+		</Update>
+		<Update>
+			<Where Type="UNIT_FRIGATE" />
+			<Set Combat="15" RangedCombat="15" Moves="5" />
+			<!-- 30 17 5 -->
+		</Update>
+		<Row>
+			<Class>UNITCLASS_SHIP_OF_THE_LINE</Class>
+			<Type>UNIT_SHIP_OF_THE_LINE</Type>
+			<PrereqTech>TECH_NAVIGATION</PrereqTech>
+			<Combat>25</Combat>
+			<RangedCombat>25</RangedCombat>
+			<Cost>220</Cost>
+			<Moves>4</Moves>
+			<HurryCostModifier>20</HurryCostModifier>
+			<Range>2</Range>
+			<CombatClass>UNITCOMBAT_NAVAL</CombatClass>
+			<Domain>DOMAIN_SEA</Domain>
+			<DefaultUnitAI>UNITAI_RESERVE_SEA</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_ENGLISH_SHIPOFTHELINE</Description>
+			<Help>TXT_KEY_UNIT_SHIP_OF_THE_LINE_HELP</Help>
+			<Strategy>TXT_KEY_UNIT_SHIP_OF_THE_LINE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_CIVILOPEDIA_UNITS_RENAISSANCE_SHIPOFTHELINE_TEXT</Civilopedia>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<Pillage>true</Pillage>
+			<Mechanized>true</Mechanized>
+			<ObsoleteTech>TECH_STEAM_POWER</ObsoleteTech>
+			<AdvancedStartCost>50</AdvancedStartCost>
+			<MinAreaSize>20</MinAreaSize>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_U_ENGLISH_SHIPOFTHELINE</UnitArtInfo>
+			<UnitFlagIconOffset>52</UnitFlagIconOffset>
+			<IconAtlas>UNIT_ATLAS_2</IconAtlas>
+			<PortraitIndex>9</PortraitIndex>
+			<MoveRate>WOODEN_BOAT</MoveRate>
+		</Row>
+		<Update>
+			<Where Class="UNITCLASS_IRONCLAD" />
+			<Set Combat="40" RangedCombat="30" Moves="5" />
+			<!-- 4 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_DESTROYER" />
+			<Set PrereqTech="TECH_TELEGRAPH" Combat="40" RangedCombat="30" Moves="7" />
+			<!-- 8 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_BATTLESHIP" />
+			<Set PrereqTech="TECH_COMBUSTION" Combat="80" RangedCombat="40" Moves="6" />
+			<!-- 60, 4 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_MISSILE_CRUISER" />
+			<Set Combat="80" RangedCombat="50" Moves="6" Cost="500" />
+			<!-- 60, 25, 520, -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_SUBMARINE" />
+			<Set RangedCombat="60" />
+			<!-- 60 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_NUCLEAR_SUBMARINE" />
+			<Set RangedCombat="70" />
+			<!-- 70 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_CARRIER" />
+			<Set Combat="70" />
+			<!-- 30 -->
+		</Update>
+	</Units>
+	<Unit_ResourceQuantityRequirements>
+		<Delete UnitType="UNIT_FRIGATE" />
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<ResourceType>RESOURCE_IRON</ResourceType>
+		</Row>
+		<Update>
+			<Where UnitType="UNIT_IRONCLAD" />
+			<Set ResourceType="RESOURCE_IRON" />
+		</Update>
+	</Unit_ResourceQuantityRequirements>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<UnitAIType>UNITAI_ATTACK_SEA</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<UnitAIType>UNITAI_RESERVE_SEA</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<UnitGameplay2DScripts>
+		<Row UnitType="UNIT_SHIP_OF_THE_LINE">
+			<SelectionSound>AS2D_SELECT_FRIGATE</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_FRIGATE</FirstSelectionSound>
+		</Row>
+	</UnitGameplay2DScripts>
+
+
+
+	<!--
+			Other
+	-->
+	<UnitClasses>
+		<Row>
+			<Type>UNITCLASS_LEVY</Type>
+			<Description>TXT_KEY_UNIT_LEVY</Description>
+			<DefaultUnit>UNIT_LEVY</DefaultUnit>
+		</Row>
+		<Row>
+			<Type>UNITCLASS_SKIRMISHER</Type>
+			<Description>TXT_KEY_UNIT_SKIRMISHER</Description>
+			<DefaultUnit>UNIT_SKIRMISHER</DefaultUnit>
+		</Row>
+		<Row>
+			<Type>UNITCLASS_LIGHT_INFANTRY</Type>
+			<Description>TXT_KEY_UNIT_LIGHT_INFANTRY</Description>
+			<DefaultUnit>UNIT_LIGHT_INFANTRY</DefaultUnit>
+		</Row>
+	</UnitClasses>
+	<Units>
+		<Update>
+			<Where Class="UNITCLASS_WORKBOAT" />
+			<Set Cost="40" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_BOMBER" />
+			<Set RangedCombat="40" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_STEALTH_BOMBER" />
+			<Set RangedCombat="65" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_GUIDED_MISSILE" />
+			<Set RangedCombat="50" Range="6" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_WORKER" />
+			<Set HurryCostModifier="-10" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_WORKBOAT" />
+			<Set HurryCostModifier="-15" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_SCOUT" />
+			<Set Combat="4"
+				 HurryCostModifier="-5"
+				 GoodyHutUpgradeUnitClass="NULL"
+				 />
+		</Update>
+		<Row>
+			<Class>UNITCLASS_LEVY</Class>
+			<Type>UNIT_LEVY</Type>
+			<PrereqTech>TECH_CIVIL_SERVICE</PrereqTech>
+			<ObsoleteTech>TECH_ECONOMICS</ObsoleteTech>
+			<Combat>10</Combat>
+			<Cost>80</Cost>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_RECON</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_LEVY</Description>
+			<Civilopedia>TXT_KEY_UNIT_LEVY_PEDIA</Civilopedia>
+			<Help>TXT_KEY_UNIT_LEVY_HELP</Help>
+			<Strategy>TXT_KEY_UNIT_LEVY_STRATEGY</Strategy>
+			<Pillage>true</Pillage>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<GoodyHutUpgradeUnitClass>UNITCLASS_SKIRMISHER</GoodyHutUpgradeUnitClass>
+			<AdvancedStartCost>20</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_U_ROMAN_LEGION</UnitArtInfo>
+			<UnitFlagAtlas>VANGUARD_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>0</UnitFlagIconOffset>
+			<IconAtlas>VEM_NEW_UNITS_ATLAS</IconAtlas>
+			<PortraitIndex>0</PortraitIndex>
+		</Row>
+		<Row>
+			<Class>UNITCLASS_SKIRMISHER</Class>
+			<Type>UNIT_SKIRMISHER</Type>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+			<ObsoleteTech>TECH_ELECTRICITY</ObsoleteTech>
+			<Combat>15</Combat>
+			<Cost>120</Cost>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_RECON</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SKIRMISHER</Description>
+			<Civilopedia>TXT_KEY_UNIT_SKIRMISHER_PEDIA</Civilopedia>
+			<Help>TXT_KEY_UNIT_SKIRMISHER_HELP</Help>
+			<Strategy>TXT_KEY_UNIT_SKIRMISHER_STRATEGY</Strategy>
+			<Pillage>true</Pillage>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<GoodyHutUpgradeUnitClass>UNITCLASS_LIGHT_INFANTRY</GoodyHutUpgradeUnitClass>
+			<AdvancedStartCost>25</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_U_AMERICAN_MINUTEMAN</UnitArtInfo>
+			<UnitFlagAtlas>VANGUARD_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>1</UnitFlagIconOffset>
+			<IconAtlas>VEM_NEW_UNITS_ATLAS</IconAtlas>
+			<PortraitIndex>1</PortraitIndex>
+		</Row>
+		<Row>
+			<Class>UNITCLASS_LIGHT_INFANTRY</Class>
+			<Type>UNIT_LIGHT_INFANTRY</Type>
+			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
+			<ObsoleteTech>TECH_ELECTRONICS</ObsoleteTech>
+			<Combat>27</Combat>
+			<Cost>215</Cost>
+			<Moves>2</Moves>
+			<CombatClass>UNITCOMBAT_RECON</CombatClass>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_LIGHT_INFANTRY</Description>
+			<Civilopedia>TXT_KEY_UNIT_LIGHT_INFANTRY_PEDIA</Civilopedia>
+			<Help>TXT_KEY_UNIT_LIGHT_INFANTRY_HELP</Help>
+			<Strategy>TXT_KEY_UNIT_LIGHT_INFANTRY_STRATEGY</Strategy>
+			<Pillage>true</Pillage>
+			<MilitarySupport>true</MilitarySupport>
+			<MilitaryProduction>true</MilitaryProduction>
+			<GoodyHutUpgradeUnitClass>UNITCLASS_PARATROOPER</GoodyHutUpgradeUnitClass>
+			<AdvancedStartCost>30</AdvancedStartCost>
+			<XPValueAttack>3</XPValueAttack>
+			<XPValueDefense>3</XPValueDefense>
+			<UnitArtInfo>ART_DEF_UNIT_INFANTRY</UnitArtInfo>
+			<UnitFlagAtlas>VANGUARD_FLAG_ATLAS</UnitFlagAtlas>
+			<UnitFlagIconOffset>2</UnitFlagIconOffset>
+			<IconAtlas>VEM_NEW_UNITS_ATLAS</IconAtlas>
+			<PortraitIndex>2</PortraitIndex>
+		</Row>
+		<Update>
+			<Where Class="UNITCLASS_MECHANIZED_INFANTRY" />
+			<Set PrereqTech="TECH_RADAR"
+				 CombatClass="UNITCOMBAT_MELEE"
+				 Cost="375"
+				 Combat="50"
+				 Moves="3"
+				 />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_INFANTRY" />
+			<Set GoodyHutUpgradeUnitClass="UNITCLASS_MECHANIZED_INFANTRY"
+				 ObsoleteTech="TECH_RADAR"
+				 UnitArtInfo="ART_DEF_UNIT_U_FRENCH_FOREIGNLEGION"
+				 />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_PARATROOPER" />
+			<Set PrereqTech="TECH_ELECTRONICS"
+				 CombatClass="UNITCOMBAT_RECON"
+				 Cost="280"
+				 Combat="38"
+				 Moves="4"
+				 />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_ANTI_TANK_GUN" />
+			<Set Combat="27" Cost="215" />
+			<!-- 350 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_ANTI_AIRCRAFT_GUN" />
+			<Set Combat="27" Cost="215" />
+			<!-- 350 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_MOBILE_SAM" />
+			<Set Cost="400" />
+			<!-- 500 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_GUIDED_MISSILE" />
+			<Set NoMaintenance="false" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_ATOMIC_BOMB" />
+			<Set HurryCostModifier="-1" />
+			<!-- 0 -->
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_NUCLEAR_MISSILE" />
+			<Set HurryCostModifier="-1" />
+			<!-- 0 -->
+		</Update>
+		<Update>
+			<Where Class="UNIT_HELICOPTER_GUNSHIP" />
+			<Set CombatClass="UNITCOMBAT_MELEE" />
+		</Update>
+	</Units>
+	<Unit_ResourceQuantityRequirements>
+		<Delete UnitType="UNIT_HELICOPTER_GUNSHIP" />
+		<!--
+		<Update>
+			<Where UnitType="UNIT_HELICOPTER_GUNSHIP" />
+			<Set ResourceType="RESOURCE_ALUMINUM" />
+		</Update>
+		-->
+	</Unit_ResourceQuantityRequirements>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_LEVY</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LEVY</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKIRMISHER</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKIRMISHER</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LIGHT_INFANTRY</UnitType>
+			<UnitAIType>UNITAI_ATTACK</UnitAIType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LIGHT_INFANTRY</UnitType>
+			<UnitAIType>UNITAI_DEFENSE</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<UnitGameplay2DScripts>
+		<Row UnitType="UNIT_LEVY">
+			<SelectionSound>AS2D_SELECT_SCOUT</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_SCOUT</FirstSelectionSound>
+		</Row>
+		<Row UnitType="UNIT_SKIRMISHER">
+			<SelectionSound>AS2D_SELECT_SCOUT</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_SCOUT</FirstSelectionSound>
+		</Row>
+		<Row UnitType="UNIT_LIGHT_INFANTRY">
+			<SelectionSound>AS2D_SELECT_SCOUT</SelectionSound>
+			<FirstSelectionSound>AS2D_BIRTH_SCOUT</FirstSelectionSound>
+		</Row>
+	</UnitGameplay2DScripts>
+	<Unit_TechTypes>
+		<Row>
+			<UnitType>UNIT_PARATROOPER</UnitType>
+			<TechType>TECH_FLIGHT</TechType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_INFANTRY</UnitType>
+			<TechType>TECH_RIFLING</TechType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FRENCH_FOREIGNLEGION</UnitType>
+			<TechType>TECH_RIFLING</TechType>
+		</Row>
+	</Unit_TechTypes>
+
+
+
+	<!--
+			Dummy Coal-User
+	-->
+	<Units>
+		<Row>
+			<Class>UNITCLASS_ARTIST</Class>
+			<Type>UNIT_COAL_DUMMY</Type>
+			<Cost>-1</Cost>
+			<Moves>1</Moves>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ARTIST</DefaultUnitAI>
+			<Description>TXT_KEY_DUMMY_COAL</Description>
+			<Help>TXT_KEY_DUMMY_COAL_HELP</Help>
+			<ShowInPedia>false</ShowInPedia>
+			<AdvancedStartCost>-1</AdvancedStartCost>
+			<WorkRate>1</WorkRate>
+			<CombatLimit>0</CombatLimit>
+			<UnitArtInfo>ART_DEF_UNIT_ARTIST</UnitArtInfo>
+			<UnitArtInfoEraVariation>true</UnitArtInfoEraVariation>
+			<UnitFlagIconOffset>88</UnitFlagIconOffset>
+			<PortraitIndex>2</PortraitIndex>
+			<IconAtlas>RESOURCE_ATLAS</IconAtlas>
+			<MoveRate>GREAT_PERSON</MoveRate>
+		</Row>
+	</Units>
+	<Unit_AITypes>
+		<Row>
+			<UnitType>UNIT_COAL_DUMMY</UnitType>
+			<UnitAIType>UNITAI_ARTIST</UnitAIType>
+		</Row>
+	</Unit_AITypes>
+	<Unit_Flavors>
+		<Row>
+			<UnitType>UNIT_COAL_DUMMY</UnitType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>1</Flavor>
+		</Row>
+	</Unit_Flavors>
+	<Unit_ResourceQuantityRequirements>
+		<Row>
+			<UnitType>UNIT_COAL_DUMMY</UnitType>
+			<ResourceType>RESOURCE_COAL</ResourceType>
+		</Row>
+	</Unit_ResourceQuantityRequirements>
+</GameData>

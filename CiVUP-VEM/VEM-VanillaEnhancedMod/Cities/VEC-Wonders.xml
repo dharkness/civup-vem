@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Buildings>
+		<Update>
+			<Where Type="BUILDING_ANGKOR_WAT" />
+			<Set MinorFriendshipFlatChange="40"
+				 GlobalPlotCultureCostModifier="0"
+				 GlobalPlotBuyCostModifier="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_BRANDENBURG_GATE" />
+			<Set Culture="2"
+				 FreeBuildingThisCity="BUILDINGCLASS_MILITARY_ACADEMY"
+				 GlobalExperience="15"
+				 />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_CHICHEN_ITZA" />
+			<Set GoldenAgeModifier="50" Happiness="0" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_CRISTO_REDENTOR" />
+			<Set PolicyCostModifier="0"
+				 Culture="2"
+				 />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_FORBIDDEN_PALACE" />
+			<Set UnhappinessModifier="-10"
+				 UnmoddedHappiness="5"
+				 />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_GREAT_LIBRARY" />
+			<Set FreeTechs="0" GreatPeopleRateChange="5" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_GREAT_WALL" />
+			<Set Culture="2"
+				 GreatGeneralRateChange="1"
+				 GreatPeopleRateChange="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_HAGIA_SOPHIA" />
+			<Set Cost="500" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_HANGING_GARDEN" />
+			<Set UnmoddedHappiness="3" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_KREMLIN" />
+			<Set GlobalInstantBorderRadius="2"
+				 GlobalPlotCultureCostModifier="-25"
+				 GlobalPlotBuyCostModifier="-25"
+				 Defense="0"
+				 GlobalDefenseMod="0"
+				 />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_LOUVRE" />
+			<Set FreeBuildingThisCity="BUILDINGCLASS_MUSEUM" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_MACHU_PICHU" />
+			<Set MountainImprovement="IMPROVEMENT_MACHU_PICCHU" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_NOTRE_DAME" />
+			<Set Culture="2" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_ORACLE" />
+			<Set Culture="10" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_PENTAGON" />
+			<Set Cost="1060"
+				 FreePromotionAllCombatUnits="PROMOTION_MARCH" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_PORCELAIN_TOWER" />
+			<Set MedianTechPercentChange="0"
+				 TradeDealModifier="25"
+				 />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_STATUE_ZEUS" />
+			<Set Culture="2"
+				 GreatGeneralRateChange="1"
+				 />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_STONEHENGE" />
+			<Set InstantBorderRadius="3"
+				 Culture="10"
+				 GreatPeopleRateChange="1"
+				 />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_SYDNEY_OPERA_HOUSE" />
+			<Set FreePolicies="2"
+				 Culture="2"
+				 />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_TAJ_MAHAL" />
+			<Set Happiness="0"
+				 GoldenAgePoints="4"
+				 />
+		</Update>
+	</Buildings>
+	<Building_FreeUnits>
+		<Delete BuildingType="BUILDING_PYRAMID" />
+		<Delete BuildingType="BUILDING_BRANDENBURG_GATE" />
+		<Row>
+			<BuildingType>BUILDING_PYRAMID</BuildingType>
+			<UnitType>UNIT_SETTLER</UnitType>
+			<NumUnits>1</NumUnits>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_COLOSSUS</BuildingType>
+			<UnitType>UNIT_MERCHANT</UnitType>
+			<NumUnits>1</NumUnits>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STATUE_ZEUS</BuildingType>
+			<UnitType>UNIT_GREAT_GENERAL</UnitType>
+			<NumUnits>1</NumUnits>
+		</Row>
+	</Building_FreeUnits>
+	<Building_YieldChanges>
+		<Update>
+			<Where BuildingType="BUILDING_GREAT_LIBRARY" />
+			<Set Yield="10" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_HANGING_GARDEN" />
+			<Set Yield="6" />
+		</Update>
+		<!--
+		<Update>
+			<Where BuildingType="BUILDING_COLOSSUS" />
+			<Set Yield="8" />
+		</Update>
+		-->
+		<Delete BuildingType="BUILDING_COLOSSUS" />
+		<Delete BuildingType="BUILDING_MACHU_PICHU" />
+	</Building_YieldChanges>
+	<Building_SpecialistYieldChanges>
+		<Row>
+			<BuildingType>BUILDING_CRISTO_REDENTOR</BuildingType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_CULTURE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CRISTO_REDENTOR</BuildingType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CRISTO_REDENTOR</BuildingType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>2</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_CRISTO_REDENTOR</BuildingType>
+			<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>2</Yield>
+		</Row>
+	</Building_SpecialistYieldChanges>
+	<Building_DomainFreeExperiences>
+		<Row>
+			<BuildingType>BUILDING_GREAT_LIGHTHOUSE</BuildingType>
+			<DomainType>DOMAIN_SEA</DomainType>
+			<Experience>15</Experience>
+		</Row>
+		<Delete BuildingType="BUILDING_BRANDENBURG_GATE" />
+	</Building_DomainFreeExperiences>
+	
+	
+
+	<Building_Flavors>
+		<!--
+		<Row>
+			<BuildingType>BUILDING_GREAT_WALL</BuildingType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		-->
+		<Row>
+			<BuildingType>BUILDING_GREAT_WALL</BuildingType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PYRAMID</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Delete BuildingType="BUILDING_STONEHENGE" />
+		<Row>
+			<BuildingType>BUILDING_STONEHENGE</BuildingType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_STONEHENGE</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Delete BuildingType="BUILDING_ANGKOR_WAT" />
+		<Row>
+			<BuildingType>BUILDING_ANGKOR_WAT</BuildingType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_ANGKOR_WAT</BuildingType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Delete BuildingType="BUILDING_FORBIDDEN_PALACE" />
+		<Row>
+			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>10</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_FORBIDDEN_PALACE</BuildingType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Delete BuildingType="BUILDING_NOTRE_DAME" />
+		<Row>
+			<BuildingType>BUILDING_NOTRE_DAME</BuildingType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_NOTRE_DAME</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_NOTRE_DAME</BuildingType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_NOTRE_DAME</BuildingType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Delete BuildingType="BUILDING_KREMLIN" />
+		<Row>
+			<BuildingType>BUILDING_KREMLIN</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>30</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_KREMLIN</BuildingType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_KREMLIN</BuildingType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>20</Flavor>
+		</Row>
+		<Delete BuildingType="BUILDING_EIFFEL_TOWER" />
+		<Row>
+			<BuildingType>BUILDING_EIFFEL_TOWER</BuildingType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EIFFEL_TOWER</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EIFFEL_TOWER</BuildingType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_EIFFEL_TOWER</BuildingType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>50</Flavor>
+		</Row>
+	</Building_Flavors>
+</GameData>

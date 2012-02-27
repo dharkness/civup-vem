@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 1/31/2011 12:12:44 PM -->
+<GameData>
+	<Language_en_US>
+		<!-- Improved Events -->
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_GROWTH_2">
+			<Text>The City of {1_CityName} now has {2_Pop} [ICON_CITIZEN] Citizens! The new Citizen will automatically work the land near the City for additional [ICON_FOOD] Food, [ICON_PRODUCTION] Production or [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_CITY_GROWTH_2">
+			<Text>{1_CityName} has grown!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_CITY_TILE">
+			<Text>The City of {1_CityName} has claimed a new tile for [ICON_CITIZEN] to work on!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_CITY_TILE">
+			<Text>{1_CityName} has claimed a new tile!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_SUMMARY_EMPIRE_TILE">
+			<Text>New tile claimed!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_NOTIFICATION_EMPIRE_TILE">
+			<Text>A new tile was claimed by your empire. It isn't workable by any cities, however.</Text>
+		</Row>
+		<Row Tag="CNOTIFICATION_CITY_GROWTH">
+			<Text>Improved Events - City Growth</Text>
+		</Row>
+		<Row Tag="CNOTIFICATION_CULTURE_GROWTH">
+			<Text>Improved Events - Culture Spread</Text>
+		</Row>
+
+		<!-- Notification Options -->
+		<Row Tag="NOTIFICATION_DENUNCIATION_EXPIRED">
+			<Text>[ICON_INFLUENCE] Denunciation Expired</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_FRIENDSHIP_EXPIRED">
+			<Text>[ICON_INFLUENCE] DoF Expired</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_MINOR_QUEST">
+			<Text>[ICON_CITY_STATE] City State Quest</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_MINOR">
+			<Text>[ICON_CITY_STATE] City State Generic</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_WAR">
+			<Text>[ICON_WAR] War Declared - Others</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_WAR_ACTIVE_PLAYER">
+			<Text>[ICON_WAR] War Declared - You</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_CAPITAL_LOST_ACTIVE_PLAYER">
+			<Text>[ICON_RAZING] Capital Lost - You</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_MET_MINOR">
+			<Text>[ICON_CITY_STATE] Met City State</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_STARVING">
+			<Text>[ICON_HAPPINESS_3] City Starving</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_ENEMY_IN_TERRITORY">
+			<Text>[ICON_WAR] Enemy in Territory</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_GOODY">
+			<Text>[ICON_FLOWER] Ruins Discovered</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_PROJECT_COMPLETED">
+			<Text>[ICON_PRODUCTION] Project Completed</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_GOLDEN_AGE_ENDED_ACTIVE_PLAYER">
+			<Text>[ICON_GOLDEN_AGE] Golden Age Ended</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_DEAL_EXPIRED_TRADE_AGREEMENT">
+			<Text>[ICON_GOLD] Deal Expired - Trade Agreement</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_DEAL_EXPIRED_RESEARCH_AGREEMENT">
+			<Text>[ICON_GOLD] Deal Expired - Research Agreement</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_DEAL_EXPIRED_DEFENSIVE_PACT">
+			<Text>[ICON_GOLD] Deal Expired - Defensive Pact</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_BARBARIAN">
+			<Text>[ICON_PIRATE] Barbarian Encampment</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_DEAL_EXPIRED_OPEN_BORDERS">
+			<Text>[ICON_GOLD] Deal Expired - Open Borders</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_VICTORY">
+			<Text>[ICON_TEAM_1] Game Victory</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_GREAT_PERSON_ACTIVE_PLAYER">
+			<Text>[ICON_GOLDEN_AGE] Great Person Born</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_TECH_AWARD">
+			<Text>[ICON_RESEARCH] Tech Discovered</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_DIPLOMACY_DECLARATION">
+			<Text>[ICON_INFLUENCE] Diplomacy Declaration</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_UNIT_DIED">
+			<Text>[ICON_WAR] Unit Died</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_PLAYER_DEAL">
+			<Text>[ICON_GOLD] Player Deal</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_PLAYER_DEAL_RECEIVED">
+			<Text>[ICON_GOLD] Player Deal - Received</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_PLAYER_DEAL_RESOLVED">
+			<Text>[ICON_GOLD] Player Deal - Resolved</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_WONDER_BEATEN">
+			<Text>[ICON_PRODUCTION] Wonder Completed - Beaten</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_CITY_RANGE_ATTACK">
+			<Text>[ICON_RANGE_STRENGTH] City Can Attack</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_WONDER_COMPLETED_ACTIVE_PLAYER">
+			<Text>[ICON_PRODUCTION] Wonder Completed - You</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_CITY_GROWTH">
+			<Text>[ICON_CITIZEN] City Growth (to 5 Pop)</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_DEAL_EXPIRED_RESOURCE">
+			<Text>[ICON_GOLD] Deal Expired - Resource</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_CITY_LOST">
+			<Text>[ICON_RAZING] City Lost</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_CAPITAL_LOST">
+			<Text>[ICON_RAZING] Capital Lost - Others</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_CAPITAL_RECOVERED">
+			<Text>[ICON_CAPITAL] Capital Retaken</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_DISCOVERED_STRATEGIC_RESOURCE">
+			<Text>[ICON_RES_IRON] Strategic Resource Found</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_DISCOVERED_LUXURY_RESOURCE">
+			<Text>[ICON_RES_GEMS] Luxury Resource Found</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_DEMAND_RESOURCE">
+			<Text>[ICON_RES_GEMS] WLKD Resource Demand</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_PLAYER_KILLED">
+			<Text>[ICON_RAZING] Player Eliminated</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_PEACE">
+			<Text>[ICON_PEACE] Peace Treaty- Others</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_PEACE_ACTIVE_PLAYER">
+			<Text>[ICON_PEACE] Peace Treaty - You</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_REBELS">
+			<Text>[ICON_RESISTANCE] Rebellion</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_DEAL_EXPIRED_GPT">
+			<Text>[ICON_GOLD] Deal Expired - GPT</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_WONDER_COMPLETED">
+			<Text>[ICON_PRODUCTION] Wonder Completed - Other</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_GOLDEN_AGE_BEGUN_ACTIVE_PLAYER">
+			<Text>[ICON_GOLDEN_AGE] Golden Age Begins</Text>
+		</Row>
+		<Row Tag="NOTIFICATION_EXPLORATION_RACE">
+			<Text>[ICON_FLOWER] Natural Wonder Discovered</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

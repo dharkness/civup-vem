@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_MEDIC" />
+			<Set AdjacentTileHealChange="2"
+				 SameTileHealChange="2"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_SUPPLY" />
+			<Set EnemyHealChange="2"
+				 NeutralHealChange="2"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_SURVIVALISM_1" />
+			<Set EnemyHealChange="2"
+				 NeutralHealChange="2"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_HEAL_IF_DESTROY_ENEMY" />
+			<Set HPHealedIfDestroyEnemy="20"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_PARTIAL_HEAL_IF_DESTROY_ENEMY" />
+			<Set HPHealedIfDestroyEnemy="4"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_FASTER_HEAL" />
+			<Set EnemyHealChange="2"
+				 NeutralHealChange="2"
+				 FriendlyHealChange="4"
+				 />
+		</Update>
+	</UnitPromotions>
+
+
+	<!-- 
+			Soldiers
+	-->
+
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_SIEGE" />
+			<Set CityAttack="30"
+				 PromotionPrereqOr1="PROMOTION_SHOCK_1"
+				 PromotionPrereqOr2="PROMOTION_DRILL_1" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_FORMATION_1" />
+			<Set PediaType="NULL" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_FORMATION_2" />
+			<Set PediaType="NULL" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_AMBUSH_1" />
+			<Set PortraitIndex="24"
+				 TechPrereq="NULL"
+				 PromotionPrereqOr1="PROMOTION_SHOCK_1"
+				 PromotionPrereqOr2="PROMOTION_DRILL_1"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_AMBUSH_2" />
+			<Set PortraitIndex="25"
+				 TechPrereq="NULL"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_MARCH" />
+			<Set HealOutsideFriendly="true"
+				 PromotionPrereqOr3="PROMOTION_AMBUSH_2"
+				 PromotionPrereqOr4="PROMOTION_COVER_2"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_BLITZ" />
+			<Set Blitz="false"
+				 ExtraAttacks="1"
+				 CanMoveAfterAttacking="true"
+				 PortraitIndex="9"
+				 PromotionPrereqOr1="PROMOTION_SHOCK_3"
+				 PromotionPrereqOr2="PROMOTION_DRILL_3"
+				 PromotionPrereqOr3="PROMOTION_AMBUSH_2"
+				 PromotionPrereqOr4="PROMOTION_COVER_2"
+				 PediaType="PEDIA_MELEE"
+				 />
+		</Update>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_AMBUSH_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AMBUSH_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AMBUSH_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AMBUSH_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+		<Update>
+			<Where PromotionType="PROMOTION_AMBUSH_2" />
+			<Set Modifier="25" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_AIR_AMBUSH_2" />
+			<Set Modifier="25" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_HELI_AMBUSH_2" />
+			<Set Modifier="25" />
+		</Update>
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Delete PromotionType="PROMOTION_FORMATION_1" />
+		<Delete PromotionType="PROMOTION_FORMATION_2" />
+		<Delete PromotionType="PROMOTION_HELI_AMBUSH_1" />
+		<Delete PromotionType="PROMOTION_HELI_AMBUSH_2" />
+		<Row>
+			<PromotionType>PROMOTION_AMBUSH_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AMBUSH_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+
+
+	<!-- 
+			Mobile
+	-->
+
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_CHARGE" />
+			<Set AttackWoundedMod="20"
+				 Amphib="true"
+				 River="true"
+				 MovesChange="1"
+				 PromotionPrereqOr1="PROMOTION_SHOCK_3"
+				 PromotionPrereqOr2="PROMOTION_DRILL_3"
+				 PromotionPrereqOr3="PROMOTION_COVER_2"
+				 OrderPriority="4"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_AMPHIBIOUS" />
+			<Set PediaType="NULL"
+				 CannotBeChosen="true"
+				 />
+		</Update>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Delete PromotionType="PROMOTION_MOBILITY" />
+
+	</UnitPromotions_UnitCombats>
+	<Unit_FreePromotions>
+		<Delete UnitType="UNIT_CAVALRY" PromotionType="PROMOTION_MOUNTED_PENALTY" />
+		<Delete UnitType="UNIT_RUSSIAN_COSSACK" PromotionType="PROMOTION_MOUNTED_PENALTY" />
+	</Unit_FreePromotions>
+
+
+
+	<!-- 
+			Ranged
+	-->
+
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_VOLLEY" />
+			<Set AttackFortifiedMod="35"/>
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_CITY_ASSAULT" />
+			<Set PediaEntry="TXT_KEY_PROMOTION_CITY_ASSUALT"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_CITY_SIEGE" />
+			<Set CityAttack="10"
+				 LostWithUpgrade="true"
+				 Description="TXT_KEY_PROMOTION_CITY_SIEGE_HELP"
+				 PediaEntry="TXT_KEY_PROMOTION_CITY_SIEGE"
+				 />
+		</Update>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Delete PromotionType="PROMOTION_SIEGE" UnitCombatType="UNITCOMBAT_ARCHER" />
+		<Delete PromotionType="PROMOTION_SIEGE" UnitCombatType="UNITCOMBAT_MOUNTED_ARCHER" />
+		<Delete PromotionType="PROMOTION_MARCH" UnitCombatType="UNITCOMBAT_ARCHER" />
+		<Delete PromotionType="PROMOTION_MARCH" UnitCombatType="UNITCOMBAT_MOUNTED_ARCHER" />
+		<Delete PromotionType="PROMOTION_MARCH" UnitCombatType="UNITCOMBAT_SIEGE" />
+		<Row>
+			<PromotionType>PROMOTION_MARCH_RANGED</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARCH_RANGED</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARCH_RANGED</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<UnitPromotions_Terrains>
+		<!--
+		Does not appear to work.
+		<Row>
+			<PromotionType>PROMOTION_NAVAL_PENALTY</PromotionType>
+			<TerrainType>TERRAIN_COAST</TerrainType>
+			<Attack>-50</Attack>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NAVAL_PENALTY</PromotionType>
+			<TerrainType>TERRAIN_OCEAN</TerrainType>
+			<Attack>-50</Attack>
+		</Row>
+		-->
+	</UnitPromotions_Terrains>
+	<UnitPromotions_Domains>
+		<Row>
+			<PromotionType>PROMOTION_CITY_ASSAULT</PromotionType>
+			<DomainType>DOMAIN_LAND</DomainType>
+			<Modifier>-50</Modifier>
+		</Row>
+	</UnitPromotions_Domains>
+	<UnitPromotions_UnitCombatMods>
+		<Delete PromotionType="PROMOTION_NAVAL_PENALTY" />
+	</UnitPromotions_UnitCombatMods>
+	<Unit_FreePromotions>
+		<Update>
+			<Where UnitType="UNIT_CHINESE_CHUKONU" PromotionType="PROMOTION_SECOND_ATTACK" />
+			<Set PromotionType="PROMOTION_AIR_LOGISTICS" />
+		</Update>
+		<Row>
+			<UnitType>UNIT_GUIDED_MISSILE</UnitType>
+			<PromotionType>PROMOTION_NAVAL_DEMOLISH</PromotionType>
+		</Row>
+		<!--
+		<Row>
+			<UnitType>UNIT_KOREAN_HWACHA</UnitType>
+			<PromotionType>PROMOTION_CITY_ASSAULT</PromotionType>
+		</Row>
+		-->
+	</Unit_FreePromotions>
+
+
+
+	<!-- 
+			Ships
+	-->
+
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_CAN_MOVE_IMPASSABLE" />
+			<Set IgnoreTerrainCost="true" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_OCEAN_IMPASSABLE" />
+			<Set RoughTerrainEndsTurn="true" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_OCEAN_IMPASSABLE_UNTIL_ASTRONOMY" />
+			<Set RoughTerrainEndsTurn="true" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_LOGISTICS" />
+			<Set PromotionPrereqOr1="PROMOTION_TARGETING_3"
+				 PromotionPrereqOr2="PROMOTION_BOMBARDMENT_3"
+				 PortraitIndex="9"
+				 Description="TXT_KEY_PROMOTION_BLITZ"
+				 PediaEntry="TXT_KEY_PROMOTION_BLITZ"
+				 Help="TXT_KEY_PROMOTION_BLITZ_HELP"
+				 PediaType="PEDIA_NAVAL"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_TARGETING_1" />
+			<Set OrderPriority="2"
+				 VisibilityChange="1"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_TARGETING_2" />
+			<Set OrderPriority="2"
+				 MovesChange="1"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_TARGETING_3" />
+			<Set OrderPriority="2"
+				 VisibilityChange="1"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_AIR_TARGETING_1" />
+			<Set OrderPriority="2"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_AIR_TARGETING_2" />
+			<Set OrderPriority="2"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_AIR_TARGETING_3" />
+			<Set OrderPriority="2"
+				 />
+		</Update>
+		<Row>
+			<Type>PROMOTION_NAVAL_SIEGE</Type>
+			<Description>TXT_KEY_PROMOTION_SIEGE</Description>
+			<Help>TXT_KEY_PROMOTION_SIEGE_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROMOTION_TARGETING_1</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_BOMBARDMENT_1</PromotionPrereqOr2>
+			<OrderPriority>1</OrderPriority>
+			<CityAttack>35</CityAttack>
+			<PortraitIndex>40</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_NAVAL</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_SIEGE</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_NAVAL_RECON_1</Type>
+			<Description>TXT_KEY_PROMOTION_NAVAL_RECON_1</Description>
+			<Help>TXT_KEY_PROMOTION_NAVAL_RECON_1_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<OrderPriority>0</OrderPriority>
+			<VisibilityChange>1</VisibilityChange>
+			<NeutralHealChange>3</NeutralHealChange>
+			<HealOutsideFriendly>true</HealOutsideFriendly>
+			<PortraitIndex>37</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_NAVAL</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_NAVAL_RECON_1</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_NAVAL_RECON_2</Type>
+			<Description>TXT_KEY_PROMOTION_NAVAL_RECON_2</Description>
+			<Help>TXT_KEY_PROMOTION_NAVAL_RECON_2_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROMOTION_NAVAL_RECON_1</PromotionPrereqOr1>
+			<OrderPriority>0</OrderPriority>
+			<MovesChange>1</MovesChange>
+			<EnemyHealChange>2</EnemyHealChange>
+			<CanMoveImpassable>true</CanMoveImpassable>
+			<PortraitIndex>38</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_NAVAL</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_NAVAL_RECON_2</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_Domains>
+		<Update>
+			<Where PromotionType="PROMOTION_TARGETING_1" />
+			<Set Modifier="10" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_TARGETING_2" />
+			<Set Modifier="10" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_TARGETING_3" />
+			<Set Modifier="15" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_AIR_TARGETING_1" />
+			<Set Modifier="10" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_AIR_TARGETING_2" />
+			<Set Modifier="10" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_AIR_TARGETING_3" />
+			<Set Modifier="15" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_BOMBARDMENT_1" />
+			<Set Modifier="10" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_BOMBARDMENT_2" />
+			<Set Modifier="10" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_BOMBARDMENT_3" />
+			<Set Modifier="15" />
+		</Update>
+	</UnitPromotions_Domains>
+	<UnitPromotions_UnitCombats>
+		<Delete PromotionType="PROMOTION_LOGISTICS" UnitCombatType="UNITCOMBAT_ARCHER" />
+		<Delete PromotionType="PROMOTION_LOGISTICS" UnitCombatType="UNITCOMBAT_MOUNTED_ARCHER" />
+		<Delete PromotionType="PROMOTION_LOGISTICS" UnitCombatType="UNITCOMBAT_SIEGE" />
+		<Delete PromotionType="PROMOTION_SUPPLY" UnitCombatType="UNITCOMBAT_NAVAL" />
+		<!--
+		<Row>
+			<PromotionType>PROMOTION_HUNTER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HUNTER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		-->
+		<Row>
+			<PromotionType>PROMOTION_NAVAL_SIEGE</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NAVAL_RECON_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NAVAL_RECON_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NAVAL_RECON_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_NAVAL_RECON_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SUBMARINE</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Unit_FreePromotions>
+		<Delete UnitType="UNIT_CARAVEL" PromotionType="PROMOTION_EXTRA_SIGHT_II" />
+		<Delete UnitType="UNIT_IRONCLAD" PromotionType="PROMOTION_OCEAN_IMPASSABLE" />
+		<Row>
+			<UnitType>UNIT_CARAVEL</UnitType>
+			<PromotionType>PROMOTION_OCEAN_IMPASSABLE_UNTIL_ASTRONOMY</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<PromotionType>PROMOTION_ONLY_DEFENSIVE</PromotionType>
+		</Row>
+	</Unit_FreePromotions>
+
+
+
+	<!-- 
+			Vanguard
+	-->
+	
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_MEDIC" />
+			<Set PromotionPrereqOr1="PROMOTION_SCOUTING_1"
+				 PromotionPrereqOr3="PROMOTION_TRENCHES_1"
+				 PromotionPrereqOr2="PROMOTION_GUERRILLA_1"
+				 PromotionPrereqOr4="NULL"
+				 PediaType="PEDIA_SCOUTING"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_SCOUTING_1" />
+			<Set IgnoreTerrainCost="true"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_SCOUTING_2" />
+			<Set EmbarkedNotCivilian="true"
+				 CanMoveImpassable="true"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_SCOUTING_3" />
+			<Set CannotBeChosen="true"
+				 PediaType="NONE"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_SURVIVALISM_1" />
+			<Set OrderPriority="0"
+				 PromotionPrereqOr3="PROMOTION_SCOUTING_1"
+				 PromotionPrereqOr2="PROMOTION_TRENCHES_1"
+				 PromotionPrereqOr1="PROMOTION_GUERRILLA_1"
+				 FreePillageMoves="true"
+				 EnemyHealChange="2"
+				 NeutralHealChange="2"
+				 PediaType="PEDIA_SCOUTING"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_SURVIVALISM_2" />
+			<Set CannotBeChosen="true"
+				 PediaType="NULL"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_SURVIVALISM_3" />
+			<Set CannotBeChosen="true"
+				 PediaType="NULL"
+				 />
+		</Update>
+		<!--
+		<Row>
+			<Type>PROMOTION_SUPPRESSION</Type>
+			<Description>TXT_KEY_PROMOTION_SUPPRESSION</Description>
+			<Help>TXT_KEY_PROMOTION_SUPPRESSION_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<PromotionPrereqOr1>PROMOTION_SHOCK_2</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_DRILL_2</PromotionPrereqOr2>
+			<PromotionPrereqOr3>PROMOTION_ACCURACY_2</PromotionPrereqOr3>
+			<PromotionPrereqOr4>PROMOTION_BARRAGE_2</PromotionPrereqOr4>
+			<OrderPriority>5</OrderPriority>
+			<PortraitIndex>43</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>PEDIA_MELEE</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_SUPPRESSION</PediaEntry>
+		</Row>
+		-->
+	</UnitPromotions>
+	<UnitPromotions_UnitCombatMods>
+		<!--
+		<Row>
+			<PromotionType>PROMOTION_SUPPRESSION</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+			<Modifier>35</Modifier>
+		</Row>
+		-->
+	</UnitPromotions_UnitCombatMods>
+	<UnitPromotions_UnitCombats>
+		<Row>
+			<PromotionType>PROMOTION_TRENCHES_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TRENCHES_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_TRENCHES_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUERRILLA_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUERRILLA_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_GUERRILLA_3</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_MARCH_VANGUARD</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Unit_FreePromotions>
+		<Update>
+			<Where UnitType="UNIT_SCOUT" PromotionType="PROMOTION_IGNORE_TERRAIN_COST" />
+			<Set PromotionType="PROMOTION_IGNORE_TERRAIN_COST_NOUPGRADE" />
+		</Update>
+	</Unit_FreePromotions>
+
+
+
+	<!-- 
+			Other
+	-->
+
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_INSTA_HEAL" />
+			<Set PediaType="NONE"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_EMBARKATION" />
+			<Set EmbarkedNotCivilian="true"
+				 Description="TXT_KEY_PROMOTION_DEFENSIVE_EMBARKATION"
+				 PediaEntry="TXT_KEY_PROMOTION_DEFENSIVE_EMBARKATION"
+				 Help="TXT_KEY_PROMOTION_DEFENSIVE_EMBARKATION_HELP"
+				 />
+		</Update>		
+		<Row>
+			<Type>PROMOTION_FREE_UPGRADES</Type>
+			<Description>TXT_KEY_PROMOTION_FREE_UPGRADES</Description>
+			<Help>TXT_KEY_PROMOTION_FREE_UPGRADES_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<UpgradeDiscount>100</UpgradeDiscount>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>PROMOTION_ATLAS</IconAtlas>
+			<PediaType>NULL</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_FREE_UPGRADES</PediaEntry>
+		</Row>
+		<Update>
+			<Where Type="PROMOTION_MORALE" />
+			<Set CombatPercent="20" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_CAN_MOVE_AFTER_ATTACKING" />
+			<Set FullMovesAfterAttack="true" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_AIR_LOGISTICS" />
+			<Set Description="TXT_KEY_PROMOTION_BLITZ"
+				 PediaEntry="TXT_KEY_PROMOTION_BLITZ"
+				 Help="TXT_KEY_PROMOTION_BLITZ_HELP"
+				 PortraitIndex="9"
+				 PromotionPrereqOr3="PROMOTION_ACCURACY_3"
+				 PromotionPrereqOr4="PROMOTION_BARRAGE_3"
+				 PediaType="PEDIA_RANGED"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_MOBILITY" />
+			<Set CannotBeChosen="true"
+				 PromotionPrereqOr1="NULL"
+				 PromotionPrereqOr2="NULL"
+				 PromotionPrereqOr3="NULL"
+				 PromotionPrereqOr4="NULL"
+				 PediaType="PEDIA_SHARED"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_SENTRY" />
+			<Set CannotBeChosen="true"
+				 PromotionPrereqOr1="NULL"
+				 PromotionPrereqOr2="NULL"
+				 PromotionPrereqOr3="NULL"
+				 PromotionPrereqOr4="NULL"
+				 PortraitIndex="59"
+				 PediaType="PEDIA_ATTRIBUTES"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_COVER_1" />
+			<Set RangedDefenseMod="25" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_COVER_VANGUARD_1" />
+			<Set PromotionPrereqOr1="PROMOTION_SCOUTING_1"
+				 PromotionPrereqOr3="PROMOTION_TRENCHES_1"
+				 PromotionPrereqOr2="PROMOTION_GUERRILLA_1"
+				 />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_COVER_2" />
+			<Set RangedDefenseMod="50" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_AMBUSH_1" />
+			<Set PromotionPrereqOr3="PROMOTION_ANTI_TANK" />
+		</Update>
+	</UnitPromotions>
+	<UnitPromotions_UnitCombats>
+		<Delete PromotionType="PROMOTION_INSTA_HEAL" />
+		<Row>
+			<PromotionType>PROMOTION_HILL_FIGHTER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HILL_FIGHTER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_HILL_FIGHTER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_DESERT_POWER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_POWER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_POWER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ARCTIC_POWER</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Delete PromotionType="PROMOTION_COVER_1" UnitCombatType="UNITCOMBAT_ARCHER" />
+		<Delete PromotionType="PROMOTION_COVER_1" UnitCombatType="UNITCOMBAT_MOUNTED_ARCHER" />
+		<Delete PromotionType="PROMOTION_COVER_1" UnitCombatType="UNITCOMBAT_SIEGE" />
+		<Delete PromotionType="PROMOTION_COVER_2" UnitCombatType="UNITCOMBAT_ARCHER" />
+		<Delete PromotionType="PROMOTION_COVER_2" UnitCombatType="UNITCOMBAT_MOUNTED_ARCHER" />
+		<Delete PromotionType="PROMOTION_COVER_2" UnitCombatType="UNITCOMBAT_SIEGE" />
+		<Row>
+			<PromotionType>PROMOTION_COVER_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_VANGUARD_1</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_COVER_VANGUARD_2</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AIR_LOGISTICS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AIR_LOGISTICS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_AIR_LOGISTICS</PromotionType>
+			<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
+		</Row>
+		<Delete PromotionType="PROMOTION_AIR_LOGISTICS" UnitCombatType="UNITCOMBAT_HELICOPTER" />
+		<Delete PromotionType="PROMOTION_WOODSMAN" />
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED_ARCHER</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_WOODSMAN</PromotionType>
+			<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+		</Row>
+	</UnitPromotions_UnitCombats>
+	<Unit_FreePromotions>
+		<Row>
+			<UnitType>UNIT_WORKBOAT</UnitType>
+			<PromotionType>PROMOTION_HOVERING_UNIT</PromotionType>
+		</Row>
+		<Update>
+			<Where UnitType="UNIT_GUIDED_MISSILE" PromotionType="PROMOTION_EVASION_II" />
+			<Set PromotionType="PROMOTION_EVASION_I" />
+		</Update>
+		<Row>
+			<UnitType>UNIT_ANTI_AIRCRAFT_GUN</UnitType>
+			<PromotionType>PROMOTION_DEFENSE_2</PromotionType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_ANTI_TANK_GUN</UnitType>
+			<PromotionType>PROMOTION_DEFENSE_2</PromotionType>
+		</Row>
+		<Update>
+			<Where UnitType="UNIT_HELICOPTER_GUNSHIP" PromotionType="PROMOTION_IGNORE_TERRAIN_COST" />
+			<Set PromotionType="PROMOTION_IGNORE_TERRAIN_COST_NOUPGRADE" />
+		</Update>
+	</Unit_FreePromotions>
+	
+
+
+
+	<!-- 
+			Attributes
+	-->
+
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_INVISIBLE_SUBMARINE" />
+			<Set RivalTerritory="true" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_PARADROP" />
+			<Set DropRange="10" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_CITY_ASSAULT" />
+			<Set CityAttack="50"
+				 AttackFortifiedMod="50" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_DEFENSE_PENALTY" />
+			<Set DefenseMod="-25" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_NAVAL_PENALTY" />
+			<Set CannotBeChosen="true" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_SUPPLY"/>
+			<Set PediaType="NULL"
+				 CannotBeChosen="true" />
+		</Update>
+		<Row>
+			<Type>PROMOTION_ANTI_CAVALRY</Type>
+			<Description>TXT_KEY_PROMOTION_ANTI_CAVALRY_HELP</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_ANTI_CAVALRY</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_ANTI_CAVALRY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<CannotBeChosen>true</CannotBeChosen>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+		<Update>
+			<Where Type="PROMOTION_ANTI_MOUNTED_I" />
+			<Set Description="TXT_KEY_PROMOTION_ANTI_MOUNTED_I_HELP" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_ANTI_MOUNTED_II" />
+			<Set Description="TXT_KEY_PROMOTION_ANTI_MOUNTED_II_HELP" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_ANTI_AIR" />
+			<Set Description="TXT_KEY_PROMOTION_ANTI_AIR_HELP" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_ANTI_HELICOPTER" />
+			<Set Description="TXT_KEY_PROMOTION_ANTI_HELICOPTER_HELP" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_ANTI_TANK" />
+			<Set Description="TXT_KEY_PROMOTION_ANTI_TANK_HELP" />
+		</Update>
+		<Update>
+			<Where Type="PROMOTION_ANTI_TANK" />
+			<Set PediaType="PEDIA_SHARED" />
+		</Update>
+		<Row>
+			<Type>PROMOTION_ANTI_MOUNTED_NOUPGRADE_I</Type>
+			<Description>TXT_KEY_PROMOTION_ANTI_MOUNTED_I_HELP</Description>
+			<Help>TXT_KEY_PROMOTION_ANTI_MOUNTED_I_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_ANTI_MOUNTED_I</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+		<Row>
+			<Type>PROMOTION_ANTI_MOUNTED_NOUPGRADE_II</Type>
+			<Description>TXT_KEY_PROMOTION_ANTI_MOUNTED_II_HELP</Description>
+			<Help>TXT_KEY_PROMOTION_ANTI_MOUNTED_II_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_ANTI_MOUNTED_II</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+		<Row>
+			<Type>PROMOTION_ATTACK_BONUS_NOUPGRADE</Type>
+			<Description>TXT_KEY_PROMOTION_ATTACK_BONUS_HELP</Description>
+			<Help>TXT_KEY_PROMOTION_ATTACK_BONUS</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<AttackMod>25</AttackMod>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PEDIA_PROMOTION_ATTACK_BONUS</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_NAVAL_DEMOLISH</Type>
+			<Description>TXT_KEY_PROMOTION_NAVAL_DEMOLISH</Description>
+			<Help>TXT_KEY_PROMOTION_NAVAL_DEMOLISH_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_NAVAL_DEMOLISH</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<CityAttack>50</CityAttack>
+			<AttackFortifiedMod>50</AttackFortifiedMod>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+		<Row>
+			<Type>PROMOTION_CAPITAL_SHIP_BONUS</Type>
+			<Description>TXT_KEY_PROMOTION_CAPITAL_SHIP_BONUS_HELP</Description>
+			<PediaEntry>TXT_KEY_PROMOTION_CAPITAL_SHIP_BONUS</PediaEntry>
+			<Help>TXT_KEY_PROMOTION_CAPITAL_SHIP_BONUS_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<CannotBeChosen>true</CannotBeChosen>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<CityAttack>50</CityAttack>
+			<AttackFortifiedMod>50</AttackFortifiedMod>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+		<Row>
+			<Type>PROMOTION_EXTRA_SIGHT_NOUPGRADE_I</Type>
+			<Description>TXT_KEY_PROMOTION_XTRA_SIGHT_I_HELP</Description>
+			<Help>TXT_KEY_PROMOTION_XTRA_SIGHT_I_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<VisibilityChange>1</VisibilityChange>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PEDIA_PROMOTION_XTRA_SIGHT_I</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_EXTRA_SIGHT_NOUPGRADE_II</Type>
+			<Description>TXT_KEY_PROMOTION_XTRA_SIGHT_II_HELP</Description>
+			<Help>TXT_KEY_PROMOTION_XTRA_SIGHT_II_HELP</Help>
+			<PediaEntry>TXT_KEY_PEDIA_PROMOTION_XTRA_SIGHT_II</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<VisibilityChange>2</VisibilityChange>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+		<Row>
+			<Type>PROMOTION_DEFENSE_1</Type>
+			<Description>TXT_KEY_PROMOTION_DEFENSE_1_HELP</Description>
+			<Help>TXT_KEY_PROMOTION_DEFENSE_1_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_DEFENSE_1</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<OrderPriority>2</OrderPriority>
+			<DefenseMod>25</DefenseMod>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+		<Row>
+			<Type>PROMOTION_DEFENSE_2</Type>
+			<Description>TXT_KEY_PROMOTION_DEFENSE_2_HELP</Description>
+			<Help>TXT_KEY_PROMOTION_DEFENSE_2_HELP</Help>
+			<PediaEntry>TXT_KEY_PROMOTION_DEFENSE_2</PediaEntry>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<OrderPriority>2</OrderPriority>
+			<DefenseMod>50</DefenseMod>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+		</Row>
+		<Row>
+			<Type>PROMOTION_IGNORE_TERRAIN_COST_NOUPGRADE</Type>
+			<Description>TXT_KEY_PROMOTION_IGNORE_TERRAIN_COST</Description>
+			<Help>TXT_KEY_PROMOTION_IGNORE_TERRAIN_COST</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<IgnoreTerrainCost>true</IgnoreTerrainCost>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PEDIA_PROMOTION_IGNORE_TERRAIN_COST</PediaEntry>
+		</Row>
+		<Row>
+			<Type>PROMOTION_COMRADERY</Type>
+			<Description>TXT_KEY_PROMOTION_COMRADERY</Description>
+			<Help>TXT_KEY_PROMOTION_COMRADERY_HELP</Help>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<LostWithUpgrade>true</LostWithUpgrade>
+			<CannotBeChosen>true</CannotBeChosen>
+			<AdjacentMod>20</AdjacentMod>
+			<PortraitIndex>58</PortraitIndex>
+			<IconAtlas>ABILITY_ATLAS</IconAtlas>
+			<PediaType>PEDIA_ATTRIBUTES</PediaType>
+			<PediaEntry>TXT_KEY_PROMOTION_COMRADERY</PediaEntry>
+		</Row>
+	</UnitPromotions>
+	<UnitPromotions_UnitClasses>
+		<Row>
+			<PromotionType>PROMOTION_ANTI_CAVALRY</PromotionType>
+			<UnitClassType>UNITCLASS_CAVALRY</UnitClassType>
+			<Modifier>50</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CAPITAL_SHIP_BONUS</PromotionType>
+			<UnitClassType>UNITCLASS_BATTLESHIP</UnitClassType>
+			<Modifier>50</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CAPITAL_SHIP_BONUS</PromotionType>
+			<UnitClassType>UNITCLASS_CARRIER</UnitClassType>
+			<Modifier>50</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_CAPITAL_SHIP_BONUS</PromotionType>
+			<UnitClassType>UNITCLASS_MISSILE_CRUISER</UnitClassType>
+			<Modifier>50</Modifier>
+		</Row>
+	</UnitPromotions_UnitClasses>
+	<UnitPromotions_UnitCombatMods>
+		<Row>
+			<PromotionType>PROMOTION_ANTI_MOUNTED_NOUPGRADE_I</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<Modifier>25</Modifier>
+		</Row>
+		<Row>
+			<PromotionType>PROMOTION_ANTI_MOUNTED_NOUPGRADE_II</PromotionType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
+			<Modifier>50</Modifier>
+		</Row>
+		<Update>
+			<Where PromotionType="PROMOTION_ANTI_MOUNTED_I" UnitCombatType="UNITCOMBAT_MOUNTED" />
+			<Set Modifier="25" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_ANTI_MOUNTED_II" UnitCombatType="UNITCOMBAT_MOUNTED" />
+			<Set Modifier="50" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_ANTI_AIR" UnitCombatType="UNITCOMBAT_FIGHTER" />
+			<Set Modifier="50" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_ANTI_AIR" UnitCombatType="UNITCOMBAT_BOMBER" />
+			<Set Modifier="50" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_ANTI_HELICOPTER" UnitCombatType="UNITCOMBAT_HELICOPTER" />
+			<Set Modifier="50" />
+		</Update>
+		<Update>
+			<Where PromotionType="PROMOTION_ANTI_TANK" UnitCombatType="UNITCOMBAT_ARMOR" />
+			<Set Modifier="50" />
+		</Update>
+	</UnitPromotions_UnitCombatMods>
+</GameData>

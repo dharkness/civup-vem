@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{7518bfbd-f4e7-4b3e-a8f3-c8740002eaf8}</ProjectGuid>
+    <Name>Balance - Terrain Improvements</Name>
+    <Guid>01127f62-3896-4897-b169-ecab445786cd</Guid>
+    <ModVersion>17</ModVersion>
+    <Stability>Stable</Stability>
+    <Teaser>+1[ICON_PRODUCTION] to Mines/Lumbermills, plus other balances.</Teaser>
+    <Description>+1[ICON_PRODUCTION] to Mines and Lumbermills with Engineering, and overall balances to terrain improvements.[NEWLINE]
+[NEWLINE]
+[COLOR_GREEN]Rationale:[/COLOR]  Motivated by a feeling terrain improvement strategies are rather limited: trading post spam on everything but riverside plains stifles decision-making. This mod balances options.[NEWLINE]
+[NEWLINE]
+[ICON_BULLET]Forts deal 1 damage to adjacent enemies.[NEWLINE]
+[ICON_BULLET]Great Person improvements buffed, and several can access resources they're built on.[NEWLINE]
+[ICON_BULLET]+1[ICON_FOOD] on freshwater farms with Fertilizer.[NEWLINE]
+[ICON_BULLET]+1[ICON_PRODUCTION] +1[ICON_GOLD] on Natural Wonders.[NEWLINE]
+[ICON_BULLET]Other small adjustments detailed in the readme.[NEWLINE]
+[NEWLINE]
+Documents\My Games\Sid Meier's Civilization 5\MODS\Balance - Terrain Improvements</Description>
+    <Authors>Thalassicus</Authors>
+    <SpecialThanks>See [COLOR_YELLOW]readme[/COLOR] for details, feedback, and credits.</SpecialThanks>
+    <Categories>$Categories$</Categories>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>Mod Template</AssemblyName>
+    <RootNamespace>Mod Template</RootNamespace>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>BTI - Natural Wonders.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BTI - Language_en_US.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BTI - Language_DE_DE.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BTI - Language_ES_ES.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BTI - Language_FR_FR.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BTI - Language_IT_IT.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BTI - Language_JA_JP.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BTI - Language_PL_PL.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Text/BTI - Language_RU_RU.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>BTI - GP Improvements.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>BTI - General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>BTI - Natural Wonders.xml</FileName>
+      </Action>
+    </ModActions>
+    <Homepage>http://civmodding.wordpress.com</Homepage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="BTI - GP Improvements.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="BTI - General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="BTI - Natural Wonders.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="BTI - Readme.html">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\BTI - Language_en_US.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Text\Please read if multilingual!.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Text" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

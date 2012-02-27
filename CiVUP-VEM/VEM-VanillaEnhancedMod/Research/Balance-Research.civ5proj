@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{eaf20caa-798c-4d5c-a79a-09cdab096a99}</ProjectGuid>
+    <Name>Balance - Research</Name>
+    <Guid>d519c1fd-0396-4e82-928e-66c595b7c698</Guid>
+    <ModVersion>6</ModVersion>
+    <Stability>Stable</Stability>
+    <Teaser>Slows late-game [ICON_RESEARCH] tech progress.</Teaser>
+    <Description>Slows late-game [ICON_RESEARCH] tech progress.
+[NEWLINE]
+[NEWLINE]
+[COLOR_GREEN]Rationale:[/COLOR] This mod is for those who would prefer slower teching, especially in the modern era, allowing you to build and use units before they obsolete. Costs are adjusted as follows:[NEWLINE][NEWLINE]
++  5%[ICON_RESEARCH] - Classical[NEWLINE]
++10%[ICON_RESEARCH] - Medieval[NEWLINE]
++20%[ICON_RESEARCH] - Renaissance[NEWLINE]
++40%[ICON_RESEARCH] - Industrial[NEWLINE]
++80%[ICON_RESEARCH] - Modern[NEWLINE]
++100% wait time - Research Pacts[NEWLINE]
+[NEWLINE]
+For details and feedback, please see the included [COLOR_YELLOW]readme[/COLOR] file:[NEWLINE]
+Documents\My Games\Sid Meier's Civilization 5\MODS\Balance - Research</Description>
+    <Authors>Thalassicus</Authors>
+    <SpecialThanks>See [COLOR_YELLOW]readme[/COLOR] for details, feedback, and credits.</SpecialThanks>
+    <Categories>$Categories$</Categories>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>Mod Template</AssemblyName>
+    <RootNamespace>Mod Template</RootNamespace>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>BR - General.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>BR - General.xml</FileName>
+      </Action>
+    </ModActions>
+    <Homepage>http://civmodding.wordpress.com/</Homepage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="BR - General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="BR - General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="BR - Readme.html">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

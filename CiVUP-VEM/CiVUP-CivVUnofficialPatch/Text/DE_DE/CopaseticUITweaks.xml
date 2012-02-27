@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/30/2010 3:22:22 PM -->
+<GameData>
+	<Language_DE_DE>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_BY">
+			<Text>Beschützt durch:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_DESC">
+			<Text>Andere Zivilisationen könnten es bevorzugen, einen Stadtstaat zu beschützen. Wenn wir diesem Stadtstaat den Krieg erklären, wird sein Beschützer im Gegenzug uns den Krieg erklären.</Text>
+		</Row>
+		
+	</Language_DE_DE>
+</GameData>

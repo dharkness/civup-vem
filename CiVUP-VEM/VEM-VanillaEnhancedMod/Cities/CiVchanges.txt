@@ -1,0 +1,498 @@
+Overall building update philosophy:  Buildings at the high end are simply too expensive.  They take so long to build that you will never recover the cost investment in many cases and they never produce a benefit.  End game buildings need to be powerful enough to justify their cost and the small amount of time they will be present.  Also, many production buildings were so bad that you would never realistically recover the cost of making them because owning them was a net loss each turn.  There are also some buildings that felt very weak because of their comparison to others, in particular the Public School is strictly worse than the University and yet costs more and the Museum is identical to the Opera house and yet costs more.  Also many building paths contained a lot of buildings that were very boring, especially the culture buildings.
+
+***Production 
+
+Building updates:  I changed the Production buildings so that if they were built roughly when they became available that they would produce a decent net benefit per turn and pay themselves off over 40 turns or so.  Almost all production buildings needed a cost reduction and most needed a *massive* boost to effectiveness to achieve this.  Specifics of changes:
+
+Workshop
+Cost:  100 
+GPT:  1 (was 2)
+Benefit:  30% more production for buildings (was 20%)
+
+Longhouse
+Cost:  100 (was 80)
+GPT:  1 (was 2)
+Benefit:  30% more production for buildings and +1 Production on Forest/Jungle (did not have 30% for buildings)
+
+Forge
+Cost:  100 (was 150)
+GPT:  1 (was 2)
+Benefit:  35% more production for land units (was 15%)
+
+Arsenal
+Cost:  170 (was 350)
+GPT:  2 (was 3)
+Benefit:  50% more production for land units (was 15%)
+
+Factory
+Cost:  250 (was 300)
+GPT:  3
+Benefit:  50% more production
+
+Windmill
+Cost:  150 (was 180)
+GPT:  2
+Benefit:  30% more production (was 15%)
+
+Nuclear Plant/Solar Plant/Hydro Plant
+Cost:  450 (was 600)
+GPT:  5 (was 3)
+Benefit:  100% more production (was 25%)
+
+Spaceship Factory
+Cost:  250 (was 450)
+GPT:  3
+Benefit:  50% more production for spaceships
+
+Seaport
+Cost:  100 (was 150)
+GPT:  2
+Benefit:  2 Production on worked Fish/Oil/Whales tiles
+
+***Happiness 
+
+Buildings updates:  I changed the costs a little to flow better with the level of production available when the buildings unlock.  Overall lowering of all production costs, gold costs remained the same.  I lowered the costs of a courthouse substantially since right now puppetting is so great anyway.
+
+Colosseum
+Cost: 120 (was 150)
+GPT: 4
+Benefit: +3 Happiness
+
+Circus
+Cost: 120 (was 150)
+GPT: 4
+Benefit: +3 Happiness
+
+Theatre
+Cost: 240 (was 300)
+GPT: 5
+Benefit: +4 Happiness
+
+Stadium
+Cost: 360 (was 450)
+GPT: 6
+Benefit: +5 Happiness
+
+Courthouse
+Cost: 100 (was 200)
+GPT: 3 (was 5)
+Benefit: removes "occupied city" penalty.
+
+***Culture 
+
+Buildings updates:  Culture buildings were very weak unless actually going for a culture victory.  I wanted to differentiate the Opeara House and Museum, improve the buildings in general so they would be worth building if not going for Cultural Victory and offer some non cultural benefits to make them more interesting.  I also lowered the costs a little across the board.
+
+Monument:  Unchanged
+
+Temple
+Cost: 110 (was 120)
+GPT: 2
+Benefit: +4 Culture (was +3 Culture)
+
+Mud Pyramid Mosque
+Cost: 110 (was 120)
+GPT: 0
+Benefit: +6 Culture (was +5 Culture)
+
+Burial Tomb
+Cost: 110 (was 120)
+GPT: 0
+Benefit: +3 Culture, +2 Happiness (was +2 Culture, +2 Happiness)
+
+Opera House
+Cost: 220 
+GPT: 3
+Benefit: +3 Culture, +1 Happiness (was +5 Culture, +0 Happiness)
+
+Museum
+Cost: 330 (was 350)
+GPT: 3
+Benefit: +6 Culture (was +5 Culture)
+
+Broadcast Tower
+Cost: 450 (was 600)
+GPT: 5 (was 3)
+Benefit: +100% Culture
+
+***Food 
+
+Building updates:  Granary/Smokehouse was a little expensive for how early it is in the tree, so it was lowered.  Water Mill was utterly rubbish before, now it is a very cheap building with a small effect.  The Medical lab was just too costly for how little time it would be active, cost and maintenance lowered.
+
+Smokehouse
+Cost: 70 (was 100)
+GPT: 1
+Benefit: +2 Food, +1 Food on Fish, Deer, Sheep, Cows
+
+Water Mill
+Cost: 40 (was 120)
+GPT: 1 (was 2)
+Benefit: +2 Food
+
+Medical Lab
+Cost: 250 (was 600)
+GPT: 2 (was 3)
+Benefit: Keep 75% of Food after growth.
+
+Aqueduct, Hospital:  unchanged.
+
+***Money 
+
+Building updates:  The buildings that just made more money were really expensive and had very weak returns.  I lowered their costs some and increased the benefits on the Bank and Stock Exchange to make them actually worth building.
+
+Market
+Cost: 100 (was 120)
+Benefit:  25% more Gold
+
+Bazaar
+Cost: 100 (was 120)
+Benefit:  35% more Gold, extra copies of Luxuries
+
+Bank
+Cost: 170 (was 220)
+Benefit:  33% more Gold (was 25%)
+
+Satraps Court
+Cost: 170 (was 220)
+Benefit:  33% more Gold, +2 Happiness (was 25% more Gold, +2 Happiness)
+
+Stock Exchange
+Cost: 300 (was 650)
+Benefit:  50% more Gold (was 33%)
+
+***Defensive 
+
+Building updates:  I set the maintenance costs of all Defensive buildings to zero.  They just weren't worth building/maintaining otherwise.  This fits in with the latest announcement of patch changes from Firaxis anyhow.
+
+***Unit XP 
+
+Building updates:  The fact that the later buildings were extremely expensive to build and maintain and they didn't give any more benefit than Barracks was very weak.  They just weren't worth building barring some kind of huge late game push with incredible cash behind it.  I upped the production and maintenance costs and increased their benefit drastically to make them powerful and to allow people to being experienced units into the game in the late going if they want to pay for it.
+
+Barracks:  unchanged.
+
+Armory
+Cost: 160 (was 130)
+GPT: 2 (was 3)
+Benefit: +30 XP for Land Units (was +15 XP for Land Units)
+
+Military Academy
+Cost: 320 (was 350)
+GPT: 4 (was 3)
+Benefit: +60 XP for Land Units (was +15 XP for Land Units)
+
+***Science
+
+Building updates:  The university was simply superior to the Public School, having both more specialists, the Jungle bonus and also being lower cost.  I lowered the University benefit slightly and buffed the Public School to match.  I lowered the cost of the Research Lab so building it would be more worthwhile.
+
+Library, Paper Maker:  unchanged
+
+University
+Cost:  200
+GPT: 3
+Benefit: +40% more science, +2 Science on Jungle (was +50% more science, +2 Science on Jungle)
+
+Public School
+Cost:  300 (was 350)
+GPT: 3
+Benefit: +60% more science (was +50% more science)
+
+Wat
+Cost:  200
+GPT: 2
+Benefit: +40% more science, +2 Science on Jungle, +3 Culture (was +50% more science, +2 Science on Jungle, +3 Culture)
+
+Research Lab
+Cost:  450 (was 600)
+GPT: 5 (was 3)
+Benefit: +100% more science, +1 Science on Water
+
+Code for the Buildings file:
+
+		<Buildings>
+
+		<!-- Science buildings -->
+
+		<Update>
+			<Where Type="BUILDING_LIBRARY" />
+			<Set SpecialistCount="1" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_UNIVERSITY" />
+			<Set SpecialistCount="2" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_PUBLIC_SCHOOL" />
+			<Set Cost="300" GoldMaintenance="3" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_LABORATORY" />
+			<Set Cost="450" GoldMaintenance="5" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_WAT" />
+			<Set SpecialistCount="2" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_PAPER_MAKER" />
+			<Set SpecialistCount="1" />
+		</Update>
+
+		<!-- Happiness buildings -->
+
+		<Update>
+			<Where Type="BUILDING_COLOSSEUM" />
+			<Set Happiness="3" Cost="120" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_THEATRE" />
+			<Set Cost="240" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_STADIUM" />
+			<Set Happiness="5" Cost="360" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_COURTHOUSE" />
+			<Set GoldMaintenance="3" Cost="100" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_CIRCUS" />
+			<Set Cost="120" />
+		</Update>
+
+		<!-- Production buildings -->
+
+		<Update>
+			<Where Type="BUILDING_WINDMILL" />
+			<Set Cost="150" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_SPACESHIP_FACTORY" />
+			<Set Cost="250" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_FORGE" />
+			<Set Cost="100" GoldMaintenance="1" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_ARSENAL" />
+			<Set Cost="170" GoldMaintenance="2" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_WORKSHOP" />
+			<Set Cost="100" GoldMaintenance="1" BuildingProductionModifier="30" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_LONGHOUSE" />
+			<Set Cost="100" GoldMaintenance="1" BuildingProductionModifier="30" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_FACTORY" />
+			<Set Cost="250" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_NUCLEAR_PLANT" />
+			<Set Cost="450" GoldMaintenance="5" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_SEAPORT" />
+			<Set Cost="100" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_HYDRO_PLANT" />
+			<Set Cost="450" GoldMaintenance="5" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_SOLAR_PLANT" />
+			<Set Cost="450" GoldMaintenance="5" />
+		</Update>
+
+		<!-- Defensive buildings -->
+
+		<Update>
+			<Where Type="BUILDING_WALLS" />
+			<Set GoldMaintenance="0" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_CASTLE" />
+			<Set GoldMaintenance="0" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_MUGHAL_FORT" />
+			<Set GoldMaintenance="0" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_MILITARY_BASE" />
+			<Set GoldMaintenance="0" />
+		</Update>
+
+		<!-- Unit XP buildings -->
+
+		<Update>
+			<Where Type="BUILDING_ARMORY" />
+			<Set Cost="160" GoldMaintenance="2" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_MILITARY_ACADEMY" />
+			<Set Cost="320" GoldMaintenance="4" />
+		</Update>
+
+		<!-- Culture buildings -->
+
+		<Update>
+			<Where Type="BUILDING_TEMPLE" />
+			<Set Culture="4" Cost="110" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_BURIAL_TOMB" />
+			<Set Culture="3" Cost="110" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_MUD_PYRAMID_MOSQUE" />
+			<Set Culture="6" Cost="110" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_OPERA_HOUSE" />
+			<Set Cost="220" Culture="3" Happiness="1" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_MUSEUM" />
+			<Set Cost="330" Culture="6" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_BROADCAST_TOWER" />
+			<Set Cost="450" GoldMaintenance="4" />
+		</Update>
+
+
+		<!-- Food buildings -->
+
+		<Update>
+			<Where Type="BUILDING_GRANARY" />
+			<Set Cost="70" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_WATERMILL" />
+			<Set GoldMaintenance="1" Cost="40" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_FLOATING_GARDENS" />
+			<Set GoldMaintenance="0" Cost="40" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_MEDICAL_LAB" />
+			<Set Cost="250" GoldMaintenance="2" />
+		</Update>
+
+		<!-- Money buildings -->
+
+		<Update>
+			<Where Type="BUILDING_MARKET" />
+			<Set Cost="100" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_BAZAAR" />
+			<Set Cost="100" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_BANK" />
+			<Set Cost="170" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_SATRAPS_COURT" />
+			<Set Cost="170" />
+		</Update>
+		<Update>
+			<Where Type="BUILDING_STOCK_EXCHANGE" />
+			<Set Cost="300" />
+		</Update>
+
+	</Buildings>
+	<Building_DomainProductionModifiers>
+		<Update>
+			<Where BuildingType="BUILDING_FORGE" DomainType="DOMAIN_LAND" />
+			<Set Modifier="35" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_ARSENAL" DomainType="DOMAIN_LAND" />
+			<Set Modifier="50" />
+		</Update>
+	</Building_DomainProductionModifiers>
+	<Building_DomainFreeExperiences>
+		<Update>
+			<Where BuildingType="BUILDING_ARMORY" DomainType="DOMAIN_LAND" />
+			<Set Experience="30" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_MILITARY_ACADEMY" DomainType="DOMAIN_LAND" />
+			<Set Experience="60" />
+		</Update>
+	</Building_DomainFreeExperiences>
+	<Building_YieldModifiers>
+		<Update>
+			<Where BuildingType="BUILDING_UNIVERSITY" YieldType="YIELD_SCIENCE" />
+			<Set Yield="40" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_WAT" YieldType="YIELD_SCIENCE" />
+			<Set Yield="40" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_PUBLIC_SCHOOL" YieldType="YIELD_SCIENCE" />
+			<Set Yield="60" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_BANK" YieldType="YIELD_GOLD" />
+			<Set Yield="33" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_STOCK_EXCHANGE" YieldType="YIELD_GOLD" />
+			<Set Yield="50" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_SATRAPS_COURT" YieldType="YIELD_GOLD" />
+			<Set Yield="33" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_WINDMILL" YieldType="YIELD_PRODUCTION" />
+			<Set Yield="30" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_NUCLEAR_PLANT" YieldType="YIELD_PRODUCTION" />
+			<Set Yield="100" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_SOLAR_PLANT" YieldType="YIELD_PRODUCTION" />
+			<Set Yield="100" />
+		</Update>
+	</Building_YieldModifiers>
+
+The following is the stuff to be added to the Language_EN_US File:
+
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_WORKSHOP_HELP" />
+			<Set Text="+30% [ICON_PRODUCTION] Production when constructing Buildings.[NEWLINE][NEWLINE]1 [ICON_CITIZEN] Engineer Specialist slot." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_PAPER_MAKER_HELP" />
+			<Set Text="+1 [ICON_SCIENCE] Science for each 2 [ICON_CITIZEN] Citizens in this City.[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_LONGHOUSE_HELP" />
+			<Set Text="+30% [ICON_PRODUCTION] Production when constructing Buildings.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production from each worked Forest or Jungle tile.[NEWLINE][NEWLINE]1 [ICON_CITIZEN] Engineer Specialist slot." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_ARMORY_HELP" />
+			<Set Text="+30 XP for all newly trained Land Units." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_FORGE_HELP" />
+			<Set Text="+35% Production towards Land Units." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_ARSENAL_HELP" />
+			<Set Text="+50% Production towards Land Units." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_MILITARY_ACADEMY_HELP" />
+			<Set Text="+60 XP for all newly trained Land Units." />
+		</Update>

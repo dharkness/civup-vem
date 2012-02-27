@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_RU_RU>
+		<Row Tag="TXT_KEY_PLOT_DEFENSE">
+			<Text>[COLOR_POSITIVE_TEXT]Мод. защиты[ENDCOLOR] : {1}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLOT_YIELDS_ACTUAL">
+			<Text>[COLOR_POSITIVE_TEXT]Выработка[ENDCOLOR] : {1}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLOT_YIELDS_WITHOUTFEATURE">
+			<Text>[COLOR_YELLOW]Отутствует {1}[ENDCOLOR] : {2}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PLOT_YIELDS_WITHIMPROVEMENT">
+			<Text>[COLOR_YELLOW]Есть {1}[ENDCOLOR] : {2}</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_DESTROYED_ENEMY" />
+			<Set Text="Ваш {@1_UnitName} ({2_Num} damage) одержал победу над {@3_UnitName}!" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_ATTACK_BY_AIR_AND_DEATH" />
+			<Set Text="Ваш {@1_UnitName} обстрелял {@2_EnUName} и одержал победу!" />
+		</Update>
+		<Row Tag="TXT_KEY_REQUIRES">
+			<Text>Требует</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONUMENT">
+			<Text>Монумент</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONASTERY">
+			<Text>Монастырь</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TOPIC_EXPERIENCE">
+			<Text>Опыт</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_SUBMARINE">
+			<Text>Подводные юниты</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_MOUNTED_ARCHER">
+			<Text>Конные лучники</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_SUPPLY_REACHED_TOOLTIP"/>
+			<Set Text="Ваша империя может поддерживать {1_Num} военных наземных юнитов. Вы привысили этот лимит на {2_Num}, что уменьшает [ICON_PRODUCTION] производство наземных юнитов в ваших городах на {3_Num}%."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_ADVANCED_BALLISTICS_HELP"/>
+			<Set Text="Позволяет вам построить [COLOR_POSITIVE_TEXT]Ядерную ракету[ENDCOLOR], ужасающее оружие, требующее 2[ICON_RES_URANIUM] урана, и способное уничтожать как города так и юниты."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_CAMEL_ARCHER"/>
+			<Set Text="Быстрый уникальный среднивековый арабский юнит. Т.к. он дистанционный, то не имеет уязвимости перед пикинерами, в отличии от рыцарей, которых он заменяет."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRADITION_TITLE"/>
+			<Set Text="Высочайшее {1_PlayerName:textkey} {2_CivName:textkey}"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_GPT_FROM_US"/>
+			<Set Text="Сделка по которой мы каждый ход поставляли [ICON_GOLD] золото цивилизации {1_CivName:textkey} закончилась."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_GPT_TO_US"/>
+			<Set Text="Сделка по которой цивилизация {1_CivName:textkey} поставляла нам [ICON_GOLD] золото каждый ход закончилась."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CSTATE_CULTURE_BONUS"/>
+			<Set Text="Вы получаете от них [COLOR_POSITIVE_TEXT][ICON_CULTURE] культуру[ENDCOLOR] во все свои города."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CSTATE_FOOD_BONUS"/>
+			<Set Text="Вы получаете от них [COLOR_POSITIVE_TEXT][ICON_FOOD] пищу[ENDCOLOR] во все свои города."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CSTATE_MILITARY_BONUS"/>
+			<Set Text="Они посылают вам [COLOR_POSITIVE_TEXT]новые военные юниты[ENDCOLOR] каждые несколько ходов."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_SPAIN_CONQUISTADOR_HELP"/>
+			<Set Text="Среднивековый уникальный испанский юнит. Конкискадоры имеют +2 видимости, не получают штрафов против городов, и могут защищать себя когда на борту судна, в отличии от рыцарей, которых они заменяют."/>
+		</Update>		
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_BASE" />
+			<Set Text="[ICON_INFLUENCE] Влияние над городом-государством {1_CivName:textkey} увеличилось до состояния [COLOR_POSITIVE_TEXT]друзей[ENDCOLOR].[NEWLINE][NEWLINE]{2_DetailsString} Они также дали вам разрешение на перемещение по их территории." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_CULTURE" />
+			<Set Text="Как [COLOR_POSITIVE_TEXT]Культурное[ENDCOLOR] город-государство, они дали вам редкие произведения искусства, увеличивающие [ICON_CULTURE] ваших городов." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_MILITARISTIC" />
+			<Set Text="Как [COLOR_POSITIVE_TEXT]Воинственное[ENDCOLOR] город-государство, они иногда будут снабжать вас военными юнитами." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_MARITIME" />
+			<Set Text="Как [COLOR_POSITIVE_TEXT]Приморское[ENDCOLOR] город-государство, они будут экспортировать [ICON_FOOD] пищу в ваши города." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_FRIENDS_LOST_BASE" />
+			<Set Text="[ICON_INFLUENCE] Влияние над городом-государством {1_CivName:textkey} было уменьшено, вы больше не [COLOR_POSITIVE_TEXT]друзья[ENDCOLOR]...[NEWLINE][NEWLINE]{2_DetailsString} Также, ваши юниты больше не имеют права пересекать их территорию." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_CULTURE" />
+			<Set Text="(Потеря [ICON_CULTURE] культуры в ваших городах)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_FRIENDS_MILITARISTIC" />
+			<Set Text="Они больше не будут поставлять вам военные юниты." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_MARITIME" />
+			<Set Text="(Потеря [ICON_FOOD] пищи в ваших городах)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_BASE" />
+			<Set Text="[ICON_INFLUENCE] Влияние над городом-государством {2_MinorCivName:textkey} увеличилось, теперь вы их [COLOR_POSITIVE_TEXT]союзник[ENDCOLOR].[NEWLINE][NEWLINE]{3_DetailsString}[NEWLINE][NEWLINE]{1_ResourceDetailsString}" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_BASE_PASSED" />
+			<Set Text="[ICON_INFLUENCE] Влияние над городом-государством {3_MinorCivName:textkey} увеличилось, вы [COLOR_POSITIVE_TEXT]вытеснили {1_CivName:textkey} как их союзника[ENDCOLOR].[NEWLINE][NEWLINE]{4_DetailsString}[NEWLINE][NEWLINE]{2_ResourceDetailsString}" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_CULTURE" />
+			<Set Text="Как [COLOR_POSITIVE_TEXT]Культурное[ENDCOLOR] город-государство, они дали вам редкие произведения искусства, увеличевающие [ICON_CULTURE] ваших городов." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_MILITARISTIC" />
+			<Set Text="Как [COLOR_POSITIVE_TEXT]Воинственное[ENDCOLOR] город-государство, они будут регулярно снабжать вас военными юнитами." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_MARITIME" />
+			<Set Text="Как [COLOR_POSITIVE_TEXT]Приморское[ENDCOLOR] город-государство, они будут экспортировать большое количество [ICON_FOOD] пищи в ваши города." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_ALLIES_LOST" />
+			<Set Text="[ICON_INFLUENCE] Влияние над городом-государством {1_CivName:textkey} уменьшилось, вы больше не [COLOR_POSITIVE_TEXT]союзники[ENDCOLOR].[NEWLINE][NEWLINE]{2_DetailsString}[NEWLINE][NEWLINE]Как результат, они больше не будут снабжать вам стратегическими и редкими ресурсами." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_ALLIES_PASSED" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]{1_CivName:textkey}[ENDCOLOR] теперь имеет большее [ICON_INFLUENCE] влияние на городом-государство {2_MinorCivName:textkey} чем вы, делая их [COLOR_NEGATIVE_TEXT]союзником[ENDCOLOR] этого города-государста![NEWLINE][NEWLINE]{3_DetailsString}[NEWLINE][NEWLINE]Как результат, они больше не будут снабжать вам стратегическими и редкими ресурсами." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_ALLIES_MILITARISTIC" />
+			<Set Text="Они будут поставлять вам меньшее количество военных юнитов." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITY_STATE_MARITIME_TT" />
+			<Set Text="Дружественное [COLOR_POSITIVE_TEXT]Приморское[ENDCOLOR] город-государство будет снабжать [ICON_FOOD] пищей ваши города." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_MOAI_HELP" />
+			<Set Text="+1 [ICON_CULTURE] Культуры.[NEWLINE]+1 [ICON_CULTURE] Культуры в соседних Моаи.[NEWLINE][ICON_LOCKED] Должен находиться на побережье." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOAI_HELP" />
+			<Set Text="+1 [ICON_CULTURE] Культуры.[NEWLINE]+1 [ICON_CULTURE] Культуры в соседних Моаи.[NEWLINE][ICON_LOCKED] Должен находиться на побережье." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLYNESIAN_SCENARIO_BUILD_MOAI_HELP" />
+			<Set Text="+1 [ICON_CULTURE] Культуры.[NEWLINE]+1 [ICON_CULTURE] Культуры в соседних Моаи.[NEWLINE][ICON_LOCKED] Должен находиться на побережье." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAME_OPTION_POLICY_SAVING" />
+			<Set Text="Отложенное принятие институтов" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAME_OPTION_PROMOTION_SAVING" />
+			<Set Text="Отложенные повышения" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MANDATE_OF_HEAVEN_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Небесный Мандат[ENDCOLOR][NEWLINE]50% излишка [ICON_HAPPINESS_1] хорошего настроения добавляется к [ICON_CULTURE] культуре." />
+		</Update>
+		<Row Tag="TXT_KEY_BUILDING_VICEROY">
+			<Text>Дворец губернатора</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_VICEROY_HELP">
+			<Text>Контролирует государство-марионетку.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CAN_BUILD_COURTHOUSE">
+			<Text>Может иметь Суд</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_CAN_BUILD_COURTHOUSE_HELP">
+			<Text>Фикс бага связанного с Судами.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_DIPLO_STATUS_TT" />
+			<Set Text="Текущее: {1_statusType}: {2_statusText} [ICON_INFLUENCE]" />
+		</Update>
+		<Row Tag="TXT_KEY_DIPLO_STATUS_OTHER_TT" >
+			<Text>Лучший конкурент ({1_civName}): {2_statusText} [ICON_INFLUENCE]</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_UNITEDSTATES_TEXT_19" />
+			<Set Text="Соединенные Штаты больше не единственная сверхдержава в мире. Они разделяют это сомнительный титут, по крайней мере, с Китаем. Внутренне они борятся c восстановлением от экономических эксцессов конца 20-го века, а также пытаются оправится от призрака рабства и расизма, который все еще преследует их. США несколько потрепанны, но отнюдь не сломанны. Они по-прежнему обладают ресурсами ведущими государство к господству в грядущем столетии." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIVILOPEDIA_LEADERS_HARUN_TEXT_3" />
+			<Set Text="At the start of Harun's reign, the Caliphate's capital was in Baghdad, a new city founded by an earlier Caliph. The city was a center of arts, science and religion, with many beautiful buildings. There Harun founded the 'House of Wisdom,' a library and research facility which collected and translated scientific writings from Persian, Indian, Greek, and Roman texts. Under Harun Baghdad would blossom, becoming perhaps the largest and richest city in the world. Later Harun would move his government to the strategically important city of ar-Raqqah, but Baghdad would remain a great city of arts, science and commerce for centuries to come (the city would be conquered and sacked by the Mongols in 1258)." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_TERRACE_FARM_TEXT" />
+			<Set Text="Сельскохозяйственная терасса была одновременно разработанна в горных районах по всему миру, включая: Бали, Филиппины, Китай и Перу. Эти небольшие поля распологались на холмах и горных масивах, что помогало при ирригации и давало место для новых пахотных земель, что, обычно, не представлялось возможным ранее. В частности Инки были мастерами террасного сельского хозяйства, они возводили большие водонепроницаемые стены для удержания их террас на месте. После постройки границы террасы Инки конструировли системы каналов и акведуков для постоянного снабжения террасы водой, тем самым увеличиывая плодородность земли. Техники древних Инков были настолько успешными, что современные фермеры Перу до сих пор используют их в сельском хозяйстве." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_BALANCED_TEXT" />
+			<Set Text="[ICON_CITIZEN]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_FOOD_TEXT" />
+			<Set Text="[ICON_FOOD]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_PROD_TEXT" />
+			<Set Text="[ICON_PRODUCTION]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_GOLD_TEXT" />
+			<Set Text="[ICON_GOLD]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_RESEARCH_TEXT" />
+			<Set Text="[ICON_RESEARCH]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_CULTURE_TEXT" />
+			<Set Text="[ICON_CULTURE]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_GREAT_PERSON_TEXT" />
+			<Set Text="[ICON_GREAT_PEOPLE]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TEXT" />
+			<Set Text="[ICON_LOCKED]" />
+		</Update>
+		
+		
+		
+		<!--
+				Units 
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_SIAMESE_WARELEPHANT" />
+			<Set Text="Уникальный сиамский юнит, уязвимый для пикинеров. Слоны Наресуана не требуют ресурсов, получают бонус против конных юнитов, и имеют большую [ICON_STRENGTH] мощь чем рыцари, которых они заменяют." />
+		</Update>
+		
+		
+		<!--
+				Resources
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS"
+			Text="Монополизация"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS_HELP"
+			Text="[ICON_HAPPINESS_1] Настроение: +1 за каждый редкий ресурс, включая излишки."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS_STRATEGY"
+			Text="Монополизация увеличивает эффект от редких ресурсов."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS_PEDIA"
+			Text="В экономике монополия существует, когда отдельное лицо или предприятие имеет достаточный контроль над конкретныи продуктом или услугой, чтобы определить условия, на которых другие лица должны иметь доступ к нему. Монополия, таким образом, характеризуется отсутствием экономической конкуренции для производства товара или услуги. [NEWLINE][NEWLINE]Монополисты обычно производят меньше товаров и продают их по более высокой цене, чем при обычной конкуренции, в результате имея большую устойчивую прибыль."
+		/>
+
+		<Row Tag="TXT_KEY_RES_IMPORTED">
+			<Text>{1_num} импортировано</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_CITYSTATES">
+			<Text>{1_num} от [ICON_CITY_STATE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_EXPORTED">
+			<Text>{1_num} экспортировано</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_USED">
+			<Text>{1_num} использовано</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_SURPLUS">
+			<Text>{1_num} излишек</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HOVERINFO_STR_MOVES">
+			<Text>[NEWLINE]{1_num}[ICON_MOVES] осталось.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HOVERINFO_EXPERIENCE">
+			<Text>{1_num}/{2_num}[ICON_WAR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HOVERINFO_HEALTH">
+			<Text>[COLOR_NEGATIVE_TEXT]{1_num} ОЗ[ENDCOLOR]</Text>
+		</Row>
+		
+		
+		
+		<!--
+				Promotions
+		-->
+		<Row Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY_HELP">
+			<Text>-50% штраф защиты</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOUNTED_PENALTY_HELP">
+			<Text>-50% штраф против конных юнитов</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DESERT_POWER">
+			<Text>Мощь пустыни</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_COMMAND">
+			<Text>Вспомогательные юниты</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_CIVILIAN">
+			<Text>Гражданские юниты</Text>
+		</Row>
+		<Row
+			Tag="TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED"
+			Text="Двойная скорость работы"
+		/>
+		<Row
+			Tag="TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED_HELP"
+			Text="Строит улучшения на +100% быстрее"
+		/>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_OLIGARCHY_HELP" />
+			<Set Text="+33% [ICON_STRENGTH] боевой мощи на дружественной территории"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_HIMEJI_CASTLE_HELP" />
+			<Set Text="+15% [ICON_STRENGTH] боевой мощи на дружественной территории"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WOODSMAN_HELP" />
+			<Set Text="Двигается быстрее в [COLOR_POSITIVE_TEXT]лесах и джунгях[ENDCOLOR]"/>
+		</Update>
+		<Row Tag="TXT_KEY_PROMOTION_DESERT_POWER_HELP">
+			<Text>Двигается быстрее в [COLOR_POSITIVE_TEXT]пустыне[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ARCTIC_POWER">
+			<Text>Арктическая мощь</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ARCTIC_POWER_HELP">
+			<Text>Двигается быстрее [COLOR_POSITIVE_TEXT]по снегу и в тундре[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUERRILLA">
+			<Text>Партизан</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUERRILLA_HELP">
+			<Text>Двигается быстрее по [COLOR_POSITIVE_TEXT]холмам[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NEW_UNIT">
+			<Text>Новый юнит</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NEW_UNIT_HELP">
+			<Text>Новый юнит</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PHALANX">
+			<Text>Фаланга</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PHALANX_HELP">
+			<Text>+50% против [COLOR_POSITIVE_TEXT]рукопашных[ENDCOLOR] и [COLOR_POSITIVE_TEXT]конных[ENDCOLOR] юнитов.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HANDICAP_I">
+			<Text>ИИ Гандикап I</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HANDICAP_I_HELP">
+			<Text>+1 Видимости[NEWLINE]+50% Опыта</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HANDICAP_II">
+			<Text>ИИ Гандикап II</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HANDICAP_II_HELP">
+			<Text>+2 Видимости[NEWLINE]+50% Опыта</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY"/>
+			<Set Text="Штраф во время защиты (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_MOUNTED_PENALTY"/>
+			<Set Text="Штраф против конных юнитов (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WEAK_RANGED"/>
+			<Set Text="Штраф наземной атаки (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WEAK_RANGED_HELP"/>
+			<Set Text="-75% боевой мощи, когда атакует наземные или морские юниты"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_HELICOPTER"/>
+			<Set Text="Бонус против вертолетов (100)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_FIGHTER"/>
+			<Set Text="Бонус против истребителей (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_NAVAL_PENALTY"/>
+			<Set Text="Штраф против морских юнитов (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_TANK"/>
+			<Set Text="Бонус против танков (100)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_NO_DEFENSIVE_BONUSES"/>
+			<Set Text="Нет защитных бонусов от ландшафта"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_FOREIGN_LANDS"/>
+			<Set Text="Бонус на чужой территории (20)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_SUPPLY_HELP"/>
+			<Set Text="+1[ICON_MOVES] и может восстанавливать повреждения [COLOR_POSITIVE_TEXT]вне дружественной территории[ENDCOLOR]. Восстанвливается 2 ОЗ за ход."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_STATUE_ZEUS_HELP"/>
+			<Set Text="+15% [ICON_STRENGTH] боевой мощи при атаке городов"/>
+		</Update>
+	</Language_RU_RU>
+</GameData>

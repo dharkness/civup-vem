@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_PROMOTION_TOTAL_WAR">
+			<Text>Total War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TOTAL_WAR_HELP">
+			<Text>+2 [COLOR_POSITIVE_TEXT]Heal Rate[ENDCOLOR].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PROFESSIONAL_ARMY">
+			<Text>Professional Army</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PROFESSIONAL_ARMY_HELP">
+			<Text>Unlocks advanced promotions.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COMMERCE">
+			<Text>Guilds</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COMMERCE_HELP">
+			<Text>+1 [ICON_MOVES] Movement.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FREEDOM">
+			<Text>Freedom</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FREEDOM_HELP">
+			<Text>+10% [ICON_STRENGTH] Strength in friendly territory.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_POLICIES_CULTURAL_VICTORY" />
+			<Set Text="Upon completing 6 Policy branches, you may construct the [COLOR_POSITIVE_TEXT]Utopia Project[ENDCOLOR] in one of your Cities, triggering a [COLOR_POSITIVE_TEXT]Cultural Victory[ENDCOLOR]!" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAME_OPTION_POLICY_SAVING" />
+			<Set Text="No Policy Saving" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAME_OPTION_POLICY_SAVING_HELP" />
+			<Set Text="Players must pick Social Policies immediately when available." />
+		</Update>
+
+		<!-- 
+				Tradition
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_TRADITION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Tradition[ENDCOLOR] is best for small empires with high populations.[NEWLINE][NEWLINE]Adopting Tradition grants +5 [ICON_CULTURE] Culture in the [ICON_CAPITAL] Capital.[NEWLINE][NEWLINE]Adopting all Policies in the Tradition tree gives +25% [ICON_FOOD] Surplus Food in each city." />
+		</Update>
+		<Row Tag="TXT_KEY_POLICY_CEREMONIAL_RITES">
+			<Text>Ceremonial Rites</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CEREMONIAL_RITES_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Ceremonial Rites[ENDCOLOR][NEWLINE]Provides 1 culture building in the oldest 4 cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_CEREMONIAL_RITES_TEXT">
+			<Text>A ceremony is an event of ritual significance performed on a special occasion. Ceremonies may have a physical display or theatrical component: dance, a procession, the laying on of hands. A declaratory verbal pronouncement may be associated with the occasion.[NEWLINE][NEWLINE]A ceremony may mark a rite of passage in a human life, marking the significance of birth, adulthood, initiation into a group, or death. Sometimes a ceremony may only be performed by a person with certain authority. Society-wide ceremonies may mark annual or seasonal or recurrent events, such as the vernal equinox, winter solstice and other annual astronomical positions.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_LEGALISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Legalism[ENDCOLOR][NEWLINE]+5 [ICON_GOLD] Gold in the [ICON_CAPITAL] Capital.[NEWLINE]-25% [ICON_HAPPINESS_4] Unhappiness from [ICON_CITIZEN] Population in the [ICON_CAPITAL] Capital." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MONARCHY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Monarchy[ENDCOLOR][NEWLINE]+4 [ICON_CULTURE] Culture for each National and World Wonder.[NEWLINE]+20% [ICON_PRODUCTION] Production for building Wonders." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_LANDED_ELITE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Landed Elite[ENDCOLOR][NEWLINE]+2 [ICON_FOOD] Food in each city.[NEWLINE]+2 [ICON_FOOD] Food on [ICON_STRENGTH] Defense buildings.[NEWLINE]Speeds border expansion in all cities." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_OLIGARCHY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Oligarchy[ENDCOLOR][NEWLINE]Garrisoned units cost no [ICON_GOLD] Maintenance, and gain 0.2 [ICON_WAR] Experience per turn.[NEWLINE]Cities with a garrison gain +100% [ICON_RANGE_STRENGTH] Ranged Strength." />
+		</Update>
+
+
+		<!--
+				Liberty 
+		-->
+		<!--
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_REPRESENTATION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Representation[ENDCOLOR][NEWLINE]Each city increases the [ICON_CULTURE] Culture cost of policies by half the normal amount.  Also starts a [ICON_GOLDEN_AGE] Golden Age." />
+		</Update>
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_LIBERTY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Liberty[ENDCOLOR] is best for civilizations which desire rapid expansion.[NEWLINE][NEWLINE]Adopting Liberty provides +2 [ICON_CULTURE] Culture in every city.[NEWLINE][NEWLINE]Adopting all policies in the Liberty tree gives 1 free [ICON_STRENGTH] Defense Building in current and future cities." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MERITOCRACY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Meritocracy[ENDCOLOR][NEWLINE]+2 [ICON_PRODUCTION] Production in each city.[NEWLINE]+2 [ICON_PRODUCTION] Production on [ICON_STRENGTH] Defense buildings." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_REPUBLIC_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Republic[ENDCOLOR][NEWLINE]10 turn [ICON_GOLDEN_AGE] Golden Age.[NEWLINE]-25% [ICON_CULTURE] Cost per City of social policies." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_REPRESENTATION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Representation[ENDCOLOR][NEWLINE]+1 [ICON_HAPPINESS_1] Happiness in [ICON_CONNECTED] Connected cities.[NEWLINE]-5% [ICON_HAPPINESS_4] Unhappiness from [ICON_CITIZEN] Population in non-occupied cities." />
+		</Update>
+
+
+		<!--
+				Honor
+		-->
+		<!--
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MILITARY_CASTE" />
+			<Set Text="Spoils of War" />
+		</Update>
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_HONOR_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Honor[ENDCOLOR] improves the effectiveness of one's army in a variety of ways.[NEWLINE][NEWLINE]Adopting Honor reveals Barbarian camps as they spawn in explored territory, gives a 25% combat bonus against Barbarians, and each barbarian killed gives [ICON_CULTURE] Culture to the empire.[NEWLINE][NEWLINE]Adopting all policies in the Honor tree grants +4 [ICON_CULTURE] Culture and +1 [ICON_HAPPINESS_1] Happiness for Colosseums." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_WARRIOR_CODE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Warrior Code[ENDCOLOR][NEWLINE]+1[ICON_MOVES] Movement for Great Generals, and a Great General appears at the [ICON_CAPITAL] Capital." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MILITARY_TRADITION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Military Tradition[ENDCOLOR][NEWLINE] +20% [ICON_PRODUCTION] Production for military units and buildings (defense, experience, and training)." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MILITARY_CASTE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Military Caste[ENDCOLOR][NEWLINE]+4 [ICON_CULTURE] Culture and +1 [ICON_HAPPINESS_1] Happiness for each city with a garrison." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_DISCIPLINE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Discipline[ENDCOLOR][NEWLINE]+20% [ICON_STRENGTH] strength for units adjacent to another military unit." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_DISCIPLINE_HELP" />
+			<Set Text="+20% [ICON_STRENGTH] Strength when adjacent to a friendly military unit" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_PROFESSIONAL_ARMY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Professional Army[ENDCOLOR][NEWLINE]-33% [ICON_GOLD] Upgrade cost for units.[NEWLINE]You salvage [ICON_GOLD] Gold from the equipment of each enemy unit killed." />
+		</Update>
+
+
+		<!--
+				Piety
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_PIETY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Piety[ENDCOLOR] improves Cultural buildings.[NEWLINE][NEWLINE]Adopting Piety gives +3 [ICON_HAPPINESS_1] Happiness.[NEWLINE][NEWLINE]Adopting all policies in the Piety tree reduces the [ICON_CULTURE] Culture cost of future Policies by 10%.[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_ORGANIZED_RELIGION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Organized Religion[ENDCOLOR][NEWLINE]+2 [ICON_CULTURE] Culture for each Monument, Temple, and Monastery.[NEWLINE]Surplus [ICON_HAPPINESS_1] Happiness adds to [ICON_CULTURE] Culture." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_THEOCRACY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Theocracy[ENDCOLOR][NEWLINE]+10% [ICON_GOLD] Gold from Temples.[NEWLINE]+10% [ICON_RESEARCH] Science from Monasteries.[NEWLINE]+10% [ICON_CULTURE] Culture in cities with a World Wonder." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MANDATE_OF_HEAVEN_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Mandate of Heaven[ENDCOLOR][NEWLINE]+1 [ICON_HAPPINESS_1] Happiness for each Monument, Temple and Monastery." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_REFORMATION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Reformation[ENDCOLOR][NEWLINE]10 turn [ICON_GOLDEN_AGE] Golden Age.[NEWLINE]25% less [ICON_HAPPINESS_1] Happiness required for [ICON_GOLDEN_AGE] Golden Ages." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_FREE_RELIGION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Free Religion[ENDCOLOR][NEWLINE]1 free [ICON_CULTURE] Social Policy.[NEWLINE]+1 [ICON_CULTURE] Culture for Artists.[NEWLINE]+2 [ICON_CULTURE] Culture on Landmarks." />
+		</Update>
+
+
+		<!--
+				Patronage
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_PATRONAGE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Patronage[ENDCOLOR] enhances the benefits of City-State friendship.[NEWLINE][NEWLINE][ICON_GOLD]Gold gifts to City-States produce 20% more [ICON_INFLUENCE] Influence.[NEWLINE][NEWLINE]Adopting all policies in the Patronage tree will make other players' [ICON_INFLUENCE] Influence with City-States decrease 10% more per turn than usual." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_PHILANTHROPY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Philanthropy[ENDCOLOR][NEWLINE][ICON_INFLUENCE] Influence with City-States degrades 25% slower than normal." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_AESTHETICS_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Aesthetics[ENDCOLOR][NEWLINE]Minimum [ICON_INFLUENCE] Influence with City-States is 20.[NEWLINE]+20 onetime [ICON_INFLUENCE] Influence boost." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_CULTURAL_DIPLOMACY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Cultural Diplomacy[ENDCOLOR][NEWLINE]+2 [ICON_HAPPINESS_1] Happiness for each City-State friend, and +3 for each ally." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_EDUCATED_ELITE" />
+			<Set Text="Trade Agreement" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_EDUCATED_ELITE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Trade Agreement[ENDCOLOR][NEWLINE]City-state friends and allies increase [ICON_PRODUCTION] Production in your cities." />
+		</Update>
+		<Row Tag="TXT_KEY_POLICY_FREE_TRADE">
+			<Text>Free Trade</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_FREE_TRADE_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Free Trade[ENDCOLOR][NEWLINE]City-state friends and allies increase [ICON_PRODUCTION] Production in your cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_FREE_TRADE_TEXT">
+			<Text>Free trade is a system of trade policy that allows traders to trade across national boundaries without interference from the respective governments. Due to the economic principle of comparative advantage, this provides trading partners with mutual gains.Under this policy prices are the sole determinant of resource allocation, and a close reflection of supply and demand.</Text>
+		</Row>	
+
+
+
+		<!--
+				Commerce
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_COMMERCE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Commerce[ENDCOLOR] improves the ability to generate and use [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Adopting Commerce increases gross [ICON_GOLD] Gold income by 10%, and all non-combat units move +1[ICON_MOVES] faster.[NEWLINE][NEWLINE]Adopting all policies in the Commerce tree gives +1 [ICON_HAPPINESS_1] Happiness from each Luxury resource, including surplus copies." />
+		</Update>
+		<Row Tag="TXT_KEY_POLICY_PATENT_LAW">
+			<Text>Patent Law</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PATENT_LAW_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Patent Law[ENDCOLOR][NEWLINE]+1 [ICON_GOLD] Gold on Villages.[NEWLINE]+2 [ICON_GOLD] Gold on Fishing Boats.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_PATENT_LAW_TEXT">
+			<Text>A patent is a set of exclusive rights granted by a state (national government) to an inventor or their assignee for a limited period of time in exchange for the public disclosure of an invention.[NEWLINE][NEWLINE]Patents in the modern sense originated in 1474, when the Republic of Venice enacted a decree that new and inventive devices, once put into practice, had to be communicated to the Republic to obtain the right to prevent others from using them.[NEWLINE][NEWLINE]England followed with the Statute of Monopolies in 1623 under King James I, which declared that patents could only be granted for "projects of new invention."  During the reign of Queen Anne (1702–14), the lawyers of the English Court developed the requirement that a written description of the invention must be submitted.  The patent system in many other countries is based on British law and can be traced back to the Statute of Monopolies.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_POLICY_GUILDS">
+			<Text>Guilds</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_GUILDS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Guilds[ENDCOLOR][NEWLINE]-50% [ICON_GOLD] Cost for roads and railroads, and a Great Merchant appears at the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_GUILDS_TEXT">
+			<Text>A guild is an association of craftsmen in a particular trade. The earliest types of guild were formed as confraternities of workers. They were organized in a manner something between a trade union, a cartel, and a secret society. They often depended on grants of letters patent by a monarch or other authority to enforce the flow of trade to their self-employed members, and to retain ownership of tools and the supply of materials.</Text>
+		</Row>		
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MERCANTILISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Mercantilism[ENDCOLOR][NEWLINE]+1 [ICON_GOLD] Gold for Merchants.[NEWLINE]+2 [ICON_GOLD] Gold on Customs Houses." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MERCHANT_NAVY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Merchant Navy[ENDCOLOR][NEWLINE]+1[ICON_MOVES] Moves and +1 Sight for military ships.[NEWLINE]+2 [ICON_PRODUCTION] Production for Coastal Cities.[NEWLINE]+2 [ICON_PRODUCTION] Production for Naval Buildings." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_PROTECTIONISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Protectionism[ENDCOLOR][NEWLINE]-20% [ICON_GOLD] Purchase cost for units and buildings." />
+		</Update>
+
+
+		<!--
+				Enlightenment
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_RATIONALISM" />
+			<Set Text="Enlightenment" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_RATIONALISM_CAP" />
+			<Set Text="ENLIGHTENMENT" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_POLICY_RATIONALISM_HEADING" />
+			<Set Text="{TXT_KEY_POLICY_BRANCH_RATIONALISM}" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_SOCIALPOLICY_RATIONALISM_HEADING3_TITLE" />
+			<Set Text="{TXT_KEY_POLICY_BRANCH_RATIONALISM}" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_RATIONALISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Enlightenment[ENDCOLOR] improves the ability to generate and use [ICON_RESEARCH] Science.[NEWLINE][NEWLINE]Adopting Enlightenment gives a free Great Scientist at the [ICON_CAPITAL] Capital.[NEWLINE][NEWLINE]Adopting all policies in the Enlightenment tree grants 2 free technologies." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_RATIONALISM_TEXT" />
+			<Set Text="The Enlightenment was an intellectual movement in 18th Century Europe. The goal of the Enlightenment was to establish an authoritative ethics, aesthetics, and knowledge based on an 'enlightened' rationality. The movement's leaders viewed themselves as a courageous body of intellectuals who were leading the world toward progress, out of a long period of irrationality, superstition, and tyranny which began during a historical period they called the Dark Ages. This movement provided a framework for the American and French Revolutions, as well as the rise of capitalism and the birth of socialism. It is matched by the high baroque era in music, and the neoclassical period in the arts." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_SOCIALPOLICY_PIETY_HEADING3_BODY" />
+			<Set Text="Piety increases the Happiness and Culture of the adopting civ. Piety becomes available once the Classical Era is reached. For players looking to achieve a Cultural Victory, this is a nice place to start, as the branch provides boosts to culture and even free policies." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_SOCIALPOLICY_RATIONALISM_ADV_QUEST" />
+			<Set Text="What is the Enlightenment social policy branch about?" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_SOCIALPOLICY_RATIONALISM_HEADING3_BODY" />
+			<Set Text="The branch of Enlightenment improves the civilization's ability to use and generate Science, becoming available upon entering the Renaissance Era." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_RATIONALISM_HEADING4_BODY" />
+			<Set Text="The Enlightenment branch of social policies is full of policies which can increase your research. This branch becomes available in the Renaissance era. See the rules on Social Policies for details." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_RATIONALISM_HEADING4_TITLE" />
+			<Set Text="The Enlightenment Branch" />
+		</Update>
+		
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_SECULARISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Secularism[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] Science for Scientists.[NEWLINE]+2 [ICON_RESEARCH] Science on Academies." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_SOVEREIGNTY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Sovereignty[ENDCOLOR][NEWLINE]+2 [ICON_GOLD] Gold on [ICON_RESEARCH] Science buildings." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_SCIENTIFIC_REVOLUTION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Scientific Revolution[ENDCOLOR][NEWLINE]+15% [ICON_RESEARCH] Science while the empire is [ICON_HAPPINESS_1] Happy." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_HUMANISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Humanism[ENDCOLOR][NEWLINE]+1 [ICON_HAPPINESS_1] Happiness from Science Buildings." />
+		</Update>
+		
+
+
+
+		<!--
+				Freedom
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_FREEDOM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Freedom[ENDCOLOR] improves the ability to generate and use [ICON_GREAT_PEOPLE] Specialists and Great People.[NEWLINE][NEWLINE]Adopting Freedom gives +10% [ICON_STRENGTH] Strength for cities and units in friendly territory.[NEWLINE][NEWLINE]Adopting all Policies in the Freedom tree gives +0.5 [ICON_HAPPINESS_1] Happiness for each Specialist.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Autocracy." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_EDUCATED_ELITE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Educated Elite[ENDCOLOR][NEWLINE]City-State friends and allies gift you [ICON_GREAT_PEOPLE] Great People." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_CONSTITUTION_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Constitution[ENDCOLOR][NEWLINE]+50% longer [ICON_GOLDEN_AGE] Golden Ages." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_DEMOCRACY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Democracy[ENDCOLOR][NEWLINE]+20% [ICON_PRODUCTION] Production while constructing buildings or wonders with one or more specialist slots." />
+		</Update>
+		<Row Tag="TXT_KEY_POLICY_HUMAN_RIGHTS">
+			<Text>Human Rights</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_HUMAN_RIGHTS_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Human Rights[ENDCOLOR][NEWLINE]-1 [ICON_FOOD] Food consumed by Specialists.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_HUMAN_RIGHTS_TEXT">
+			<Text>(todo)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_LIBERTARIANISM">
+			<Text>Liberatrianism</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_LIBERTARIANISM_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Liberatrianism[ENDCOLOR][NEWLINE]+50% [ICON_GREAT_PEOPLE] Great Person creation rate.[NEWLINE]One Great Person of your choice appears at the [ICON_CAPITAL] Capital.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_POLICY_LIBERTARIANISM_TEXT">
+			<Text>(todo)</Text>
+		</Row>
+
+
+		<!--
+				Autocracy
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_AUTOCRACY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Autocracy[ENDCOLOR] is for militaristic civilizations dreaming of world conquest.[NEWLINE][NEWLINE]Adopting Autocracy gives +15 [ICON_WAR] Experience to all current and future units.[NEWLINE][NEWLINE]Adopting all Policies in the Autocracy tree grants a 20% attack bonus to all Military Units for 30 turns.[NEWLINE][NEWLINE][COLOR_WARNING_TEXT]This branch cannot be active at the same time as Freedom.[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_NATIONALISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Nationalism[ENDCOLOR][NEWLINE]+25% [ICON_PRODUCTION] Production for units.[NEWLINE]-25% [ICON_GOLD] Purchase cost for units." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_FASCISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Fascism[ENDCOLOR][NEWLINE]-33% [ICON_GOLD] Maintenance cost for units." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MILITARISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Militarism[ENDCOLOR][NEWLINE]Quantity of Strategic Resources produced by the empire increased by 50%." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_POLICE_STATE_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Police State[ENDCOLOR][NEWLINE]+3 [ICON_HAPPINESS_1] Happiness from each Courthouse.[NEWLINE]+100% [ICON_PRODUCTION] Production for building Courthouses." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_TOTAL_WAR_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Total War[ENDCOLOR][NEWLINE]+2 heal rate for all units." />
+		</Update>
+
+
+		<!--
+				Order
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_BRANCH_ORDER_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Order[ENDCOLOR] gives benefits local to individual cities or territories, such as [ICON_PRODUCTION] Production.[NEWLINE][NEWLINE]Adopting Order will increase [ICON_HAPPINESS_1] Happiness by 1 per City.[NEWLINE][NEWLINE]Adopting all Policies in the Order tree grants +2 of every yield in every city (food, production, gold, science, and culture)." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_UNITED_FRONT_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]United Front[ENDCOLOR][NEWLINE]+20% attack bonus in friendly territory.[NEWLINE]+10% [ICON_GOLD] Gold from domestic [ICON_CONNECTED] Trade." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_PLANNED_ECONOMY_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Planned Economy[ENDCOLOR][NEWLINE]-25% [ICON_GOLD] Maintenance cost for Buildings." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_SOCIALISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Socialism[ENDCOLOR][NEWLINE]+2 [ICON_HAPPINESS_1] Happiness and +10% [ICON_RESEARCH] Science from Smithies and Factories." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_POPULISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Populism[ENDCOLOR][NEWLINE]+1 [ICON_PRODUCTION] Production for Engineers.[NEWLINE]+2 [ICON_PRODUCTION] Production on Manufactories." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_COMMUNISM_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Communism[ENDCOLOR][NEWLINE]+1 [ICON_PRODUCTION] Production on Villages." />
+		</Update>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_TOPIC_LAW" >
+			<Text>Law</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_GOLD_FROM_OPEN_BORDERS">
+			<Text>{1_Num} from mutual Open Borders with other leaders.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TP_SCIENCE_FROM_RESEARCH_AGREEMENTS"/>
+			<Set Text="[ICON_BULLET][COLOR_POSITIVE_TEXT]+{1_Num}[ENDCOLOR] [ICON_RESEARCH] from trade deals with other players."/>
+		</Update>
+		<Row Tag="TXT_KEY_YIELD_FROM_POLICIES">
+			<Text>{1_Num} {2_icon} from Policies</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_TRAITS">
+			<Text>{1_Num} {2_icon} from Traits</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_PROCESSES">
+			<Text>{1_Num} {2_IconString} from Process</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_MINOR_CIVS">
+			<Text>{1_num} {2_icon} from City-States</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_FOCUS" >
+			<Text>{2_icon} City Focus: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_POPULATION" >
+			<Text>[ICON_CITIZEN] Population: {1_num}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_NOT_CONNECTED" >
+			<Text>[ICON_CONNECTED] Not Connected: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RAZING" >
+			<Text>[ICON_RAZING] Razing: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_RESISTANCE" >
+			<Text>[ICON_RESISTANCE] Resistance: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_PUPPET" >
+			<Text>[ICON_PUPPET] Puppet: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_OCCUPIED" >
+			<Text>[ICON_OCCUPIED] Occupied: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_BLOCKADED" >
+			<Text>[ICON_BLOCKADED] Blockaded: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_CAPITAL" >
+			<Text>[ICON_CAPITAL] Capital: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID" >
+			<Text>[ICON_MUSHROOM] Avoid Growth: {1_num}%</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_IS_AVOID_MANY" >
+			<Text>(More than {1_num}% of cities on avoid)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CITYSTATE_MODIFIER_WEIGHT_TOTAL" >
+			<Text>{1_num} (city) / {2_num} (empire) = {3_num}% of {4_num}{5_icon}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_USAGE" >
+			<Text>([COLOR_POSITIVE_TEXT]{1_num}[ENDCOLOR] - [COLOR_NEGATIVE_TEXT]{2_num}[ENDCOLOR] consumed)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_SURPLUS" >
+			<Text>{1_num} {2_icon} Surplus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FROM_OTHER_YIELDS">
+			<Text>({1_num} {2_icon} + {3_num} {4_icon} {5_yieldstring})</Text>
+		</Row>
+		<!--
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_PLAYER"/>
+			<Set Text="[NEWLINE][ICON_BULLET]Policy Modifier: {1_num}%"/>
+		</Update>
+		-->
+		<Row Tag="TXT_KEY_PRODMOD_YIELD_SETTLER_POLICY">
+			<Text>[NEWLINE][ICON_BULLET]Policy Modifier for Settlers: {1_num}%</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_CAPITAL_BUILDING_TRAIT" />
+			<Set Text="[NEWLINE][ICON_BULLET]Modifier for Buildings in [ICON_CAPITAL] Capital: {1_Num}%"/>
+		</Update>
+		<Row Tag="TXT_KEY_YIELD_MOD_GLOBAL_BUILDINGS">
+			<Text>[NEWLINE][ICON_BULLET]Buildings in Other Cities: {1_Num}%</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_HAPPINESS" />
+			<Set Text="[NEWLINE][ICON_BULLET][COLOR_WARNING_TEXT][ICON_HAPPINESS_4] Unhappiness Modifier: {1_Num}%[ENDCOLOR]"/>
+		</Update>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_es_ES>
+		<!--
+				Cultura
+		-->
+		
+		
+		
+		<!--
+				Comida
+		-->
+		<!-- Granero -->
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_GRANARY" />
+			<Set Text="Ahumadero" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_GRANARY_STRATEGY" />
+			<Set Text="El ahumadero aumenta la creación de alimentos de una ciudad, acelerando el crecimiento de la ciudad. Esto es útil cuando se desea crear una ciudad grande rápidamente" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_BUILDINGS_GRANARY_TEXT" />
+			<Set Text="Un ahumadero es un edificio donde se cura la carne o el pescado con humo, a menudo por grupos o comunidades de personas. La conservación de los alimentos se produce por la sal de curado y ahumado en frío durante dos semanas o más. Se usa fuego de madera muy suave para generar aire seco ligeramente caliente para garantizar el correcto secado de las carnes. El producto final puede ser almacenado en el edificio, a veces durante un año o más. [NEWLINE][NEWLINE]Los ahumaderos se protegen a veces para evitar que los animales y los ladrones tengan acceso a los alimentos. Tradicionalmente, un ahumadero es una dependencia adjunta pequeña a menudo con un respiradero, una sola entrada, sin ventanas y con frecuencia tiene un techo de dos aguas o estilo piramidal. Los ahumaderos comunales y comerciales son más grandes que los que se usan en residencias o fincas." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_POTTERY_HELP" />
+			<Set Text="Permite a las ciudades construir el [COLOR_POSITIVE_TEXT]Ahumadero[ENDCOLOR], que proporciona [ICON_FOOD] Comida, facilitando el crecimiento de las ciudades." />
+		</Update>
+		<!-- Acueducto -->
+		<Row Tag="TXT_KEY_BUILDING_AQUEDUCT">
+			<Text>Acueducto</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AQUEDUCT_HELP">
+			<Text>Almacena el 40% de la [ICON_FOOD] Comida cuando la ciudad crece.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AQUEDUCT_STRATEGY">
+			<Text>El acueducto es un edificio de la época clásica. Reduce la cantidad de alimentos que la ciudad necesita para crecer en un 40% (crecimiento 160% más rápido.)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AQUEDUCT_PEDIA">
+			<Text>Un acueducto es un suministro de agua o canales navegables construidos para transportar agua. Aunque se asocia particularmente a los romanos, los acueductos se idearon mucho antes en Grecia, Arabia y la India. Los egipcios y Harappan (Civilización India) construyeron sofisticados sistemas de riego. En las Américas, la capital azteca de Tenochtitlán estaba regada por dos acueductos: el agua fluía por la ciudad desde las montañas a través de uno mientras el otro se reparaba y limpiaba.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_HOSPITAL_HELP" />
+			<Set Text="Almacena el 60% de la [ICON_FOOD] Comida cuando la ciudad crece." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_HOSPITAL_STRATEGY" />
+			<Set Text="El Hospital es un edificio de la época Industrial. Reduce la cantidad de alimentos que la ciudad necesita para crecer en un 60%. Requiere la construcción previa de un acueducto. (crecimiento un 160% más rápido que con un acueducto solo y crecimiento acumulado de un 250% más rápido.)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_MEDICAL_LAB_HELP" />
+			<Set Text="Almacena el 75% de la [ICON_FOOD] Comida cuando la ciudad crece." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_MEDICAL_LAB_STRATEGY" />
+			<Set Text="El Laboratorio Médico es un edificio de la época Moderna. Disminuye la cantidad de alimentos que una ciudad necesita para crecer en un 75%. Requiere la construcción previa de un hospital. (crecimiento un 160% más rápido que con un hospital solo y crecimiento acumulado de un  400% más rápido.)" />
+		</Update>
+		
+		
+		
+		<!--
+				Oro
+		-->
+		
+		
+		
+		<!--
+				Felicidad
+		-->
+		
+		
+		
+		<!--
+				Otros
+		-->
+
+
+
+		<!--
+				Producción
+		-->
+		
+		
+		
+		<!--
+				Ciencia
+		-->
+		
+		
+
+		<!--
+				General
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_MISSION_START_GOLDENAGE_HELP"/>
+			<Set Text="Esta orden consumirá en Gran Personaje e iniciará una [ICON_GOLDEN_AGE] Edad de Oro ([ICON_PRODUCTION] y [ICON_GOLD] adicionales) con una duración de {1_Num} turnos. Cada vez que un Gran Personaje comienza a una edad de oro, la duración de la siguiente se reducirá (hasta un mínimo de 2 turnos)."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRADE_ROUTE_INCOME_INFO"/>
+			<Set Text="{1_Num} [ICON_GOLD] Oro de base por ruta[NEWLINE]0.05 de [ICON_GOLD] Oro por [ICON_CITIZEN] Ciudadano en la Capital[NEWLINE]{2_Num} de [ICON_GOLD] Oro por [ICON_CITIZEN] Ciudadano"/>
+		</Update>
+		
+		
+		
+		<!--
+				Maravillas Nacionales
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_CIRCUS_MAXIMUS" />
+			<Set Text="Termas de Trajano" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_CIRCUS_MAXIMUS_STRATEGY" />
+			<Set Text="Las Termas de Trajano proporcionan felicidad y cultura." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_CIRCUS_MAXIMUS_PEDIA" />
+			<Set Text="Las Termas de Trajano fueron unos baños y complejos de ocio enormes construidos en Roma desde el año 104 hasta el 109 (DC/EC o AD/CE), encargado por el emperador Trajano. El arquitecto del complejo se dice que es Apolodoro de Damasco. [newline] [newline] Los baños se utilizaron durante por lo menos tres siglos, principalmente como un centro recreativo y social, tanto por los ciudadanos romanos masculinos como femeninos." />
+		</Update>
+		<Row Tag="TXT_KEY_BUILDING_AGRA_FORT">
+			<Text>Fuerte de Agra</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AGRA_FORT_STRATEGY">
+			<Text>El Fuerte de Agra proporciona defensa, espacios para especialista Mercante y Cultura</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_AGRA_FORT_PEDIA">
+			<Text>Fuerte de Agra se puede describir más exactamente como una ciudad amurallada. Es la fortaleza más importante de la India. [NEWLINE] [NEWLINE] Los grandes emperadores Mogoles Humayun, Akbar, Jehangir, Shah Jahan y Aurangzeb vivieron aquí y el país fue gobernado desde aquí. Se recibió la visita de embajadores extranjeros, viajeros y dignatarios. Contenía una fortuna y tesoro estatales inmensos.</Text>
+		</Row>
+		<!--<Row Tag="TXT_KEY_BUILDING_MEDICI_BANK">
+			<Text>Banco Medici</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MEDICI_BANK_STRATEGY">
+			<Text>El Banco Medici proporciona Oro, espacios para especialista Mercante y Cultura.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MEDICI_BANK_PEDIA">
+			<Text>El Banco Medici (1397-1494 DC o EC) fue uno de los primeros bancos europeos, creado por la familia Medici en Italia. Era el banco más grande y más respetado en Europa durante su mejor momento. Una contribución notable a la profesión de la contabilidad fue el desarrollo del sistema de doble entrada de seguimiento de los créditos y débitos por separado en libros de contabilidad.</Text>
+		</Row>-->
+		
+		
+		
+		<!--
+				Maravillas
+		-->
+	</Language_es_ES>
+</GameData>

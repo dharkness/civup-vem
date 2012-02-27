@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Defines>
+		<Update>
+			<Where Name="MINOR_FRIENDSHIP_FROM_TRADE_MISSION" />
+			<Set Value="40" />
+			<!-- 30 -->
+		</Update>
+		<Update>
+			<Where Name="GOLDEN_AGE_LENGTH" />
+			<Set Value="10" />
+			<!-- 10 -->
+		</Update>
+		<Update>
+			<Where Name="GOLDEN_AGE_GREAT_PEOPLE_MODIFIER" />
+			<Set Value="50" />
+			<!-- 100 -->
+		</Update>
+		<Update>
+			<Where Name="MIN_UNIT_GOLDEN_AGE_TURNS" />
+			<Set Value="2" />
+			<!-- 3 -->
+		</Update>
+		<Update>
+			<Where Name="GOLDEN_AGE_BASE_THRESHOLD_HAPPINESS" />
+			<Set Value="500" />
+			<!-- 500 -->
+		</Update>
+		<Update>
+			<Where Name="GOLDEN_AGE_EACH_GA_ADDITIONAL_HAPPINESS" />
+			<Set Value="250" />
+			<!-- 250 -->
+		</Update>
+	</Defines>
+	<Missions>
+		<Update>
+			<Where Type="MISSION_DISCOVER"/>
+			<Set Visible="0"/>
+		</Update>
+	</Missions>
+	<Units>
+		<Update>
+			<Where Type="UNIT_SCIENTIST"/>
+			<Set FreeBeakersBase="475"
+				 FreeBeakersCoefficient=".25"
+				 FreeBeakersExponent="2.95"
+				 FreeBeakersCooldownTurns="1"
+				 FreeBeakersVisibleDivisor="5"
+				 />
+			<!--
+				 The formula used is
+				 science = FreeBeakersBase + (FreeBeakersCoefficient*n)^FreeBeakersExponent
+				 where n is the number of researched techs
+			-->
+		</Update>
+		<Update>
+			<Where Type="UNIT_ARTIST" />
+			<Set GoldenAgeTurns="8" CultureBombRadius="2" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_ENGINEER" />
+			<Set GoldenAgeTurns="6" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_MERCHANT" />
+			<Set GoldenAgeTurns="6"
+				 BaseGold="100"
+				 NumGoldPerEra="600"
+				 />
+			<!-- 350, 50 -->
+		</Update>
+		<Update>
+			<Where Type="UNIT_SCIENTIST" />
+			<Set GoldenAgeTurns="6" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_GREAT_GENERAL" />
+			<Set GoldenAgeTurns="6" />
+		</Update>
+	</Units>
+	<SpecialistYields>
+		<Update>
+			<Where SpecialistType="SPECIALIST_ENGINEER" YieldType="YIELD_PRODUCTION" />
+			<Set Yield="3" />
+		</Update>
+		<Update>
+			<Where SpecialistType="SPECIALIST_MERCHANT" YieldType="YIELD_GOLD" />
+			<Set Yield="3" />
+		</Update>
+		<Update>
+			<Where SpecialistType="SPECIALIST_SCIENTIST" YieldType="YIELD_SCIENCE" />
+			<Set Yield="3" />
+		</Update>
+	</SpecialistYields>
+	<Specialists>
+		<Update>
+			<Where Type="SPECIALIST_ARTIST" />
+			<Set CulturePerTurn="3" />
+		</Update>
+	</Specialists>
+</GameData>

@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Table name="UnitPromotions_Equivilancy">
+		<Column name="Melee" type="text"/>
+		<Column name="Ranged" type="text"/>
+		<Column name="Vanguard" type="text"/>
+	</Table>
+	<Table name="Trait_FreePromotionUnitTypes">
+		<Column name="TraitType" type="text" reference="Traits(Type)"/>
+		<Column name="UnitType" type="text" reference="Units(Type)"/>
+		<Column name="PromotionType" type="text" reference="UnitPromotions(Type)"/>
+	</Table>
+	<Table name="Trait_FreeExperience_Domains">
+		<Column name="TraitType" type="text" reference="Traits(Type)"/>
+		<Column name="DomainType" type="text" reference="Domains(Type)"/>
+		<Column name="Experience" type="integer" default="0"/>
+	</Table>
+	<Table name="Trait_FreeYieldFromFlavorInCapital">
+		<Column name="TraitType" type="text" reference="Traits(Type)"/>
+		<Column name="BuildingType" type="text" reference="Buildings(Type)"/>
+		<Column name="YieldType" type="text" />
+		<Column name="Yield" type="integer" default="0"/>
+		<Column name="YieldMod" type="integer" default="0"/>
+	</Table>
+	<!--
+	<Table name="Trait_SpecialistYieldChanges">
+		<Column name="TraitType" type="text" reference="Traits(Type)"/>
+		<Column name="SpecialistType" type="text" reference="Specialists(Type)"/>
+		<Column name="YieldType" type="text" reference="Yields(Type)"/>
+		<Column name="Yield" type="integer"/>
+	</Table>
+	-->
+	<Table name="Policy_FreePromotionUnitClasses">
+		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
+		<Column name="UnitClass" type="text" reference="UnitClasses(Type)"/>
+		<Column name="PromotionType" type="text" reference="UnitPromotions(Type)"/>
+	</Table>
+	<Table name="Policy_FreeBuildingFlavor">
+		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
+		<Column name="FlavorType" type="text"/>
+		<Column name="NumCities" type="integer" default="0"/>
+	</Table>
+	<Table name="Resource_TerrainWeights">
+		<Column name="ResourceType" type="text" reference="Resources(Type)"/>
+		<Column name="TerrainType" type="text" reference="Terrains(Type)"/>
+		<Column name="FeatureType" type="text" default="NULL"/>
+		<Column name="PlotType" type="text" default="NULL"/>
+		<Column name="Freshwater" type="boolean" default="false"/>
+		<Column name="NotLake" type="boolean" default="false"/>
+		<Column name="Weight" type="variant" default="1"/>
+	</Table>
+	<Table name="Policy_SpecialistYieldChanges">
+		<Column name="PolicyType" type="text" reference="Policies(Type)"/>
+		<Column name="SpecialistType" type="text" reference="Specialists(Type)"/>
+		<Column name="YieldType" type="text" reference="Yields(Type)"/>
+		<Column name="Yield" type="integer" notnull="true"/>
+	</Table>
+	
+	<Defines>
+		<Row Name="LOADED_CIVUP">
+			<Value>1</Value>
+		</Row>
+		<Update>
+			<Where Name="POST_COMBAT_TEXT_DELAY" />
+			<Set Value="0.2" />
+		</Update>
+		<Update>
+			<Where Name="FRIENDSHIP_THRESHOLD_MAX" />
+			<Set Value="200" />
+			<!-- 120 -->
+		</Update>
+	</Defines>
+	<CiVUP>
+		<Row Type="AVOID_GROWTH_FULL_EFFECT_CUTOFF">
+			<Value>50</Value>
+		</Row>
+		<Row Type="MINOR_CIV_LIBERATED_FRIENDSHIP_MAX">
+			<Value>50</Value>
+		</Row>
+		<Row Type="UNIT_SETTLER_BASE_COST">
+			<Value>105</Value>
+		</Row>
+		<Row Type="UNIT_LEVEL_UP_HEAL_PERCENT">
+			<Value>0</Value>
+		</Row>
+		<Row Type="PUPPET_UNHAPPINESS_MOD">
+			<Value>0</Value>
+		</Row>
+		<Row Type="EVENTS_EARLIEST_TURN">
+			<Value>0</Value>
+		</Row>
+		<Row Type="PERCENT_SCIENCE_FOR_1_SURPLUS_HAPPINESS">
+			<Value>0</Value>
+		</Row>
+	</CiVUP>
+	<GameOptions>
+		<Update>
+			<Where Type="GAMEOPTION_QUICK_COMBAT" />
+			<Set Visible="0" />
+		</Update>
+	</GameOptions>
+	<Traits>
+		<Row>
+			<Type>TRAIT_NONE</Type>
+			<Description>TXT_KEY_SV_ICONS_NONE</Description>
+			<ShortDescription>TXT_KEY_SV_ICONS_NONE</ShortDescription>
+		</Row>
+	</Traits>
+	<Leader_Traits>
+		<Row>
+			<LeaderType>LEADER_BARBARIAN</LeaderType>
+			<TraitType>TRAIT_NONE</TraitType>
+		</Row>
+	</Leader_Traits>
+	<UnitCombatInfos>
+		<Row>
+			<Type>UNITCOMBAT_COMMAND</Type>
+			<Description>TXT_KEY_UNITCOMBAT_COMMAND</Description>
+		</Row>
+		<Row>
+			<Type>UNITCOMBAT_CIVILIAN</Type>
+			<Description>TXT_KEY_UNITCOMBAT_CIVILIAN</Description>
+		</Row>
+		<Row>
+			<Type>UNITCOMBAT_SUBMARINE</Type>
+			<Description>TXT_KEY_UNITCOMBAT_SUBMARINE</Description>
+		</Row>
+		<Row>
+			<Type>UNITCOMBAT_MOUNTED_ARCHER</Type>
+			<Description>TXT_KEY_UNITCOMBAT_MOUNTED_ARCHER</Description>
+		</Row>
+		<Update>
+			<Where Type="UNITCOMBAT_MELEE" />
+			<Set PromotionCategory="Melee" />
+		</Update>
+		<Update>
+			<Where Type="UNITCOMBAT_MOUNTED" />
+			<Set PromotionCategory="Melee" />
+		</Update>
+		<Update>
+			<Where Type="UNITCOMBAT_GUN" />
+			<Set PromotionCategory="Melee" />
+		</Update>
+		<Update>
+			<Where Type="UNITCOMBAT_ARMOR" />
+			<Set PromotionCategory="Melee" />
+		</Update>
+		<Update>
+			<Where Type="UNITCOMBAT_HELICOPTER" />
+			<Set PromotionCategory="Melee" />
+		</Update>
+		<Update>
+			<Where Type="UNITCOMBAT_ARCHER" />
+			<Set PromotionCategory="Ranged" />
+		</Update>
+		<Update>
+			<Where Type="UNITCOMBAT_MOUNTED_ARCHER" />
+			<Set PromotionCategory="Ranged" />
+		</Update>
+		<Update>
+			<Where Type="UNITCOMBAT_SIEGE" />
+			<Set PromotionCategory="Ranged" />
+		</Update>
+		<Update>
+			<Where Type="UNITCOMBAT_RECON" />
+			<Set PromotionCategory="Vanguard" />
+		</Update>
+		<Update>
+			<Where Type="UNITCOMBAT_NAVAL" />
+			<Set PromotionCategory="Naval" />
+		</Update>
+		<Update>
+			<Where Type="UNITCOMBAT_SUBMARINE" />
+			<Set PromotionCategory="Submarine" />
+		</Update>
+	</UnitCombatInfos>
+	<UnitPromotions_Equivilancy>
+		<Row>
+			<Melee>PROMOTION_SHOCK_1</Melee>
+			<Ranged>PROMOTION_ACCURACY_1</Ranged>
+			<Vanguard>PROMOTION_TRENCHES_1</Vanguard>
+		</Row>
+		<Row>
+			<Melee>PROMOTION_SHOCK_2</Melee>
+			<Ranged>PROMOTION_ACCURACY_2</Ranged>
+			<Vanguard>PROMOTION_TRENCHES_2</Vanguard>
+		</Row>
+		<Row>
+			<Melee>PROMOTION_SHOCK_3</Melee>
+			<Ranged>PROMOTION_ACCURACY_3</Ranged>
+			<Vanguard>PROMOTION_TRENCHES_3</Vanguard>
+		</Row>
+		<Row>
+			<Melee>PROMOTION_DRILL_1</Melee>
+			<Ranged>PROMOTION_BARRAGE_1</Ranged>
+			<Vanguard>PROMOTION_GUERRILLA_1</Vanguard>
+		</Row>
+		<Row>
+			<Melee>PROMOTION_DRILL_2</Melee>
+			<Ranged>PROMOTION_BARRAGE_2</Ranged>
+			<Vanguard>PROMOTION_GUERRILLA_2</Vanguard>
+		</Row>
+		<Row>
+			<Melee>PROMOTION_DRILL_3</Melee>
+			<Ranged>PROMOTION_BARRAGE_3</Ranged>
+			<Vanguard>PROMOTION_GUERRILLA_3</Vanguard>
+		</Row>
+		<Row>
+			<Melee>PROMOTION_COVER_1</Melee>
+			<Ranged>PROMOTION_COVER_1</Ranged>
+			<Vanguard>PROMOTION_COVER_VANGUARD_1</Vanguard>
+		</Row>
+		<Row>
+			<Melee>PROMOTION_MARCH</Melee>
+			<Ranged>PROMOTION_MARCH_RANGED</Ranged>
+			<Vanguard>PROMOTION_MARCH_VANGUARD</Vanguard>
+		</Row>
+		<Row>
+			<Melee>PROMOTION_BLITZ</Melee>
+			<Ranged>PROMOTION_AIR_LOGISTICS</Ranged>
+		</Row>
+		<Row>
+			<Melee>PROMOTION_CHARGE</Melee>
+			<Ranged>PROMOTION_RANGE</Ranged>
+		</Row>
+		<Row>
+			<Melee>PROMOTION_AMBUSH_1</Melee>
+			<Ranged>PROMOTION_VOLLEY</Ranged>
+		</Row>
+		<Row>
+			<Melee>PROMOTION_MEDIC</Melee>
+			<Ranged>PROMOTION_MEDIC</Ranged>
+			<Vanguard>PROMOTION_MEDIC</Vanguard>
+		</Row>
+	</UnitPromotions_Equivilancy>
+	<Trait_MovesChangeUnitCombats>
+		<Row>
+			<TraitType>TRAIT_TERROR</TraitType>
+			<UnitCombatType>UNITCOMBAT_MOUNTED_ARCHER</UnitCombatType>
+			<MovesChange>1</MovesChange>
+		</Row>
+	</Trait_MovesChangeUnitCombats>
+	<Units>
+		<Update>
+			<Where Class="UNITCLASS_NUCLEAR_SUBMARINE"/>
+			<Set CombatClass="UNITCOMBAT_SUBMARINE"/>
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_SUBMARINE"/>
+			<Set CombatClass="UNITCOMBAT_SUBMARINE"/>
+		</Update>
+		<Update>
+			<Where Type="UNIT_MONGOLIAN_KESHIK"/>
+			<Set Moves="4"/>
+		</Update>
+	</Units>
+	<UnitPromotions>
+		<Update>
+			<Where Type="PROMOTION_STATUE_ZEUS"/>
+			<Set PortraitIndex="42"/>
+		</Update>
+	</UnitPromotions>
+	<Buildings>
+		<!--
+		<Update>
+			<Where Type="BUILDING_KREPOST"/>
+			<Set PlotCultureCostModifier="0" LocalPlotCultureCostModifier="-50" />
+		</Update>
+		-->
+		<Update>
+			<Where Type="BUILDING_HARBOR" />
+			<Set Strategy="TXT_KEY_PRODUCTION_BUILDING_CAPITAL_EXTRA" />
+		</Update>
+		<Update>
+			<Where BuildingClass="BUILDINGCLASS_COURTHOUSE" />
+			<Set NoOccupiedUnhappiness="false"
+				 NoOccupiedUnhappinessFixed="true"
+				 OnlyAI="true"
+				 />
+		</Update>
+	</Buildings>
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_COURTHOUSE</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_CAN_BUILD_COURTHOUSE</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+
+
+
+	<!--
+			Capital Science
+	-->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_SCIENCE_BONUS</Type>
+			<DefaultBuilding>BUILDING_SCIENCE_BONUS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_SCIENCE_BONUS</Description>
+			<MaxPlayerInstances>0</MaxPlayerInstances>
+			<NoLimit>true</NoLimit>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_SCIENCE_PENALTY</Type>
+			<DefaultBuilding>BUILDING_SCIENCE_PENALTY</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_SCIENCE_PENALTY</Description>
+			<MaxPlayerInstances>0</MaxPlayerInstances>
+			<NoLimit>true</NoLimit>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_SCIENCE_BONUS</Type>
+			<BuildingClass>BUILDINGCLASS_SCIENCE_BONUS</BuildingClass>
+			<Cost>0</Cost>
+			<Description>TXT_KEY_BUILDING_SCIENCE_BONUS</Description>
+			<Help>TXT_KEY_BUILDING_SCIENCE_BONUS_HELP</Help>
+			<Strategy>TXT_KEY_BUILDING_SCIENCE_BONUS</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_SCIENCE_BONUS</Civilopedia>
+			<AlwaysShowHelp>true</AlwaysShowHelp>
+			<ArtDefineTag>PALACE</ArtDefineTag>
+			<NukeImmune>true</NukeImmune>
+			<MinAreaSize>-1</MinAreaSize>
+			<DisplayPosition>32</DisplayPosition>
+			<NeverCapture>true</NeverCapture>
+			<PortraitIndex>17</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<IsVisible>true</IsVisible>
+		</Row>
+		<Row>
+			<Type>BUILDING_SCIENCE_PENALTY</Type>
+			<BuildingClass>BUILDINGCLASS_SCIENCE_PENALTY</BuildingClass>
+			<Cost>0</Cost>
+			<Description>TXT_KEY_BUILDING_SCIENCE_PENALTY</Description>
+			<Help>TXT_KEY_BUILDING_SCIENCE_PENALTY_HELP</Help>
+			<Strategy>TXT_KEY_BUILDING_SCIENCE_PENALTY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_SCIENCE_PENALTY</Civilopedia>
+			<AlwaysShowHelp>true</AlwaysShowHelp>
+			<ArtDefineTag>PALACE</ArtDefineTag>
+			<NukeImmune>true</NukeImmune>
+			<MinAreaSize>-1</MinAreaSize>
+			<DisplayPosition>32</DisplayPosition>
+			<NeverCapture>true</NeverCapture>
+			<PortraitIndex>17</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<IsVisible>true</IsVisible>
+		</Row>
+	</Buildings>
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_SCIENCE_BONUS</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_SCIENCE_PENALTY</BuildingType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>-1</Yield>
+		</Row>
+	</Building_YieldModifiers>
+
+
+
+	<!--
+			Monopolization
+	-->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_LUXURY_SURPLUS_HAPPINESS</Type>
+			<DefaultBuilding>BUILDING_EXTRA_HAPPINESS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_EXTRA_HAPPINESS</Description>
+			<MaxPlayerInstances>0</MaxPlayerInstances>
+			<NoLimit>true</NoLimit>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_EXTRA_HAPPINESS</Type>
+			<BuildingClass>BUILDINGCLASS_LUXURY_SURPLUS_HAPPINESS</BuildingClass>
+			<Cost>0</Cost>
+			<Description>TXT_KEY_BUILDING_EXTRA_HAPPINESS</Description>
+			<Help>TXT_KEY_BUILDING_EXTRA_HAPPINESS_HELP</Help>
+			<Strategy>TXT_KEY_BUILDING_EXTRA_HAPPINESS_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_EXTRA_HAPPINESS_PEDIA</Civilopedia>
+			<AlwaysShowHelp>true</AlwaysShowHelp>
+			<ArtDefineTag>PALACE</ArtDefineTag>
+			<UnmoddedHappiness>1</UnmoddedHappiness>
+			<NukeImmune>true</NukeImmune>
+			<MinAreaSize>-1</MinAreaSize>
+			<DisplayPosition>32</DisplayPosition>
+			<NeverCapture>true</NeverCapture>
+			<PortraitIndex>17</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<IsVisible>false</IsVisible>
+		</Row>
+	</Buildings>
+
+
+
+	<!--
+			Arabian Trade Bonus
+	-->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_DESERT_CARAVANS</Type>
+			<DefaultBuilding>BUILDING_DESERT_CARAVANS</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_DESERT_CARAVANS</Description>
+			<MaxPlayerInstances>0</MaxPlayerInstances>
+			<NoLimit>true</NoLimit>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_DESERT_CARAVANS</Type>
+			<BuildingClass>BUILDINGCLASS_DESERT_CARAVANS</BuildingClass>
+			<Cost>0</Cost>
+			<Description>TXT_KEY_BUILDING_DESERT_CARAVANS</Description>
+			<Help>TXT_KEY_BUILDING_DESERT_CARAVANS_HELP</Help>
+			<Strategy>TXT_KEY_BUILDING_DESERT_CARAVANS_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_BUILDING_DESERT_CARAVANS_PEDIA</Civilopedia>
+			<AlwaysShowHelp>true</AlwaysShowHelp>
+			<ArtDefineTag>PALACE</ArtDefineTag>
+			<NukeImmune>true</NukeImmune>
+			<MinAreaSize>-1</MinAreaSize>
+			<DisplayPosition>32</DisplayPosition>
+			<NeverCapture>true</NeverCapture>
+			<PortraitIndex>23</PortraitIndex>
+			<IconAtlas>TECH_ATLAS_1</IconAtlas>
+			<IsVisible>false</IsVisible>
+		</Row>
+	</Buildings>
+	<Building_GlobalYieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_DESERT_CARAVANS</BuildingType>
+			<YieldType>YIELD_GOLD</YieldType>
+			<Yield>5</Yield>
+		</Row>
+	</Building_GlobalYieldModifiers>
+
+
+
+	<!--
+			Puppets and Annexation
+	-->
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_VICEROY</Type>
+			<DefaultBuilding>BUILDING_VICEROY</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_VICEROY</Description>
+			<MaxPlayerInstances>0</MaxPlayerInstances>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_PUPPET_MODIFIER</Type>
+			<DefaultBuilding>BUILDING_PUPPET_MODIFIER</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_PUPPET_MODIFIER</Description>
+			<MaxPlayerInstances>0</MaxPlayerInstances>
+			<NoLimit>true</NoLimit>
+		</Row>
+		<Row>
+			<Type>BUILDINGCLASS_CAN_BUILD_COURTHOUSE</Type>
+			<DefaultBuilding>BUILDING_CAN_BUILD_COURTHOUSE</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_CAN_BUILD_COURTHOUSE</Description>
+			<MaxPlayerInstances>0</MaxPlayerInstances>
+		</Row>
+	</BuildingClasses>
+	<Buildings>
+		<Row>
+			<Type>BUILDING_VICEROY</Type>
+			<BuildingClass>BUILDINGCLASS_VICEROY</BuildingClass>
+			<Cost>0</Cost>
+			<Description>TXT_KEY_BUILDING_VICEROY</Description>
+			<AlwaysShowHelp>true</AlwaysShowHelp>
+			<Help>TXT_KEY_BUILDING_VICEROY_HELP</Help>
+			<ArtDefineTag>ART_DEF_BUILDING_VICEROY</ArtDefineTag>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>19</PortraitIndex>
+			<IsVisible>false</IsVisible>
+		</Row>
+		<Row>
+			<Type>BUILDING_PUPPET_MODIFIER</Type>
+			<BuildingClass>BUILDINGCLASS_PUPPET_MODIFIER</BuildingClass>
+			<Cost>0</Cost>
+			<Description>TXT_KEY_BUILDING_PUPPET_MODIFIER</Description>
+			<AlwaysShowHelp>true</AlwaysShowHelp>
+			<Help>TXT_KEY_BUILDING_PUPPET_MODIFIER_HELP</Help>
+			<ArtDefineTag>ART_DEF_BUILDING_PUPPET_MODIFIER</ArtDefineTag>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>19</PortraitIndex>
+			<IsVisible>false</IsVisible>
+		</Row>
+		<Row>
+			<Type>BUILDING_CAN_BUILD_COURTHOUSE</Type>
+			<BuildingClass>BUILDINGCLASS_CAN_BUILD_COURTHOUSE</BuildingClass>
+			<Cost>0</Cost>
+			<Description>TXT_KEY_BUILDING_CAN_BUILD_COURTHOUSE</Description>
+			<AlwaysShowHelp>true</AlwaysShowHelp>
+			<Help>TXT_KEY_BUILDING_CAN_BUILD_COURTHOUSE_HELP</Help>
+			<ArtDefineTag>ART_DEF_BUILDING_VICEROY</ArtDefineTag>
+			<HurryCostModifier>-1</HurryCostModifier>
+			<MinAreaSize>-1</MinAreaSize>
+			<NeverCapture>true</NeverCapture>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<PortraitIndex>19</PortraitIndex>
+			<IsVisible>false</IsVisible>
+		</Row>
+	</Buildings>
+
+
+	<HistoricRankings>
+		<Delete />
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_1</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_1_QUOTE</LeaderQuote>
+			<LeaderScore>8000</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_2</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_2_QUOTE</LeaderQuote>
+			<LeaderScore>7000</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_3</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_3_QUOTE</LeaderQuote>
+			<LeaderScore>6100</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_4</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_4_QUOTE</LeaderQuote>
+			<LeaderScore>5300</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_5</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_5_QUOTE</LeaderQuote>
+			<LeaderScore>4600</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_6</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_6_QUOTE</LeaderQuote>
+			<LeaderScore>4000</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_7</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_7_QUOTE</LeaderQuote>
+			<LeaderScore>3500</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_8</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_8_QUOTE</LeaderQuote>
+			<LeaderScore>3000</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_9</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_9_QUOTE</LeaderQuote>
+			<LeaderScore>2600</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_10</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_10_QUOTE</LeaderQuote>
+			<LeaderScore>2300</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_11</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_11_QUOTE</LeaderQuote>
+			<LeaderScore>2000</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_12</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_12_QUOTE</LeaderQuote>
+			<LeaderScore>1800</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_13</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_13_QUOTE</LeaderQuote>
+			<LeaderScore>1600</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_14</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_14_QUOTE</LeaderQuote>
+			<LeaderScore>1400</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_15</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_15_QUOTE</LeaderQuote>
+			<LeaderScore>1200</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_16</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_16_QUOTE</LeaderQuote>
+			<LeaderScore>1000</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_17</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_17_QUOTE</LeaderQuote>
+			<LeaderScore>750</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_18</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_18_QUOTE</LeaderQuote>
+			<LeaderScore>500</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_19</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_19_QUOTE</LeaderQuote>
+			<LeaderScore>250</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_20</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_20_QUOTE</LeaderQuote>
+			<LeaderScore>100</LeaderScore>
+		</Row>
+		<Row>
+			<HistoricLeader>TXT_KEY_DQ_LEADER_NAME_21</HistoricLeader>
+			<LeaderQuote>TXT_KEY_DQ_LEADER_NAME_21_QUOTE</LeaderQuote>
+			<LeaderScore>0</LeaderScore>
+		</Row>
+	</HistoricRankings>
+</GameData>

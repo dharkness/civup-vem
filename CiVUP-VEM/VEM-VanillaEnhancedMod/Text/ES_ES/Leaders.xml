@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_es_ES>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_INGENIOUS" />
+			<Set Text="Recibe un Gran científico gratis al descubrir la Escritura. Los Grandes científicos aparecen un 66% más rápido." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_BAZAAR_HELP" />
+			<Set Text="Proporciona un recurso extra por cada uno cerca de esta ciudad y 1 espacio extra de especialista [ICON_CITIZEN] Mercader." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_LONGHOUSE_HELP" />
+			<Set Text="+20% [ICON_PRODUCTION] a la producción al construir Edificios.[NEWLINE][NEWLINE]+1 de Producción [ICON_PRODUCTION] por cada casilla de Bosque o Jungla explotada." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_RIVER_EXPANSION" />
+			<Set Text="Todas las unidades militares terrestres tienen +1 de alcance visual. 33% de descuento en la compra de casillas." />
+		</Update>
+		<Row Tag="TXT_KEY_TRAIT_GOVERNANCE_SHORT">
+			<Text>Legislador</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_GOVERNANCE">
+			<Text>Los [ICON_GREAT_PEOPLE] Grandes Personajes se crean un 33% más rápido.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_OTTOMAN_JANISSARY_STRATEGY" />
+			<Set Text="El Jenízaro es una unidad exclusiva Otomana que sustituye al Mosquete. Recibe una importante bonificación al combate cuando ataca. Además, se cura +2 de daño automáticamente cuando destruye a una unidad. Esto puede conceder al ejército que lo lleve una ventaja aplastante contra una fuerza enemiga que esté a la defensiva." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_POPULATION_GROWTH" />
+			<Set Text="Reduce un 25% la [ICON_HAPPINESS_4] Infelicidad por el número de [ICON_CITIZEN] Ciudadanos, aumenta un 66% la[ICON_HAPPINESS_4] Infelicidad por el número de Ciudades." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_B17" />
+			<Set Text="Una unidad aérea que siembra la muerte sobre unidades terrestres y marítimas. Solo los estadounidenses pueden construirla. Esta unidad tiene posibilidades de burlar la intercepción, más rango y hace más daño a las ciudades que el Bombardero, al que sustituye." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_ZERO" />
+			<Set Text="Una unidad aérea pensada para controlar los cielos e interceptar a los aviones enemigos que se acerquen. Solo los japoneses pueden construirla. Esta unidad tiene más rango y una bonificación al luchar contra otros Cazas, a diferencia del Caza, al que sustituye." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_PANZER" />
+			<Set Text="Una unidad rápida y poderosa de la Era Industrial. Recibe una penalización al atacar ciudades y cuando defiende, pero es increíblemente eficaz en terreno abierto.[NEWLINE][NEWLINE]Sólo los alemanes pueden construirlo. Esta unidad tiene más movimiento y rango de visión que el Tanque, al que sustituye." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_JAGUAR" />
+			<Set Text="Unidad militar de inicios del juego bastante débil exclusiva para los Aztecas. Los Jaguares luchan con mayor eficacia en la selva, se mueven rápidamente en los bosques y selvas y sanan el daño cuando matan una unidad enemiga, a diferencia del Guerrero al se sustituye." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_IROQUOIAN_MOHAWKWARRIOR_STRATEGY" />
+			<Set Text="El guerrero Mohawk es la unidad exclusiva de los Iroquíes que reemplaza al Soldado con Espada. El guerrero Mohawk lucha más fuerte y se mueve más rápido en el bosque y en la selva." />
+		</Update>
+	</Language_es_ES>
+</GameData>

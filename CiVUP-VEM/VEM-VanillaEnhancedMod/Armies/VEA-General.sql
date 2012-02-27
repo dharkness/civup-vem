@@ -1,0 +1,280 @@
+--
+-- Unit Stats
+-- 
+
+UPDATE Units
+SET Combat = ROUND(Combat * 1.1, 0)
+WHERE Class = 'UNITCLASS_SWORDSMAN';
+
+UPDATE Units
+SET Combat = ROUND(Combat * 1.2, 0)
+WHERE Class = 'UNITCLASS_HORSEMAN';
+
+UPDATE Units
+SET RangedCombat = RangedCombat - 1
+WHERE Class = 'UNITCLASS_CROSSBOWMAN';
+
+UPDATE Units
+SET Combat = ROUND(Combat * 1.06, 0)
+WHERE Class = 'UNITCLASS_LONGSWORDSMAN';
+
+UPDATE Units
+SET Combat = ROUND(Combat * 1.09, 0)
+WHERE Class = 'UNITCLASS_TANK';
+
+UPDATE Units
+SET RangedCombat = ROUND(RangedCombat * 0.75, 0)
+WHERE Class = 'UNITCLASS_CHARIOT_ARCHER';
+
+UPDATE Units
+SET RangedCombat = ROUND(RangedCombat * 1.2, 0)
+WHERE CombatClass = 'UNITCOMBAT_SIEGE'
+AND NOT Type IN ('UNIT_KOREAN_HWACHA')
+AND NOT Class IN ('UNITCLASS_ARTILLERY','UNITCLASS_CANNON');
+
+UPDATE Unit_ResourceQuantityRequirements
+SET ResourceType = 'RESOURCE_ALUMINUM'
+WHERE UnitType IN (
+	'UNIT_BOMBER',
+	'UNIT_AMERICAN_B17',
+	'UNIT_FIGHTER',
+	'UNIT_JAPANESE_ZERO'
+);
+
+UPDATE Unit_ResourceQuantityRequirements
+SET ResourceType = 'RESOURCE_OIL'
+WHERE UnitType IN (
+	'UNIT_MODERN_ARMOR',
+	'UNIT_NUCLEAR_SUBMARINE',
+	'UNIT_MISSILE_CRUISER'
+);
+
+--
+-- Free Promotions
+--
+
+UPDATE Unit_FreePromotions
+SET PromotionType = 'PROMOTION_CITY_ASSAULT'
+WHERE PromotionType = 'PROMOTION_CITY_SIEGE';
+
+INSERT INTO UnitPromotions_UnitClasses (PromotionType, UnitClassType, Attack, Defense)
+SELECT DISTINCT 'PROMOTION_NAVAL_PENALTY', Class, -50, 50
+FROM Units WHERE (
+	Domain = 'DOMAIN_SEA'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_NAVAL_PENALTY'
+FROM Units WHERE (
+	RangedCombat > 0
+	AND Domain = 'DOMAIN_LAND'
+	AND NOT CombatClass = 'UNITCOMBAT_SIEGE'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_CITY_SIEGE'
+FROM Units WHERE Class IN (
+	'UNITCLASS_SWORDSMAN',
+	'UNITCLASS_LONGSWORDSMAN'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_DEFENSE_1'
+FROM Units WHERE CombatClass IN (
+	'UNITCOMBAT_RECON'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_COMRADERY'
+FROM Units WHERE CombatClass IN (
+	'UNITCOMBAT_RECON'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_DEFENSE_1'
+FROM Units WHERE Class IN (
+	'UNITCLASS_SPEARMAN',
+	'UNITCLASS_PIKEMAN'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_CAN_MOVE_AFTER_ATTACKING'
+FROM Units WHERE Class IN (
+	'UNITCLASS_CHARIOT_ARCHER'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_ANTI_CAVALRY'
+FROM Units WHERE Class IN (
+	'UNITCLASS_LANCER'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_ATTACK_BONUS_NOUPGRADE'
+FROM Units WHERE Class IN (
+	'UNITCLASS_LANCER'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_NAVAL_DEMOLISH'
+FROM Units WHERE Class IN (
+	'UNITCLASS_SHIP_OF_THE_LINE',
+	'UNITCLASS_IRONCLAD',
+	'UNITCLASS_BATTLESHIP',
+	'UNITCLASS_MISSILE_CRUISER'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_NAVAL_RECON_1'
+FROM Units WHERE Class IN (
+	'UNITCLASS_CARAVEL',
+	'UNITCLASS_FRIGATE',
+	'UNITCLASS_DESTROYER'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_EXTRA_SIGHT_NOUPGRADE_I'
+FROM Units WHERE Class IN (
+	'UNITCLASS_DESTROYER',
+	'UNITCLASS_SUBMARINE',
+	'UNITCLASS_NUCLEAR_SUBMARINE'
+);
+
+INSERT INTO Unit_FreePromotions (UnitType, PromotionType)
+SELECT DISTINCT Type, 'PROMOTION_CAPITAL_SHIP_BONUS'
+FROM Units WHERE Class IN (
+	'UNITCLASS_SUBMARINE',
+	'UNITCLASS_NUCLEAR_SUBMARINE'
+);
+
+UPDATE Unit_FreePromotions
+SET PromotionType = 'PROMOTION_SMALL_CITY_PENALTY'
+WHERE PromotionType = 'PROMOTION_CITY_PENALTY'
+AND UnitType IN (
+	'UNIT_HORSEMAN',
+	'UNIT_GREEK_COMPANIONCAVALRY',
+	'UNIT_KNIGHT',
+	'UNIT_SIAMESE_WARELEPHANT',
+	'UNIT_LANCER',
+	'UNIT_OTTOMAN_SIPAHI',
+	'UNIT_CAVALRY',
+	'UNIT_RUSSIAN_COSSACK'
+);
+
+UPDATE Unit_FreePromotions
+SET PromotionType = 'PROMOTION_BLITZ'
+WHERE PromotionType = 'PROMOTION_LOGISTICS';
+
+UPDATE Unit_FreePromotions
+SET PromotionType = 'PROMOTION_ANTI_MOUNTED_NOUPGRADE_II'
+WHERE PromotionType = 'PROMOTION_ANTI_MOUNTED_II'
+AND UnitType IN (
+	'UNIT_SPEARMAN',
+	'UNIT_BARBARIAN_SPEARMAN',
+	'UNIT_PERSIAN_IMMORTAL',
+	'UNIT_PIKEMAN',
+	'UNIT_GERMAN_LANDSKNECHT'
+);
+
+--
+-- Misc
+--
+
+UPDATE Buildings
+SET ConquestProb = 100
+WHERE HurryCostModifier != -1;
+
+UPDATE Buildings
+SET ConquestProb = 0
+WHERE BuildingClass IN (
+	'BUILDINGCLASS_COURTHOUSE',
+	'BUILDINGCLASS_WALLS',
+	'BUILDINGCLASS_CASTLE',
+	'BUILDINGCLASS_ARSENAL',
+	'BUILDINGCLASS_MILITARY_BASE',
+	'BUILDINGCLASS_FACTORY',
+	'BUILDINGCLASS_SOLAR_PLANT',
+	'BUILDINGCLASS_NUCLEAR_PLANT'
+);
+
+UPDATE Buildings
+SET ConquestProb = 50
+WHERE BuildingClass IN (
+	'BUILDINGCLASS_LIBRARY',
+	'BUILDINGCLASS_COLOSSEUM',
+	'BUILDINGCLASS_THEATRE',
+	'BUILDINGCLASS_STADIUM',
+	'BUILDINGCLASS_MARKET',
+	'BUILDINGCLASS_BANK',
+	'BUILDINGCLASS_STOCK_EXCHANGE',
+	'BUILDINGCLASS_MINT',
+	'BUILDINGCLASS_HARBOR'
+);
+
+UPDATE Units
+SET HurryCostModifier = -1
+WHERE Special = 'SPECIALUNIT_PEOPLE'
+AND NOT CombatClass = 'UNITCOMBAT_DIPLOMACY';
+
+UPDATE UnitPromotions
+SET LostWithUpgrade = 1
+WHERE (
+	   Type LIKE '%PENALTY%'
+	OR Type LIKE '%NOUPGRADE%'
+	OR Type IN (
+		'PROMOTION_ROUGH_TERRAIN_ENDS_TURN',	-- penalty
+		'PROMOTION_ONLY_DEFENSIVE', 			-- penalty
+		'PROMOTION_NO_DEFENSIVE_BONUSES', 		-- penalty
+		'PROMOTION_MUST_SET_UP', 				-- penalty
+		'PROMOTION_CITY_ASSAULT',				-- demolish
+		'PROMOTION_CITY_SIEGE', 				-- demolish
+		'PROMOTION_GREAT_GENERAL', 				-- leadership
+		'PROMOTION_CAN_MOVE_AFTER_ATTACKING', 	-- mobile
+		'PROMOTION_ANTI_HELICOPTER'				-- fighters
+	)
+);
+
+UPDATE UnitPromotions
+SET LostWithUpgrade = 1
+WHERE PediaType = 'PEDIA_ATTRIBUTES'
+AND NOT Type IN (
+	'PROMOTION_INDIRECT_FIRE', 					-- earned
+	'PROMOTION_CAN_MOVE_AFTER_ATTACKING',		-- not important
+	'PROMOTION_IGNORE_TERRAIN_COST', 			-- minutemen
+	'PROMOTION_PHALANX', 						-- hoplites
+	'PROMOTION_GOLDEN', 						-- immortals	
+	'PROMOTION_DESERT_POWER', 					-- barbarians
+	'PROMOTION_ARCTIC_POWER', 					-- barbarians
+	'PROMOTION_GUERRILLA', 						-- barbarians
+	'PROMOTION_FREE_UPGRADES', 					-- citystates	
+	'PROMOTION_HANDICAP_I', 					-- handicap
+	'PROMOTION_HANDICAP_II', 					-- handicap	
+	'PROMOTION_OCEAN_MOVEMENT'					-- england
+	)
+AND NOT Type IN (
+	SELECT PromotionType
+	FROM Unit_FreePromotions
+	WHERE UnitType IN (
+		SELECT UnitType
+		FROM Civilization_UnitClassOverrides
+		WHERE CivilizationType != 'CIVILIZATION_BARBARIAN'
+	)
+);
+
+UPDATE UnitPromotions
+SET   PortraitIndex = '58'
+WHERE PortraitIndex = '59'
+AND   LostWithUpgrade = 1;
+
+UPDATE UnitPromotions
+SET   PortraitIndex = '59'
+WHERE PortraitIndex = '58'
+AND   LostWithUpgrade = 0
+AND NOT Type IN (
+	'PROMOTION_HANDICAP_I', 		-- handicap
+	'PROMOTION_HANDICAP_II' 		-- handicap	
+);
+
+UPDATE Units
+SET HurryCostModifier = ROUND((HurryCostModifier + 100) * 1.50 - 100, 0)
+WHERE (Combat > 0 OR RangedCombat > 0) AND HurryCostModifier >= 0;

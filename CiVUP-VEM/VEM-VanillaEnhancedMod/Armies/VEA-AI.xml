@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Unit_Flavors>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_ARCHER" />					<Set Flavor="4"  /><!-- 1  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_SPEARMAN" />					<Set Flavor="3"  /><!-- 1  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_CATAPULT" />					<Set Flavor="4"  /><!-- 4  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_ROMAN_BALLISTA" />			<Set Flavor="4"  /><!-- 8  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_CROSSBOWMAN" />				<Set Flavor="5"  /><!-- 4  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_TREBUCHET" />				<Set Flavor="5"  /><!-- 3  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_CANNON" />					<Set Flavor="6"  /><!-- 4  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_ARTILLERY" />				<Set Flavor="8"  /><!-- 10 --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_CHARIOT_ARCHER" />			<Set Flavor="4"  /><!-- 2  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_EGYPTIAN_WARCHARIOT" />		<Set Flavor="5"  /><!-- 3  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_INDIAN_WARELEPHANT" />		<Set Flavor="5"  /><!-- 3  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_HORSEMAN" />					<Set Flavor="6"  /><!-- 6  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_GREEK_COMPANIONCAVALRY" />	<Set Flavor="10" /><!-- 10 --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_KNIGHT" />					<Set Flavor="9"  /><!-- 9  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_ARABIAN_CAMELARCHER" />		<Set Flavor="5"  /><!-- 5  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_SONGHAI_MUSLIMCAVALRY" />	<Set Flavor="12" /><!-- 12 --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_SIAMESE_WARELEPHANT" />		<Set Flavor="10" /><!-- 10 --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_PIKEMAN" />					<Set Flavor="4"  /><!-- 4  --></Update>
+				  <Row><FlavorType>FLAVOR_OFFENSE</FlavorType>	<UnitType>UNIT_LEVY</UnitType>					 <Flavor>6</Flavor></Row>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_LANCER" />					<Set Flavor="9"  /><!-- 6  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_ANTI_TANK_GUN" />			<Set Flavor="7"  /><!-- 1  --></Update>
+				  <Row><FlavorType>FLAVOR_OFFENSE</FlavorType>	<UnitType>UNIT_SKIRMISHER</UnitType>			 <Flavor>9</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_OFFENSE</FlavorType>	<UnitType>UNIT_LIGHT_INFANTRY</UnitType>		 <Flavor>11</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_OFFENSE</FlavorType>	<UnitType>UNIT_ANTI_AIRCRAFT_GUN</UnitType>		 <Flavor>7</Flavor></Row>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_ARCHER" />					<Set Flavor="4"  /><!-- 2  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_CATAPULT" />					<Set Flavor="1"  /><!-- 4  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_ROMAN_BALLISTA" />			<Set Flavor="3"  /><!-- 6  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_CROSSBOWMAN" />				<Set Flavor="4"  /><!-- 4  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_TREBUCHET" />				<Set Flavor="2"  /><!-- 3  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_PIKEMAN" />					<Set Flavor="4"  /><!-- 6  --></Update>
+				  <Row><FlavorType>FLAVOR_DEFENSE</FlavorType>	<UnitType>UNIT_LEVY</UnitType>					 <Flavor>6</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_DEFENSE</FlavorType>	<UnitType>UNIT_CHARIOT_ARCHER</UnitType>		 <Flavor>4</Flavor></Row>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_EGYPTIAN_WARCHARIOT" />		<Set Flavor="5"  /><!-- 1  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_INDIAN_WARELEPHANT" />		<Set Flavor="6"  /><!-- 3  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_HORSEMAN" />					<Set Flavor="2"  /><!-- 2  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_GREEK_COMPANIONCAVALRY" />	<Set Flavor="3"  /><!-- 3  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_KNIGHT" />					<Set Flavor="5"  /><!-- 3  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_SIAMESE_WARELEPHANT" />		<Set Flavor="16" /><!-- 16 --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_SONGHAI_MUSLIMCAVALRY" />	<Set Flavor="4"  /><!-- 4  --></Update>
+				  <Row><FlavorType>FLAVOR_DEFENSE</FlavorType>	<UnitType>UNIT_ARABIAN_CAMELARCHER</UnitType> 	 <Flavor>8</Flavor></Row>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_CANNON" />					<Set Flavor="3"  /><!-- 4  --></Update>
+				  <Row><FlavorType>FLAVOR_DEFENSE</FlavorType>	<UnitType>UNIT_SKIRMISHER</UnitType>			 <Flavor>10</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_DEFENSE</FlavorType>	<UnitType>UNIT_LIGHT_INFANTRY</UnitType>		 <Flavor>12</Flavor></Row>
+		<Update><Where FlavorType="FLAVOR_RANGED"				UnitType="UNIT_TREBUCHET" />				<Set Flavor="4"  /><!-- 5  --></Update>
+		<Update><Where FlavorType="FLAVOR_RANGED"				UnitType="UNIT_CATAPULT" />					<Set Flavor="4"  /><!-- 12 --></Update>
+		<Update><Where FlavorType="FLAVOR_RANGED"				UnitType="UNIT_ROMAN_BALLISTA" />			<Set Flavor="5"  /><!-- 16 --></Update>
+		<Update><Where FlavorType="FLAVOR_RANGED"				UnitType="UNIT_CROSSBOWMAN" />				<Set Flavor="8"  /><!-- 6  --></Update>
+		<Update><Where FlavorType="FLAVOR_RANGED"				UnitType="UNIT_CHARIOT_ARCHER" />			<Set Flavor="4"  /><!-- 4  --></Update>
+		<Update><Where FlavorType="FLAVOR_RANGED"				UnitType="UNIT_EGYPTIAN_WARCHARIOT" />		<Set Flavor="8"  /><!-- 8  --></Update>
+		<Update><Where FlavorType="FLAVOR_RANGED"				UnitType="UNIT_INDIAN_WARELEPHANT" />		<Set Flavor="8"  /><!-- 8  --></Update>
+		<Update><Where FlavorType="FLAVOR_RANGED"				UnitType="UNIT_ARABIAN_CAMELARCHER" />		<Set Flavor="10" /><!-- 10 --></Update>
+				  <Row><FlavorType>FLAVOR_MOBILE</FlavorType>   <UnitType>UNIT_SCOUT</UnitType>					 <Flavor>1</Flavor></Row>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_CHARIOT_ARCHER" />			<Set Flavor="2"  /><!-- 1  --></Update>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_EGYPTIAN_WARCHARIOT" />		<Set Flavor="4"  /><!-- 4  --></Update>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_INDIAN_WARELEPHANT" />		<Set Flavor="3"  /><!-- 2  --></Update>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_HORSEMAN" />					<Set Flavor="4"  /><!-- 4  --></Update>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_GREEK_COMPANIONCAVALRY" />	<Set Flavor="6"  /><!-- 6  --></Update>
+				  <Row><FlavorType>FLAVOR_MOBILE</FlavorType>   <UnitType>UNIT_LEVY</UnitType>					 <Flavor>4</Flavor></Row>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_KNIGHT" />					<Set Flavor="5"  /><!-- 5  --></Update>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_ARABIAN_CAMELARCHER" />		<Set Flavor="10" /><!-- 10 --></Update>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_SONGHAI_MUSLIMCAVALRY" />	<Set Flavor="10" /><!-- 10 --></Update>
+				  <Row><FlavorType>FLAVOR_MOBILE</FlavorType>	<UnitType>UNIT_SKIRMISHER</UnitType>			 <Flavor>6</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_MOBILE</FlavorType>	<UnitType>UNIT_LIGHT_INFANTRY</UnitType>		 <Flavor>8</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_RECON</FlavorType>	<UnitType>UNIT_LEVY</UnitType>					 <Flavor>5</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_RECON</FlavorType>	<UnitType>UNIT_SKIRMISHER</UnitType>			 <Flavor>10</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_RECON</FlavorType>	<UnitType>UNIT_LIGHT_INFANTRY</UnitType>		 <Flavor>15</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_RECON</FlavorType>	<UnitType>UNIT_PARATROOPER</UnitType>			 <Flavor>20</Flavor></Row>
+
+		<Update><Where FlavorType="FLAVOR_NAVAL_RECON"			UnitType="UNIT_TRIREME" />					<Set Flavor="4"  /><!-- 1  --></Update>
+				  <Row><FlavorType>FLAVOR_OFFENSE</FlavorType>	<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>		 <Flavor>15</Flavor></Row>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_IRONCLAD" />					<Set Flavor="15" /><!-- 4  --></Update>
+				  <Row><FlavorType>FLAVOR_DEFENSE</FlavorType>	<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>		 <Flavor>5</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_NAVAL</FlavorType>	<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>		 <Flavor>7</Flavor></Row>
+		<Update><Where FlavorType="FLAVOR_NAVAL"				UnitType="UNIT_IRONCLAD" />					<Set Flavor="7"  /><!-- 6  --></Update>
+		
+		<Delete UnitType="UNIT_CARRIER" />
+				  <Row><FlavorType>FLAVOR_OFFENSE</FlavorType>	<UnitType>UNIT_CARRIER</UnitType>				 <Flavor>1</Flavor></Row>
+		
+		<!-- Modern units, sorted by flavor -->
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_STEALTH_BOMBER" />			<Set Flavor="30" /><!-- 15 --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_BOMBER" />					<Set Flavor="25" /><!-- 10 --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_MODERN_ARMOR" />				<Set Flavor="20" /><!-- 20 --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_GERMAN_PANZER" />			<Set Flavor="20" /><!-- 20 --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_GUIDED_MISSILE" />			<Set Flavor="18" /><!-- 7  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_ROCKET_ARTILLERY" />			<Set Flavor="15" /><!-- 10 --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_HELICOPTER_GUNSHIP" />		<Set Flavor="15" /><!-- 10 --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_TANK" />						<Set Flavor="15" /><!-- 15 --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_MECHANIZED_INFANTRY" />		<Set Flavor="9"  /><!-- 9  --></Update>
+		<Update><Where FlavorType="FLAVOR_OFFENSE"				UnitType="UNIT_PARATROOPER" />				<Set Flavor="8"  /><!-- 9  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_STEALTH_BOMBER" />			<Set Flavor="25" /><!-- 7  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_BOMBER" />					<Set Flavor="20" /><!-- 5  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_GUIDED_MISSILE" />			<Set Flavor="16" /><!-- 2  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_ROCKET_ARTILLERY" />			<Set Flavor="16" /><!-- 5  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_GERMAN_PANZER" />			<Set Flavor="16" /><!-- 10 --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_MECHANIZED_INFANTRY" />		<Set Flavor="16" /><!-- 15 --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_PARATROOPER" />				<Set Flavor="16" /><!-- 16 --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_BOMBER" />					<Set Flavor="15" /><!-- 5  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_MODERN_ARMOR" />				<Set Flavor="15" /><!-- 7  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_TANK" />						<Set Flavor="14" /><!-- 5  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_HELICOPTER_GUNSHIP" />		<Set Flavor="14" /><!-- 8  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_STEALTH_BOMBER" />			<Set Flavor="25" /><!-- 7  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_BOMBER" />					<Set Flavor="20" /><!-- 5  --></Update>
+				  <Row><FlavorType>FLAVOR_MOBILE</FlavorType>	<UnitType>UNIT_STEALTH_BOMBER</UnitType>		 <Flavor>17</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_MOBILE</FlavorType>	<UnitType>UNIT_BOMBER</UnitType>				 <Flavor>16</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_MOBILE</FlavorType>	<UnitType>UNIT_HELICOPTER_GUNSHIP</UnitType>	 <Flavor>15</Flavor></Row>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_MODERN_ARMOR" />				<Set Flavor="14" /><!-- 9  --></Update>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_GERMAN_PANZER" />			<Set Flavor="13" /><!-- 14 --></Update>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_TANK" />						<Set Flavor="9"  /><!-- 10 --></Update>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_PARATROOPER" />				<Set Flavor="9"  /><!-- 3  --></Update>
+		<Update><Where FlavorType="FLAVOR_MOBILE"				UnitType="UNIT_MECHANIZED_INFANTRY" />		<Set Flavor="3"  /><!-- 3  --></Update>
+		<Update><Where FlavorType="FLAVOR_AIR"					UnitType="UNIT_GUIDED_MISSILE" />			<Set Flavor="7"  /><!-- 7  --></Update>
+		<Update><Where FlavorType="FLAVOR_AIR"					UnitType="UNIT_HELICOPTER_GUNSHIP" />		<Set Flavor="5"  /><!-- 12 --></Update>
+				  <Row><FlavorType>FLAVOR_RANGED</FlavorType>	<UnitType>UNIT_STEALTH_BOMBER</UnitType>		 <Flavor>30</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_RANGED</FlavorType>	<UnitType>UNIT_BOMBER</UnitType>				 <Flavor>25</Flavor></Row>
+				  <Row><FlavorType>FLAVOR_RANGED</FlavorType>	<UnitType>UNIT_GUIDED_MISSILE</UnitType>		 <Flavor>15</Flavor></Row>
+		<Update><Where FlavorType="FLAVOR_RANGED"				UnitType="UNIT_ROCKET_ARTILLERY" />			<Set Flavor="11" /><!-- 8  --></Update>
+		<Update><Where FlavorType="FLAVOR_ANTIAIR"				UnitType="UNIT_JET_FIGHTER" />				<Set Flavor="40" /><!-- 5  --></Update>
+		<Update><Where FlavorType="FLAVOR_ANTIAIR"				UnitType="UNIT_FIGHTER" />					<Set Flavor="35" /><!-- 6  --></Update>
+		<Update><Where FlavorType="FLAVOR_ANTIAIR"				UnitType="UNIT_MOBILE_SAM" />				<Set Flavor="30" /><!-- 25 --></Update>
+		<Update><Where FlavorType="FLAVOR_ANTIAIR"				UnitType="UNIT_ANTI_AIRCRAFT_GUN" />		<Set Flavor="25" /><!-- 25 --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_MOBILE_SAM" />				<Set Flavor="3"  /><!-- 6  --></Update>
+		<Update><Where FlavorType="FLAVOR_DEFENSE"				UnitType="UNIT_ANTI_AIRCRAFT_GUN" />		<Set Flavor="3"  /><!-- 6  --></Update>
+	</Unit_Flavors>
+	<AIMilitaryStrategy_Flavors>
+		<Update>
+			<Where AIMilitaryStrategyType="MILITARYAISTRATEGY_NEED_ANTIAIR" FlavorType="FLAVOR_ANTIAIR" />
+			<Set Flavor="25" />
+			<!-- 75 -->
+		</Update>
+		<Update>
+			<Where AIMilitaryStrategyType="MILITARYAISTRATEGY_ENOUGH_ANTIAIR" FlavorType="FLAVOR_ANTIAIR" />
+			<Set Flavor="-50" />
+			<!-- -75 -->
+		</Update>
+	</AIMilitaryStrategy_Flavors>
+</GameData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 12/30/2010 12:48:34 PM -->
+<GameData>
+	<Language_DE_DE>
+		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME">
+			<Text>Erforsche Technologie</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME_HELP">
+			<Text>Fügt {1_num} [ICON_RESEARCH] Wissenschaft zur [COLOR_POSITIVE_TEXT]momentan[ENDCOLOR] zu erforschende Technologie hinzu, mit [COLOR_NEGATIVE_TEXT]keinem Überschuss[ENDCOLOR] für die folgende Technologie.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME_DISABLED_HELP">
+			<Text>Es kann für {1_num} Runden keine Forschung mehr generiert werden.</Text>
+		</Row>
+	</Language_DE_DE>
+</GameData>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 11/10/2010 3:26:53 PM -->
+<GameData>
+  <!-- TODO: Insert table creation example here. -->
+ 
+  <!-- TODO: Insert table data example here.-->
+
+	<BuildingClasses>
+		<Row>
+			<Type>BUILDINGCLASS_RAILYARD</Type>
+			<DefaultBuilding>BUILDING_RAILYARD</DefaultBuilding>
+			<Description>TXT_KEY_BUILDING_RAILYARD</Description>
+		</Row>
+	</BuildingClasses>
+
+	<Buildings>
+		<Row>
+			<Type>BUILDING_RAILYARD</Type>
+			<BuildingClass>BUILDINGCLASS_RAILYARD</BuildingClass>
+			<PrereqTech>TECH_RAILROAD</PrereqTech>
+
+			<AlwaysShowHelp>true</AlwaysShowHelp>
+			<Help>TXT_KEY_BUILDING_RAILYARD_HELP</Help>
+			<Description>TXT_KEY_BUILDING_RAILYARD</Description>
+			<Strategy>TXT_KEY_BUILDING_RAILYARD_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag>
+
+			<MinAreaSize>-1</MinAreaSize>
+			<HurryCostModifier>0</HurryCostModifier>
+			<IconAtlas>BW_ATLAS_1</IconAtlas>
+			<NeverCapture>true</NeverCapture>
+			<PortraitIndex>3</PortraitIndex>
+		</Row>
+	</Buildings>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_BUILDING_RAILYARD_HELP">
+			<Text>Works around a bug (right-click for details).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_RAILYARD">
+			<Text>Central Station</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_RAILYARD_STRATEGY">
+			<Text>The Central Station is a workaround to a bug: the [ICON_CONNECTED] trade network is connected to the capital, yet the capital is not connected to the trade network, a paradox preventing it from recieving the +25% [ICON_PRODUCTION] Railroad bonus.[NEWLINE][NEWLINE]An unbroken [ICON_CONNECTED] route of roads, railroads, or water tiles to the [ICON_CAPITAL] Capital provides [ICON_GOLD].[NEWLINE][NEWLINE]An unbroken [ICON_CONNECTED] route of railroads or water tiles to the [ICON_CAPITAL] Capital provides +25% [ICON_PRODUCTION] (requires Railroads technology).[NEWLINE][NEWLINE]A [ICON_CONNECTED] trade route can only cross between water and land tiles at a Harbor.</Text>
+		</Row>
+	</Language_en_US>
+
+	<Building_YieldModifiers>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<YieldType>YIELD_PRODUCTION</YieldType>
+			<Yield>25</Yield>
+		</Row>
+	</Building_YieldModifiers>
+
+	<Building_ClassesNeededInCity>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+		</Row>
+	</Building_ClassesNeededInCity>
+
+	<Building_Flavors>
+		<!-- Free bugfix, so build this right away! -->
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_OFFENSE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_DEFENSE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_CITY_DEFENSE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_MILITARY_TRAINING</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_RECON</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_RANGED</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_MOBILE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_NAVAL</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_NAVAL_RECON</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_NAVAL_GROWTH</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_NAVAL_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_AIR</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_EXPANSION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_GROWTH</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_INFRASTRUCTURE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_GOLD</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_SCIENCE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_CULTURE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_HAPPINESS</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_GREAT_PEOPLE</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_WONDER</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_RELIGION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_DIPLOMACY</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_SPACESHIP</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_RAILYARD</BuildingType>
+			<FlavorType>FLAVOR_WATER_CONNECTION</FlavorType>
+			<Flavor>100</Flavor>
+		</Row>
+	</Building_Flavors>
+</GameData>

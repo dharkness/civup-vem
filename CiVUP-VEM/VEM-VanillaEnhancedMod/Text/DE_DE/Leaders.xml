@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_de_DE>
+		<!--
+				Traits
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_ART_OF_WAR" />
+			<Set Text="Große Generäle erscheinen schneller, haben eine vergrößte Sichtweite und erhöhen die Kampfstärke." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER" />
+			<Set Text="25% [ICON_PRODUCTION] Produktion für alle Gebäude, die bereits in der [ICON_CAPITAL] Hauptstadt existieren." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_CITY_STATE_BONUSES" />
+			<Set Text="+40% [ICON_FOOD] Nahrung, [ICON_CULTURE] Kultur und [ICON_WAR] Kampferfahrung durch befreundete Stadtstaaten." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_CITY_STATE_FRIENDSHIP" />
+			<Set Text="Stadtstaat [ICON_INFLUENCE] Einfluß vermindert sich nur halb so schnell, erholt sich aber in doppelter Geschwindigkeit wieder. Geschenkte Einheiten von militaristischen Stadtstaaten besitzen +15% [ICON_STRENGTH] Stärke." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_IGNORE_TERRAIN_IN_FOREST" />
+			<Set Text="Nahkampf- und Schusswaffeneinheiten bewegen sich in Wäldern und Dschungel schneller. Innerhalb der eigenen Kulturgrenzen zählen diese Felder sogar wie eine Straße." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_INGENIOUS" />
+			<Set Text="Bei der Entdeckung der Schrift wird ein freier Großer Wissenschaftler gewährt. Große Wissenschaftler erscheinen 66% schneller." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_CONVERTS_LAND_BARBARIANS" />
+			<Set Text="Besiegte Barbaren ergeben sich, anstatt zu sterben." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_ENHANCED_GOLDEN_AGES" />
+			<Set Text="[ICON_GOLDEN_AGE] Goldene Zeitalter dauern 50% länger und erhöhen die Bewegungspunkte der Einheiten um +1[ICON_MOVES]." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_TERROR" />
+			<Set Text="Bonus für eroberte Stadtstaaten wird um 25% erhöht. Alle berittenen Einheiten sowie berittene Bogenschützen und Unterstützungseinheiten erhalten +1 [ICON_MOVES] Bewegung." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_SEVEN_CITIES" />
+			<Set Text="200 [ICON_GOLD] Gold für die Entdeckung eines Naturwunders, und der geplante Ertrag des Wunders wird verdoppelt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_RIVER_EXPANSION" />
+			<Set Text="+1 Sichtweite für Landeinheiten, und -50% [ICON_GOLD] Kosten beim Kauf von Geländefeldern." />
+		</Update>
+		<Row Tag="TXT_KEY_TRAIT_GOVERNANCE_SHORT">
+			<Text>Regierung</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_GOVERNANCE">
+			<Text>Erträge der Spezialisten werden um 1 erhöht.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_OCEAN_MOVEMENT" />
+			<Set Text="+2[ICON_MOVES] Bewegung auf Wasser, und +15 [ICON_WAR] Erfahrung für Marineeinheiten." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_LAND_TRADE_GOLD_SHORT" />
+			<Set Text="Wüstenkarawanen" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_LAND_TRADE_GOLD" />
+			<Set Text="Jedes Luxusgut erhöht das [ICON_GOLD] Goldeinkommen um 5%, und Einheiten bewegen sich auf Wüstenfeldern schneller." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_POPULATION_GROWTH" />
+			<Set Text="-25% [ICON_HAPPINESS_4] Unzufriedenheit wegen [ICON_CITIZEN] Bevölkerung." />
+		</Update>
+		
+		
+		<!--
+				Units
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_MUSLIM_CAVALRY" />
+			<Set Text="Einzigartige berittene Einheit der Songhai. Die Mandekalu-Kavallerie erhält sofort die Beförderung 'Belagerung', im Gegensatz zum Ritter, den sie ersetzt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_PANZER" />
+			<Set Text="Schelle und mächtige Einheit des Industriezeitalters. Hat Nachteile beim Angriff auf Städte und bei der Verteidigung, aber ist unglaublich effektiv im offenen Gelände.[NEWLINE][NEWLINE]Nur die Deutschen können diese Einheit bauen. Diese Einheit besitzt extra Stärke, Bewegungspunkte und Sichtweite, verglichen mit dem Panzer, den sie ersetzt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_ZERO" />
+			<Set Text="Eine Lufteinheit, die entworfen wurde, um die Herrschaft in der Luft zu erlangen und um gegnerische Flugzeuge abzufangen. Nur die Japaner können sie bauen. Die Einheit hat eine erhöhte Reichweite und verursacht mehr Schaden bei anderen Flugzeugen als der Jäger, den sie ersetzt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_B17" />
+			<Set Text="Eine Lufteinheit, die den Tod von oben auf gegnerische Einheiten und Städte regnen läßt. Nur die Amerikaner können sie bauen. Die Einheit hat eine erhöhte Reichweite, trägt weniger Schaden beim Abfangen davon und fügt Städten zusätzlichen Schaden im Vergleich zum Bomber, den die Einheit ersetzt, zu." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_JAGUAR" />
+			<Set Text="Eine früh im Spiel erhältliche einzigartige Militäreinheit der Azteken. Der Jaguarkrieger kämpft effektiver im Dschungel und heilt Schaden, wenn er einen Gegner tötet, im Gegensatz zum Krieger, den er ersetzt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_MINUTEMAN" />
+			<Set Text="Eine der ersten Schießpulvereinheiten im Spiel, die nur von den Amerikanern gebaut werden kann. In unebenen Gelände kämpft die Einheit effektiver und bewegt sich schneller als der Musketier, den sie ersetzt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_MUSKETEER" />
+			<Set Text="Eine der ersten Schießpulvereinheiten im Spiel, die nur von den Franzosen gebaut werden kann. Der Französische Musketier besitzt Vorteile beim Kampf außerhalb befreundetem Territoriums, im Gegensatz zum Musketier, den er ersetzt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_IROQUOIAN_MOHAWKWARRIOR_STRATEGY" />
+			<Set Text="Der Mohawk-Krieger ist eine einzigartige irokesische Einheit, die in Wäldern und Dschungeln effektiver kämpft, als der Schwertkämpfer, den er ersetzt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_OTTOMAN_JANISSARY_STRATEGY" />
+			<Set Text="Der Janitschar ist eine einzigartige osmanische Einheit, die den Musketier ersetzt. Der Janitschar erhält einen bedeutenden Angriffsbonus bei Kämpfen. Außerdem heilt der Janitschar automatisch 2 Punkte, wenn er eine feindliche Einheit vernichtet. Dies kann einer Armee aus Janitscharen einen erdrückenden Vorteil gegen feindliche Verteidigungskräfte geben." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_MEDIC_GENERAL_HELP" />
+			<Set Text="Einheiten, die sich innerhalb 1 Feld Entfernung befinden [COLOR_POSITIVE_TEXT]heilen 2 zusätzliche Punkte[ENDCOLOR] pro Runde." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_MONGOLIA_KESHIK_HELP" />
+			<Set Text="Der einzigartige mongolische Ersatz für den Ritter bewegt sich schneller, ist eine Fernkampfeinheit und teilt nicht die Schwächen des Ritters gegen Städte und Pikeniere. Der Keshik sammelt auch schneller Erfahrung." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_FOREIGN_LEGION" />
+			<Set Text="Einfache Infanterieeinheit des Industriezeitalters. Die Fremdenlegion kostet weniger als die Infanterie, die sie ersetzt." />
+		</Update>
+
+
+		<!-- 
+				Desert Caravans
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS"
+			Text="Wüstenkarawanen"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS_HELP"
+			Text="[ICON_GOLD] Gold: +5% in allen Städten für jedes Luxusgut."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS_STRATEGY"
+			Text="Wüstenkarawanen erhöhen das Goldeinkommen des Reiches aus Luxusgütern."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS_PEDIA"
+			Text="Die Handelsstraßen durch Arabien waren wichtige Wege um den Austausch von kulturellen, wirtschaftlichen und technologischen Dingen zwischen Händlern, Kaufmännern, Pilgern, Missionaren, Soldaten, Nomaden und den Stadtbewohnern des antiken China, Indien, Tibet, Persien und Mittelmeerstaaten für fast 3000 Jahre zu gewährleisten."
+		/>
+
+
+
+		<!-- 
+				Indus Sanitation
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_INDIAN_SANITATION"
+			Text="Kanalisation"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_INDIAN_SANITATION_STRATEGY"
+			Text="Reines Trinkwasser aus der Kanalisation erhöht die [ICON_FOOD] Nahrung von Flußfeldern. Auch wird die zum Stadtwachstum benötigte Nahrungsmenge um 40% verringert. Die Kanalisation sollte in Städten gebaut werden, die über die Zeit sehr groß werden sollen."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_INDIAN_SANITATION_CIV"
+			Text="Die Harappakultur des Indus-Tales entwarf um 2600 v.Chr. das erste bekannte städtische Kanalisationssystem. Einzelne Häuser oder Wohngruppen erlangten ihr Wasser aus Brunnen. Abwasser wurde aus speziellen Baderäumen in ummantelten Rinnen, die seitlich der Hauptstraßen entlang führten, geleitet. Es wird vermutet, dass die massiven Mauern die Städte der Harappa gegen Überflutungen schützen sollten. Diese hydraulische Konstruktion der Harappakultur war sogar effektiver als die heutigen Systeme an manchen Stellen in Pakistan und Indien. Dies ermöglichte die Errichtung große Städte, mit nur geringer landwirtschaftlicher Erschließung."
+		/>
+
+
+
+		<!-- 
+				Pioneer Fort
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_AMERICAN_FORT"
+			Text="Pionier-Festung"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_AMERICAN_FORT_STRATEGY"
+			Text="Die Pionier-Festung ist ein einzigartiges Gebäude der Amerikaner, welches die Verteidigungsstärke einer Stadt erhöht und dadurch die Eroberung derselben erschwert. Weiterhin verbessert es die Wachstumsrate einer Stadt. Die Pionier-Festung ist in grenznahen Städten sehr nützlich."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_AMERICAN_FORT_CIV"
+			Text="Als Amerikanische Pioniere werden alle Menschen in der Geschichte der Vereinigten Staaten bezeichnet, die von der Atlantikküste nach Westen zogen, um zu dort zu siedeln und neue Gebiete zu erschließen. Die Bezeichnung bezieht sich insbesonderne auf diejenigen, welche Gebiete besiedelten, die den Europäern und Amerikanern unbekannt waren, und die sogar von einheimischen Völkern bewohnt waren oder genützt wurden.[NEWLINE]
+[NEWLINE]Die Idee und der Ethos hinter den Pionieren datiert bereits weit vor der Abwanderung in Amerikanische Gebiete, die nun die 'Westlichen Staaten' genannt wurden, da viele Gebiete die von Pionieren der Küste besiedelt wurden, nun als der 'Osten' betrachet wurde. Daniel Boone, beispielsweise, eine Schlüsselfigur der amerikanischen Pionier-Geschichte, siedelte in Kentucky, als dieser 'Dunkle und Blutige Ort' noch unerschlossen war.[NEWLINE]
+[NEWLINE]Ein wichtiger Schritt für das Siedeln im Westen war die Einführung des 'Homestead Act', welcher formelles Recht schaffte und den Besiedlungsprozess regelte."
+		/>
+
+
+
+		<!-- 
+				Pioneer
+		-->
+		<Row
+			Tag="TXT_KEY_UNIT_AMERICAN_PIONEER"
+			Text="Pioneer"
+		/>
+		<Row
+			Tag="TXT_KEY_UNIT_AMERICAN_PIONEER_HELP"
+			Text="Gründet neue Städte, um das Reich zu erweitern.[NEWLINE][NEWLINE][ICON_FOOD] Das Stadtwachstum wird während der Bauzeit der Einheit gestoppt.[NEWLINE]"
+		/>
+		<Row
+			Tag="TXT_KEY_UNIT_AMERICAN_PIONEER_STRATEGY"
+			Text="Der Pionier ist eine einzigartige amerikanische Einheit. Er kann sich schneller Fortbewegen als der Siedler, den er ersetzt.[NEWLINE][NEWLINE]Die Einheit wird zum Bau neuer Städte verwendet. Er kann sich nicht selbst verteidigen, so dass er von einer Kampfeinheit begleitet werden sollte."
+		/>
+		<Row
+			Tag="TXT_KEY_UNIT_AMERICAN_PIONEER_CIV"
+			Text="Als Amerikanische Pioniere werden alle Menschen in der Geschichte der Vereinigten Staaten bezeichnet, die von der Atlantikküste nach Westen zogen, um zu dort zu siedeln und neue Gebiete zu erschließen. Die Bezeichnung bezieht sich insbesonderne auf diejenigen, welche Gebiete besiedelten, die den Europäern und Amerikanern unbekannt waren, und die sogar von einheimischen Völkern bewohnt waren oder genützt wurden.[NEWLINE]
+[NEWLINE]
+Die Idee und der Ethos hinter den Pionieren datiert bereits weit vor der Abwanderung in Amerikanische Gebiete, die nun die 'Westlichen Staaten' genannt wurden, da viele Gebiete die von Pionieren der Küste besiedelt wurden, nun als der 'Osten' betrachet wurde. Daniel Boone, beispielsweise, eine Schlüsselfigur der amerikanischen Pionier-Geschichte, siedelte in Kentucky, als dieser 'Dunkle und Blutige Ort' noch unerschlossen war.[NEWLINE]
+[NEWLINE]
+Ein wichtiger Schritt für das Siedeln im Westen war die Einführung des 'Homestead Act', welcher formelles Recht schaffte und den Besiedlungsprozess regelte."
+		/>
+		
+		
+		<!--
+				Dōjō
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_DOJO"
+			Text="Dojo"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_DOJO_STRATEGY"
+			Text="Das Dojo ist ein einzigartiges japanisches Gebäude, welches die Kaserne ersetzt. Es erhöht die [ICON_WAR] Erfahrung für dort aufgestellte Einheiten, und erhöht die [ICON_CULTURE] Kultur durch in der Nähe befindliche strategische Rohstoffe."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_DOJO_PEDIA"
+			Text="Das japanische Dojo ('Ort des Weges') ist ein Ort des Zusammenkommens, um Training, Übungen und andere mit den 'Do' Künsten verbundene Dinge durchzuführen. Dojos waren ursprünglich mit Tempeln verbunden. In Japan werden alle körperbetonten Trainingseinrichtungen, auch professionelle Ringkampfschulen, 'Dojo' genannt, da sie mit den Kampfkünsten eng verwurzelt sind."
+		/>
+
+
+		
+
+		<!--
+				Shrine
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_SHRINE"
+			Text="Shinto-Schrein"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_SHRINE_STRATEGY"
+			Text="Der Shinto-Schrein ist ein einzigartiges Gebäude der Japaner. Es erhöht die Zufriedenheit einer Stadt und liefert Kultur für jedes Luxusgut, im Gegensatz zum Kloster, das er ersetzt. Der Shinto-Schrein kann nicht erbaut werden, solange eine Stadt kein solches Luxusgut in der Nähe erschlossen hat."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_SHRINE_CIV"
+			Text="In Japan existieren Shinto-Schreine Seite an Seite mit buddhistischen Tempeln und sind die zahlreichsten, berühmtesten und wichtigsten religiösen Orte im Land. Ein Shinto-Schrein ist ein Gebilde oder Objekt, dessen Hauptzweck die Beherbergung von einem oder mehreren Shinto Kami (Geister, natürliche Kräfte oder Wesen) dient. Kami können sich in beinahe jedem natürlichen oder handgemachten Ding befinden, vom Vulkan Fuji bis hin zu einem kleinen Juwel. Die Schreine als solche sind gewöhnlich und variieren stark in ihren Anwendungsbereichen. Der Schrein kann ein großes Gebäude oder ein kleines Objekt am Straßenrand sein, oder sogar von Menschen herumgetragen werden.[NEWLINE]
+[NEWLINE]
+Genau wie die buddhistischen Tempel, sind Shinto-Schreine nicht in erster Linie Gebetsorte. Die wichtigsten Gebäude eines Schreins werden zur sicheren Aufbewahrung von heiligen Objekten benutzt. Es gibt zwar einige spezielle Gebäude für gewissen Rituale, diese stehen gewöhnlich allerings nur einer begrenzten Anzahl an Teilnehmern offen. Religiöse Massenversammlungen im Stile der Christlichen Kirchen finden nicht regelmäßig statt und werden auch nicht innerhalb des Schreins abgehalten. Wenn viele Menschen an einer Zeremonie beteiligt sind, wird das Ganze eine festliche Gestalt annehmen und draußen stattfinden."
+		/>
+
+
+		<!--
+				Steam Mill
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_ENGLISH_STEAM_MILL"
+			Text="Dampfmühle"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_ENGLISH_STEAM_MILL_STRATEGY"
+			Text="Die Dampfmühle ist ein einzigartiges Gebäude der Engländer. Sie verbessert den Ertrag von Luxusgütern und kann in jeder Stadt gebaut werden, im Gegensatz zur Werkstatt, die sie ersetzt."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_ENGLISH_STEAM_MILL_CIV"
+			Text="Im 18. Jahrhundert begann in der Wirtschaft Großbritanniens ein Wandel hin zu maschinellen Fabriken. Zuvor hatte man sich auf Handarbeit und Zugtiere verlassen. Dieser Vorläufer der Industriellen Revolution begann mit der Mechanisierung der Textilindustrie. Die Ausweitung des Handels wurde durch die Einführung von Kanälen, verbesserten Straßen und Schienen ermöglicht. Die erweiterte Ausnützung von Wasserrädern und die Einführung der Dampfkraft führten zu einer dramatischen Erhöhung der Produktionskapazität. Die Entwicklung von Ganzmetallwerkzeugen im frühen 19. Jahrhundert erleichterte den Bau von stetig verfeinerten Produktionsmaschinen zur Fertigung für eine große Anzahl verschiedener Industrien."
+		/>
+	</Language_de_DE>
+</GameData>

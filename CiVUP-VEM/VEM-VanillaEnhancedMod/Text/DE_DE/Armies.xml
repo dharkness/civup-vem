@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_de_DE>
+		<Update>
+			<Where Tag="TXT_KEY_RESOURCE_COAL_HELP" />
+			<Set Text="Von Fabriken genützt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_BRONZE_WORKING_HELP" />
+			<Set Text="Enthüllt [ICON_RES_IRON] [COLOR_POSITIVE_TEXT]Eisen[ENDCOLOR]. Erlaubt Arbeitern [COLOR_POSITIVE_TEXT]Dschungel abzuholzen[ENDCOLOR], um das Geländefeld für den Bau anderer Verbesserungen frei zu machen. Erlaubt ebenfalls das Aufstellen der Einheit [COLOR_POSITIVE_TEXT]Speerkämpfer[ENDCOLOR], einer militärischen Einheit, die ihre Stärken in der Verteidigung gegen berittene Gegner hat." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_IRON_WORKING_HELP" />
+			<Set Text="Erlaubt das Aufstellen der Einheit [COLOR_POSITIVE_TEXT]Schwertkämpfer[ENDCOLOR], einer starken Nahkampfeinheit." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNITCOMBAT_RECON" />
+			<Set Text="Unterstützt Einheiten" />
+		</Update>
+		
+		
+		<!-- 
+				Promotions
+		-->
+		<Row Tag="TXT_KEY_PROMOTION_ANTI_CAVALRY">
+			<Text>Bonus gegen Kavallerie (50)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ANTI_CAVALRY_HELP">
+			<Text>+50% gegen [COLOR_POSITIVE_TEXT]Kavallerie[ENDCOLOR]</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_GAIN_EXPERIENCE_HELP" />
+			<Set Text="Erfahrung 50% schneller" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_MOUNTED_I" />
+			<Set Text="Bonus gegen Berittene (25)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_MOUNTED_I_HELP" />
+			<Set Text="+25% gegen [COLOR_POSITIVE_TEXT]Berittene[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_MOUNTED_II" />
+			<Set Text="Bonus gegen Berittene (50)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_MOUNTED_II_HELP" />
+			<Set Text="+50% gegen [COLOR_POSITIVE_TEXT]Berittene[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_AIR" />
+			<Set Text="Bonus gegen Lufteinheiten (50)" />
+		</Update>
+		<Row Tag="TXT_KEY_PROMOTION_ANTI_AIR_HELP">
+			<Text>+50% gegen [COLOR_POSITIVE_TEXT]Lufteinheiten[ENDCOLOR]</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_HELICOPTER" />
+			<Set Text="Bonus gegen Helikopter (50)" />
+		</Update>
+		<Row Tag="TXT_KEY_PROMOTION_ANTI_HELICOPTER_HELP">
+			<Text>+50% gegen [COLOR_POSITIVE_TEXT]Helikopter[ENDCOLOR]</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_TANK" />
+			<Set Text="Bonus gegen Panzer (50)" />
+		</Update>
+		<Row Tag="TXT_KEY_PROMOTION_ANTI_TANK_HELP">
+			<Text>+50% gegen [COLOR_POSITIVE_TEXT]Panzer[ENDCOLOR]</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_BLITZ_HELP" />
+			<Set Text="Zweifacher Angriff" />
+		</Update>
+		<Row Tag="TXT_KEY_PROMOTION_CAPITAL_SHIP_BONUS">
+			<Text>Bonus gegen Großschiffe (50)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CAPITAL_SHIP_BONUS_HELP">
+			<Text>+50% gegen [COLOR_POSITIVE_TEXT]Schlachtschiffe[ENDCOLOR][NEWLINE]+50% gegen [COLOR_POSITIVE_TEXT]Raketenkreuzer[ENDCOLOR][NEWLINE]+50% gegen [COLOR_POSITIVE_TEXT]Flugzeugträger[ENDCOLOR]</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_CHARGE_HELP" />
+			<Set Text="+25% gegen [COLOR_POSITIVE_TEXT]verwundete[ENDCOLOR] Einheiten[NEWLINE]Keine Kampfabzüge bei Angriffen vom Meer oder Flüßen aus." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_CITY_SIEGE" />
+			<Set Text="Niederrreißen" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_CITY_SIEGE_HELP" />
+			<Set Text="+50% gegen [COLOR_POSITIVE_TEXT]Städte[ENDCOLOR][NEWLINE]+50% gegen [COLOR_POSITIVE_TEXT]verschanzte Einheiten[ENDCOLOR][NEWLINE]-50% gegen [COLOR_NEGATIVE_TEXT]Landeinheiten[ENDCOLOR]" />
+		</Update>
+		<Row Tag="TXT_KEY_PROMOTION_COVER_PENALTY">
+			<Text>Malus gegen Fernkämpfer (10)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COVER_PENALTY_HELP">
+			<Text>-10% [COLOR_NEGATIVE_TEXT]Verteidigung[ENDCOLOR] gegen alle [COLOR_NEGATIVE_TEXT]Fernangriffe[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_COVER_PENALTY_PEDIA">
+			<Text>-10% gegen [COLOR_NEGATIVE_TEXT]Fernkämpfer[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEFENSE_1">
+			<Text>Verteidigungsbonus (25)</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DEFENSE_HELP">
+			<Text>+25% [COLOR_POSITIVE_TEXT]Verteidigung[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ATTACK_BONUS_HELP">
+			<Text>+25% [COLOR_POSITIVE_TEXT]Angriff[ENDCOLOR]</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY" />
+			<Set Text="-25% [COLOR_NEGATIVE_TEXT]Verteidigung[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_FORMATION_1" />
+			<Set Text="Formation" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_FORMATION_1_HELP" />
+			<Set Text="+35% gegen [COLOR_POSITIVE_TEXT]berittene[ENDCOLOR] Einheiten" />
+		</Update>
+		<Row Tag="TXT_KEY_PROMOTION_NAVAL_DEMOLISH">
+			<Text>Zerstörung vom Meer aus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NAVAL_DEMOLISH_HELP">
+			<Text>+50% gegen [COLOR_POSITIVE_TEXT]Städte[ENDCOLOR][NEWLINE]+50% gegen [COLOR_POSITIVE_TEXT]verschanzte Einheiten[ENDCOLOR]</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_SIEGE_HELP" />
+			<Set Text="+35% gegen [COLOR_POSITIVE_TEXT]Städte[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_SCOUTING_1_HELP" />
+			<Set Text="Keine Bewegungsbeschränkungen[NEWLINE]+1 Sichtweite" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_SCOUTING_2_HELP" />
+			<Set Text="Kann [COLOR_POSITIVE_TEXT]Eis[ENDCOLOR] und [COLOR_POSITIVE_TEXT]Berge[ENDCOLOR] durchqueren[NEWLINE]Kann Territorium ohne Offene Grenzen erkunden[NEWLINE]+1 [ICON_MOVES]Bewegung" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_SCOUTING_3_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Heilt[ENDCOLOR] jede Runde[NEWLINE]+1 Sichtweite" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_SURVIVALISM_2_HELP" />
+			<Set Text="+50% [COLOR_POSITIVE_TEXT]Verteidigung[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_SURVIVALISM_3_HELP" />
+			<Set Text="+25% [COLOR_POSITIVE_TEXT]Verteidigung[ENDCOLOR].[NEWLINE][COLOR_POSITIVE_TEXT]Heilt jede Runde.[ENDCOLOR]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_VOLLEY_HELP" />
+			<Set Text="+35% gegen [COLOR_POSITIVE_TEXT]verschanzte[ENDCOLOR] Einheiten" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_MARCH_HELP" />
+			<Set Text="Heilt jede Runde" />
+		</Update>
+		
+		
+		
+		<!--
+				Footsoldiers
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_HOPLITE" />
+			<Set Text="Eine einzigartige antike Einheit der Griechen. Die Einheit Hoplit hat eine höhere [ICON_STRENGTH] Kampfstärke als der Speerkämpfer, den sie ersetzt." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_IMMORTAL" />
+			<Set Text="Eine einzigartige antike Einheit der Perser, die Vorteile bei der Verteidigung gegen berittene Einheiten hat. Die Unsterblichen heilen schneller als der Speerkämpfer, den sie ersetzen." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_SPEARMAN" />
+			<Set Text="Einheit der Antike mit Vorteilen bei der Verteidigung gegen berittene Einheiten." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_SPAIN_TERCIO_HELP" />
+			<Set Text="Die vorherrschende Militäreinheit der Spanier in der Renaissance. Die Tercio hat eine höhere [ICON_STRENGTH] Kampfstärke als der Musketenschütze, den sie ersetzt. Weiterhin hat sie Vorteile gegen berittene Einheiten." />
+		</Update>
+
+
+
+		<!--
+				Mobile
+		-->
+		<Row Tag="TXT_KEY_UNIT_LEVY">
+			<Text>Miliz</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_LEVY_HELP">
+			<Text>Die Milizen sind preiswerte, resourcenfreie mittelalterliche Fußsoldaten, nützlich für Stadtbewachung sowie das Abfangen von Angriffen.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_LEVY_PEDIA">
+			<Text>Die verbreitetste Infantrieeinheit des Mittelalters waren berufsmäßige Bauern, welche gezwungen waren für ihren lokalen Fürsten im Feudalsystem zu kämpfen.  Milizeinheiten wurden oftmals von Gilden oder Bezirken mit Offizieren und Fahnen ausgestattet.  In vielen europäischen Ländern wurden Leibeigene benötigt, die pro Jahr etwa 45 Tage Militärdienst ohne Bezahlung absolvieren mußten. Typischerweise wurden sie während der Zeit eingesetzt, in der sie nicht für die Landwirtschaft benötigt wurden.[NEWLINE][NEWLINE]Milizen hatten gewöhnlich keine Rüstung und kämpften mit einfacher Ausrüstung, wie Äxten, Speeren und Schildern.  In manchen Fällen besorgten und warteten sie ihre eigene Ausrüstung, während sie anderen Fällen von ihrem Herrn oder König ausgestattet wurden, für den sie kämpften.  Milizen waren zwar nur spärlich ausgerüstet, aber aufgrund ihrer geringen Fähigkeiten und des minimalen Resourcenbedarfs konnten diese Einheiten leichter ersetzt werden, als die adligen Ritter. Diese Tatsache wird in Civilization durch verbesserte Heilfähigkeiten dargestellt, die durch Beförderungen möglich wird.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_COMPANION_CAVALRY" />
+			<Set Text="Eine frühzeitig erhältliche, schnelle und starke berittene Einheit. Sie hat Nachteile gegen Speerkämpfer. Sie kann nur von den Griechen aufgestellt werden. Diese Einheit hat eine höhere [ICON_STRENGTH] Kampfstärke und hilft dabei, Große Generäle hervorzubringen. Sie ersetzt die Einheit Reiter." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_CAVALRY" />
+			<Set Text="Dragoner" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_CAVALRY" />
+			<Set Text="Berittene Einheit der Renaissance, die fähig ist, in eine direkte Konfrontation mit modernen Infanterie-Einheiten zu gehen. Schwach gegen Lanciers und Sipahi." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_LANCER" />
+			<Set Text="Eine berittene Einheit, die schneller und stärker ist, als die Ritter. Sie hat Vorteile gegen Kavallerie und beim Angriff. Lanciers eignen sich als Unterstützungseinheit:[NEWLINE][ICON_BULLET]Medizinische Heilung[NEWLINE][ICON_BULLET]Absorbieren von Schaden[NEWLINE][ICON_BULLET]Vernichtung verwundeter Feinde[NEWLINE][ICON_BULLET]Erhöhung des Bonus für Flankieren[NEWLINE][ICON_BULLET]Ausspähen möglicher Bedrohungen" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_SIPAHI" />
+			<Set Text="Eine berittene Einheit der Osmanen, schneller und stärker als der Ritter, mit Boni auf Angriff und im Kampf gegen Dragoner. Sipahi sind schneller und haben höhere Sichtweite, als der Lancier, den sie ersetzen." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_ANTI_TANK_GUN" />
+			<Set Text="Panzerabwehrkanonen haben Vorteile beim Kampf gegen Panzer und sind nützliche Unterstützungseinheiten:[NEWLINE][ICON_BULLET]Medizinische Heilung[NEWLINE][ICON_BULLET]Absorbieren von Schaden[NEWLINE][ICON_BULLET]Vernichtung verwundeter Feinde[NEWLINE][ICON_BULLET]Erhöhung des Bonus für Flankieren[NEWLINE][ICON_BULLET]Ausspähen möglicher Bedrohungen" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_PARATROOPER" />
+			<Set Text="Fallschirmjäger können sich bis zu 10 Felder von befreundeten Gebieten aus per Lufttransport bewegen. Sie sind als Unterstützungseinheit sehr nützlich:[NEWLINE][ICON_BULLET]Medizinische Heilung[NEWLINE][ICON_BULLET]Absorbieren von Schaden[NEWLINE][ICON_BULLET]Vernichtung verwundeter Feinde[NEWLINE][ICON_BULLET]Erhöhung des Bonus für Flankieren[NEWLINE][ICON_BULLET]Ausspähen möglicher Bedrohungen" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_PARATROOPER_STRATEGY" />
+			<Set Text="Fallschirmjäger sind eine Fußtruppen-Einheit der Moderne. Sie sind etwas schwächer als die mechanisierte Infanterie. Allerdings können Fallschirmjäger auf Gebieten, die bis zu 10 Felder entfernt sind, abspringen (von befreundetem Gebiet aus). Das macht es den Fallschirmjägern möglich, buchstäblich über feindliche Stellungen hinweg zu springen und Straßen, wichtige Rohstoffe und andere Einrichtungen zu plündern, und so Chaos hinter sich zurückzulassen. Fallschirmjäger begeben sich bei einer solchen Mission in höchste Gefahr. Deshalb sollte es das Ziel wert sein!" />
+		</Update>
+
+
+
+		<!--
+				Ships
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_FRIGATE" />
+			<Set Text="Schnelles Segelschiff der Renaissance, welches dazu benutzt wurde, die Kontrolle über die Meere zu erzwingen." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_IRONCLAD" />
+			<Set Text="Mächtiges dampfbetriebenes Großschiff, welches mit Eisenplatten gepanzert ist." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_IRONCLAD_STRATEGY" />
+			<Set Text="Panzerschiffe waren die ersten verfügbaren dampfbetriebenen Kriegsschiffe. Sie sind schwerer zu versenken als jedes Segelschiff und haben eine höhere Fernkampfstärke ." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIVILOPEDIA_UNITS_RENAISSANCE_IRONCLAD_TEXT" />
+			<Set Text="Das Panzerschiff war in der Mitte des 18. Jahrhundertes ein dampfbetriebenes Kriegsschiff, welches durch Eisen- oder Stahlplatten geschützt war. Das Panzerschiff wurde eingeführt, weil Kriegsschiffe aus Holz sehr verwundbar gegen explosive Granaten oder Brandstiftung waren. Das erste Panzerschiff war die 'La Gloire'. Sie wurde im November 1859 von der französischen Marine vom Stapel gelassen.[NEWLINE][NEWLINE]Panzerschiffe wurden für unterschiedliche Zwecke entworfen. Sie wurden als Hochsee-Kriegsschiffe, zur Küstenverteidigung und als Langstrecken-Kreuzer eingesetzt. Die schnelle Weiterentwicklung in der Kriegsschiff-Technologie im späten 19. Jahrhundert, verwandelte das Panzerschiff von einem Seefahrzeug mit hölzerner Außenschale und Segeln, die die Dampfmotoren in ihrem stählernen Aufbau ergänzen sollten, zu Kriegsschiffen mit Geschütztürmen und Kreuzern, ähnlich der Schiffe im 20. Jahrhundert. Der Wandel wurde durch die Entwicklung von schwereren Schiffsgeschützen (die Panzerschiffe von 1880 trugen einige der schwersten Geschütze, die jemals auf See verwendet wurden), höherwertigen Dampfmaschinen und Fortschritten in der Metallurgie vorangetrieben. Dies ermöglichte erst den Bau von Stahlschiffen.[NEWLINE][NEWLINE]Die rapide Entwicklungsgeschwindigkeit in der Periode der Panzerschiffe bedeutete, dass viele Schiffe bereits bei ihrer Fertigstellung veraltet waren, und dass die Marinetaktiken einem ständigen Wandel ausgesetzt waren. Viele Panzerschiffe wurden erbaut, um es als Ramme oder mit Torpedos zu gebrauchen. Torpedos wurden von den Marine-Architekten für die wichtigste Waffe im Seekampf gehalten. Es gibt kein eindeutiges Ende der Panzerschiff-Ära, aber gegen Ende der 1890er Jahre war die Bezeichnung Panzerschiff nicht mehr gebräuchlich. Neue schiffe wurden zunehmend nach einem Standard-Muster entworfen, und Schlachtschiff oder Schlachtkreuzer genannt." />
+		</Update>
+		<Row Tag="TXT_KEY_UNIT_SHIP_OF_THE_LINE_HELP">
+			<Text>Mächtige Nahkampf-Seeeinheit und erstes Schiff mit der Möglichkeit "Zerstörung", welche die Kampfstärke gegen Städte erhöht.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_SHIP_OF_THE_LINE_STRATEGY">
+			<Text>Das Linienschiff ist stärker als die Fregatte, die es ersetzt. Allerdings ist es langsamer und teurer.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_DUMMY_COAL">
+			<Text>_</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DUMMY_COAL_HELP">
+			<Text>Ignore this. It simply works around a bug with strategic resources in the game (if no unit uses a resource, it cannot be traded).</Text>
+		</Row>
+	</Language_de_DE>
+</GameData>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_DE_DE>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_HIDE_UNIT_ICON">
+			<Text>Einheiten-Symbole</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_HIDE_UNIT_ICON_TT">
+			<Text>Zeige Einheiten-Symbole</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_TOGGLE_FLAG_PROMOTIONS">
+			<Text>Einheiten-Beförderungen</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TOGGLE_FLAG_PROMOTIONS_TT">
+			<Text>Zeige Einheiten-Beförderungen (max. 9)[NEWLINE] [NEWLINE][COLOR_POSITIVE_TEXT]RECHTSKLICK[/COLOR] für Optionen</Text>
+		</Row>
+	</Language_DE_DE>
+</GameData>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<!--
+			Obsoletes
+	-->
+	<Units>
+		<Update>
+			<Where Class="UNITCLASS_SCOUT" />
+			<Set ObsoleteTech="TECH_CIVIL_SERVICE" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_WARRIOR" />
+			<Set ObsoleteTech="TECH_IRON_WORKING" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_SPEARMAN" />
+			<Set ObsoleteTech="TECH_METAL_CASTING" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_PERSIAN_IMMORTAL" />
+			<Set ObsoleteTech="TECH_GUNPOWDER" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_GREEK_HOPLITE" />
+			<Set ObsoleteTech="TECH_GUNPOWDER" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_SWORDSMAN" />
+			<Set ObsoleteTech="TECH_STEEL" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_HORSEMAN" />
+			<Set ObsoleteTech="TECH_METALLURGY" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_MUSKETMAN" />
+			<Set ObsoleteTech="TECH_DYNAMITE" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_MUSKETMAN" />
+			<Set ObsoleteTech="TECH_RIFLING" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_INFANTRY" />
+			<Set ObsoleteTech="TECH_RADAR" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_LANCER" />
+			<Set ObsoleteTech="TECH_COMBUSTION" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_ANTI_AIRCRAFT_GUN" />
+			<Set ObsoleteTech="TECH_COMPUTERS" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_TANK" />
+			<Set ObsoleteTech="TECH_LASERS" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_TRIREME" />
+			<Set ObsoleteTech="TECH_COMPASS" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_GALLEY" />
+			<Set ObsoleteTech="TECH_COMPASS" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_CARAVEL" />
+			<Set ObsoleteTech="TECH_NAVIGATION" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_FRIGATE" />
+			<Set ObsoleteTech="TECH_TELEGRAPH" />
+		</Update>
+		<Update>
+			<Where Class="UNITCLASS_IRONCLAD" />
+			<Set ObsoleteTech="TECH_COMBUSTION" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_BATTLESHIP" />
+			<Set ObsoleteTech="TECH_ROBOTICS" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_ARTILLERY" />
+			<Set ObsoleteTech="TECH_ROCKETRY" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_FIGHTER" />
+			<Set ObsoleteTech="TECH_LASERS" />
+		</Update>
+		<Update>
+			<Where Type="UNIT_BOMBER" />
+			<Set ObsoleteTech="TECH_STEALTH" />
+		</Update>
+	</Units>
+
+	<!--
+			Upgrades
+	-->
+	<Unit_ClassUpgrades>
+		<Row>
+			<UnitType>UNIT_SCOUT</UnitType>
+			<UnitClassType>UNITCLASS_LEVY</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LEVY</UnitType>
+			<UnitClassType>UNITCLASS_SKIRMISHER</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SKIRMISHER</UnitType>
+			<UnitClassType>UNITCLASS_LIGHT_INFANTRY</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_LIGHT_INFANTRY</UnitType>
+			<UnitClassType>UNITCLASS_PARATROOPER</UnitClassType>
+		</Row>
+		<Update>
+			<Where UnitType="UNIT_INFANTRY" />
+			<Set UnitClassType="UNITCLASS_MECHANIZED_INFANTRY" />
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_FOREIGN_LEGION" />
+			<Set UnitClassType="UNITCLASS_PARATROOPER" />
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_PIKEMAN" />
+			<Set UnitClassType="UNITCLASS_MUSKETMAN" />
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_GERMAN_LANDSKNECHT" />
+			<Set UnitClassType="UNITCLASS_MUSKETMAN" />
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_AMERICAN_MINUTEMAN" />
+			<Set UnitClassType="UNITCLASS_LIGHT_INFANTRY" />
+		</Update>		
+		<Update>
+			<Where UnitType="UNIT_LANCER" />
+			<Set UnitClassType="UNITCLASS_TANK" />
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_OTTOMAN_SIPAHI" />
+			<Set UnitClassType="UNITCLASS_TANK" />
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_TRIREME" />
+			<Set UnitClassType="UNITCLASS_CARAVEL" />
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_CARAVEL" />
+			<Set UnitClassType="UNITCLASS_FRIGATE" />
+		</Update>
+		<Row>
+			<UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
+			<UnitClassType>UNITCLASS_IRONCLAD</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BATTLESHIP</UnitType>
+			<UnitClassType>UNITCLASS_MISSILE_CRUISER</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_SUBMARINE</UnitType>
+			<UnitClassType>UNITCLASS_NUCLEAR_SUBMARINE</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_FIGHTER</UnitType>
+			<UnitClassType>UNITCLASS_JET_FIGHTER</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_JAPANESE_ZERO</UnitType>
+			<UnitClassType>UNITCLASS_JET_FIGHTER</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_BOMBER</UnitType>
+			<UnitClassType>UNITCLASS_STEALTH_BOMBER</UnitClassType>
+		</Row>
+		<Row>
+			<UnitType>UNIT_AMERICAN_B17</UnitType>
+			<UnitClassType>UNITCLASS_STEALTH_BOMBER</UnitClassType>
+		</Row>
+	</Unit_ClassUpgrades>
+</GameData>

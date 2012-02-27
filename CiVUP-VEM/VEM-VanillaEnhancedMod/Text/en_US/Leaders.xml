@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<!--
+				Traits
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_AMPHIB_WARLORD_SHORT" />
+			<Set Text="Warlord" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_AMPHIB_WARLORD" />
+			<Set Text="Receive triple [ICON_GOLD] Gold from Barbarian encampments and pillaging Cities." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_ENHANCED_CULTURE" />
+			<Set Text="+3 [ICON_CULTURE] Culture per turn from Cities before discovering Steam Power." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_ART_OF_WAR" />
+			<Set Text="Great Generals spawn faster, see farther, and provide extra combat strength." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_CAPITAL_BUILDINGS_CHEAPER" />
+			<Set Text="25% [ICON_PRODUCTION] Production towards any buildings that already exist in the [ICON_CAPITAL] Capital." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_CITY_STATE_BONUSES" />
+			<Set Text="+40% [ICON_FOOD] Food, [ICON_CULTURE] Culture, and [ICON_WAR] Experience from friendly City-States." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_CITY_STATE_FRIENDSHIP" />
+			<Set Text="City-State [ICON_INFLUENCE] Influence degrades at half and recovers at twice the normal rate. Unit rewards from Militaristic City-States have bonus [ICON_STRENGTH] Strength." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_IGNORE_TERRAIN_IN_FOREST" />
+			<Set Text="Units move faster in Forests and Jungle, which counts as Roads within cultural borders." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_INGENIOUS" />
+			<Set Text="Free Great Scientist when you discover Writing. Earn Great Scientists 50% faster." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_CONVERTS_LAND_BARBARIANS" />
+			<Set Text="Barbarians surrender when defeated." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_ENHANCED_GOLDEN_AGES" />
+			<Set Text="Units move +1[ICON_MOVES] faster during [ICON_GOLDEN_AGE] Golden Ages." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_TERROR" />
+			<Set Text="Bonus from capturing City-States increased 25%. All mounted, mounted archer, and vanguard units have +1 [ICON_MOVES] Movement." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_SEVEN_CITIES" />
+			<Set Text="Double yields from Natural Wonders, 100 [ICON_GOLD] Gold from discovering a Natural Wonder, and starts with a free Scout." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_RIVER_EXPANSION" />
+			<Set Text="+1 sight for land units, and -50% [ICON_GOLD] Cost to purchase tiles." />
+		</Update>
+		<Row Tag="TXT_KEY_TRAIT_GOVERNANCE_SHORT">
+			<Text>Governance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_GOVERNANCE">
+			<Text>+1 yield from specialists.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_OCEAN_MOVEMENT" />
+			<Set Text="+2[ICON_MOVES] Movement on water, and +15 [ICON_WAR] Experience for naval units." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_LAND_TRADE_GOLD_SHORT" />
+			<Set Text="Desert Caravans" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_LAND_TRADE_GOLD" />
+			<Set Text="Each luxury resource increases [ICON_GOLD] Gold income by 5%, and units move faster in Desert terrain." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_POPULATION_GROWTH" />
+			<Set Text="-20% [ICON_HAPPINESS_4] Unhappiness from [ICON_CITIZEN] Population." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_SCHOLARS_JADE_HALL" />
+			<Set Text="+2 [ICON_RESEARCH] Science for all specialists and Great Person improvements. Receive a tech boost each time a scientific building/Wonder is built in the Korean capital." />
+		</Update>
+		
+		
+		<!--
+				Units
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_MUSLIM_CAVALRY" />
+			<Set Text="Unique Songhai mounted unit. Mandekalu Cavalry starts with the Siege promotion, unlike the Knight it replaces." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_SAMURAI" />
+			<Set Text="Powerful Medieval soldier unique to the the Japanese. Samurai are stronger and produce Great Generals more quickly than the Longswordsmen they replace, and start with the Shock 1 promotion." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_DENMARK_BERSERKER_HELP" />
+			<Set Text="Soldier of the Medieval era unique to Denmark. The Berserker moves faster than the Longswordsman it replaces, has no penalty attacking across rivers or from the sea, and has a bonus against wounded units." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_PANZER" />
+			<Set Text="Fast and powerful Industrial Era Unit. Receives a penalty when attacking Cities and on defense, but is incredibly effective in open ground.[NEWLINE][NEWLINE]Only the Germans may build it. This Unit has extra strength, movement, and sight range compared to the Tank, which it replaces." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_ZERO" />
+			<Set Text="Air Unit designed to wrest control of the skies and intercept incoming enemy aircraft. Only the Japanese may build it. This Unit has extra range, and bonus damage against other Fighters, unlike the Fighter which it replaces." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_B17" />
+			<Set Text="Air Unit that rains death from above onto enemy Units and Cities. Only the Americans may build it. This Unit has extra range, takes less damage from interception, and does additional damage to Cities compared to the Bomber, which it replaces." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_JAGUAR" />
+			<Set Text="Early-game military unit unique to the Aztecs. The Jaguar fights more effectively in Jungle and heals damage when it kills an enemy, unlike the Warrior it replaces." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_MINUTEMAN" />
+			<Set Text="Renaissance Vanguard Unit unique to the Americans. It is stronger than the Skirmisher it replaces, sees farther, and moves faster in rough terrain." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_MUSKETEER" />
+			<Set Text="One of the first gunpowder units of the game, unique to the French. Musketeers have a combat bonus outside of friendly territory, unlike the Musketman it replaces." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_IROQUOIAN_MOHAWKWARRIOR_STRATEGY" />
+			<Set Text="The Mohawk Warrior is the Iroquoian unique unit, and fights stronger in Forest and Jungle than the Swordsman it replaces." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_OTTOMAN_JANISSARY_STRATEGY" />
+			<Set Text="The Janissary is an Ottoman unique unit, replacing the Musketman. The Janissary receives a significant combat bonus when on the attack. In addition, the Janissary unit automatically heals 2 damage when it destroys a unit. This can give a Janissary army a crushing advantage against an enemy force on the defensive." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_MEDIC_GENERAL_HELP" />
+			<Set Text="Units within 1 tile [COLOR_POSITIVE_TEXT]Heal 4 Additional HP[ENDCOLOR] per turn." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_MONGOLIA_KESHIK_HELP" />
+			<Set Text="The unique Mongolian replacement for the Knight moves faster, is ranged, and does not share the Knight's vulnerabilities to Cities or Pikemen. The Keshik also earns experience more quickly." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_FOREIGN_LEGION" />
+			<Set Text="Basic unit of the Industrial Era. The Foreign Legion costs less than the Infantry it replaces." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_ROMAN_LEGION" />
+			<Set Text="Powerful Roman soldier of the Classical Era with a bonus against Cities. The Legion has higher strength than the Swordsman it replaces, extra defense against ranged attacks, and can build roads at twice the speed of Workers." />
+		</Update>
+
+
+		<!-- 
+				Desert Caravans
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS"
+			Text="Desert Caravans"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS_HELP"
+			Text="[ICON_GOLD] Gold: +5% in all cities for each luxury resource."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS_STRATEGY"
+			Text="Desert Caravans increase the Empire's gold from luxuries."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_DESERT_CARAVANS_PEDIA"
+			Text="The trade routes through Arabia were important paths for cultural, commercial, and technological exchange between traders, merchants, pilgrims, missionaries, soldiers, nomads and urban dwellers from Ancient China, Ancient India, Ancient Tibet, Persian Empire and Mediterranean countries for almost 3,000 years."
+		/>
+
+
+
+		<!-- 
+				Jelling Stones
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_JELLING_STONES"
+			Text="Jelling Stones"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_JELLING_STONES_STRATEGY"
+			Text="The Jelling Stones are a National Wonder unique to Denmark. This wonder gives all units built in this city the 'Morale' promotion, increasing their combat strength by +20. Jelling Stones also give the city a large amount of culture for each city captured, unlike the Heroic Epic it replaces."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_JELLING_STONES_PEDIA"
+			Text="The Jelling stones are massive carved runestones from the 10th century, found at the town of Jelling in Denmark. The older of the two Jelling stones was raised by King Gorm in memory of his wife Thyra. The larger of the two stones was raised by Harald Bluetooth, King Gorm's son. Harald constructed the second stone in memory of his parents, celebration of his conquest of Denmark and Norway, and his conversion of the Danes to Christianity. The runic inscriptions on these stones are considered the most well known in Denmark."
+		/>
+
+
+
+		<!-- 
+				Indus Sanitation
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_INDIAN_SANITATION"
+			Text="Sanitation System"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_INDIAN_SANITATION_STRATEGY"
+			Text="Clean drinking water from a Sanitation System improves [ICON_FOOD] Food from Rivers. It also decreases the amount of food a city needs to increase in size by 40%. Build Sanitation Systems in cities that you want to grow large over time."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_INDIAN_SANITATION_CIV"
+			Text="The Harappan civilization of the Indus River Valley designed the world's first known urban sanitation systems around 2600 BCE. Individual homes or groups of homes obtained water from wells. Waste water was directed from rooms set aside for bathing to covered drains lining the major streets. The massive walls of Harappan cities were speculated to protect from flooding. These Harappan hydraulic engineering systems were even more efficient than those of many areas of Pakistan and India today, achieving large urban cities with relatively little agriculture development."
+		/>
+
+
+
+		<!-- 
+				Pioneer Fort
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_AMERICAN_FORT"
+			Text="Pioneer Fort"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_AMERICAN_FORT_STRATEGY"
+			Text="The Pioneer Fort is an American unique building increasing a city's Defense Strength, making the city more difficult to capture. It also increases the city's growth rate. The Pioneer Fort is quite useful for cities located along a civilization's frontier."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_AMERICAN_FORT_CIV"
+			Text="American pioneers are any of the people in U.S. history who migrated west from the Atlantic coast to settle and develop new areas. The term especially refers to those who were going to settle territory new to European or American society, although the territory may have been inhabited by or utilized by native peoples.[NEWLINE]
+[NEWLINE]
+The pioneer concept and ethos greatly predate the migration to parts of the United States now called 'western' states, as many places now considered as East were also settled by pioneers from the coast. For example, Daniel Boone, a key figure in American pioneer history, settled in Kentucky, when that 'Dark and Bloody Ground' was still undeveloped.[NEWLINE]
+[NEWLINE]
+One important development in the Western settlement was the Homestead Act, which provided formal legislation which regulated the settlement process."
+		/>
+
+
+
+		<!-- 
+				Pioneer
+		-->
+		<Row
+			Tag="TXT_KEY_UNIT_AMERICAN_PIONEER"
+			Text="Pioneer"
+		/>
+		<Row
+			Tag="TXT_KEY_UNIT_AMERICAN_PIONEER_HELP"
+			Text="Founds new Cities to expand your empire.[NEWLINE][NEWLINE][ICON_FOOD] Growth of the City is stopped while this Unit is being built.[NEWLINE]"
+		/>
+		<Row
+			Tag="TXT_KEY_UNIT_AMERICAN_PIONEER_STRATEGY"
+			Text="The Pioneer is an American Unique Unit. It moves faster than the settler it replaces.[NEWLINE][NEWLINE]Use this unit to construct new cities. It cannot defend itself, so accompany it with a combat unit."
+		/>
+		<Row
+			Tag="TXT_KEY_UNIT_AMERICAN_PIONEER_CIV"
+			Text="American pioneers are any of the people in U.S. history who migrated west from the Atlantic coast to settle and develop new areas. The term especially refers to those who were going to settle territory new to European or American society, although the territory may have been inhabited by or utilized by native peoples.[NEWLINE]
+[NEWLINE]
+The pioneer concept and ethos greatly predate the migration to parts of the United States now called 'western' states, as many places now considered as East were also settled by pioneers from the coast. For example, Daniel Boone, a key figure in American pioneer history, settled in Kentucky, when that 'Dark and Bloody Ground' was still undeveloped.[NEWLINE]
+[NEWLINE]
+One important development in the Western settlement was the Homestead Act, which provided formal legislation which regulated the settlement process."
+		/>
+		
+		
+		<!--
+				Dōjō
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_DOJO"
+			Text="Dojo"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_DOJO_STRATEGY"
+			Text="The Dojo is a Japanese Unique Building replacing the Barracks. It improves [ICON_WAR] Experience for units trained here, and increases [ICON_CULTURE] Culture from nearby strategic resources."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_DOJO_PEDIA"
+			Text="A Japanese dojo ('place of the way') is a gathering place to conduct training, examinations, and other related encounters for the 'do' arts. Dojos were initially adjunct to temples. In Japan any physical training facility, including professional wrestling schools, may be called dojo because of its close martial arts roots."
+		/>
+
+
+		
+
+		<!--
+				Shrine
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_SHRINE"
+			Text="Shinto Shrine"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_SHRINE_STRATEGY"
+			Text="The Shinto Shrine is a Japanese Unique Building. It increases a city's happiness and provides culture from all luxury resources, unlike the Monastery it replaces. The Shinto Shrine cannot be built unless the city has such an improved resource nearby."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_JAPANESE_SHRINE_CIV"
+			Text="In Japan, Shinto shrines exist side by side with Buddhist temples, and are the most numerous, famous, and important religious sites in Japan. A Shinto shrine is a structure or object whose main purpose is to house one or more Shinto kami (spirits, natural forces, or essence). Kami can reside in almost anything natural or man-made, from Mt. Fuji to a small jewel.  As such, these shrines are common and vary widely in scope. The Shrine itself can be a large building or small object, along a roadside, or might even be carried by people.[NEWLINE]
+[NEWLINE]
+Like Buddhist temples, Shinto shrines are not primarily a place of worship. The shrine's most important buildings are used for the safekeeping of sacred objects. There are specialized buildings for certain rites, but these are usually open only to a limited number of participants. Religious mass gatherings in the style of Christian churches do not take place with regularity and are not held inside the shrine. If many people are involved in a ceremony, it will assume a festive character and will be held outdoors."
+		/>
+
+
+		<!--
+				Steam Mill
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_ENGLISH_STEAM_MILL"
+			Text="Steam Mill"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_ENGLISH_STEAM_MILL_STRATEGY"
+			Text="The Steam Mill is an English Unique Building. It improves the yield of luxury resources and can be built in any city, unlike the Workshop it replaces."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_ENGLISH_STEAM_MILL_CIV"
+			Text="A transition began towards machine-based factories in Great Britain's economy in the 1700s, previously reliant on manual labor and draft animals. These precursors to the Industrial Revolution started with the mechanization of the textile industries. Trade expansion was enabled by the introduction of canals, improved roads, and railways. Wider utilization of water wheels and the introduction of steam power pushed dramatic increases in production capacity. The development of all-metal machine tools in the early 1800s facilitated the construction of increasingly refined  production machines for manufacturing in a wide variety of industries."
+		/>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 9/30/2010 3:22:22 PM -->
+<GameData>
+	<Language_RU_RU>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_BY">
+			<Text>Защитники:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MINORCIV_PROTECTED_DESC">
+			<Text>Другие цивилизвации могут решить защищать город-государство. Объявление войны такому городу-государству может привести к объявлению вам войны со стороны его защитников.</Text>
+		</Row>
+
+	</Language_RU_RU>
+</GameData>

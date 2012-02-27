@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Deploy" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <ProjectGuid>{9caacd2b-2993-4a92-a6bf-1200f64df8fa}</ProjectGuid>
+    <Name>Balance - Diplomacy</Name>
+    <Guid>b5f80d90-cdfb-4798-9eb5-2d591e471c68</Guid>
+    <ModVersion>7</ModVersion>
+    <Stability>Beta</Stability>
+    <Teaser>Balances [ICON_PEACE] diplomacy and city-states.</Teaser>
+    <Description>Balances [ICON_PEACE] diplomacy and city-states.[NEWLINE][NEWLINE][COLOR_GREEN]Rationale:[/COLOR] Motivated by a feeling Maritime city-states are significantly better than others (especially for large empires or maps), with Militaristic a distant third, and city-states are overall more valuable than alternatives to spend gold.[NEWLINE][NEWLINE][ICON_BULLET]66%[ICON_FOOD] maximum Maritime bonus in cities outside the Capital.[NEWLINE][ICON_BULLET]125%[ICON_WAR] Militaristic unit reward rate.[NEWLINE][ICON_BULLET]City-states are less likely to request killing their neighbors.[NEWLINE][ICON_BULLET]Quest completion [ICON_INFLUENCE] influence bonuses increased.[NEWLINE][ICON_BULLET]80%[ICON_INFLUENCE] influence from gold payments to city-states.[NEWLINE][ICON_BULLET]For more info and feedback please see the [COLOR_YELLOW]readme[/COLOR].[NEWLINE][NEWLINE](Replaces and updates the old Balance - City States mod)[NEWLINE]Documents\My Games\Sid Meier's Civilization 5\MODS\Balance - Diplomacy</Description>
+    <Authors>Thalassicus</Authors>
+    <SpecialThanks>Please see [COLOR_YELLOW]readme[/COLOR] included in mod folder.</SpecialThanks>
+    <Categories>$Categories$</Categories>
+    <AffectsSavedGames>false</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>true</SupportsSinglePlayer>
+    <SupportsMultiplayer>true</SupportsMultiplayer>
+    <SupportsMac>true</SupportsMac>
+    <AssemblyName>Balance - City States</AssemblyName>
+    <RootNamespace>Balance - City States</RootNamespace>
+    <ModActions>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>BD - General.xml</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>BD - General.sql</FileName>
+      </Action>
+    </ModActions>
+    <Homepage>http://civmodding.wordpress.com</Homepage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Package Only' ">
+    <PackageMod>true</PackageMod>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Deploy Only' ">
+    <PackageMod>false</PackageMod>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="BD - General.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="BD - General.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="BD - Readme.html">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
+</Project>

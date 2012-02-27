@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_DE_DE>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_UNIT_DESTROYED_ENEMY" />
+			<Set Text="Ihr {@1_UnitName} ({2_Num} damage) besiegte eine gegnerische Einheit {@3_UnitName}!" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_MISC_YOU_ATTACK_BY_AIR_AND_DEATH" />
+			<Set Text="Ihre Einheit {@1_UnitName} bombartierte eine gegnerischen Einheit {@2_EnUName} und besiegte sie!" />
+		</Update>
+		<Row Tag="TXT_KEY_REQUIRES">
+			<Text>Benötigt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MONUMENT">
+			<Text>Monument</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TOPIC_EXPERIENCE">
+			<Text>Kampferfahrung</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_SUBMARINE">
+			<Text>Unterwasser Einheiten</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_MOUNTED_ARCHER">
+			<Text>Berittene Bogenschützen</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_SUPPLY_REACHED_TOOLTIP"/>
+			<Set Text="Ihr Reich kann {1_Num} Land Militäreinheiten erhalten. Sie überschreiten diese Grenze um {2_Num}, was die [ICON_PRODUCTION] Produktion von Land Militäreinheiten in ihren Städten um {3_Num}% reduziert."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TECH_ADVANCED_BALLISTICS_HELP"/>
+			<Set Text="Ermöglicht den Bau von [COLOR_POSITIVE_TEXT]Nuklearraketen[ENDCOLOR], furchteinflößenden Waffen, die 2[ICON_RES_URANIUM] Uran benötigen und massive Zerstörungen in Städten verursachen und Einheiten vernichten können."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_CAMEL_ARCHER"/>
+			<Set Text="Schnelle mittelaterliche arabische Einheit. Kann Fernangriffe ausführen und ist nicht verwundbar gegen Angriffe von Pikenieren, im Gegensatz zum Ritter, den sie ersetzt."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRADITION_TITLE"/>
+			<Set Text="Souverän {1_PlayerName:textkey} von {2_CivName:textkey}"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_GPT_FROM_US"/>
+			<Set Text="Ein Handelsabkommen, demzufolge wir jede Runde [ICON_GOLD] Gold an  {1_CivName:textkey} geliefert haben wurde beendet."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_DEAL_EXPIRED_GPT_TO_US"/>
+			<Set Text="Ein Handelsabkommen, demzufolge {1_CivName:textkey} uns [ICON_GOLD] Gold jede Runde geliefert hat wurde beendet."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CSTATE_CULTURE_BONUS"/>
+			<Set Text="Sie erhalten [COLOR_POSITIVE_TEXT][ICON_CULTURE] Kultur[ENDCOLOR] vom Stadtstaat in all Ihren Städten."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CSTATE_FOOD_BONUS"/>
+			<Set Text="Sie erhalten [COLOR_POSITIVE_TEXT][ICON_FOOD] Nahrun[ENDCOLOR] vom Stadtstaat in all Ihren Städten."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CSTATE_MILITARY_BONUS"/>
+			<Set Text="Sie senden Ihnen [COLOR_POSITIVE_TEXT]neue Militäreinheiten[ENDCOLOR] alle paar Runden."/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_SPAIN_CONQUISTADOR_HELP"/>
+			<Set Text="Mittelalterliche einzigartige Einheit der Spanier. Der Konquistador hat +2 Sichtweite, keinen Malus gegen Städte, und kann sich zur See selbst verteidigen, im Gegensatz zum Ritter, den er ersetzt."/>
+		</Update>		
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_BASE" />
+			<Set Text="Unser [ICON_INFLUENCE] Einfluss auf {1_CivName:textkey} hat soweit zugenommen, dass Sie jetzt mit uns [COLOR_POSITIVE_TEXT]BEFREUNDET[ENDCOLOR] sind.[NEWLINE][NEWLINE]{2_DetailsString} Sie erlauben uns jetzt auch mit Einheiten durch ihr Territorium zu reisen" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_CULTURE" />
+			<Set Text="Als [COLOR_POSITIVE_TEXT]kultivierter[ENDCOLOR] Stadtstaat senden sie uns beeindruckende Kunstwerke, die die [ICON_CULTURE] Kultur in Ihren Städten erhöhen." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_MILITARISTIC" />
+			<Set Text="Als [COLOR_POSITIVE_TEXT]militaristischer[ENDCOLOR] Stadtstaat senden Sie uns manchmal militärische Einheiten." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_FRIENDS_MARITIME" />
+			<Set Text="Als [COLOR_POSITIVE_TEXT]maritimer[ENDCOLOR] Stadtstaat liefern sie [ICON_FOOD] Nahrungsmittel an unsere Städte." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_FRIENDS_LOST_BASE" />
+			<Set Text="Unser [ICON_INFLUENCE] Einfluss auf {1_CivName:textkey} hat soweit abgenommen, dass sie nicht mehr mit uns [COLOR_POSITIVE_TEXT]BEFREUNDET[ENDCOLOR] sind...[NEWLINE][NEWLINE]{2_DetailsString} Unsere Einheiten können nicht mehr frei durch ihr Territorium reisen" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_CULTURE" />
+			<Set Text="([ICON_CULTURE] Kulturbonus an Ihre Städten verloren)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_FRIENDS_MILITARISTIC" />
+			<Set Text="(Sie werden uns nicht mehr mit Truppen versorgen.)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_MARITIME" />
+			<Set Text="([ICON_FOOD] Nahrungsbonus an Ihre Städten verloren)" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_BASE" />
+			<Set Text="Unser [ICON_INFLUENCE] Einfluss auf {2_MinorCivName:textkey} hat soweit zugenommen, dass wir jetzt mit ihnen [COLOR_POSITIVE_TEXT]VERBÜNDET[ENDCOLOR] sind.[NEWLINE][NEWLINE]{3_DetailsString}[NEWLINE][NEWLINE]{1_ResourceDetailsString}" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_BASE_PASSED" />
+			<Set Text="Unser [ICON_INFLUENCE] Einfluss auf {3_MinorCivName:textkey} hat soweit zugenommen, dass wir jetzt {1_CivName:textkey} als ihren [COLOR_POSITIVE_TEXT]Verbündeten ABGELÖST[ENDCOLOR] haben.[NEWLINE][NEWLINE]{4_DetailsString}[NEWLINE][NEWLINE]{2_ResourceDetailsString}" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_CULTURE" />
+			<Set Text="Als [COLOR_POSITIVE_TEXT]kultivierter[ENDCOLOR] Stadtstaat senden sie uns ihre herausragendsten Kunstwerke, welche die [ICON_CULTURE] Kultur Ihrer Städte erhöhen." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_MILITARISTIC" />
+			<Set Text="Als [COLOR_POSITIVE_TEXT]militaristischer[ENDCOLOR] Stadtstaat senden sie uns jetzt regelmäßig militärische Einheiten." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_NOW_ALLIES_MARITIME" />
+			<Set Text="Als [COLOR_POSITIVE_TEXT]maritimer[ENDCOLOR] Stadtstaat exportieren sie jetzt große Mengen [ICON_FOOD] Nahrungsmittel in Ihre Städte." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_ALLIES_LOST" />
+			<Set Text="Unser [ICON_INFLUENCE] Einfluss auf {1_CivName:textkey} hat soweit abgenommen, dass wir nicht mehr mit ihnen [COLOR_POSITIVE_TEXT]VERB�NDET[ENDCOLOR] sind.[NEWLINE][NEWLINE]{2_DetailsString}[NEWLINE][NEWLINE]Deshalb beliefern sie uns nicht länger mit ihren strategischen Ressourcen und Luxusgütern." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_ALLIES_PASSED" />
+			<Set Text="[COLOR_NEGATIVE_TEXT]{1_CivName:textkey}[ENDCOLOR] hat jetzt mehr [ICON_INFLUENCE] Einfluss auf {2_MinorCivName:textkey} als wir. Dadurch haben sie uns als [COLOR_NEGATIVE_TEXT]VERBÜNDETEN[ENDCOLOR] des Stadtstaates abgelöst![NEWLINE][NEWLINE]{3_DetailsString}[NEWLINE][NEWLINE]Anstatt uns beliefern sie jetzt [COLOR_NEGATIVE_TEXT]{1_CivName:textkey}[ENDCOLOR] mit ihren strategischen Ressourcen und Luxusgütern." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_NOTIFICATION_MINOR_LOST_ALLIES_MILITARISTIC" />
+			<Set Text="Sie werden uns jetzt seltener mit neuen Truppen versorgen." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITY_STATE_MARITIME_TT" />
+			<Set Text="Ein befreundeter [COLOR_POSITIVE_TEXT]maritimer[ENDCOLOR] Stadtstaat liefert [ICON_FOOD] Nahrung an Ihre Städte." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILD_MOAI_HELP" />
+			<Set Text="+1 [ICON_CULTURE] Kultur.[NEWLINE]+1 [ICON_CULTURE] Kultur für Moai im Umkreis von 1 Feld.[NEWLINE][ICON_LOCKED] Muss in Küstenstadt erbaut werden." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CIV5_IMPROVEMENTS_MOAI_HELP" />
+			<Set Text="+1 [ICON_CULTURE] Kultur.[NEWLINE]+1 [ICON_CULTURE] Kultur für Moai im Umkreis von 1 Feld.[NEWLINE][ICON_LOCKED] Muss in Küstenstadt erbaut werden." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLYNESIAN_SCENARIO_BUILD_MOAI_HELP" />
+			<Set Text="+1 [ICON_CULTURE] Kultur.[NEWLINE]+1 [ICON_CULTURE] Kultur für Moai im Umkreis von 1 Feld.[NEWLINE][ICON_LOCKED] Muss in Küstenstadt erbaut werden." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAME_OPTION_POLICY_SAVING" />
+			<Set Text="Erlaubt Speichern von Politiken" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_GAME_OPTION_PROMOTION_SAVING" />
+			<Set Text="Erlaubt Speichern von Beförderungen" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_MANDATE_OF_HEAVEN_HELP" />
+			<Set Text="[COLOR_POSITIVE_TEXT]Auftrag des Himmels[ENDCOLOR][NEWLINE][ICON_CULTURE] Kultur erhöht sich jede Runde um 50% der überschüssigen [ICON_HAPPINESS_1] Zufriedenheit." />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_BALANCED_TEXT" />
+			<Set Text="[ICON_CITIZEN]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_FOOD_TEXT" />
+			<Set Text="[ICON_FOOD]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_PROD_TEXT" />
+			<Set Text="[ICON_PRODUCTION]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_GOLD_TEXT" />
+			<Set Text="[ICON_GOLD]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_RESEARCH_TEXT" />
+			<Set Text="[ICON_RESEARCH]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_CULTURE_TEXT" />
+			<Set Text="[ICON_CULTURE]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_GREAT_PERSON_TEXT" />
+			<Set Text="[ICON_GREAT_PEOPLE]" />
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_CITYVIEW_FOCUS_AVOID_GROWTH_TEXT" />
+			<Set Text="[ICON_LOCKED]" />
+		</Update>
+		
+		<!--
+				Units 
+		-->
+		<Update>
+			<Where Tag="TXT_KEY_UNIT_HELP_SIAMESE_WARELEPHANT" />
+			<Set Text="Einzigartige Einheit Siams, die keine Resourcen benötigt. Obwohl schwach gegen Pikeniere, erhalten sie einen Bonus gegen berittene Einheiten. Sie haben eine höhere [ICON_STRENGTH] Stärke als die Ritter, die sie ersetzen." />
+		</Update>
+		
+		
+		<!--
+				Resources
+		-->
+		<Row
+			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS"
+			Text="Monopolisierung"
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS_HELP"
+			Text="[ICON_HAPPINESS_1] Zufriedenheit: +1 für jedes Luxusgut, auch für überzählige Mengen."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS_STRATEGY"
+			Text="Monopolisierung erhöht den Effekt von Luxusgütern."
+		/>
+		<Row
+			Tag="TXT_KEY_BUILDING_EXTRA_HAPPINESS_PEDIA"
+			Text="In der Marktwirtschaft spricht man von einem Monopol, wenn eine einzelnes Individuum, Unternehmen oder Organisation eine so große Kontrolle über ein bestimmtes Produkt oder eine bestimmte Dienstleistung hat, so dass es die Bedingungen zum Zugang dazu diktieren kann. Existieren keine Alternativen dazu, dann verlieren die Gesetze der freien Marktwirtschaft ihre Gültigkeit, zum Vorteil des Monopolisten und zum Nachteil des Käufers."
+		/>
+		
+		<Row Tag="TXT_KEY_RES_IMPORTED">
+			<Text>{1_Num} Importiert</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_CITYSTATES">
+			<Text>{1_Num} Von [ICON_CITY_STATE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_EXPORTED">
+			<Text>{1_Num} Exportiert</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_USED">
+			<Text>{1_Num} Verbraucht</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RES_SURPLUS">
+			<Text>{1_Num} Überschuss</Text>
+		</Row>
+		<Row Tag="TXT_KEY_HOVERINFO_MOVES_HP">
+			<Text>[NEWLINE]{1_Num}[ICON_MOVES] verbleibend.</Text>
+		</Row>
+		
+		
+		
+		<!--
+				Promotions
+		-->
+		<Row Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY_HELP">
+			<Text>-50% Malus auf Verteidigung</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOUNTED_PENALTY_HELP">
+			<Text>-50% Malus gegen Berittene</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DESERT_POWER">
+			<Text>Wüstenmacht</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_COMMAND">
+			<Text>Versorgungseinheiten</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNITCOMBAT_CIVILIAN">
+			<Text>Zvile Einheiten</Text>
+		</Row>
+		<Row
+			Tag="TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED"
+			Text="Doppeltes Arbeitstempo"
+		/>
+		<Row
+			Tag="TXT_KEY_PROMOTION_DOUBLE_WORK_SPEED_HELP"
+			Text="Baut Verbesserungen +100% schneller"
+		/>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_OLIGARCHY_HELP" />
+			<Set Text="+33% [ICON_STRENGTH] Stärke in befreundetem Territorium"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_HIMEJI_CASTLE_HELP" />
+			<Set Text="+15% [ICON_STRENGTH] Stärke in befreundetem Territorium"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WOODSMAN_HELP" />
+			<Set Text="Schnellere Fortbewegung in [COLOR_POSITIVE_TEXT]Wäldern und Dschungel[ENDCOLOR]"/>
+		</Update>
+		<Row Tag="TXT_KEY_PROMOTION_DESERT_POWER_HELP">
+			<Text>Schnellere Fortbewegung in [COLOR_POSITIVE_TEXT]Wüsten[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ARCTIC_POWER">
+			<Text>Arktische Macht</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ARCTIC_POWER_HELP">
+			<Text>Schnellere Fortbewegung in [COLOR_POSITIVE_TEXT]Schnee und Tundra[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUERRILLA">
+			<Text>Guerrilla</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GUERRILLA_HELP">
+			<Text>Schnellere Fortbewegung in [COLOR_POSITIVE_TEXT]Bergen[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NEW_UNIT">
+			<Text>Neue Einheit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NEW_UNIT_HELP">
+			<Text>Neue Einheit</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PHALANX">
+			<Text>Phalanx</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PHALANX_HELP">
+			<Text>+50% gegen [COLOR_POSITIVE_TEXT]Nahkampf[ENDCOLOR] und [COLOR_POSITIVE_TEXT]berittene[ENDCOLOR] Einheiten.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_PRODMOD_YIELD_PLAYER"/>
+			<Set Text="[NEWLINE][ICON_BULLET]Stadt Politik-Modifikator: {1_num}%"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_DEFENSE_PENALTY"/>
+			<Set Text="Malus auf Verteidigung (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_MOUNTED_PENALTY"/>
+			<Set Text="Malus gegen Berittene (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WEAK_RANGED"/>
+			<Set Text="Bodenangriff Malus (75)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_WEAK_RANGED_HELP"/>
+			<Set Text="-75% Stärke beim Angriff auf Boden- und Seeeinheiten"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_HELICOPTER"/>
+			<Set Text="Bonus gegen Helikopter (100)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_FIGHTER"/>
+			<Set Text="Bonus gegen Jäger (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_NAVAL_PENALTY"/>
+			<Set Text="Malus gegen Seeeinheiten (50)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_ANTI_TANK"/>
+			<Set Text="Bonus gegen Panzer (100)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_NO_DEFENSIVE_BONUSES"/>
+			<Set Text="Keine defensiven Terrain-Boni"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_FOREIGN_LANDS"/>
+			<Set Text="Fremde Länder Bonus (20)"/>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROMOTION_SUPPLY_HELP"/>
+			<Set Text="+1[ICON_MOVES] und könnte auf [COLOR_POSITIVE_TEXT]nicht befreundetem Territorium heilen[ENDCOLOR]. 2 Punkte heilen pro Runde."/>
+		</Update>
+	</Language_DE_DE>
+</GameData>

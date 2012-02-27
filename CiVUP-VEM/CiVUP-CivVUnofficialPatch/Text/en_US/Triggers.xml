@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_USER_EVENT_OPTION_SELECT">
+			<Text>Select</Text>
+		</Row>
+		<Row Tag="TXT_KEY_USER_EVENT_OPTION_OK">
+			<Text>OK</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_DISTANT_PLAYER">
+			<Text>an unmet player</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DISTANT_CITY">
+			<Text>a distant city</Text>
+		</Row>
+		<Row Tag="TXT_KEY_DISTANT_UNIT">
+			<Text>distant unit</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

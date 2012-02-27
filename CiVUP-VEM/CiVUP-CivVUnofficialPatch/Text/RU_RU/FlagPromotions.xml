@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_RU_RU>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_HIDE_UNIT_ICON">
+			<Text>Значки юнитов</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_HIDE_UNIT_ICON_TT">
+			<Text>Отображать значки юнитов</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_TOGGLE_FLAG_PROMOTIONS">
+			<Text>Повышения юнитов</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TOGGLE_FLAG_PROMOTIONS_TT">
+			<Text>Отображать повышения юнитов (макс. 9)[NEWLINE] [NEWLINE][COLOR_POSITIVE_TEXT]Правый-клик[/COLOR] для опций</Text>
+		</Row>
+	</Language_RU_RU>
+</GameData>

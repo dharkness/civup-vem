@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<!--Global Diplomacy AI Defines-->
+	<Defines>
+		<!--Minor Civ Gifts-->
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_THRESHOLD" />
+			<Set Value="100" />
+			<!-- 100 -->
+		</Update>
+		<Update>
+			<Where Name="MC_ALWAYS_GIFT_DIPLO_THRESHOLD" />
+			<Set Value="4" />
+			<!-- 4 -->
+		</Update>
+		<Update>
+			<Where Name="MC_SOMETIMES_GIFT_RAND_MULTIPLIER" />
+			<Set Value="5" />
+			<!-- 5 -->
+		</Update>
+		<Update>
+			<Where Name="MC_SMALL_GIFT_WEIGHT_PASS_OTHER_PLAYER" />
+			<Set Value="30" />
+			<!-- 30 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_PASS_OTHER_PLAYER" />
+			<Set Value="15" />
+			<!-- 15 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_MARITIME_GROWTH" />
+			<Set Value="5" />
+			<!-- 10 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_DIPLO_VICTORY" />
+			<Set Value="200" />
+			<!-- 200 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_CULTURE_VICTORY" />
+			<Set Value="200" />
+			<!-- 200 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_CONQUEST_VICTORY" />
+			<Set Value="100" />
+			<!-- 100 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_MILITARISTIC" />
+			<Set Value="0" />
+			<!-- -50 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_RESOURCE_WE_NEED" />
+			<Set Value="150" />
+			<!-- 80 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_NEUTRAL_VICTORY_ROLL" />
+			<Set Value="101" />
+			<!-- 101 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_PROTECTIVE" />
+			<Set Value="100" />
+			<!-- 10 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_HOSTILE" />
+			<Set Value="-20" />
+			<!-- -20 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_NEIGHBORS" />
+			<Set Value="10" />
+			<!-- 5 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_CLOSE" />
+			<Set Value="5" />
+			<!-- 4 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_FAR" />
+			<Set Value="3" />
+			<!-- 3 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_ALMOST_NOT_ALLIES" />
+			<Set Value="250" />
+			<!-- 250 -->
+		</Update>
+		<Update>
+			<Where Name="MC_GIFT_WEIGHT_ALMOST_NOT_FRIENDS" />
+			<Set Value="150" />
+			<!-- 150 -->
+		</Update>
+		<!--Opinion Weights-->
+		<Update>
+			<Where Name="OPINION_WEIGHT_LAND_FIERCE" />
+			<Set Value="30" />
+			<!--Was 30-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_LAND_STRONG" />
+			<Set Value="15" />
+			<!--Was 20-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_LAND_WEAK" />
+			<Set Value="10" />
+			<!--Was 10-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_RETURNED_CIVILIAN" />
+			<Set Value="-30" />
+			<!--Was -20-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_ASKED_NO_SETTLE" />
+			<Set Value="10" />
+			<!--Was 20-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_MADE_DEMAND_OF_US" />
+			<Set Value="10" />
+			<!--Was 20-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_BROKEN_EXPANSION_PROMISE" />
+			<Set Value="10" />
+			<!--Was 20-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_IGNORED_EXPANSION_PROMISE" />
+			<Set Value="5" />
+			<!--Was 15-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_DOF" />
+			<Set Value="-25" />
+			<!--Was -35-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_DENOUNCED_BY_FRIEND_EACH" />
+			<Set Value="10" />
+			<!--Was 20-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_WAR_FRIEND_EACH" />
+			<Set Value="60" />
+			<!--Was 40-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_REFUSED_REQUEST_EACH" />
+			<Set Value="5" />
+			<!--Was 15-->
+		</Update>
+		<Update>
+			<Where Name="OPINION_WEIGHT_RECKLESS_EXPANDER" />
+			<Set Value="20" />
+			<!--Was 35-->
+		</Update>
+		<!--Opinion Thresholds-->
+		<Update>
+			<Where Name="OPINION_THRESHOLD_FRIEND" />
+			<Set Value="-25" />
+			<!--Was -30-->
+		</Update>
+		<!--Approaches-->
+		<Update>
+			<Where Name="APPROACH_RANDOM_PERCENT" />
+			<Set Value="10" />
+			<!--Was 15-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_FRIENDLY_DEMAND" />
+			<Set Value="-3" />
+			<!--Was -6-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_WAR_BROKEN_EXPANSION_PROMISE" />
+			<Set Value="3" />
+			<!--Was 4-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_FRIENDLY_BROKEN_EXPANSION_PROMISE" />
+			<Set Value="-2" />
+			<!--Was -6-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_DECEPTIVE_BROKEN_EXPANSION_PROMISE" />
+			<Set Value="-2" />
+			<!--Was -6-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_WAR_IGNORED_EXPANSION_PROMISE" />
+			<Set Value="2" />
+			<!--Was 3-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_FRIENDLY_IGNORED_EXPANSION_PROMISE" />
+			<Set Value="-2" />
+			<!--Was -4-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_DECEPTIVE_IGNORED_EXPANSION_PROMISE" />
+			<Set Value="-2" />
+			<!--Was -4-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_WAR_BROKEN_BORDER_PROMISE" />
+			<Set Value="3" />
+			<!--Was 4-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_FRIENDLY_BROKEN_BORDER_PROMISE" />
+			<Set Value="-3" />
+			<!--Was -6-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_DECEPTIVE_BROKEN_BORDER_PROMISE" />
+			<Set Value="-3" />
+			<!--Was -6-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_WAR_IGNORED_BORDER_PROMISE" />
+			<Set Value="2" />
+			<!--Was 3-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_FRIENDLY_IGNORED_BORDER_PROMISE" />
+			<Set Value="-2" />
+			<!--Was -4-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_DECEPTIVE_IGNORED_BORDER_PROMISE" />
+			<Set Value="-2" />
+			<!--Was -4-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_HOSTILE_MILITARY_THREAT_NONE" />
+			<Set Value="2" />
+			<!--Was 2-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_WAR_BROKEN_CITY_STATE_PROMISE" />
+			<Set Value="3" />
+			<!--Was 4-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_FRIENDLY_BROKEN_CITY_STATE_PROMISE" />
+			<Set Value="-3" />
+			<!--Was -10-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_WAR_BROKEN_CITY_STATE_PROMISE_WORLD" />
+			<Set Value="2" />
+			<!--Was 3-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_FRIENDLY_BROKEN_CITY_STATE_PROMISE_WORLD" />
+			<Set Value="-1" />
+			<!--Was -3-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_FRIENDLY_IGNORED_CITY_STATE_PROMISE" />
+			<Set Value="-1" />
+			<!--Was -4-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_WAR_IGNORED_CITY_STATE_PROMISE" />
+			<Set Value="2" />
+			<!--Was 4-->
+		</Update>
+		<Update>
+			<Where Name="APPROACH_WAR_RECKLESS_EXPANDER" />
+			<Set Value="120" />
+			<!--Was 160-->
+		</Update>
+		<!--Minor Civ Approach-->
+		<Update>
+			<Where Name="MINOR_APPROACH_IGNORE_CURRENTLY_WAR" />
+			<Set Value="0" />
+			<!--Was 3-->
+		</Update>
+		<Update>
+			<Where Name="MINOR_APPROACH_FRIENDLY_PROXIMITY_NEIGHBORS" />
+			<Set Value="1" />
+			<!--Was -1-->
+		</Update>
+		<Update>
+			<Where Name="MINOR_APPROACH_FRIENDLY_PERSONALITY_HOSTILE" />
+			<Set Value="0" />
+			<!--Was -1-->
+		</Update>
+		<Update>
+			<Where Name="MINOR_APPROACH_PROTECTIVE_PERSONALITY_HOSTILE" />
+			<Set Value="0" />
+			<!--Was -2-->
+		</Update>
+		<!--Peace Willingness-->
+		<Update>
+			<Where Name="PEACE_WILLINGNESS_OFFER_PROJECTION_UNKNOWN" />
+			<Set Value="10" />
+			<!--Was 0-->
+		</Update>
+		<!--War Goals-->
+		<Update>
+			<Where Name="WAR_GOAL_DAMAGE_MINOR" />
+			<Set Value="0" />
+			<!--Was -10-->
+		</Update>
+		<!--War Projections-->
+		<Update>
+			<Where Name="WAR_PROJECTION_THEIR_MILITARY_STRENGTH_STRONG" />
+			<Set Value="-20" />
+			<!--Was -25-->
+		</Update>
+		<Update>
+			<Where Name="WAR_PROJECTION_THEIR_ECONOMIC_STRENGTH_POWERFUL" />
+			<Set Value="-25" />
+			<!--Was -30-->
+		</Update>
+		<Update>
+			<Where Name="WAR_PROJECTION_THEIR_ECONOMIC_STRENGTH_IMMENSE" />
+			<Set Value="-35" />
+			<!--Was -50-->
+		</Update>
+		<Update>
+			<Where Name="WAR_PROJECTION_WAR_DAMAGE_US_NONE" />
+			<Set Value="10" />
+			<!--Was 0-->
+		</Update>
+		<Update>
+			<Where Name="WAR_PROJECTION_WAR_DAMAGE_US_MINOR" />
+			<Set Value="0" />
+			<!--Was -10-->
+		</Update>
+		<Update>
+			<Where Name="WAR_PROJECTION_WAR_DAMAGE_US_MAJOR" />
+			<Set Value="-10" />
+			<!--Was -20-->
+		</Update>
+		<!--Military Threat-->
+		<Update>
+			<Where Name="MILITARY_THREAT_PER_MINOR_ATTACKED" />
+			<Set Value="15" />
+			<!--Was 20-->
+		</Update>
+		<Update>
+			<Where Name="MILITARY_THREAT_PER_MINOR_CONQUERED" />
+			<Set Value="10" />
+			<!--Was 10-->
+		</Update>
+		<!--Warmonger Threat-->
+		<Update>
+			<Where Name="WARMONGER_THREAT_MINOR_CONQUERED_WEIGHT" />
+			<Set Value="8" />
+			<!--Was 10-->
+		</Update>
+		<!--Issues of Dispute-->
+		<Update>
+			<Where Name="LAND_DISPUTE_FIERCE_THRESHOLD" />
+			<Set Value="600" />
+			<!--Was 400-->
+		</Update>
+		<Update>
+			<Where Name="LAND_DISPUTE_STRONG_THRESHOLD" />
+			<Set Value="300" />
+			<!--Was 230-->
+		</Update>
+		<Update>
+			<Where Name="LAND_DISPUTE_WEAK_THRESHOLD" />
+			<Set Value="150" />
+			<!--Was 100-->
+		</Update>
+		<Update>
+			<Where Name="LAND_DISPUTE_NEIGHBORS" />
+			<Set Value="15" />
+			<!--Was 30-->
+		</Update>
+		<Update>
+			<Where Name="LAND_DISPUTE_CLOSE" />
+			<Set Value="9" />
+			<!--Was 18-->
+		</Update>
+		<Update>
+			<Where Name="VICTORY_DISPUTE_GRAND_STRATEGY_MATCH_UNSURE" />
+			<Set Value="0" />
+			<!--Was 6-->
+		</Update>
+		<Update>
+			<Where Name="VICTORY_DISPUTE_GRAND_STRATEGY_MATCH_LIKELY" />
+			<Set Value="1" />
+			<!--Was 10-->
+		</Update>
+		<Update>
+			<Where Name="VICTORY_DISPUTE_GRAND_STRATEGY_MATCH_POSITIVE" />
+			<Set Value="2" />
+			<!--Was 14-->
+		</Update>
+		<!--Issues of Dispute (Other Players Estimate)-->
+		<Update>
+			<Where Name="VICTORY_DISPUTE_OTHER_PLAYER_GRAND_STRATEGY_MATCH_UNSURE" />
+			<Set Value="0" />
+			<!--Was 3-->
+		</Update>
+		<Update>
+			<Where Name="VICTORY_DISPUTE_OTHER_PLAYER_GRAND_STRATEGY_MATCH_LIKELY" />
+			<Set Value="1" />
+			<!--Was 5-->
+		</Update>
+		<Update>
+			<Where Name="VICTORY_DISPUTE_OTHER_PLAYER_GRAND_STRATEGY_MATCH_POSITIVE" />
+			<Set Value="2" />
+			<!--Was 7-->
+		</Update>
+	</Defines>
+</GameData>

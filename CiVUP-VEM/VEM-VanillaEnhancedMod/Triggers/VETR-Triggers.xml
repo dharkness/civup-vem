@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Triggers>
+		<Row><Type>COMMERCIAL_FARMING</Type>		<ImprovementType>IMPROVEMENT_FARM</ImprovementType></Row>
+		<Row><Type>MINE_STRIKE</Type>				<ImprovementType>IMPROVEMENT_MINE</ImprovementType></Row>
+		<Row><Type>VILLAGE_PROTESTS</Type>			<ImprovementType>IMPROVEMENT_TRADING_POST</ImprovementType></Row>
+		<Row><Type>PLANTATION_DEMAND</Type>			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType><Weight>20</Weight></Row>
+		<Row><Type>EXOTIC_CAMP_ANIMALS</Type>		<ImprovementType>IMPROVEMENT_CAMP</ImprovementType><Weight>20</Weight></Row>
+		<Row><Type>QUALITY_QUARRY</Type>			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType><Weight>20</Weight></Row>
+		<Row><Type>EXOTIC_LUMBER</Type>				<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType></Row>
+		<Row><Type>PASTURE_FENCING</Type>			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType></Row>
+		<Row><Type>FISHING_DEMAND</Type>			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType><Weight>20</Weight></Row>
+		<Row><Type>WELL_EXPANSION</Type>			<ImprovementType>IMPROVEMENT_WELL</ImprovementType><Weight>50</Weight></Row>
+		<Row><Type>PLATFORM_DECOMMISSIONING</Type>	<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType><Weight>50</Weight></Row>
+		<Row><Type>FORT_EXPANSION</Type>			<ImprovementType>IMPROVEMENT_FORT</ImprovementType><Weight>20</Weight></Row>
+		<Row><Type>GRANARY_POPULATION_BOOM</Type>	<BuildingClass>BUILDINGCLASS_GRANARY</BuildingClass></Row>
+		<Row><Type>SMITHY_DEVELOPMENT</Type>		<BuildingClass>BUILDINGCLASS_WORKSHOP</BuildingClass></Row>
+		<Row><Type>MARKET_MONOPOLY</Type>			<BuildingClass>BUILDINGCLASS_MARKET</BuildingClass></Row>
+		<Row><Type>LIBRARY_CONTROVERSY</Type>		<BuildingClass>BUILDINGCLASS_LIBRARY</BuildingClass></Row>
+		<Row><Type>MONUMENT_CONTROVERSY</Type>		<BuildingClass>BUILDINGCLASS_MONUMENT</BuildingClass></Row>
+		<Row><Type>WALLED_SLUMS</Type>				<BuildingClass>BUILDINGCLASS_WALLS</BuildingClass></Row>
+		<Row><Type>BARRACKS_RECRUITMENT</Type>		<BuildingClass>BUILDINGCLASS_BARRACKS</BuildingClass><Weight>20</Weight></Row>
+		<Row><Type>COLOSSEUM_ATTENDANCE</Type>		<BuildingClass>BUILDINGCLASS_COLOSSEUM</BuildingClass></Row>
+		<Row><Type>SCOUT_SAVIOR</Type>				<UnitClass>UNITCLASS_SCOUT</UnitClass></Row>
+	</Triggers>
+	<Outcomes>
+		<Row><Type>COMMERCIAL_FARMING_1</Type>       <Yield>3</Yield><YieldType>YIELD_CULTURE</YieldType>      <GoldCost>150</GoldCost><Order>1</Order><TriggerType>COMMERCIAL_FARMING</TriggerType></Row>	
+		<Row><Type>COMMERCIAL_FARMING_2</Type>       <Yield>2</Yield><YieldType>YIELD_FOOD</YieldType>         <GoldCost>150</GoldCost><Order>2</Order><TriggerType>COMMERCIAL_FARMING</TriggerType></Row>	
+		<Row><Type>COMMERCIAL_FARMING_3</Type>       <Yield>1</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>COMMERCIAL_FARMING</TriggerType></Row>
+		<Row><Type>MINE_STRIKE_1</Type>              <Yield>1</Yield><YieldType>YIELD_HAPPINESS</YieldType>    <GoldCost>150</GoldCost><Order>1</Order><TriggerType>MINE_STRIKE</TriggerType></Row>	
+		<Row><Type>MINE_STRIKE_2</Type>              <Yield>3</Yield><YieldType>YIELD_PRODUCTION</YieldType>   <GoldCost>150</GoldCost><Order>2</Order><TriggerType>MINE_STRIKE</TriggerType></Row>	
+		<Row><Type>MINE_STRIKE_3</Type>              <Yield>1</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>MINE_STRIKE</TriggerType></Row>
+		<Row><Type>VILLAGE_PROTESTS_1</Type>         <Yield>3</Yield><YieldType>YIELD_SCIENCE</YieldType>      <GoldCost>150</GoldCost><Order>1</Order><TriggerType>VILLAGE_PROTESTS</TriggerType></Row>	
+		<Row><Type>VILLAGE_PROTESTS_2</Type>         <Yield>1</Yield><YieldType>YIELD_HAPPINESS</YieldType>    <GoldCost>150</GoldCost><Order>2</Order><TriggerType>VILLAGE_PROTESTS</TriggerType></Row>	
+		<Row><Type>VILLAGE_PROTESTS_3</Type>         <Yield>1</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>VILLAGE_PROTESTS</TriggerType></Row>
+		<Row><Type>PLANTATION_DEMAND_1</Type>        <Yield>1</Yield><YieldType>YIELD_HAPPINESS</YieldType>    <GoldCost>150</GoldCost><Order>1</Order><TriggerType>PLANTATION_DEMAND</TriggerType></Row>	
+		<Row><Type>PLANTATION_DEMAND_2</Type>        <Yield>2</Yield><YieldType>YIELD_FOOD</YieldType>         <GoldCost>150</GoldCost><Order>2</Order><TriggerType>PLANTATION_DEMAND</TriggerType></Row>	
+		<Row><Type>PLANTATION_DEMAND_3</Type>        <Yield>1</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>PLANTATION_DEMAND</TriggerType></Row>
+		<Row><Type>EXOTIC_CAMP_ANIMALS_1</Type>      <Yield>3</Yield><YieldType>YIELD_CULTURE</YieldType>      <GoldCost>150</GoldCost><Order>1</Order><TriggerType>EXOTIC_CAMP_ANIMALS</TriggerType></Row>	
+		<Row><Type>EXOTIC_CAMP_ANIMALS_2</Type>      <Yield>2</Yield><YieldType>YIELD_FOOD</YieldType>         <GoldCost>150</GoldCost><Order>2</Order><TriggerType>EXOTIC_CAMP_ANIMALS</TriggerType></Row>	
+		<Row><Type>EXOTIC_CAMP_ANIMALS_3</Type>      <Yield>1</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>EXOTIC_CAMP_ANIMALS</TriggerType></Row>
+		<Row><Type>QUALITY_QUARRY_1</Type>           <Yield>3</Yield><YieldType>YIELD_CULTURE</YieldType>      <GoldCost>150</GoldCost><Order>1</Order><TriggerType>QUALITY_QUARRY</TriggerType></Row>	
+		<Row><Type>QUALITY_QUARRY_2</Type>           <Yield>3</Yield><YieldType>YIELD_PRODUCTION</YieldType>   <GoldCost>150</GoldCost><Order>2</Order><TriggerType>QUALITY_QUARRY</TriggerType></Row>	
+		<Row><Type>QUALITY_QUARRY_3</Type>           <Yield>1</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>QUALITY_QUARRY</TriggerType></Row>
+		<Row><Type>EXOTIC_LUMBER_1</Type>            <Yield>3</Yield><YieldType>YIELD_CULTURE</YieldType>      <GoldCost>150</GoldCost><Order>1</Order><TriggerType>EXOTIC_LUMBER</TriggerType></Row>	
+		<Row><Type>EXOTIC_LUMBER_2</Type>            <Yield>3</Yield><YieldType>YIELD_PRODUCTION</YieldType>   <GoldCost>150</GoldCost><Order>2</Order><TriggerType>EXOTIC_LUMBER</TriggerType></Row>	
+		<Row><Type>EXOTIC_LUMBER_3</Type>            <Yield>1</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>EXOTIC_LUMBER</TriggerType></Row>
+		<Row><Type>PASTURE_FENCING_1</Type>          <Yield>2</Yield><YieldType>YIELD_FOOD</YieldType>         <GoldCost>150</GoldCost><Order>1</Order><TriggerType>PASTURE_FENCING</TriggerType></Row>	
+		<Row><Type>PASTURE_FENCING_2</Type>          <Yield>3</Yield><YieldType>YIELD_PRODUCTION</YieldType>   <GoldCost>150</GoldCost><Order>2</Order><TriggerType>PASTURE_FENCING</TriggerType></Row>	
+		<Row><Type>PASTURE_FENCING_3</Type>          <Yield>1</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>PASTURE_FENCING</TriggerType></Row>
+		<Row><Type>FISHING_DEMAND_1</Type>           <Yield>2</Yield><YieldType>YIELD_FOOD</YieldType>         <GoldCost>150</GoldCost><Order>1</Order><TriggerType>FISHING_DEMAND</TriggerType></Row>	
+		<Row><Type>FISHING_DEMAND_2</Type>           <Yield>3</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>150</GoldCost><Order>2</Order><TriggerType>FISHING_DEMAND</TriggerType></Row>	
+		<Row><Type>FISHING_DEMAND_3</Type>           <Yield>1</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>FISHING_DEMAND</TriggerType></Row>
+		<Row><Type>WELL_EXPANSION_1</Type>           <Yield>6</Yield><YieldType>YIELD_CULTURE</YieldType>      <GoldCost>200</GoldCost><Order>1</Order><TriggerType>WELL_EXPANSION</TriggerType></Row>	
+		<Row><Type>WELL_EXPANSION_2</Type>           <Yield>6</Yield><YieldType>YIELD_PRODUCTION</YieldType>   <GoldCost>200</GoldCost><Order>2</Order><TriggerType>WELL_EXPANSION</TriggerType></Row>	
+		<Row><Type>WELL_EXPANSION_3</Type>           <Yield>2</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>WELL_EXPANSION</TriggerType></Row>
+		<Row><Type>PLATFORM_DECOMMISSIONING_1</Type> <Yield>6</Yield><YieldType>YIELD_FOOD</YieldType>         <GoldCost>200</GoldCost><Order>1</Order><TriggerType>PLATFORM_DECOMMISSIONING</TriggerType></Row>	
+		<Row><Type>PLATFORM_DECOMMISSIONING_2</Type> <Yield>6</Yield><YieldType>YIELD_PRODUCTION</YieldType>   <GoldCost>200</GoldCost><Order>2</Order><TriggerType>PLATFORM_DECOMMISSIONING</TriggerType></Row>	
+		<Row><Type>PLATFORM_DECOMMISSIONING_3</Type> <Yield>2</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>PLATFORM_DECOMMISSIONING</TriggerType></Row>
+		<Row><Type>FORT_EXPANSION_1</Type>           <Yield>6</Yield><YieldType>YIELD_SCIENCE</YieldType>      <GoldCost>300</GoldCost><Order>1</Order><TriggerType>FORT_EXPANSION</TriggerType></Row>	
+		<Row><Type>FORT_EXPANSION_2</Type>           <Action>Game.TrigAction.FortExpansion2</Action>           <GoldCost>300</GoldCost><Order>2</Order><TriggerType>FORT_EXPANSION</TriggerType></Row>	
+		<Row><Type>FORT_EXPANSION_3</Type>           <Yield>4</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>FORT_EXPANSION</TriggerType></Row>
+		<Row><Type>GRANARY_POPULATION_BOOM_1</Type>  <Action>Game.TrigAction.GranaryPopulationBoom1</Action>   <GoldCost>200</GoldCost><Order>1</Order><TriggerType>GRANARY_POPULATION_BOOM</TriggerType></Row>	
+		<Row><Type>GRANARY_POPULATION_BOOM_2</Type>  <Action>Game.TrigAction.GranaryPopulationBoom2</Action>   <GoldCost>200</GoldCost><Order>2</Order><TriggerType>GRANARY_POPULATION_BOOM</TriggerType></Row>	
+		<Row><Type>GRANARY_POPULATION_BOOM_3</Type>  <Yield>1</Yield><YieldType>YIELD_POPULATION</YieldType>   <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>GRANARY_POPULATION_BOOM</TriggerType></Row>
+		<Row><Type>SMITHY_DEVELOPMENT_1</Type>       <Yield>6</Yield><YieldType>YIELD_SCIENCE</YieldType>      <GoldCost>200</GoldCost><Order>1</Order><TriggerType>SMITHY_DEVELOPMENT</TriggerType></Row>	
+		<Row><Type>SMITHY_DEVELOPMENT_2</Type>       <Yield>6</Yield><YieldType>YIELD_PRODUCTION</YieldType>   <GoldCost>200</GoldCost><Order>2</Order><TriggerType>SMITHY_DEVELOPMENT</TriggerType></Row>	
+		<Row><Type>SMITHY_DEVELOPMENT_3</Type>       <Yield>2</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>SMITHY_DEVELOPMENT</TriggerType></Row>
+		<Row><Type>MARKET_MONOPOLY_1</Type>          <Yield>2</Yield><YieldType>YIELD_HAPPINESS</YieldType>    <GoldCost>200</GoldCost><Order>1</Order><TriggerType>MARKET_MONOPOLY</TriggerType></Row>	
+		<Row><Type>MARKET_MONOPOLY_2</Type>          <Yield>6</Yield><YieldType>YIELD_SCIENCE</YieldType>      <GoldCost>200</GoldCost><Order>2</Order><TriggerType>MARKET_MONOPOLY</TriggerType></Row>	
+		<Row><Type>MARKET_MONOPOLY_3</Type>          <Yield>2</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>MARKET_MONOPOLY</TriggerType></Row>
+		<Row><Type>LIBRARY_CONTROVERSY_1</Type>      <Yield>6</Yield><YieldType>YIELD_SCIENCE</YieldType>      <GoldCost>200</GoldCost><Order>1</Order><TriggerType>LIBRARY_CONTROVERSY</TriggerType></Row>	
+		<Row><Type>LIBRARY_CONTROVERSY_2</Type>      <Yield>2</Yield><YieldType>YIELD_HAPPINESS</YieldType>    <GoldCost>200</GoldCost><Order>2</Order><TriggerType>LIBRARY_CONTROVERSY</TriggerType></Row>	
+		<Row><Type>LIBRARY_CONTROVERSY_3</Type>      <Yield>2</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>LIBRARY_CONTROVERSY</TriggerType></Row>
+		<Row><Type>MONUMENT_CONTROVERSY_1</Type>     <Yield>6</Yield><YieldType>YIELD_CULTURE</YieldType>      <GoldCost>200</GoldCost><Order>1</Order><TriggerType>MONUMENT_CONTROVERSY</TriggerType></Row>	
+		<Row><Type>MONUMENT_CONTROVERSY_2</Type>     <Yield>2</Yield><YieldType>YIELD_HAPPINESS</YieldType>    <GoldCost>200</GoldCost><Order>2</Order><TriggerType>MONUMENT_CONTROVERSY</TriggerType></Row>	
+		<Row><Type>MONUMENT_CONTROVERSY_3</Type>     <Yield>2</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>MONUMENT_CONTROVERSY</TriggerType></Row>
+		<Row><Type>WALLED_SLUMS_1</Type>             <Yield>6</Yield><YieldType>YIELD_CULTURE</YieldType>      <GoldCost>200</GoldCost><Order>1</Order><TriggerType>WALLED_SLUMS</TriggerType></Row>	
+		<Row><Type>WALLED_SLUMS_2</Type>             <Yield>6</Yield><YieldType>YIELD_PRODUCTION</YieldType>   <GoldCost>200</GoldCost><Order>2</Order><TriggerType>WALLED_SLUMS</TriggerType></Row>	
+		<Row><Type>WALLED_SLUMS_3</Type>             <Yield>2</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>WALLED_SLUMS</TriggerType></Row>
+		<Row><Type>BARRACKS_RECRUITMENT_1</Type>     <Yield>2</Yield><YieldType>YIELD_HAPPINESS</YieldType>    <GoldCost>200</GoldCost><Order>1</Order><TriggerType>BARRACKS_RECRUITMENT</TriggerType></Row>	
+		<Row><Type>BARRACKS_RECRUITMENT_2</Type>     <Action>Game.TrigAction.BarracksRecruitment2</Action>     <GoldCost>200</GoldCost><Order>2</Order><TriggerType>BARRACKS_RECRUITMENT</TriggerType></Row>	
+		<Row><Type>BARRACKS_RECRUITMENT_3</Type>     <Yield>2</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>BARRACKS_RECRUITMENT</TriggerType></Row>
+		<Row><Type>COLOSSEUM_ATTENDANCE_1</Type>     <Yield>2</Yield><YieldType>YIELD_HAPPINESS</YieldType>    <GoldCost>200</GoldCost><Order>1</Order><TriggerType>COLOSSEUM_ATTENDANCE</TriggerType></Row>	
+		<Row><Type>COLOSSEUM_ATTENDANCE_2</Type>     <Yield>6</Yield><YieldType>YIELD_CULTURE</YieldType>      <GoldCost>200</GoldCost><Order>2</Order><TriggerType>COLOSSEUM_ATTENDANCE</TriggerType></Row>	
+		<Row><Type>COLOSSEUM_ATTENDANCE_3</Type>     <Yield>2</Yield><YieldType>YIELD_GOLD</YieldType>         <GoldCost>  0</GoldCost><Order>3</Order><TriggerType>COLOSSEUM_ATTENDANCE</TriggerType></Row>
+		<Row><Type>SCOUT_SAVIOR_1</Type>             <Action>Game.TrigAction.ScoutSavior1</Action>             <Condition>Game.TrigCondition.UnitUnownedTerritory</Condition><Order>1</Order><TriggerType>SCOUT_SAVIOR</TriggerType></Row>	
+		<Row><Type>SCOUT_SAVIOR_2</Type>             <Action>Game.TrigAction.ScoutSavior2</Action>             <Condition>Game.TrigCondition.UnitUnownedTerritory</Condition><Order>2</Order><TriggerType>SCOUT_SAVIOR</TriggerType></Row>	
+		<Row><Type>SCOUT_SAVIOR_3</Type>             <Action>Game.TrigAction.ScoutSavior3</Action>             <Condition>Game.TrigCondition.ScoutSavior3</Condition><Order>3</Order><TriggerType>SCOUT_SAVIOR</TriggerType></Row>	
+	</Outcomes>
+	<Outcome_Flavors>		
+		<Row><OutcomeType>COMMERCIAL_FARMING_1</OutcomeType>       <FlavorType>FLAVOR_CULTURE</FlavorType></Row>	
+		<Row><OutcomeType>COMMERCIAL_FARMING_2</OutcomeType>       <FlavorType>FLAVOR_GROWTH</FlavorType></Row>	
+		<Row><OutcomeType>MINE_STRIKE_1</OutcomeType>              <FlavorType>FLAVOR_HAPPINESS</FlavorType></Row>	
+		<Row><OutcomeType>MINE_STRIKE_2</OutcomeType>              <FlavorType>FLAVOR_PRODUCTION</FlavorType></Row>	
+		<Row><OutcomeType>VILLAGE_PROTESTS_1</OutcomeType>         <FlavorType>FLAVOR_SCIENCE</FlavorType></Row>	
+		<Row><OutcomeType>VILLAGE_PROTESTS_2</OutcomeType>         <FlavorType>FLAVOR_HAPPINESS</FlavorType></Row>	
+		<Row><OutcomeType>PLANTATION_DEMAND_1</OutcomeType>        <FlavorType>FLAVOR_HAPPINESS</FlavorType></Row>	
+		<Row><OutcomeType>PLANTATION_DEMAND_2</OutcomeType>        <FlavorType>FLAVOR_GROWTH</FlavorType></Row>	
+		<Row><OutcomeType>EXOTIC_CAMP_ANIMALS_1</OutcomeType>      <FlavorType>FLAVOR_CULTURE</FlavorType></Row>	
+		<Row><OutcomeType>EXOTIC_CAMP_ANIMALS_2</OutcomeType>      <FlavorType>FLAVOR_GROWTH</FlavorType></Row>	
+		<Row><OutcomeType>QUALITY_QUARRY_1</OutcomeType>           <FlavorType>FLAVOR_CULTURE</FlavorType></Row>	
+		<Row><OutcomeType>QUALITY_QUARRY_2</OutcomeType>           <FlavorType>FLAVOR_PRODUCTION</FlavorType></Row>	
+		<Row><OutcomeType>EXOTIC_LUMBER_1</OutcomeType>            <FlavorType>FLAVOR_CULTURE</FlavorType></Row>	
+		<Row><OutcomeType>EXOTIC_LUMBER_2</OutcomeType>            <FlavorType>FLAVOR_PRODUCTION</FlavorType></Row>	
+		<Row><OutcomeType>PASTURE_FENCING_1</OutcomeType>          <FlavorType>FLAVOR_GROWTH</FlavorType></Row>	
+		<Row><OutcomeType>PASTURE_FENCING_2</OutcomeType>          <FlavorType>FLAVOR_PRODUCTION</FlavorType></Row>	
+		<Row><OutcomeType>FISHING_DEMAND_1</OutcomeType>           <FlavorType>FLAVOR_GROWTH</FlavorType></Row>	
+		<Row><OutcomeType>FISHING_DEMAND_2</OutcomeType>           <FlavorType>FLAVOR_GOLD</FlavorType></Row>	
+		<Row><OutcomeType>WELL_EXPANSION_1</OutcomeType>           <FlavorType>FLAVOR_CULTURE</FlavorType></Row>	
+		<Row><OutcomeType>WELL_EXPANSION_2</OutcomeType>           <FlavorType>FLAVOR_PRODUCTION</FlavorType></Row>	
+		<Row><OutcomeType>PLATFORM_DECOMMISSIONING_1</OutcomeType> <FlavorType>FLAVOR_GROWTH</FlavorType></Row>	
+		<Row><OutcomeType>PLATFORM_DECOMMISSIONING_2</OutcomeType> <FlavorType>FLAVOR_PRODUCTION</FlavorType></Row>	
+		<Row><OutcomeType>FORT_EXPANSION_1</OutcomeType>           <FlavorType>FLAVOR_SCIENCE</FlavorType></Row>	
+		<Row><OutcomeType>FORT_EXPANSION_2</OutcomeType>           <FlavorType>FLAVOR_DEFENSE</FlavorType></Row>	
+		<Row><OutcomeType>GRANARY_POPULATION_BOOM_1</OutcomeType>  <FlavorType>FLAVOR_EXPANSION</FlavorType></Row>	
+		<Row><OutcomeType>GRANARY_POPULATION_BOOM_2</OutcomeType>  <FlavorType>FLAVOR_TILE_IMPROVEMENT</FlavorType></Row>	
+		<Row><OutcomeType>SMITHY_DEVELOPMENT_1</OutcomeType>       <FlavorType>FLAVOR_SCIENCE</FlavorType></Row>	
+		<Row><OutcomeType>SMITHY_DEVELOPMENT_2</OutcomeType>       <FlavorType>FLAVOR_PRODUCTION</FlavorType></Row>	
+		<Row><OutcomeType>MARKET_MONOPOLY_1</OutcomeType>          <FlavorType>FLAVOR_HAPPINESS</FlavorType></Row>	
+		<Row><OutcomeType>MARKET_MONOPOLY_2</OutcomeType>          <FlavorType>FLAVOR_SCIENCE</FlavorType></Row>	
+		<Row><OutcomeType>LIBRARY_CONTROVERSY_1</OutcomeType>      <FlavorType>FLAVOR_SCIENCE</FlavorType></Row>	
+		<Row><OutcomeType>LIBRARY_CONTROVERSY_2</OutcomeType>      <FlavorType>FLAVOR_HAPPINESS</FlavorType></Row>	
+		<Row><OutcomeType>MONUMENT_CONTROVERSY_1</OutcomeType>     <FlavorType>FLAVOR_CULTURE</FlavorType></Row>	
+		<Row><OutcomeType>MONUMENT_CONTROVERSY_2</OutcomeType>     <FlavorType>FLAVOR_HAPPINESS</FlavorType></Row>	
+		<Row><OutcomeType>WALLED_SLUMS_1</OutcomeType>             <FlavorType>FLAVOR_CULTURE</FlavorType></Row>	
+		<Row><OutcomeType>WALLED_SLUMS_2</OutcomeType>             <FlavorType>FLAVOR_PRODUCTION</FlavorType></Row>	
+		<Row><OutcomeType>BARRACKS_RECRUITMENT_1</OutcomeType>     <FlavorType>FLAVOR_HAPPINESS</FlavorType></Row>	
+		<Row><OutcomeType>BARRACKS_RECRUITMENT_2</OutcomeType>     <FlavorType>FLAVOR_OFFENSE</FlavorType></Row>	
+		<Row><OutcomeType>COLOSSEUM_ATTENDANCE_1</OutcomeType>     <FlavorType>FLAVOR_HAPPINESS</FlavorType></Row>	
+		<Row><OutcomeType>SCOUT_SAVIOR_1</OutcomeType>             <FlavorType>FLAVOR_EXPANSION</FlavorType></Row>	
+		<Row><OutcomeType>SCOUT_SAVIOR_2</OutcomeType>             <FlavorType>FLAVOR_DEFENSE</FlavorType></Row>	
+		<Row><OutcomeType>SCOUT_SAVIOR_3</OutcomeType>             <FlavorType>FLAVOR_OFFENSE</FlavorType></Row>	
+	</Outcome_Flavors>
+</GameData>

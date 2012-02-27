@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 12/30/2010 12:48:34 PM -->
+<GameData>
+	<Language_RU_RU>
+		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME">
+			<Text>Исследовать технологию</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME_HELP">
+			<Text>Добавляет {1_num} [ICON_RESEARCH] науки к вашей, [COLOR_POSITIVE_TEXT]в настоящее время[ENDCOLOR], исследуемой технологии, [COLOR_NEGATIVE_TEXT]без добаления[ENDCOLOR] к следующей технологии.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MISSION_DISCOVER_ME_DISABLED_HELP">
+			<Text>Невозможно создать дополнительные исследования на {1_num} ходов.</Text>
+		</Row>
+	</Language_RU_RU>
+</GameData>

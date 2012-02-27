@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Buildings>
+		<Update>
+			<Where BuildingClass="BUILDINGCLASS_LIBRARY" />
+			<Set Cost="100" />
+		</Update>
+		<!-- This doesn't work!
+		<Update>
+			<Where BuildingClass="BUILDINGCLASS_OBSERVATORY" />
+			<Set Mountain="false" NearbyMountainRequired="true" />
+		</Update>
+		-->
+	</Buildings>
+	<Building_YieldChangesPerPop>
+		<Update>
+			<Where BuildingType="BUILDING_LIBRARY" YieldType="YIELD_SCIENCE" />
+			<Set Yield="100" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_PAPER_MAKER" YieldType="YIELD_SCIENCE" />
+			<Set Yield="100" />
+		</Update>
+		<Update>
+			<Where BuildingType="BUILDING_PUBLIC_SCHOOL" YieldType="YIELD_SCIENCE" />
+			<Set Yield="100" />
+		</Update>
+	</Building_YieldChangesPerPop>	
+	<Building_FeatureYieldChanges>
+		<Delete BuildingType="BUILDING_UNIVERSITY" FeatureType="FEATURE_JUNGLE" />
+		<Delete BuildingType="BUILDING_WAT" FeatureType="FEATURE_JUNGLE" />
+		<Row>
+			<BuildingType>BUILDING_UNIVERSITY</BuildingType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_WAT</BuildingType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_PUBLIC_SCHOOL</BuildingType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+		<Row>
+			<BuildingType>BUILDING_LABORATORY</BuildingType>
+			<FeatureType>FEATURE_JUNGLE</FeatureType>
+			<YieldType>YIELD_SCIENCE</YieldType>
+			<Yield>1</Yield>
+		</Row>
+	</Building_FeatureYieldChanges>
+</GameData>

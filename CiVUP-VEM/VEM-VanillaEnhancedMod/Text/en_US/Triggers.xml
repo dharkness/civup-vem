@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_TRIGGER_COMMERCIAL_FARMING">
+			<Text>Commercial Farming</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COMMERCIAL_FARMING_DESC">
+			<Text>Wealthy individuals plan to buy and commercialize small farms near {2_city}, unless local farmers can increase their revenues.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COMMERCIAL_FARMING_OUTCOME_1">
+			<Text>Invest in a culture of traditional farming.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COMMERCIAL_FARMING_OUTCOME_2">
+			<Text>Support the mergers with treasury incentives.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COMMERCIAL_FARMING_OUTCOME_3">
+			<Text>Allow the purchases without interference.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COMMERCIAL_FARMING_TIP_1">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_CULTURE] Culture: +3</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COMMERCIAL_FARMING_TIP_2">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_FOOD] Food: +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COMMERCIAL_FARMING_TIP_3">
+			<Text>[ICON_GOLD] Gold: +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COMMERCIAL_FARMING_ALERT_1">
+			<Text>[ICON_TEAM_3] Traditional farmers are a strong part of the [ICON_CULTURE] Culture near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COMMERCIAL_FARMING_ALERT_2">
+			<Text>[ICON_TEAM_3] Commercialization improved farm [ICON_FOOD] Food near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COMMERCIAL_FARMING_ALERT_3">
+			<Text>[ICON_TEAM_3] Buyouts improved farm [ICON_GOLD] Gold near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MINE_STRIKE">
+			<Text>Mine Strike</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MINE_STRIKE_DESC">
+			<Text>Mine operators near {2_city} are expanding production, but workers are on strike because of hazardous conditions in the mine.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MINE_STRIKE_OUTCOME_1">
+			<Text>Support improvements to work conditions at the mine.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MINE_STRIKE_OUTCOME_2">
+			<Text>Hire strike breakers to continue production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MINE_STRIKE_OUTCOME_3">
+			<Text>Let the mine operator handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MINE_STRIKE_TIP_1">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_FOOD] Food: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MINE_STRIKE_TIP_2">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_PRODUCTION] Production: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MINE_STRIKE_TIP_3">
+			<Text>[ICON_PRODUCTION] Production: +1 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MINE_STRIKE_ALERT_1">
+			<Text>[ICON_TEAM_3] Miners from {2_city} receive better [ICON_FOOD] Food, ending a strike.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MINE_STRIKE_ALERT_2">
+			<Text>[ICON_TEAM_3] Swiftly ending a strike of {2_city}'s mine expanded [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MINE_STRIKE_ALERT_3">
+			<Text>[ICON_TEAM_3] A mine near {2_city} expanded [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_VILLAGE_PROTESTS">
+			<Text>Village Protests</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_VILLAGE_PROTESTS_DESC">
+			<Text>Citizens in a village near {2_city} are angry about high poverty and crime in their region.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_VILLAGE_PROTESTS_OUTCOME_1">
+			<Text>Improve education to help the poor qualify for better jobs.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_VILLAGE_PROTESTS_OUTCOME_2">
+			<Text>Improve the police force to lower crime rates.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_VILLAGE_PROTESTS_OUTCOME_3">
+			<Text>Distribute propaganda to boost morale.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_VILLAGE_PROTESTS_TIP_1">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_RESEARCH] Science: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_VILLAGE_PROTESTS_TIP_2">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_GOLD] Gold: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_VILLAGE_PROTESTS_TIP_3">
+			<Text>[ICON_GOLD] Gold: +1 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_VILLAGE_PROTESTS_ALERT_1">
+			<Text>[ICON_TEAM_3] A village near {2_city} improved [ICON_RESEARCH] Education for the poor.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_VILLAGE_PROTESTS_ALERT_2">
+			<Text>[ICON_TEAM_3] A village near {2_city} improved  [ICON_GOLD] Revenue with a crackdown on crime.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_VILLAGE_PROTESTS_ALERT_3">
+			<Text>[ICON_TEAM_3] Propaganda improved public morale for villagers near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLANTATION_DEMAND">
+			<Text>Plantation Demand</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLANTATION_DEMAND_DESC">
+			<Text>Demand is rising for the crops of a plantation near {2_city}, where workers harvest the fields for low pay.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLANTATION_DEMAND_OUTCOME_1">
+			<Text>Enact laws to improve pay and conditions for workers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLANTATION_DEMAND_OUTCOME_2">
+			<Text>Lower trade barriers to strengthen the export economy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLANTATION_DEMAND_OUTCOME_3">
+			<Text>Let the plantation owners handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLANTATION_DEMAND_TIP_1">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_FOOD] Food: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLANTATION_DEMAND_TIP_2">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_GOLD] Gold: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLANTATION_DEMAND_TIP_3">
+			<Text>[ICON_GOLD] Gold: +1 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLANTATION_DEMAND_ALERT_1">
+			<Text>[ICON_TEAM_3] A strong workforce improved plantation [ICON_FOOD] Food output near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLANTATION_DEMAND_ALERT_2">
+			<Text>[ICON_TEAM_3] Lower trade barriers improved plantation [ICON_GOLD] Income near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLANTATION_DEMAND_ALERT_3">
+			<Text>[ICON_TEAM_3] Rising demand improved plantation [ICON_GOLD] Income near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_CAMP_ANIMALS">
+			<Text>Exotic Camp Animals</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_CAMP_ANIMALS_DESC">
+			<Text>Exotic animals were discovered outside the camp near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_CAMP_ANIMALS_OUTCOME_1">
+			<Text>Create an animal preserve to improve tourism revenue.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_CAMP_ANIMALS_OUTCOME_2">
+			<Text>Build a lodge to enhance hunting revenue.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_CAMP_ANIMALS_OUTCOME_3">
+			<Text>Let the trappers handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_CAMP_ANIMALS_TIP_1">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_CULTURE] Culture: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_CAMP_ANIMALS_TIP_2">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_GOLD] Gold: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_CAMP_ANIMALS_TIP_3">
+			<Text>[ICON_GOLD] Gold: +1 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_CAMP_ANIMALS_ALERT_1">
+			<Text>[ICON_TEAM_3] An exotic nature preserve improved tourism [ICON_CULTURE] Culture near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_CAMP_ANIMALS_ALERT_2">
+			<Text>[ICON_TEAM_3] An exotic hunting lodge improved [ICON_GOLD] Gold near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_CAMP_ANIMALS_ALERT_3">
+			<Text>[ICON_TEAM_3] Exotic animals discovered near {2_city} improved hunting [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_QUALITY_QUARRY">
+			<Text>Quality Quarry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_QUALITY_QUARRY_DESC">
+			<Text>An unusually high quality rock vein was discovered in the quarry outside {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_QUALITY_QUARRY_OUTCOME_1">
+			<Text>Hire artisans to craft sculptures per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_QUALITY_QUARRY_OUTCOME_2">
+			<Text>Fund extra machinery to speed mining operations.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_QUALITY_QUARRY_OUTCOME_3">
+			<Text>Let the quarry manager handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_QUALITY_QUARRY_TIP_1">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_CULTURE] Culture: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_QUALITY_QUARRY_TIP_2">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_PRODUCTION] Production: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_QUALITY_QUARRY_TIP_3">
+			<Text>[ICON_PRODUCTION] Production: +1 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_QUALITY_QUARRY_ALERT_1">
+			<Text>[ICON_TEAM_3] Magnificent sculptures improved [ICON_CULTURE] Culture near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_QUALITY_QUARRY_ALERT_2">
+			<Text>[ICON_TEAM_3] A quarry near {2_city} expanded [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_QUALITY_QUARRY_ALERT_3">
+			<Text>[ICON_TEAM_3] A quarry near {2_city} discovered a [ICON_PRODUCTION] Productive rock vein.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_LUMBER">
+			<Text>Exotic Lumber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_LUMBER_DESC">
+			<Text>Exotic trees were discovered near the lumbermill outside {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_LUMBER_OUTCOME_1">
+			<Text>Create a national park to improve tourism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_LUMBER_OUTCOME_2">
+			<Text>Build new infrastructure for lumber exports.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_LUMBER_OUTCOME_3">
+			<Text>Let the lumber business handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_LUMBER_TIP_1">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_CULTURE] Culture: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_LUMBER_TIP_2">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_PRODUCTION] Production: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_LUMBER_TIP_3">
+			<Text>[ICON_PRODUCTION] Production: +1 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_LUMBER_ALERT_1">
+			<Text>[ICON_TEAM_3] An exotic national park improved tourism [ICON_CULTURE] Culture near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_LUMBER_ALERT_2">
+			<Text>[ICON_TEAM_3] Extensive [ICON_PRODUCTION] Production infrastructure near {2_city} exports valuable trees.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_EXOTIC_LUMBER_ALERT_3">
+			<Text>[ICON_TEAM_3] Exotic trees discovered near {2_city} improved lumber [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PASTURE_FENCING">
+			<Text>Pasture Fencing</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PASTURE_FENCING_DESC">
+			<Text>Farmers near {2_city} want to build more fences to keep out livestock,[NEWLINE]but ranchers are concerned about the loss of grazing land.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PASTURE_FENCING_OUTCOME_1">
+			<Text>Support the efforts of farmers to fence the land.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PASTURE_FENCING_OUTCOME_2">
+			<Text>Support the efforts of ranchers to keep an open range.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PASTURE_FENCING_OUTCOME_3">
+			<Text>Let the local citizens handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PASTURE_FENCING_TIP_1">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_FOOD] Food: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PASTURE_FENCING_TIP_2">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_PRODUCTION] Production: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PASTURE_FENCING_TIP_3">
+			<Text>[ICON_PRODUCTION] Production: +1 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PASTURE_FENCING_ALERT_1">
+			<Text>[ICON_TEAM_3] Fencing a pasture near {2_city} improved [ICON_FOOD] Food from surrounding farmland.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PASTURE_FENCING_ALERT_2">
+			<Text>[ICON_TEAM_3] Ranchers near {2_city} increased [ICON_PRODUCTION] Production from an open range.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PASTURE_FENCING_ALERT_3">
+			<Text>[ICON_TEAM_3] A compromise between ranchers and farmers near {2_city} improved livestock [ICON_PRODUCTION] Production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FISHING_DEMAND">
+			<Text>Fishing Demand</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FISHING_DEMAND_DESC">
+			<Text>Demand is rising for the marine life found in seas near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FISHING_DEMAND_OUTCOME_1">
+			<Text>Build infrastructure to expand the local fishing industry.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FISHING_DEMAND_OUTCOME_2">
+			<Text>Set catch quotas to limit supply and raise revenues.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FISHING_DEMAND_OUTCOME_3">
+			<Text>Let local fisheries handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FISHING_DEMAND_TIP_1">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_FOOD] Food: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FISHING_DEMAND_TIP_2">
+			<Text>[ICON_GOLD] Cost: 150[NEWLINE][ICON_GOLD] Gold: +3 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FISHING_DEMAND_TIP_3">
+			<Text>[ICON_GOLD] Gold: +1 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FISHING_DEMAND_ALERT_1">
+			<Text>[ICON_TEAM_3] Fishermen near {2_city} expanded [ICON_FOOD] Food output.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FISHING_DEMAND_ALERT_2">
+			<Text>[ICON_TEAM_3] Catching rare marine life near {2_city} earns lots of [ICON_GOLD] Gold.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FISHING_DEMAND_ALERT_3">
+			<Text>[ICON_TEAM_3] Rare marine life near {2_city} improved [ICON_GOLD] Gold from fishing.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WELL_EXPANSION">
+			<Text>Well Expansion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WELL_EXPANSION_DESC">
+			<Text>An oil business wishes to expand near {2_city}, but the tourism industry is concerned about impact on the landscape.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WELL_EXPANSION_OUTCOME_1">
+			<Text>Support the tourism business with a new national monument.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WELL_EXPANSION_OUTCOME_2">
+			<Text>Support oil development with new roads and infrastructure.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WELL_EXPANSION_OUTCOME_3">
+			<Text>Let the businesses handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WELL_EXPANSION_TIP_1">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_CULTURE] Culture: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WELL_EXPANSION_TIP_2">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_PRODUCTION] Production: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WELL_EXPANSION_TIP_3">
+			<Text>[ICON_PRODUCTION] Production: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WELL_EXPANSION_ALERT_1">
+			<Text>[ICON_TEAM_3] A monument to beautiful land near   {2_city} improved tourism [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WELL_EXPANSION_ALERT_2">
+			<Text>[ICON_TEAM_3] New infrastructure expanded oil [ICON_PRODUCTION] Production near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WELL_EXPANSION_ALERT_3">
+			<Text>[ICON_TEAM_3] Oil [ICON_PRODUCTION] Production expanded near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLATFORM_DECOMMISSIONING">
+			<Text>Platform Decommissioning</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLATFORM_DECOMMISSIONING_DESC">
+			<Text>Several offshore platforms in the oil field near {2_city} exhausted their oil supply.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLATFORM_DECOMMISSIONING_OUTCOME_1">
+			<Text>Support commercial fishing by converting the rigs into artificial reefs.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLATFORM_DECOMMISSIONING_OUTCOME_2">
+			<Text>Dismantle and reuse components for rigs elsewhere in the oil field.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLATFORM_DECOMMISSIONING_OUTCOME_3">
+			<Text>Let the business handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLATFORM_DECOMMISSIONING_TIP_1">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_FOOD] Food: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLATFORM_DECOMMISSIONING_TIP_2">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_PRODUCTION] Production: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLATFORM_DECOMMISSIONING_TIP_3">
+			<Text>[ICON_PRODUCTION] Production: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLATFORM_DECOMMISSIONING_ALERT_1">
+			<Text>[ICON_TEAM_3] Oil rigs converted to artificial reefs improved fishing [ICON_FOOD] Food near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLATFORM_DECOMMISSIONING_ALERT_2">
+			<Text>[ICON_TEAM_3] Reusing depleted oil rig components improved [ICON_PRODUCTION] Production near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_PLATFORM_DECOMMISSIONING_ALERT_3">
+			<Text>[ICON_TEAM_3] Offshore platforms improved oil [ICON_PRODUCTION] Production near {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FORT_EXPANSION">
+			<Text>Fort Expansion</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FORT_EXPANSION_DESC">
+			<Text>The general in charge of the fort near {2_city} wishes to start new construction efforts.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FORT_EXPANSION_OUTCOME_1">
+			<Text>Research new military technologies at the fort.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FORT_EXPANSION_OUTCOME_2">
+			<Text>Upgrade the defensive capabilities of the fort.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FORT_EXPANSION_OUTCOME_3">
+			<Text>Let the general handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FORT_EXPANSION_TIP_1">
+			<Text>[ICON_GOLD] Cost: 300[NEWLINE][ICON_RESEARCH] Science: +6[NEWLINE][ICON_GOLD] Gold: +6</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FORT_EXPANSION_TIP_2">
+			<Text>[ICON_GOLD] Cost: 300[NEWLINE]The fort becomes a Citadel.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FORT_EXPANSION_TIP_3">
+			<Text>[ICON_RESEARCH] Science: +2 per turn[NEWLINE][ICON_GOLD] Gold: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FORT_EXPANSION_ALERT_1">
+			<Text>[ICON_TEAM_3] A fort near {2_city} expanded personnel and research facilities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FORT_EXPANSION_ALERT_2">
+			<Text>[ICON_TEAM_3] A fort near {2_city} expanded to a Citadel.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_FORT_EXPANSION_ALERT_3">
+			<Text>[ICON_TEAM_3] A fort near {2_city} expanded weapon research.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_GRANARY_POPULATION_BOOM">
+			<Text>Granary Growth</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_GRANARY_POPULATION_BOOM_DESC">
+			<Text>Improvements to the granary in {2_city} are attracting citizens to the city, creating a job shortage.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_GRANARY_POPULATION_BOOM_OUTCOME_1">
+			<Text>Provide funds for citizens to find a new place to live.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_GRANARY_POPULATION_BOOM_OUTCOME_2">
+			<Text>Hire citizens for a public works program.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_GRANARY_POPULATION_BOOM_OUTCOME_3">
+			<Text>Let the mayor handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_GRANARY_POPULATION_BOOM_TIP_1">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE]+1 Settler.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_GRANARY_POPULATION_BOOM_TIP_2">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE]+2 Workers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_GRANARY_POPULATION_BOOM_TIP_3">
+			<Text>[ICON_CITIZEN] Citizen: +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_GRANARY_POPULATION_BOOM_ALERT_1">
+			<Text>[ICON_TEAM_3] The government of {2_city} funded a new settlement program.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_GRANARY_POPULATION_BOOM_ALERT_2">
+			<Text>[ICON_TEAM_3] The government of {2_city} funded a new public works program.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_GRANARY_POPULATION_BOOM_ALERT_3">
+			<Text>[ICON_TEAM_3] Population is booming in {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SMITHY_DEVELOPMENT">
+			<Text>Smithy Development</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SMITHY_DEVELOPMENT_DESC">
+			<Text>A new smelting process developed by the smithy at {2_city} is potentially hazardous to workers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SMITHY_DEVELOPMENT_OUTCOME_1">
+			<Text>Fund research to make the process safer.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SMITHY_DEVELOPMENT_OUTCOME_2">
+			<Text>Send resources to immediately put the process into production.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SMITHY_DEVELOPMENT_OUTCOME_3">
+			<Text>Let the mayor handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SMITHY_DEVELOPMENT_TIP_1">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_RESEARCH] Science: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SMITHY_DEVELOPMENT_TIP_2">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_PRODUCTION] Production: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SMITHY_DEVELOPMENT_TIP_3">
+			<Text>[ICON_PRODUCTION] Production: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SMITHY_DEVELOPMENT_ALERT_1">
+			<Text>[ICON_TEAM_3] Extensive [ICON_RESEARCH] Research is under way to create a safer smelting process in {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SMITHY_DEVELOPMENT_ALERT_2">
+			<Text>[ICON_TEAM_3] A new smelting process was quickly put into [ICON_PRODUCTION] Production in {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SMITHY_DEVELOPMENT_ALERT_3">
+			<Text>[ICON_TEAM_3] A new smelting process improved [ICON_PRODUCTION] Production in {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MARKET_MONOPOLY">
+			<Text>Market Monopoly</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MARKET_MONOPOLY_DESC">
+			<Text>A business providing large donations to local schools is forming a monopoly on the market in {2_city}, driving up prices.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MARKET_MONOPOLY_OUTCOME_1">
+			<Text>Split up the monopoly to increase market competition.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MARKET_MONOPOLY_OUTCOME_2">
+			<Text>Support the educational donations with treasury incentives.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MARKET_MONOPOLY_OUTCOME_3">
+			<Text>Collect the taxes on higher prices.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MARKET_MONOPOLY_TIP_1">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_GOLD] Gold: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MARKET_MONOPOLY_TIP_2">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_RESEARCH] Science: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MARKET_MONOPOLY_TIP_3">
+			<Text>[ICON_GOLD] Gold: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MARKET_MONOPOLY_ALERT_1">
+			<Text>[ICON_TEAM_3] Increased competition improved the [ICON_GOLD] Gold economy of a market in {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MARKET_MONOPOLY_ALERT_2">
+			<Text>[ICON_TEAM_3] Funding for [ICON_RESEARCH] Education increased in the city of {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MARKET_MONOPOLY_ALERT_3">
+			<Text>[ICON_TEAM_3] Higher prices from a monopoly on {2_city}'s market increased [ICON_GOLD] Gold revenues.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_LIBRARY_CONTROVERSY">
+			<Text>Library Controversy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_LIBRARY_CONTROVERSY_DESC">
+			<Text>A controversial book about racism in the history of {2_city} is sparking riots.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_LIBRARY_CONTROVERSY_OUTCOME_1">
+			<Text>Fund deeper research into the city's turbulent past.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_LIBRARY_CONTROVERSY_OUTCOME_2">
+			<Text>Ban the book until the riots fade.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_LIBRARY_CONTROVERSY_OUTCOME_3">
+			<Text>Let the historians handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_LIBRARY_CONTROVERSY_TIP_1">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_RESEARCH] Science: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_LIBRARY_CONTROVERSY_TIP_2">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_HAPPINESS_1] Happiness: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_LIBRARY_CONTROVERSY_TIP_3">
+			<Text>[ICON_RESEARCH] Science: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_LIBRARY_CONTROVERSY_ALERT_1">
+			<Text>[ICON_TEAM_3] A controversial book starts further [ICON_RESEARCH] Research into the history of {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_LIBRARY_CONTROVERSY_ALERT_2">
+			<Text>[ICON_TEAM_3] Riots in {2_city} fade as a book causing [ICON_HAPPINESS_1_4] Anger was banned.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_LIBRARY_CONTROVERSY_ALERT_3">
+			<Text>[ICON_TEAM_3] Historians are [ICON_RESEARCH] Researching the turbulent past of {2_city}. </Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MONUMENT_CONTROVERSY">
+			<Text>Monument Controversy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MONUMENT_CONTROVERSY_DESC">
+			<Text>Citizens in {2_city} are protesting an old monument to imperialist expansion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MONUMENT_CONTROVERSY_OUTCOME_1">
+			<Text>Give speeches promoting a peaceful culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MONUMENT_CONTROVERSY_OUTCOME_2">
+			<Text>Distribute propaganda supporting militaristic expansion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MONUMENT_CONTROVERSY_OUTCOME_3">
+			<Text>Let the mayor handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MONUMENT_CONTROVERSY_TIP_1">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_CULTURE] Culture: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MONUMENT_CONTROVERSY_TIP_2">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_HAPPINESS_1] Happiness: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MONUMENT_CONTROVERSY_TIP_3">
+			<Text>[ICON_CULTURE] Culture: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MONUMENT_CONTROVERSY_ALERT_1">
+			<Text>[ICON_TEAM_3] Peaceful [ICON_CULTURE] Cultural demonstrations sweep through {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MONUMENT_CONTROVERSY_ALERT_2">
+			<Text>[ICON_TEAM_3] Propaganda in {2_city} reduced [ICON_HAPPINESS_1_4] Anger over imperialism.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_MONUMENT_CONTROVERSY_ALERT_3">
+			<Text>[ICON_TEAM_3] The [ICON_CULTURE] Cultural borders of {2_city} expand faster from an imperialist resurgence.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WALLED_SLUMS">
+			<Text>Walled Slums</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WALLED_SLUMS_DESC">
+			<Text>Development of {2_city} expanded beyond the old city wall, with the inner districts deteriorating to slums.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WALLED_SLUMS_OUTCOME_1">
+			<Text>Revitalize the old city with cultural programs.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WALLED_SLUMS_OUTCOME_2">
+			<Text>Tear down the slums to make room for new businesses.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WALLED_SLUMS_OUTCOME_3">
+			<Text>Let the mayor handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WALLED_SLUMS_TIP_1">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_CULTURE] Culture: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WALLED_SLUMS_TIP_2">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_GOLD] Gold: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WALLED_SLUMS_TIP_3">
+			<Text>[ICON_CITIZEN] Citizen: +1</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WALLED_SLUMS_ALERT_1">
+			<Text>[ICON_TEAM_3] The inner city of {2_city} revitalized its [ICON_CULTURE] Culture.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WALLED_SLUMS_ALERT_2">
+			<Text>[ICON_TEAM_3] A new business center in {2_city} increased [ICON_GOLD] Gold revenues.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_WALLED_SLUMS_ALERT_3">
+			<Text>[ICON_TEAM_3] Districts within {2_city}'s old walls turned to slums as the population boomed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_BARRACKS_RECRUITMENT">
+			<Text>Barracks Conscription</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_BARRACKS_RECRUITMENT_DESC">
+			<Text>Mandatory conscription is causing anger among citizens of {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_BARRACKS_RECRUITMENT_OUTCOME_1">
+			<Text>Propose a voluntary system to your advisers.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_BARRACKS_RECRUITMENT_OUTCOME_2">
+			<Text>Start a pro-enlistment propaganda campaign.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_BARRACKS_RECRUITMENT_OUTCOME_3">
+			<Text>Let the mayor handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_BARRACKS_RECRUITMENT_TIP_1">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_HAPPINESS_1] Happiness: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_BARRACKS_RECRUITMENT_TIP_2">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_MILITARY UNITS] Military Units: +2</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_BARRACKS_RECRUITMENT_TIP_3">
+			<Text>[ICON_HAPPINESS_1] Happiness: +1 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_BARRACKS_RECRUITMENT_ALERT_1">
+			<Text>[ICON_TEAM_3] Promising voluntary military improved [ICON_HAPPINESS_1] Happiness in {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_BARRACKS_RECRUITMENT_ALERT_2">
+			<Text>[ICON_TEAM_3] A barracks in {2_city} enlisted new military personnel.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_BARRACKS_RECRUITMENT_ALERT_3">
+			<Text>[ICON_TEAM_3] Patriotic propaganda improved [ICON_HAPPINESS_1] Happiness in {2_city}.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COLOSSEUM_ATTENDANCE">
+			<Text>Colosseum Attendance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COLOSSEUM_ATTENDANCE_DESC">
+			<Text>The colosseum in {2_city} is drawing unusually crowds.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COLOSSEUM_ATTENDANCE_OUTCOME_1">
+			<Text>Host massive shows of patriotic propaganda.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COLOSSEUM_ATTENDANCE_OUTCOME_2">
+			<Text>Show elaborate competitions to entertain the public.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COLOSSEUM_ATTENDANCE_OUTCOME_3">
+			<Text>Let the mayor handle this.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COLOSSEUM_ATTENDANCE_TIP_1">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_CULTURE] Culture: +6 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COLOSSEUM_ATTENDANCE_TIP_2">
+			<Text>[ICON_GOLD] Cost: 200[NEWLINE][ICON_HAPPINESS_1] Happiness: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COLOSSEUM_ATTENDANCE_TIP_3">
+			<Text>[ICON_GOLD] Gold: +2 per turn</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COLOSSEUM_ATTENDANCE_ALERT_1">
+			<Text>[ICON_TEAM_3] The colosseum of {2_city} hosts massive shows of [ICON_CULTURE] Cultural propaganda.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COLOSSEUM_ATTENDANCE_ALERT_2">
+			<Text>[ICON_TEAM_3] Competitions attract [ICON_HAPPINESS_1] Happy crowds in the {2_city} colosseum.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_COLOSSEUM_ATTENDANCE_ALERT_3">
+			<Text>[ICON_TEAM_3] Improvements to the {2_city} colosseum raised [ICON_GOLD] Gold revenues.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SCOUT_SAVIOR">
+			<Text>Scout Savior</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SCOUT_SAVIOR_DESC">
+			<Text>Your scout rescued the child of a tribal chieftain from a ferocious animal. The grateful village elders offer to teach your scout their wilderness knowledge.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SCOUT_SAVIOR_OUTCOME_1">
+			<Text>Train to explore vast distances faster.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SCOUT_SAVIOR_OUTCOME_2">
+			<Text>Train to move quickly with hunting bows.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SCOUT_SAVIOR_OUTCOME_3">
+			<Text>Train to brave dangerous battles.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SCOUT_SAVIOR_TIP_1">
+			<Text>+15 [ICON_WAR] Experience for the Scout.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SCOUT_SAVIOR_TIP_2">
+			<Text>Upgrade to an Archer who ignores terrain.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SCOUT_SAVIOR_TIP_3">
+			<Text>+20% [ICON_STRENGTH] Strength from Morale.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SCOUT_SAVIOR_ALERT_1">
+			<Text>[ICON_TEAM_3] A {2_target} of {1_player} explores faster.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SCOUT_SAVIOR_ALERT_2">
+			<Text>[ICON_TEAM_3] A {2_target} of {1_player} learned to use hunting bows.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRIGGER_SCOUT_SAVIOR_ALERT_3">
+			<Text>[ICON_TEAM_3] A {2_target} of {1_player} is braver in battle.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>
